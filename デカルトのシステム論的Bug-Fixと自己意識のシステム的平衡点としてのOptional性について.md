@@ -13,6 +13,7 @@ Cogitoにおけるシステム的欠陥
 要するに疑っていることの終了処理が疑う行為のみだと実装されていないのです。どこまで疑えば、疑っていることを終了できるのかということです。
 2行で書くと次のようになり、実質的に「この文章は嘘である」と同じパラドックスになります。
 
+```python
 while(True):
   doubt("doubting-me") //疑っている状態が収束しない
 
@@ -41,6 +42,7 @@ int main(){
 //後の処理
 
 }
+```
 
 # デカルトのシステム論的Bug Fix
 
@@ -48,6 +50,7 @@ int main(){
 　
 プログラム的に言えばある程度の自己参照ループに陥ったときは強制的に処理を落とすのです。
 
+```python
 //cogito-v2.ph
 //v2 doubt()帰ってこない場合があることが分かったからバグfixしといた
 
@@ -74,17 +77,21 @@ while(true){
 //後の処理
 
 }
+```
 
 ミニマルに書くとこうなります。きちんとcutoff関数が動いていることが分かり、プログラムが美しく動いています。
+```python
 a = doubter("self")
   if isVoid(a) == False:
 　  　//自己は存在する
+```
 
 # Cogitoのクラス設計
 
 システムの必要条件が分かったので。Cogitoをクラス化していきます。
 実装上の都合observerとdoubterだと内部で閉じてしまうので外部参照用にpublic関数のidentifySelfActivity()を入れました。これで外部から内部状態を参照できます。
 
+```python
 //cogito-class.ph
 
 class Cogito::BaseClass_Cogito:
@@ -102,6 +109,8 @@ class Cogito::BaseClass_Cogito:
 
   public identifySelfActivity()
     //doubter()とobserver()の交流状態を判定する
+
+```
 
 # 多重人格と多クラスインスタンス
 
