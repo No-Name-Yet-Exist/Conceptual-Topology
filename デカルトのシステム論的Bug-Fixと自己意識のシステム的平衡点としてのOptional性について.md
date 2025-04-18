@@ -14,29 +14,29 @@ Cogitoにおけるシステム的欠陥
 2行で書くと次のようになり、実質的に「この文章は嘘である」と同じパラドックスになります。
 
 while(True):
-doubt("doubting-me") //疑っている状態が収束しない
+  doubt("doubting-me") //疑っている状態が収束しない
 
 //cogito-org.ph
 
 def doubt(x):
-//疑う処理
+  //疑う処理
 
 def doubter(x):
-return doubt(x)
+  return doubt(x)
 
 int main(){
 
-//色々な事前処理
+  //色々な事前処理
 
-While(true){
-a = doubter(X)
+  While(true){
+    a = doubter(X)
 
-if isVoid(a) == False:
-  //自己が存在する
-else:
-  //自己が存在しない
+  if isVoid(a) == False:
+    //自己が存在する
+  else:
+    //自己が存在しない
 
-}
+  }
 
 //後の処理
 
@@ -62,12 +62,12 @@ int main(){
 //色々な事前処理
 
 while(true){
-a = doubter(X)
+  a = doubter(X)
 
-if isVoid(a) == False:
-  //自己が存在する
-else:
-  //自己が存在しない
+  if isVoid(a) == False:
+    //自己が存在する
+  else:
+    //自己が存在しない
 
 }
 
@@ -76,9 +76,9 @@ else:
 }
 
 ミニマルに書くとこうなります。きちんとcutoff関数が動いていることが分かり、プログラムが美しく動いています。
-a = doubt("self")
-if isVoid(a) == False:
-　　//自己は存在する
+a = doubter("self")
+  if isVoid(a) == False:
+　  　//自己は存在する
 
 # Cogitoのクラス設計
 
@@ -88,19 +88,20 @@ if isVoid(a) == False:
 //cogito-class.ph
 
 class Cogito::BaseClass_Cogito:
-def init(self):
-startSelfSystem()
+  def init(self):
+    startSelfSystem()
 
-private doubter():
-//内部処理
-private observer():
-//内部処理
+  private doubter():
+    //内部処理
+  
+  private observer():
+    //内部処理
 
-private startSelfSystem():
-//doubter()とobserver()を起動する
+  private startSelfSystem():
+    //doubter()とobserver()を起動する
 
-public identifySelfActivity()
-//doubter()とobserver()の交流状態を判定する
+  public identifySelfActivity()
+    //doubter()とobserver()の交流状態を判定する
 
 # 多重人格と多クラスインスタンス
 
