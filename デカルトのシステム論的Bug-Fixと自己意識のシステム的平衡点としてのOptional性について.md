@@ -16,7 +16,9 @@ Cogitoにおけるシステム的欠陥
 ```python
 while(True):
   doubt("doubting-me") //疑っている状態が収束しない
+```
 
+```python
 //cogito-org.ph
 
 def doubt(x):
