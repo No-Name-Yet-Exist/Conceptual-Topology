@@ -2,6 +2,7 @@ Word2vecのプログラムの背景: Dampingとは
 
 今回解説するプログラムは以下です
 
+```python
 from gensim.models import KeyedVectors
 import numpy as np
 import matplotlib.pyplot as plt
@@ -43,6 +44,7 @@ def compute_damping(w1, w2, rupture):
 for w1, w2, rupture in pairs:
     damping = compute_damping(w1, w2, rupture)
     print(f'{w1}-{w2} (rupture: {rupture}) → damping: {damping:.4f}')
+```
 
 dampingを理解するには前提知識として次が必要です
 概念は属性射ベクトルの集合としてみています。
@@ -80,11 +82,19 @@ dog-animal-(dog-cat) = {Canine⃗, Domesticated⃗, Pet⃗} ⊖ ( Canine⃗ - Fe
 dog_after = dog-animal-(dog-cat) =  {Feline⃗ , Domesticated⃗, Pet⃗}
 つまりAnimal成分が抜けている状態になる。
 
-この時Dampingの計算は次の通りになります。
-Damping =  dog_before - dog_after = {Animal⃗, Canine⃗, Domesticated⃗, Pet⃗} ⊖ {Feline⃗ , Domesticated⃗, Pet⃗} =  {Animal⃗, Canine⃗, -Feline⃗ } ≒ {Animal⃗, Canine⃗ }
+dog_before = dog - (dog-cat)=- cat ≒ dog = {Canine⃗, Domesticated⃗, Pet⃗}
 ※≒で繋げられるかは実際に概念空間を見ないと分かりませんが、dog catが対立概念であることを踏まえdog = -catとしてここでは読んでいます。
 
-Dampingとは{Animal⃗, Canine⃗ } 、言い換えればAnimal(rupture)を取り除いた後の変化量である{Animal⃗, Canine⃗ } を測っている。これが大きい場合dogという概念はanimal依存であると分かるというものでした。
+この時Dampingの計算は次の通りになります。
+Damping =  dog_before - dog_after = {Animal⃗, Canine⃗, Domesticated⃗, Pet⃗} ⊖ {Feline⃗ , Domesticated⃗, Pet⃗} =  {Animal⃗, Canine⃗, -Feline⃗ } ≒ {Animal⃗, Canine⃗ }
+
+Dampingとは{Animal⃗, Canine⃗ } 、言い換えればAnimal(rupture)を取り除いた後の変化量である{Animal⃗, Canine⃗ } を測っている※1。これが大きい場合dogという概念はanimal依存であると分かるというものでした。
+
+※1 {Animal⃗, Canine⃗ } Canineが残っていますがDamping自体が主にAnimal成分の消失に伴う変化量となっています。Canineについては残余の属性でありDampingの主要因ではありません。
+
+Damping =rupture（例：Animal⃗）成分を除去した時、ベクトルの変化量
+Damping = |Proj_before| - |Proj_after|
+ここで変化しているのは、rupture軸に依存していた成分が消えたことで生じるズレであり、Dampingはrupture成分（＝Animal⃗）がどれだけ概念を支えていたかを測っています。
 
 この記事はFair Use対象外です。
 This document and all conceptual content therein are © [No Name Yet Exist], 2025. All rights reserved. Unauthorized reproduction, distribution, or use without explicit permission is prohibited.
