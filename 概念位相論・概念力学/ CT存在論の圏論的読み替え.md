@@ -6,7 +6,8 @@ Z = Morphisms
 写像関係/ M関数 = Morphisms → ここは別の概念がありそう
 Endomorphism = CTによる自己定義
 CT = M(CT, CT′,Z) | C(CT, CT′, Z) = true ∧ C(CT, CT_latest, CT)= true
-生成的存在論/動的存在論の圏論的読み替え
+
+# 生成的存在論/動的存在論の圏論的読み替え
 
 
 とはいえ全く圏論を知らないので試しの翻訳です。
@@ -19,7 +20,8 @@ Objectは非連続 ObjectはMorphismを通して変形する場合　Functorと�
 
 「それ」の中身自体は「それ」とは別に非連続性を持ったものとしてあれるけど、観測された連続性がなければ「それ」としては存在できない。 　
 「それ」というMorphismは、Morphismの写像対象であるObjectが非連続でも連続的なものとして存在する(それがそもそもMorphismだから)。だけどMorphism自体は連続的な写像概念だからそのMorphic Path(CT用語)がないとMorphismとしては成立しない
-CT存在論の圏論的翻訳
+
+# CT存在論の圏論的翻訳
 
 存在とは、Objectの属性ではなく、Morphismsの成立によって定義される。
 連続性Z ≒ Morphismの成立条件（存在を保証する構造的連結）
