@@ -1,6 +1,9 @@
-# 概念位相論とは
+# 概念位相論とは / What is Conceptual Topology
 概念位相論は意味や概念がどのように構成され変化するかを
 圏論的構造やベクトルを用いて分析するものです
+
+The conceptual topology analizes how words, concepts and meanings etc are consisted
+and change through category theory and vector such as word2vec
 
 king - man + woman = queen
 
