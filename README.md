@@ -134,3 +134,5 @@ id_word ≈word
 Those are the summary of the conceptual topology.
 You can also see the formulas, word2vec experiements and other applications
 These are written in Japanease, so we are afraid that please use the translator.
+
+This document and all conceptual content therein are © [No Name Yet Exist], 2025. All rights reserved. Unauthorized reproduction, distribution, or use without explicit permission is prohibited.
