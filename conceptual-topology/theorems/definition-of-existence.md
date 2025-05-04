@@ -1,7 +1,7 @@
 Let's make a blank box. Nothing is inside yet so there is no contrast. I put 100 elements here and they have inner Δt. After Δt, they change its property. I calculate this lim Δt→0 It is a noisy environment. They barely exist but their property is always changing even their position. I pick one, and I name it A and I manipulate its inner Δt =1. It starts to have a relation or contrast between A and noise (emergence of contrast Z).
 
-For clarification, I rewrote it in formal language.
 
+```
 Let S = {x₁, x₂, ..., xₙ} be a set of deforming nodes under internal Δtᵢ.
 
 Noise-field N: a system S where no persistent contrast function exists across elements.
@@ -17,6 +17,7 @@ Let A ∈ S and ∃ Δt_A ≠ Δtᵢ, ∀i ≠ A: Then ∃ Z such that: C(A, x�
 Z = contrast between A and the noise-field.
 
 Δt, continuity is a fundamental element of all existence and meaning. The continuity is the flip side of the same phenomena, called rupture. Clarification: A latent structure will be treated as noise since there is no observable continuity.
+```
 
 日本語に戻ります。
 

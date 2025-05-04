@@ -13,6 +13,8 @@
 
 
 1. 任意の時間的スライスΔtにおいて、任意の対象A,B間において可逆な射しか存在しないときAとBは存在しない
+
+```
 Let a space be S
 Sn = GenCategoryWith1Morphism(S) = { Cn1, C_n2 …. C_n} // 射を含む圏を生成
 Let assume A, B ⊂ Si
@@ -29,7 +31,7 @@ This implies A≈B∣Z, which contradicts A={−B}, B={−A}
 
 Therefore:
 A and B do not exist as definable, distinguishable entities under Z
-
+```
 
 2. 安定構造の非成立による無
 μ(A):=Δt→ϵlim[∃Z:C(A_t, A_t+Δt, Z) is stable] = 0
