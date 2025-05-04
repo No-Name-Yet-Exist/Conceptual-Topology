@@ -45,12 +45,34 @@ woman =  {Female⃗}
 ```
 
 ```
+1st Morphism: He → Human He is a human
+  → Existential attribution: assigning a category ("Human") to an individual ("He").
+
+2nd Morphism: Human → He He is a human, but Human is him
+ → Reverse attribution: turning the attributed category back into an individual reference.
+ → Highlights the directionality and reversibility of meaning.
+2rd Morphism: mammal
+ → Higher-order abstraction over both "He" and "Human".
+   This abstracts from individual and category to a shared ontological layer (e.g., biological classification).
+
 He ----f----> Human
  |              |
 α|              |α'
  ↓              ↓
 Human <----g--- He
 
+        ↓
+       (Θ)
+        ↓
+      mammal
+
+f: Propositional classification morphism (He is a Human)
+g: Referential inversion morphism (Human is him)
+α, α′: 2-morphisms ensuring bidirectional equivalence between He and Human
+(Reversible structure)
+
+Θ: 3rd morphism representing higher-order abstraction
+(emergence of "mammal" as a shared conceptual generalization)
 ```
 
 # Semantic Additivity Principle
@@ -91,7 +113,17 @@ r: Regen morphism — applies −Δ to recover A from B
 Δ: Differential — the structural difference space between A and B
 
 
+# The Definition Of Word
+Let C be a concept
+C = {−OC₁, −OC₂, ..., −OCₙ}
+word ≅ C and Ob(Word) ∋ word
+∀ fᵢ ∈ Mor(C), ∃∞_f s.t. fᵢ ⊆ ∞_f
+∀ ∞_f, ∃ Word s.t. ∞_f ⊆ Word
+and then: Word≅Nat(h∞f​,Language)
+id_word ≈word
+
+
 ## 概念位相論.md and 概念位相論と圏論の体系的・記号的接続.md
 Those are the summary of the conceptual topology.
-You can see the formulas, word2vec experiements and other applications
+You can also see the formulas, word2vec experiements and other applications
 These are written in Japanease, so we are afraid that please use the translator.
