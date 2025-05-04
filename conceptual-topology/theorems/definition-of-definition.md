@@ -15,3 +15,5 @@ concept A is said to be Δt-stable if any morphism g: A → A′ | Z (continuity
 　f：ヒサマツミドリシジミ → メスアカミドリシジミ の差異
 　f′：別の同種内の差異（たとえば模様のゆらぎ）
 これがf≅f′の関係にある場合、どちらの差異もミドリシジミとしての種構造を壊さずに連続変形できる
+
+This document and all conceptual content therein are © [No Name Yet Exist], 2025. All rights reserved. Unauthorized reproduction, distribution, or use without explicit permission is prohibited.

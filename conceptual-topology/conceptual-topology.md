@@ -1,7 +1,3 @@
-# 概念位相論
-
-概念の写像関係や変化について扱う。これに伴い概念や意味の内部成分についても扱い、余分な部分を取り除いたり、足し合わせたりして変化させていく、その操作や法則性、規則を扱う。他分野との接続としてみれば圏論やトポロジー、意味論、存在論、認知が挙げられる。
-
 # 概念の基本定義
 
 ConceptSpace：概念は対象 C∈Ob(ConceptSpace) として存在し以下のように定義できる。
@@ -78,6 +74,7 @@ Transform(A↔B) = 両者を接続する意味的射
 以下が実際のword2vec上での適用例
 
 
+
 # 意味加算原則（Semantic Additivity Principle）
 
 任意の意味概念 A, B において、
@@ -91,6 +88,8 @@ A − (A − B)
 = B
 
 従ってA − (A − B) ≈ B
+
+
 
 # 意味保存の三角形
 
@@ -135,7 +134,8 @@ r: B → A (= white → black)
 以下が実際のword2vec上での例
 
 
-# Z は概念間の「断絶（rupture）」または「連続性の座標軸」
+
+# R は概念間の「断絶（rupture）」または「連続性の座標軸」
 
 
 With R:
@@ -145,6 +145,7 @@ Without R :
 C1 —[ Continuity Path ]—> C2
 
 同じベクトルでも、Rの有無でその意味論的解釈が反転する。
+
 
 # 意味素
 
@@ -158,6 +159,7 @@ C₀ = {-OC, ε } // ε は概念固有の文脈/文化／用法差
 
 意味素は必ず同じコンテキストで使われるわけではない。片方の概念が特定の用法や含意でしか使われないことがある。それがεとなる。
 意味集合の計算
+
 
 # 意味集合の演算
 　- 意味集合 A ∪ B = 意味融合（概念の合成）
@@ -175,12 +177,14 @@ C₀ = {-OC, ε } // ε は概念固有の文脈/文化／用法差
 　こちらは動詞の過去形/未来形で近似的な実験データがあります。
 CTL
 
+
 # 結合法則成立：
  (A ⊕ B) ⊕ C = A ⊕ (B ⊕ C) が成立
 Queen = {Royalty⃗, Female⃗, Human⃗} かつ King = {Royalty⃗, Male⃗, Human⃗}のとき以下が成り立つ
 
 Queen ⊕ ({Male⃗} ⊕ −{Female⃗}) = King
 (Queen ⊕ {Male⃗}) ⊕ −{Female⃗} = King
+
 
 # 単位元（Identity Element）：
 Neutral⃗ = 「意味を変えない無属性集合」
@@ -201,5 +205,4 @@ X ⊕ Neutral⃗ ≡ idₓ(X)
 つまり、Neutral⃗ は概念空間における意味的恒等射として機能する
 
 
-この記事はFair Use対象外です。
 This document and all conceptual content therein are © [No Name Yet Exist], 2025. All rights reserved. Unauthorized reproduction, distribution, or use without explicit permission is prohibited.

@@ -14,3 +14,5 @@ PCT = M(PCT , CT ′,Z) | C(PCT , CT ′, Z) = true ∧ C(PCT, CT, PCT)= true
 yet
 PCT → CT | PCT
 Thus ∄f∈C(CT, PCT | R)
+
+This document and all conceptual content therein are © [No Name Yet Exist], 2025. All rights reserved. Unauthorized reproduction, distribution, or use without explicit permission is prohibited.

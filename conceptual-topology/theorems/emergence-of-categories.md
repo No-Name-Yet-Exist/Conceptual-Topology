@@ -35,3 +35,5 @@ Cn1, C_n2 …. C_n⊂ C_n-1
 
 Let C₀ be a category-genesis,
 such that ∀f ∈ Mor(C₀), f is invertible under homeo-transformation.
+
+This document and all conceptual content therein are © [No Name Yet Exist], 2025. All rights reserved. Unauthorized reproduction, distribution, or use without explicit permission is prohibited.

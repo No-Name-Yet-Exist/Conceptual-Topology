@@ -29,3 +29,5 @@ Continuity := ∫ₜ₀^{t₀+Δt} M(A, A′, Z) dt
 
 断絶（Rupture）は、M() の時間微分が閾値を超えるか、定義不能（=0 または ∞）となるときに発生すると考えられます。(意味の場合はZ)
 Rupture := dM/dt ≥ θ or dM/dt undefined
+
+This document and all conceptual content therein are © [No Name Yet Exist], 2025. All rights reserved. Unauthorized reproduction, distribution, or use without explicit permission is prohibited.
