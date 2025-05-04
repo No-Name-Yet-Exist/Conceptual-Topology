@@ -6,25 +6,9 @@ This github is storage of the following account.
 https://note.com/xoreaxeax
 
 
-
-# king - man + woman = queen
-
-```
-Let C be a concept
-C = {−OC₁, −OC₂, ..., −OCₙ} // Yoneda's lemma and structralism
-
-king = {Royalty⃗, Male⃗, Human⃗}
-queen = {Royalty⃗, Female⃗, Human⃗} 
-man = {Male⃗}
-woman =  {Female⃗} 
-
-{Royalty⃗, Male⃗, Human⃗} - {Male⃗} + {Female⃗} 
-= {Royalty⃗, Female⃗, Human⃗} 
-= queen
-```
-
 # Commutative diagrams: The Relationship of words in category theory
 
+### king - man + woman = queen
 ```
         f
      K → Q
@@ -78,6 +62,23 @@ g: Referential inversion morphism (Human is him)
 Θ: 3rd morphism representing higher-order abstraction
 (emergence of "mammal" as a shared conceptual generalization)
 ```
+
+# king - man + woman = queen
+
+```
+Let C be a concept
+C = {−OC₁, −OC₂, ..., −OCₙ} // Yoneda's lemma and structralism
+
+king = {Royalty⃗, Male⃗, Human⃗}
+queen = {Royalty⃗, Female⃗, Human⃗} 
+man = {Male⃗}
+woman =  {Female⃗} 
+
+{Royalty⃗, Male⃗, Human⃗} - {Male⃗} + {Female⃗} 
+= {Royalty⃗, Female⃗, Human⃗} 
+= queen
+```
+
 
 # Semantic Additivity Principle
 
