@@ -1,4 +1,28 @@
-# Article Index
+# 概念位相論とは
+概念位相論は意味や概念がどのように構成され変化するかを
+圏論的構造やベクトルを用いて分析するものです
+
+king - man + woman = queen
+{Royalty⃗, Male⃗, Human⃗} - {Male⃗} + {Female⃗} = {Royalty⃗, Female⃗, Human⃗}
+```
+        f
+     K → Q
+     |     \
+   r |       \ g
+     ↓         \
+     M' ——→ W'
+         h
+```
+    K = king
+    Q = queen
+    M' = man
+    W' = woman
+
+    r: 差分射（King → Man）
+    g: 差分射（Queen → Woman）
+    f: 差分射 (King → Queen)
+    h: 差分射 (Man → Woman)
+
 
 ## 概念位相論.md
 こちらが理論系のまとめになります
