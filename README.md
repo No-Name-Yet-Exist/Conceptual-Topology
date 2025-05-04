@@ -3,7 +3,10 @@
 圏論的構造やベクトルを用いて分析するものです
 
 king - man + woman = queen
-{Royalty⃗, Male⃗, Human⃗} - {Male⃗} + {Female⃗} = {Royalty⃗, Female⃗, Human⃗}
+
+{Royalty⃗, Male⃗, Human⃗} - {Male⃗} + {Female⃗} 
+= {Royalty⃗, Female⃗, Human⃗} = queen
+
 ```
         f
      K → Q
