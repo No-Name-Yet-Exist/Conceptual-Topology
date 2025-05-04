@@ -84,6 +84,7 @@ g: Referential inversion morphism (Human is him)
 Any given concept A and B meet the following according to the Semantic Additivity Principle
 This is observed in word2vec using black - (black - white) ≈ black (cos_sim = 0.8)
 
+```
 A = {-B},　B={-A}
 A − (A − B)
 = {-B} -( {-B} - {-A} )
@@ -92,6 +93,7 @@ A − (A − B)
 = B
 
 ∴　A − (A − B) ≈ B
+```
 
 # Meaning Preservation Triangle
 
