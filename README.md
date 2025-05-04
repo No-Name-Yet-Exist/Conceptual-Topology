@@ -24,7 +24,7 @@ https://note.com/xoreaxeax
 
   r: Differential Morphism（King → Man）
   g: Differential Morphism（Queen → Woman）
-  f: Differential Morphism(King → Queen)
+  f: Composed Semantic Morphism g ∘ h ∘ r 
   h: Differential Morphism(Man → Woman)
 ```
 
