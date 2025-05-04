@@ -10,17 +10,17 @@ https://note.com/xoreaxeax
 
 ### king - man + woman = queen
 
-Let C be a concept
-C = {−OC₁, −OC₂, ..., −OCₙ} // Yoneda's lemma and structralism
+  Let C be a concept
+  C = {−OC₁, −OC₂, ..., −OCₙ} // Yoneda's lemma and structralism
 
-king = {Royalty⃗, Male⃗, Human⃗}
-queen = {Royalty⃗, Female⃗, Human⃗} 
-man = {Male⃗}
-woman =  {Female⃗} 
+  king = {Royalty⃗, Male⃗, Human⃗}
+  queen = {Royalty⃗, Female⃗, Human⃗} 
+  man = {Male⃗}
+  woman =  {Female⃗} 
 
-{Royalty⃗, Male⃗, Human⃗} - {Male⃗} + {Female⃗} 
-= {Royalty⃗, Female⃗, Human⃗} 
-= queen
+  {Royalty⃗, Male⃗, Human⃗} - {Male⃗} + {Female⃗} 
+  = {Royalty⃗, Female⃗, Human⃗} 
+  = queen
 
 
 # Commutative diagrams: The Relationship of words in category theory
