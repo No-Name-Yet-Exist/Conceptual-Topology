@@ -75,7 +75,6 @@ f: Propositional classification morphism (He is a Human)
 g: Referential inversion morphism (Human is him)
 α, α′: 2-morphisms ensuring bidirectional equivalence between He and Human
 (Reversible structure)
-
 Θ: 3rd morphism representing higher-order abstraction
 (emergence of "mammal" as a shared conceptual generalization)
 ```
@@ -119,6 +118,7 @@ r: Regen morphism — applies −Δ to recover A from B
 
 
 # The Definition Of Word
+```
 Let C be a concept
 C = {−OC₁, −OC₂, ..., −OCₙ}
 word ≅ C and Ob(Word) ∋ word
@@ -126,7 +126,7 @@ word ≅ C and Ob(Word) ∋ word
 ∀ ∞_f, ∃ Word s.t. ∞_f ⊆ Word
 and then: Word≅Nat(h∞f​,Language)
 id_word ≈word
-
+```
 
 ## 概念位相論.md and 概念位相論と圏論の体系的・記号的接続.md
 Those are the summary of the conceptual topology.
