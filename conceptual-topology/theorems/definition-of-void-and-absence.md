@@ -1,0 +1,51 @@
+# Theorem (Voidness in Conceptual Topology):
+
+ある対象 A が「無」（すなわち定義不可能かつ存在しない）であるとは、
+以下の条件を全て満たすときである。
+1. ∀Δt→0, ∃f∈C(A,B∣Z) such that f is invertible
+2. μ(A):=Δt→ϵlim[∃Z:C(A_t, A_t+Δt, Z) is stable] = 0
+3. Neutral
+
+### 準存在 「ない」(quasi-existence） の定義
+対象 Aが「準存在（ない）」であるとは、条件2のみを満たし、条件1を満たしていないときである：
+※「コップが机にない」はμ(A)>0は満たすが、1を満たしていない
+　 視覚情報として差異化できないため不在
+
+
+1. 任意の時間的スライスΔtにおいて、任意の対象A,B間において可逆な射しか存在しないときAとBは存在しない
+Let a space be S
+Sn = GenCategoryWith1Morphism(S) = { Cn1, C_n2 …. C_n} // 射を含む圏を生成
+Let assume A, B ⊂ Si
+A = {-B} and B = {-A}
+
+if :
+∀Δt→0, ∃f∈C(A,B∣Z) such that f is invertible
+
+then:
+id_x = A → B = B → A | Z　
+
+But:
+This implies A≈B∣Z, which contradicts A={−B}, B={−A}
+
+Therefore:
+A and B do not exist as definable, distinguishable entities under Z
+
+
+2. 安定構造の非成立による無
+μ(A):=Δt→ϵlim[∃Z:C(A_t, A_t+Δt, Z) is stable] = 0
+⇒ 時間上で再現される構造的差異(差異を保った連続性)が存在しない
+
+3. 単位元は無として解釈する
+A ⊕ Neutral = A
+Neutral は意味射や構造変化に対して完全に反応せず、生成的でも干渉的でもない。
+
+```C
+#include <stdio.h>
+int main(){
+  void* a;  // void* is Neutral ⇒ invertible 
+            //μ(a)=0 since a has no morpic identity; Z is undefined
+  printf(*a); // Segmentation fault (core dumped)
+}
+```
+
+This document and all conceptual content therein are © [No Name Yet Exist], 2025. All rights reserved. Unauthorized reproduction, distribution, or use without explicit permission is prohibited.
