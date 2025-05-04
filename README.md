@@ -13,6 +13,8 @@ https://note.com/xoreaxeax
 # Commutative diagrams: The Relationship of words in category theory
 
 ### king - man + woman = queen
+This relationship can be expressed as the following semantic morphism diagram
+
 ```
         f
      K → Q
@@ -101,6 +103,7 @@ A − (A − B)
 ```
 
 # Meaning Preservation Triangle
+This triangle illustrates how additive semantics reconstructs conceptual continuity.
 
 ```
          f: A → B （black → white）
