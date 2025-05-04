@@ -45,13 +45,18 @@ woman =  {Female⃗}
 ```
 
 ```
-1st Morphism: He → Human He is a human
+1st Morphism: Human He is a human
+2nd Morphism: He is a human, but Human is him
+3rd Morphism: mammal
+
+1st Morphism: He → Human (He is a human)
   → Existential attribution: assigning a category ("Human") to an individual ("He").
 
-2nd Morphism: Human → He He is a human, but Human is him
+2nd Morphism: Human → He (He is a human, but Human is him)
  → Reverse attribution: turning the attributed category back into an individual reference.
  → Highlights the directionality and reversibility of meaning.
-2rd Morphism: mammal
+ 
+3rd Morphism: mammal
  → Higher-order abstraction over both "He" and "Human".
    This abstracts from individual and category to a shared ontological layer (e.g., biological classification).
 
