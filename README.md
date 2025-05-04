@@ -16,22 +16,22 @@ https://note.com/xoreaxeax
 This relationship can be expressed as the following semantic morphism diagram
 
 ```
-        f
-     K → Q
-     |     \
-   r |       \ g
-     ↓         \
-     M' ——→ W'
-         h
-  K = king
-  Q = queen
-  M' = man
-  W' = woman
+      f
+    K → Q
+    |     \
+  r |       \ g
+    ↓         \
+    M' ——→ W'
+        h
+K = king
+Q = queen
+M' = man
+W' = woman
 
-  r: Differential Morphism（King → Man）
-  g: Differential Morphism（Queen → Woman）
-  f: Composed Semantic Morphism g ∘ h ∘ r 
-  h: Differential Morphism(Man → Woman)
+r: Differential Morphism（King → Man）
+g: Differential Morphism（Queen → Woman）
+f: Composed Semantic Morphism g ∘ h ∘ r 
+h: Differential Morphism(Man → Woman)
 ```
 
 ```
@@ -141,5 +141,20 @@ word ≅ C and Ob(Word) ∋ word
 and then: Word≅Nat(h∞f​,Language)
 id_word ≈word
 ```
-
+<br/>
+<br/>  
+---
+<br/>
+<br/>
 This document and all conceptual content therein are © [No Name Yet Exist], 2025. All rights reserved. Unauthorized reproduction, distribution, or use without explicit permission is prohibited.
+<br/>
+<br/>
+---
+<br/>
+<br/>
+<br/>
+
+Meaning doesn’t escape.  
+Meaning moves.  
+*f: escape → move | reduced unpredictability*
+
