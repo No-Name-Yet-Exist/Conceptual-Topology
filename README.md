@@ -26,6 +26,14 @@ king - man + woman = queen
     f: 差分射 (King → Queen)
     h: 差分射 (Man → Woman)
 
+```
+He ----f----> Human
+ |              |
+α|              |α'
+ ↓              ↓
+Human <----g--- He
+
+```
 
 ## 概念位相論.md
 こちらが理論系のまとめになります
