@@ -7,7 +7,7 @@ https://note.com/xoreaxeax
 
 
 
-### king - man + woman = queen
+# king - man + woman = queen
 
 ```
 Let C be a concept
