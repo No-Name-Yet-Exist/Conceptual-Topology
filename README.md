@@ -106,7 +106,6 @@ A − (A − B)
    /     \       ↑
 A ──────→ δ      │
           r: −Δ → A (B → A: )
-```         
 
 A: Initial concept
 B: Target (destination) concept
@@ -117,7 +116,7 @@ f: Meaning morphism (standard semantic transformation)
 δ: Differential morphism — extracts Δ, the semantic difference between A and B
 r: Regen morphism — applies −Δ to recover A from B
 Δ: Differential — the structural difference space between A and B
-
+```         
 
 # The Definition Of Word
 ```
