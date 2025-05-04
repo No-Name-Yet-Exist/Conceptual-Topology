@@ -1,8 +1,8 @@
 # What is Conceptual Topology
 The conceptual topology analizes how words, concepts and meanings etc are consisted
-and change using category theory and vector such as word2vec
+and change using category theory and vector such as word2vec. Currently Translation is ongoing.
 
-This github is storage of the following account.
+This github is originally meant to be a storage of the following account.
 https://note.com/xoreaxeax
 
 
