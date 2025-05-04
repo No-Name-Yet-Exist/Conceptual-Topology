@@ -127,9 +127,9 @@ r: Regen morphism — applies −Δ to recover A from B
 ```         
 
 # The Definition Of Word
-Any word that contains other words is subsumed by a higher-order concept,
-and the higher-order concept is, in turn, contained within the word.
-A word is itself a word.
+A word that includes itself or other words is subsumed by a higher-order concept.
+That concept, in turn, is structurally embedded within the word.
+Therefore, a word is a self-referential structure.
 
 ```
 Let C be a concept //e.g. black
