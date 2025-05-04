@@ -7,6 +7,9 @@ king - man + woman = queen
 {Royalty⃗, Male⃗, Human⃗} - {Male⃗} + {Female⃗} 
 = {Royalty⃗, Female⃗, Human⃗} = queen
 
+
+# Commutative diagrams: The Relationship of words in category theory
+
 ```
         f
      K → Q
