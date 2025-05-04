@@ -8,6 +8,7 @@ Noise-field N: a system S where no persistent contrast function exists across el
 
 We can define proto-existence and proto-meaning
 μ(A):=Δt→ϵlim[∃Z:C(At,At+Δt,Z) is stable]
+
 i, lim Δt→0: D(xᵢ_t, xᵢ_{t+Δt}) ≠ 0 (i.e., change), but ∄ C(xᵢ, xⱼ, Z) ⇒ System = noise
 Even if change exists (i.e., local dynamics are nonzero), if no stable contrast C(xᵢ, xⱼ, Z) can be defined, then the system remains unstructured, and thus meaningless — a noise-field.
 

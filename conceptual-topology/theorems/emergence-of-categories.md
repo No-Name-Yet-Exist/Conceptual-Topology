@@ -33,5 +33,5 @@ C₁, C₂⊂ C₀
 I generalize this
 Cn1, C_n2 …. C_n⊂ C_n-1
 
-Let C₀ be a category-genesis (原始圏C₀),
+Let C₀ be a category-genesis,
 such that ∀f ∈ Mor(C₀), f is invertible under homeo-transformation.
