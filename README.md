@@ -1,8 +1,12 @@
 # What is Conceptual Topology
-The conceptual topology analizes how words, concepts and meanings etc are consisted
-and change using category theory and vector such as word2vec. Currently Translation is ongoing.
+Conceptual Topology mainly analyzes how words, concepts, and meanings are structured and transformed, using tools from category theory and vector semantics such as word2vec. 
 
-This github is originally meant to be a storage of the following account.
+Conceptual Topology aims to provide a formal structure for meaning itself, bridging philosophy, linguistics, and mathematics.
+
+The translation is currently in progress; not all content is available in English yet.
+Please refer to the **Index** section for key definitions and core concepts.
+
+This GitHub repository serves as an archive for the following account:
 https://note.com/xoreaxeax
 
 
@@ -120,8 +124,13 @@ r: Regen morphism — applies −Δ to recover A from B
 ```         
 
 # The Definition Of Word
+Any word that contains other words is subsumed by a higher-order concept,
+and the higher-order concept is, in turn, contained within the word.
+A word is itself a word.
+
 ```
-Let C be a concept
+Let C be a concept //e.g. black
+Let OC be the opposite concept //e.g. white
 C = {−OC₁, −OC₂, ..., −OCₙ}
 word ≅ C and Ob(Word) ∋ word
 ∀ fᵢ ∈ Mor(C), ∃∞_f s.t. fᵢ ⊆ ∞_f
