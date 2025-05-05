@@ -1,22 +1,31 @@
-# Theorem (Voidness in Conceptual Topology):
+# Definition of Void (Non-Existence)
 
-ある対象 A が「無」（すなわち定義不可能かつ存在しない）であるとは、
-以下の条件を全て満たすときである。
+An object A is considered to be void (i.e., both undefined and nonexistent) 
+if it satisfies all of the following conditions::
+
 1. ∀Δt→0, ∃f∈C(A,B∣Z) such that f is invertible
 2. μ(A):=Δt→ϵlim[∃Z:C(A_t, A_t+Δt, Z) is stable] = 0
 3. Neutral
 
-### 準存在 「ない」(quasi-existence） の定義
-対象 Aが「準存在（ない）」であるとは、条件2のみを満たし、条件1を満たしていないときである：
-※「コップが机にない」はμ(A)>0は満たすが、1を満たしていない
-　 視覚情報として差異化できないため不在
+### Definition of Quasi-Existence ("Not There")
+An object A is said to be in a state of quasi-existence (i.e., "not there") if it satisfies only condition μ(A)>0, but not condition 1:
+
+For example, the statement “There is no cup on the desk” satisfies μ(A) > 0
+(i.e., the concept "cup" exists in contrast frame Z such as your memory)
+but it fails condition 1, because no differentiable structure allows us to identify the cup on the desk. Therefore, it is absent as visual information within the contrast frame Z.
 
 
-1. 任意の時間的スライスΔtにおいて、任意の対象A,B間において可逆な射しか存在しないときAとBは存在しない
+1. Theorem of Non-Existence under Full Invertibility
+If, for any temporal slice Δt, only invertible morphisms exist between any two objects A and B, then neither A nor B is considered to exist:
+
+That is, when all morphisms f ∈ C(A, B | Z) are invertible for all Δt → 0,
+A and B become indistinguishable under the contrast frame Z.
+In such a case, the differential structure required to define either object fails to emerge,
+and thus neither A nor B can be said to exist.
 
 ```
 Let a space be S
-Sn = GenCategoryWith1Morphism(S) = { Cn1, C_n2 …. C_n} // 射を含む圏を生成
+Sn = GenCategoryWith1Morphism(S) = { Cn1, C_n2 …. C_n} // Generate Categories
 Let assume A, B ⊂ Si
 A = {-B} and B = {-A}
 
@@ -33,13 +42,23 @@ Therefore:
 A and B do not exist as definable, distinguishable entities under Z
 ```
 
-2. 安定構造の非成立による無
+2. Void Through the Absence of Stable Structure
+if:
 μ(A):=Δt→ϵlim[∃Z:C(A_t, A_t+Δt, Z) is stable] = 0
-⇒ 時間上で再現される構造的差異(差異を保った連続性)が存在しない
+then:
+No structurally preserved difference (i.e., continuity of contrast) exists across time.
 
-3. 単位元は無として解釈する
+
+3. The Identity Element as Void
+We interpret the identity element as a form of void:
+
 A ⊕ Neutral = A
-Neutral は意味射や構造変化に対して完全に反応せず、生成的でも干渉的でもない。
+
+The object Neutral exhibits no generative or interfering behavior with respect to semantic morphisms or structural transformations.
+
+It remains entirely inert—neither altering nor producing any meaningful change in the structure of A.
+
+In this sense, Neutral functions as a conceptual void: structurally present, but semantically absent.
 
 ```C
 #include <stdio.h>
