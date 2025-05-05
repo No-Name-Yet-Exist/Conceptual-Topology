@@ -17,8 +17,9 @@ concept A is said to be Δt-stable if any morphism g: A → A′ | Z (continuity
 
 If f ≅ f′, then both differences can be continuously transformed into one another without breaking the underlying species structure of Midori-shijimi.
 
+```
+
 ![alt text](https://raw.githubusercontent.com/No-Name-Yet-Exist/Articles/main/conceptual-topology/resources/image.png)
 
 
-```
 This document and all conceptual content therein are © [No Name Yet Exist], 2025. All rights reserved. Unauthorized reproduction, distribution, or use without explicit permission is prohibited.
