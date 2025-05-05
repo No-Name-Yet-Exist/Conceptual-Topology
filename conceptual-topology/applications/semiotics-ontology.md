@@ -1,5 +1,5 @@
 Refinement Required
-
+    
 ### Semiotics and Ontology  
 Existence is not a property of an object itself, but a condition of morphic continuity (Z).  
 A thing exists as "that" only when a morphism consistently links it over time.
