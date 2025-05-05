@@ -37,7 +37,7 @@ h: Differential Morphism(Man → Woman)
 ```
 1st Morphism: Human He is a human
 2nd Morphism: He is a human, but Human is him
-3rd Morphism: mammal
+3rd Morphism: man
 
 1st Morphism: He → Human (He is a human)
   → Existential attribution: assigning a category ("Human") to an individual ("He").
@@ -46,7 +46,7 @@ h: Differential Morphism(Man → Woman)
  → Reverse attribution: turning the attributed category back into an individual reference.
  → Highlights the directionality and reversibility of meaning.
  
-3rd Morphism: mammal
+3rd Morphism: man
  → Higher-order abstraction over both "He" and "Human".
    This abstracts from individual and category to a shared ontological layer (e.g., biological classification).
 
@@ -59,14 +59,14 @@ Human <----g--- He
         ↓
        (Θ)
         ↓
-      mammal
+       man
 
 f: Propositional classification morphism (He is a Human)
 g: Referential inversion morphism (Human is him)
 α, α′: 2-morphisms ensuring bidirectional equivalence between He and Human
 (Reversible structure)
 Θ: 3rd morphism representing higher-order abstraction
-(emergence of "mammal" as a shared conceptual generalization)
+(emergence of "man" as a shared conceptual generalization)
 ```
 
 # king - man + woman = queen
