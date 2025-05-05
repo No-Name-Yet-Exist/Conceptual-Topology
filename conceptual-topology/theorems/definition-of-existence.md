@@ -1,5 +1,14 @@
-Let's make a blank box. Nothing is inside yet so there is no contrast. I put 100 elements here and they have inner Δt. After Δt, they change its property. I calculate this lim Δt→0 It is a noisy environment. They barely exist but their property is always changing even their position. I pick one, and I name it A and I manipulate its inner Δt =1. It starts to have a relation or contrast between A and noise (emergence of contrast Z).
+Let us begin with an empty box—blank, without any contents, 
+and therefore without any contrast. Now, we place 100 elements inside this box.
+Each element possesses an internal temporal fluctuation, denoted by Δt. As time progresses, their properties begin to change according to their individual Δt. 
 
+We consider the limit as Δt → 0.In this state, the environment becomes noisy: The elements barely qualify as "existing," as their attributes—including position—are in constant flux.
+
+From this chaotic set, we select a single element and designate it A.
+We manually set its internal Δt to 1, stabilizing it relative to the others.
+
+As a result, A begins to differentiate itself from the background noise.
+This marks the emergence of contrast, which we denote as Z.
 
 ```
 Let S = {x₁, x₂, ..., xₙ} be a set of deforming nodes under internal Δtᵢ.
@@ -19,16 +28,17 @@ Z = contrast between A and the noise-field.
 Δt, continuity is a fundamental element of all existence and meaning. The continuity is the flip side of the same phenomena, called rupture. Clarification: A latent structure will be treated as noise since there is no observable continuity.
 ```
 
-日本語に戻ります。
-
-ここにおける連続性はtとΔtの積分によって定義されます。なぜかというと、連続性とは微小な差異の統合概念として置き換えられるためです。
+Continuity, in this framework, can be expressed as the integration over t and Δt,
+since it represents the accumulated manifestation of infinitesimal variation.
+Let M(t) be a structural function that varies continuously over time t.
 Continuity := ∫ₜ₀^{t₀+Δt} M(A, A′, t) dt
-M() は時間 t において連続的に変化する構造関数
 
-また意味の連続性を定義するのであれば、constrast frame Zを使用して以下のように書きます。
+
+To describe the continuity of semantic structure, we introduce a contrast frame Z, and define continuity as:
 Continuity := ∫ₜ₀^{t₀+Δt} M(A, A′, Z) dt
 
-断絶（Rupture）は、M() の時間微分が閾値を超えるか、定義不能（=0 または ∞）となるときに発生すると考えられます。(意味の場合はZ)
+A rupture is said to occur when the time derivative of M exceeds a certain threshold,
+or becomes undefined (e.g., equals 0 or diverges to ∞) : with respect to Z in the semantic space
 Rupture := dM/dt ≥ θ or dM/dt undefined
 
 This document and all conceptual content therein are © [No Name Yet Exist], 2025. All rights reserved. Unauthorized reproduction, distribution, or use without explicit permission is prohibited.
