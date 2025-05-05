@@ -7,7 +7,7 @@ This does not have all contents yet.
 ### category theory to NL (natural langauge)
 This analizes how we avoided the issues created when we apply category theory to NL.
 
-### definition of Ontology
+### Self-Definability Theorem
 A complete ontology must be capable of defining its own categorical structure without relying on externally invertible mappings. Conceptual Topology satisfies this condition.
 
 
