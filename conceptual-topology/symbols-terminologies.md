@@ -54,6 +54,8 @@ Then: f: 食べ物→たい焼き∣Zp​ragmatics ∈ Mor(C)
 But:∄g:鯛→たい焼き∣Zp​ragmatics
 such that g∈Iso(C)→ rupture at (鯛,たい焼き) under Z
 
+morphic identity: preserved structure through deformation
+
 恒等射(id)の成立条件
 Let node_a be A
 Let node_b be B

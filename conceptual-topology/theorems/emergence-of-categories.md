@@ -1,19 +1,29 @@
 # the process of the category emergence
 
-# Theorem of Definitional Existence
+### Theorem of Definitional Existence
 
 ### the assymetry creates difference
-if A given meets C(A, B∣R) > θ and μ(A) > 0, A ≈ id_A 
+if  Given A meets C(A, B ∣ R) > θ and μ(A) > 0, A ≈ id_A 
+
+This was tested with a rupture modeling with python.
 
 ```
 Let node_a be A
 Let node_b be B
 A = {-B} and B = {-A} 
+
+// HoTT-style inequivalence A ≠ B
 If:∀Δt→0, ∄f∈C(A, B∣R) > θ such that f is invertible and f≅f′ under continuous homeo-transformation
 Then:
+//HoTT-style equivalence A = A′
 μ(A):=Δt→ϵlim[∃Z:C(A_t, A_t+Δt, Z) is stable] > 0
+
+//preserved morphic identity under temporal continuity with frame Z
 ∴ A ≈ id_A
 ```
+
+In HoTT, identity is defined by the existence of a path (homotopy).
+In CT, we reinterpret such paths as morphisms under structural continuity (Z): morphic identity preserved through morphic path. The rupture condition R characterizes asymmetry where such paths fail. Thus, identity in CT is not an invariable equality, but a conditionally preserved morphic alignment defined via temporal stability (μ) and contextual continuity (Z).
 
 
 ### how category emerges
