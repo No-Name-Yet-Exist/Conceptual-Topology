@@ -1,0 +1,106 @@
+言語における1 射 2射 3射 ∞射の構造についてです。また語の圏論的定義を行います。
+
+1射: 単純な命題
+彼は男である
+He is a man.
+
+2射: 命題の反転
+彼は男であるが、男は彼である。
+He is a man but he the man is him
+
+3射: アナロジー・メタファー的構造
+構造を維持しつつ+αの要素を加えています
+A:
+「king → queen」
+（男→女、同格、階層保持）
+B:
+「prince → princess」
+（若さの意味追加、未来性）
+C:
+「emperor → empress」
+（格式・神格化の差が強い）
+
+∞射は以下に該当します A~Cの間で共通している要素です
+「man → woman」
+（完全抽象化・基本対立軸）
+またメタに見れば発音だったり、表記だったりが∞射としても見れます
+
+合わせて「Human」も∞射に該当します。
+∞射をメタに見ると「word」も∞射のメタ概念としての∞∞射で機能します
+
+また∞射は言語における基礎概念対立軸として解釈できます
+black - white などと合わせて∞射としてword2vec上では扱われます
+　→ 他の語への依存度が極端に低い語として出てきます
+(dampingで定量化可能)
+
+以上の知見を合わせて、以下が「語」の定義になります
+
+Let C be a concept
+C = {−OC₁, −OC₂, ..., −OCₙ}
+word ≅ C and Ob(Word) ∋ word
+∀ fᵢ ∈ Mor(C), ∃∞_f s.t. fᵢ ⊆ ∞_f
+∀ ∞_f, ∃ Word s.t. ∞_f ⊆ Word
+and then: Word≅Nat(h∞f​,Language)
+id_word ≈word
+
+訳:
+語とは、他の語との差異から構造的に定義され、
+その語のあらゆる意味的関係性（射 fᵢ）は上位の意味束（∞_f）に収束し、
+その意味束は「語」という記号によって名付けられる。
+語とはすなわち、∞_f から言語圏への自然変換としてYoneda 的に記述されうる、構造的上位概念である。また語という語自身が語の圏に属していて、自己恒等的に意味を保持し続ける。
+
+一行で:
+語を含めたいかなる語は上位概念に内包され、上位概念は語に内包される。語は語である。
+3射の抽象機能
+
+3射は抽象化機能としても働くようです
+
+1 射: He → Human He is a human
+2射: Human → He He is a human, but Human is him
+3射: mammal
+
+「He → Human」＝存在の属性化
+「Human → He」＝属性の再個体化
+「mammal」＝その両者を上位概念として抽象化
+
+```
+He ----f----> Human
+ |              |
+α|              |α'
+ ↓              ↓
+Human <----g--- He
+
+        ↓
+      (Θ)
+        ↓
+      mammal
+```
+    f = 命題的分類（is）
+
+    g = 指示の転倒 (but)
+
+    α, α' = 2-射: He = Human という可逆性の保証構造
+
+    Θ = mammal へ上位抽象化（3-射的再生成）
+
+
+この構造は文法レベルで支持されます
+1 射: Black → White: Black is White
+2射: White → Black: Black is White, but White is Black
+3射: grey (抽象化であるがBlack WhiteのDiluted Trait として解釈)
+
+```
+Black ──f₁──▶ White
+  │             ▲
+  │             │
+  ▼             │
+White ──f₂──▶ Black
+
+     ⇒ grey  (Θ: f₁⇔f₂ の干渉項)
+```
+
+ちなみに言語ではないですが、国も∞射に見えます。中の人も文化も何もかも入れ替わりますが、
+∞射が維持されている間は国です。国の連続性は何と言われて、国名だったり、中の人の血統だったり言えますが、結局のところ国名も変わるわけで、他国を見れば新しい土地の人が国に入ったりすることもあります。要はだれもその∞射が何であるかは確実なことが言えません。なので∞射だとも言えます。
+
+This document and all conceptual content therein are © [No Name Yet Exist], 2025. 
+All rights reserved. Unauthorized reproduction, distribution, or use without explicit permission is prohibited.
