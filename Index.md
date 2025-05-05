@@ -32,6 +32,14 @@ We say so when no differentiable structure corresponding to the concept "cup" ex
 A new category Cᵢ (and subsequently Cᵢ₊₁) emerges when the complete symmetry of the initial category C₀ is broken — that is, when a morphism f: A → B appears such that f is non-invertible,
 and thus A ≉ B under any structure-preserving transformation.
 
+### Semiotics And Ontology
+What is "that". What means that exists.
 
+### Word2Vec x Python Experiments
+Conceptual Topology is tested with Word2Vec and Python Script.
+We provide with the code and the used data set written in word2vec.md
+
+### applications
+We provide example use cases of Conceptual Topology.
 
 This document and all conceptual content therein are © [No Name Yet Exist], 2025. All rights reserved. Unauthorized reproduction, distribution, or use without explicit permission is prohibited.
