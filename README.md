@@ -1,4 +1,5 @@
-# What is Conceptual Topology
+# What is Conceptual Topology: 
+### Category Theory × Semantics x Philosophy
 Conceptual Topology mainly analyzes how words, concepts, and meanings are structured and transformed, using tools from category theory and vector semantics such as word2vec. 
 
 Conceptual Topology aims to provide a formal structure for meaning itself, bridging philosophy, linguistics, and mathematics.
@@ -80,7 +81,7 @@ queen = {Royalty⃗, Female⃗, Human⃗}
 man = {Male⃗}
 woman =  {Female⃗} 
 
-{Royalty⃗, Male⃗, Human⃗} - {Male⃗} + {Female⃗} 
+{Royalty⃗, Male⃗, Human⃗} ⊕ {Male⃗} ⊕ {Female⃗} 
 = {Royalty⃗, Female⃗, Human⃗} 
 = queen
 ```
@@ -94,7 +95,7 @@ This is observed in word2vec using black - (black - white) ≈ black (cos_sim = 
 ```
 A = {-B},　B={-A}
 A − (A − B)
-= {-B} -( {-B} - {-A} )
+= {-B} - ( {-B} - {-A} )
 = {-B} + ( -{-B} + {-A} ) //The additivity principle was applied
 = {-A}
 = B
