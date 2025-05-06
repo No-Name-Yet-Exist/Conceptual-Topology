@@ -95,18 +95,28 @@ f′
       \      /       (Di: 要素数=rupture数の場合 U字ではなくなる )
        mammal
 
-    Z := category of life
+
+Dᵢ (語彙空間A)          Dᵢ₊₁ (語彙空間B)
+dog  →  canine         she  →  human
+  \      |                   |      
+   \     | Zi                | Zi 
+     → mammal      →       mammal
+
+  Canine → Human  | Zi_η = animal or category of life (abstraction)
+  ηᵢ: Canine → Human | Zi_η
+  with Zi_η := {referential_shift: taxnomic_categoryA → taxnomic_categoryB, codomain = mammal }
+
 ```
 
 Quasi-Natural Transformation of Meaning Systemsの破綻例ただしいずれもZを明示した場合には成り立つ
 
 ```
              R
-   computer  ←    it     上が開いているので対応/近似/rupture
+   computer  ←    it     
        |           |
        |     R     |
-electronics  ←  language     中間層では近似/対応 (rupture許容) 
-         \      /       (Di: 要素数=rupture数の場合 U字ではなくなる)
+electronics  ←  language      (Di: 要素数=rupture数の場合 U字ではなくなる)  
+         \      /      
            Tool
 
 //Zを明示する場合は成立
