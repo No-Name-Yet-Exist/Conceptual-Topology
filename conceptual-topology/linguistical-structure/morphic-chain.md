@@ -24,10 +24,10 @@ Mirror Morphism Definition:
     ∃Z: rupture(f, f′ | Z) ≠ ∅ ∧ cod(f) = cod(f′) | Y
 
 Quasi-Natural Transformation of Meaning Systems
-    η: Dᵢ ⇒ Dᵢ₊₁  
-    η_X ∘ Dᵢ(f) ≈ Dᵢ₊₁(f′) ∘ η_Y  
-    for all f: X → Y in Dᵢ,
-    where f′: η_X(X) → η_Y(Y) is the image morphism under meaning translation
+    η: Dᵢ ⇒ Dᵢ₊₁  | Y // Y = codomain
+    η_X ∘ Dᵢ({f₁ | Z₁, ..., fₙ | Zₙ}) ≈ Dᵢ₊₁({f′₁, ..., f′ₙ}) ∘ η_Y | Y
+    for all fᵢ: Xᵢ → Yᵢ | Zᵢ in Dᵢ,  
+    where f′ᵢ: η_X(Xᵢ) → η_Y(Yᵢ) | Zᵢ is the image morphism under meaning translation
 
     Then: η is a quasi-natural transformation under Z-frame
     i.e. η ∈ Mor(C) where C is the contextual meaning category
