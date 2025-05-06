@@ -15,13 +15,13 @@ Morphic-Chain Mirror is a contextual correspondence between two Morphic Chains, 
 
 ```
 Mirror Morphism Definition:
-    f′: A′ → B  
-      → A′ ≠ A, but cod(f) = cod(f′) = B
+    f′: A′ → B  | Z
+      → A′ ≠ A, but cod(f) = cod(f′) = B | Y
 
     We define f′ as a mirror-correspondent morphism of f under a given Z-frame,
     if and only if:
 
-    ∃Z: rupture(f, f′ | Z) ≠ ∅ ∧ cod(f) = cod(f′)
+    ∃Z: rupture(f, f′ | Z) ≠ ∅ ∧ cod(f) = cod(f′) | Y
 
 Quasi-Natural Transformation of Meaning Systems
     η: Dᵢ ⇒ Dᵢ₊₁  
@@ -83,4 +83,41 @@ f′
 　（例："Canine → Mammal" に対し、"Human → Mammal"）
 　
 ```
+
+
+これを分かりやすく言うと以下のようになっています
+
+```
+          R
+    she   ←  dog     上が開いているので対応/近似/rupture
+     |         |
+     |    Z    |
+   human  ←  canine  中間層では近似/対応 (rupture許容) 
+      \      /       (Diのi: i=rupture数の場合 U字ではなくなる )
+       mammal
+
+    Z := category of life
+```
+
+Quasi-Natural Transformation of Meaning Systemsの破綻例ただしいずれもZを明示した場合には成り立つ
+
+```
+             R
+   computer  ←    it     上が開いているので対応/近似/rupture
+       |           |
+       |     R     |
+electronics  ←  language     中間層では近似/対応 (rupture許容) 
+         \      /       (Diのi: i=rupture数の場合 U字ではなくなる)
+           Tool
+
+//Zを明示する場合は成立
+Z = { 
+  it := "the computer in context A", 
+  Language := "descriptional tool", 
+  Tool := "utility" 
+}
+
+※破綻条件については精査が必要です。他に条件があるかもしれません
+```
+
 This document and all conceptual content therein are © [No Name Yet Exist], 2025. All rights reserved. Unauthorized reproduction, distribution, or use without explicit permission is prohibited.
