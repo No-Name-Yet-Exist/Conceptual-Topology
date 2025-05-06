@@ -83,3 +83,4 @@ f′
 　（例："Canine → Mammal" に対し、"Human → Mammal"）
 　
 ```
+This document and all conceptual content therein are © [No Name Yet Exist], 2025. All rights reserved. Unauthorized reproduction, distribution, or use without explicit permission is prohibited.
