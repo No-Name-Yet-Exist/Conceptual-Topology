@@ -7,6 +7,10 @@ if  Given A meets C(A, B ∣ R) > θ and μ(A) > 0, A ≈ id_A
 
 This was tested with a rupture modeling with python.
 
+In HoTT, identity is defined by the existence of a path (homotopy).
+In CT, we reinterpret such paths as morphisms under structural continuity (Z): morphic identity preserved through morphic path. The rupture condition R characterizes asymmetry where such paths fail. Thus, identity in CT is not an invariable equality, but a conditionally preserved morphic alignment defined via temporal stability (μ) and contextual continuity (Z).
+
+
 ```
 Let node_a be A
 Let node_b be B
@@ -22,8 +26,6 @@ Then:
 ∴ A ≈ id_A
 ```
 
-In HoTT, identity is defined by the existence of a path (homotopy).
-In CT, we reinterpret such paths as morphisms under structural continuity (Z): morphic identity preserved through morphic path. The rupture condition R characterizes asymmetry where such paths fail. Thus, identity in CT is not an invariable equality, but a conditionally preserved morphic alignment defined via temporal stability (μ) and contextual continuity (Z).
 
 
 ### how category emerges

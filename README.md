@@ -86,35 +86,23 @@ woman =  {Female⃗}
 = queen
 ```
 
-
-# Semantic Additivity Principle
-
-Any given concept A and B meet the following according to the Semantic Additivity Principle
-This is observed in word2vec using black - (black - white) ≈ black (cos_sim = 0.8)
+# Meaning Preservation Communicative Diagram
+This diagram illustrates how additive semantics reconstructs conceptual continuity.
 
 ```
-A = {-B},　B={-A}
-A − (A − B)
-= {-B} - ( {-B} - {-A} )
-= {-B} + ( -{-B} + {-A} ) //The additivity principle was applied
-= {-A}
-= B
+A − (A − B) ≈ A
 
-∴　A − (A − B) ≈ B
-```
+            f: A → B （black → white）
+    B
+    ▲
+   /    \
+  /        \  Δ = A − B
+ /           \       
+δ            ↑
+ \           /
+  \         /
+   A <── r: −Δ
 
-# Meaning Preservation Triangle
-This triangle illustrates how additive semantics reconstructs conceptual continuity.
-
-```
-         f: A → B （black → white）
-      B
-      ▲
-     / \
-    /   \  Δ = A − B
-   /     \       ↑
-A ──────→ δ      │
-          r: −Δ → A (B → A: )
 
 A: Initial concept
 B: Target (destination) concept
@@ -136,7 +124,7 @@ Therefore, a word is a self-referential structure.
 // A concept is a structure of oppositional differences
 Let C be a concept //e.g. black
 Let OC be the opposite concept //e.g. white
-C = {−OC₁, −OC₂, ..., −OCₙ}
+C = {−OC₁, −OC₂, ..., −OCₙ} 
 
 // A word is a concept, and belongs to the category of words
 word ≅ C and Ob(Word) ∋ word

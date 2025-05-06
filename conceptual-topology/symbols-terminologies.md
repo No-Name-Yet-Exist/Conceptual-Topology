@@ -8,6 +8,7 @@ A = {–B}
 A = {–B} ⇔ B = {–A}
 Object is always relational and oppositional
 
+
 ### Morphism
 f: A → B | R
 f: A ≈ B | Z_local
@@ -17,8 +18,8 @@ Z: variable which ensures the continuity
 R: rupture
 
 Rupture = アゲハ → キアゲハ | spices
-Z_local = 局所的な連続性・homeomorphic可逆性 (アゲハ ≈ キアゲハ | アゲハチョウ科)
-Z_global: より大域的な構造保存の近似関係 (アゲハ ~ キアゲハ | 蝶)
+Z_local = local Continuity or Local Morphic Path: (アゲハ ≈ キアゲハ | アゲハチョウ科)
+Z_global: Global Continuity or Global Morphic Path (アゲハ ~ キアゲハ | 蝶)
 isomorphism アゲハ = アゲハ'
 
 蝶 → アゲハ蝶 → spicesは、下記で示す圏構造 Ci → Ci+1 → C+2 で対応する
@@ -36,16 +37,16 @@ F: C₀ → C₁ 　
 rupture R によって可逆写像が破られ、圏C₀の部分圏が可視的構造として発現する
 
 ### Z
-連続性を担保するもの
+The variable which preserves the continuity
 アゲハ蝶 → キアゲハ | Z = アゲハチョウ科
 
 ### rupture
-連続性の断裂
+The rupture of continuity
 アゲハ蝶 ≉ キアゲハ | 種
 
 ### Local vs Global
-Local: 局所連続性
-Global: Localを含む広域連続性
+Local: Local Continuity
+Global: Global Continuity which includes Local Continuity
 
 ```
 Let C=Category of 食べ物
@@ -60,6 +61,7 @@ such that g∈Iso(C)→ rupture at (鯛,たい焼き) under Z
 ### morphic identity
 preserved structure through deformation
 
+
 ### 恒等射(id)の成立条件
 Let node_a be A
 Let node_b be B
@@ -70,7 +72,7 @@ Then:
 μ(A):=Δt→ϵlim[∃Z:C(A_t, A_t+Δt, Z) is stable] > 0
 ∴ A ≈ id_A
 
-### 意味加算原則
+### Semantic Additivity Principle
 king - man + woman = queen
 {Royalty⃗, Male⃗, Human⃗} - {Male⃗} + {Female⃗} = {Royalty⃗, Female⃗, Human⃗}
 
@@ -93,24 +95,23 @@ f: Composed Semantic Morphism g ∘ h ∘ r
 h: Differential Morphism(Man → Woman)
 ```
 
-非可逆射原則
+non-invertibility prinicple
 f: A → B | Δ− where A and B are not void
 
 light → black | ￢light ⇒ true
 black → white | ￢light ⇒ false
-blackは光が無くても黒であり、白にはならない
 
-以下はtrue
+This is true:
 black → white | color ⇒ true
 
 
 # CTL (Conceptual Topology Language)
 
 ~ : Global Homeomorphism
-A ~ B 存在論的自然同型 (≃, quasi-iso)
+A ~ B (≃, quasi-iso)
 
 ≈ : Local Continuity / Local Homeomorphism
-f: A ≅ B (局所isomorphism / homeomorphism)
+f: A ≅ B (Local isomorphism / homeomorphism)
 
 ≅: isomorphic
 id_A ≈ f
@@ -131,14 +132,14 @@ f: A → B where no f⁻¹ exists
 | : Given contrast frame — axis or observation context. You put a morphic path or rupture frame
 
 
-A‘: 射の対象を示す
+A‘: The changed state of A
 f: A → A'
 
 ¬: absence or place where ruptured
 A∈Ob(C),but ∀X,Hom(X,A)≅Hom(X,B)
 light → black | ￢light
 
-//: コメント
+//: Comment
 
 Δt : Time-delta — deformation through temporal contrast
 f: A_t → A_{t+Δt}
