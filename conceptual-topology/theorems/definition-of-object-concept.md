@@ -1,10 +1,11 @@
-概念 Cは意味射ベクトルの集合として定義されます
+Concept C is defined as a set of semantic morphisms
 C = { a₁_vec, a₂_vec, ..., aₙ_vec }
 
 This is related to Yoneda's lemma
 For any object A in a category C,
 and any functor F: C → Set,
 Nat(Hom(–, A), F) ≅ F(A)
+
 
 # Meaning Preservation Triangle
 This triangle illustrates how additive semantics reconstructs conceptual continuity.
