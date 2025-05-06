@@ -119,5 +119,4 @@ Z = {
 
 ※破綻条件については精査が必要です。他に条件があるかもしれません
 ```
-
 This document and all conceptual content therein are © [No Name Yet Exist], 2025. All rights reserved. Unauthorized reproduction, distribution, or use without explicit permission is prohibited.
