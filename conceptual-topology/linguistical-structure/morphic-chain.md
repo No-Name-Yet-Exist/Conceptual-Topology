@@ -92,7 +92,7 @@ f′
      |         |
      |    Z    |
    human  ←  canine  中間層では近似/対応 (rupture許容) 
-      \      /       (Diのi: i=rupture数の場合 U字ではなくなる )
+      \      /       (Di: 要素数=rupture数の場合 U字ではなくなる )
        mammal
 
     Z := category of life
@@ -106,7 +106,7 @@ Quasi-Natural Transformation of Meaning Systemsの破綻例ただしいずれも
        |           |
        |     R     |
 electronics  ←  language     中間層では近似/対応 (rupture許容) 
-         \      /       (Diのi: i=rupture数の場合 U字ではなくなる)
+         \      /       (Di: 要素数=rupture数の場合 U字ではなくなる)
            Tool
 
 //Zを明示する場合は成立
