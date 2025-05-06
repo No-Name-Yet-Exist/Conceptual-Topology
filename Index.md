@@ -1,11 +1,22 @@
 # Index
 
 ### conceptual-topology
-Enlish version. Currently the translation is ongoing. 
+English version. Currently the translation is in progress. 
 This does not have all contents yet.
+
 
 ### category theory to NL (natural langauge)
 This analizes how we avoided the issues created when we apply category theory to NL.
+
+
+### symbols-terminologies
+This provides the systematical connection between Category Theory and Conceptual Topology.
+e.g. the definition of Object or other terminologies such as Z or morphic path.
+
+### Definition of Object/Concept
+Why are the objects and concepts expressed as C = { a₁_vec, a₂_vec, ..., aₙ_vec }
+or A = {-B} and B = {-A}
+
 
 ### Self-Definability Theorem
 A complete ontology must be capable of defining its own categorical structure without relying on externally invertible mappings. Conceptual Topology satisfies this condition.
@@ -34,14 +45,22 @@ We say so when no differentiable structure corresponding to the concept "cup" ex
 A new category Cᵢ (and subsequently Cᵢ₊₁) emerges when the complete symmetry of the initial category C₀ is broken — that is, when a morphism f: A → B appears such that f is non-invertible,
 and thus A ≉ B under any structure-preserving transformation.
 
+
 ### Semiotics And Ontology
 What is "that". What means that exists.
+
+
+### Definition of Word
+What is word: Yoneda × Structralism × Category Theory
+
 
 ### Word2Vec x Python Experiments
 Conceptual Topology is tested with Word2Vec and Python Script.
 We provide with the code and the used data set written in word2vec.md
 
+
 ### applications
 We provide example use cases of Conceptual Topology.
+
 
 This document and all conceptual content therein are © [No Name Yet Exist], 2025. All rights reserved. Unauthorized reproduction, distribution, or use without explicit permission is prohibited.
