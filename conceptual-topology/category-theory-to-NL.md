@@ -36,7 +36,7 @@ rupture→|            Z | η_Animal         Z | η_Mammal
 自然変換
 Canine → Human：中間カテゴリの構造変換 (動物の大枠のカテゴリ)
 Mammal → Mammal：恒等写像（共通の上位分類）
-Dog → Sheについてはruptureと解釈
+Dog → Sheについてはruptureと解釈 (Entitiy ≠ Pronoun)
 ```
 
 Dᵢ Dᵢ₊₁どちらも「Mammal（上位概念）」に向かって
