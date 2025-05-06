@@ -16,7 +16,7 @@ Morphic-Chain Mirror is a contextual correspondence between two Morphic Chains, 
 ```
 Mirror Morphism Definition:
     f′: A′ → B  | Z
-      → A′ ≠ A, but cod(f) = cod(f′) = B | Y
+      → A′ ≠ A, but cod(f) = cod(f′) = B | Y // Y = codomain
 
     We define f′ as a mirror-correspondent morphism of f under a given Z-frame,
     if and only if:
@@ -73,7 +73,7 @@ Dᵢ Dᵢ₊₁どちらも「Mammal（上位概念）」に向かって
 η: Dᵢ ⇒ Dᵢ₊₁
 　→ 語圏（語彙空間）間の自然変換（意味変換）
 
-η_X ∘ Dᵢ(f) ≈ Dᵢ₊₁(f′) ∘ η_Y
+η_X ∘ Dᵢ({f₁ | Z₁, ..., fₙ | Zₙ}) ≈ Dᵢ₊₁({f′₁, ..., f′ₙ}) ∘ η_Y | Y
 　→ CTにおける自然変換の「準可換性」：
 　構造的に対応するが、ruptureがあるため近似的可換性（≈）
 　“quasi-natural transformation” 
