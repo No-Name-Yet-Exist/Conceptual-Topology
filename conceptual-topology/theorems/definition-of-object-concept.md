@@ -1,4 +1,4 @@
-Concept C is defined as a set of semantic morphisms
+Concept C is defined as a set of semantic morphisms.
 C = { a₁_vec, a₂_vec, ..., aₙ_vec }
 
 This is related to Yoneda's lemma
