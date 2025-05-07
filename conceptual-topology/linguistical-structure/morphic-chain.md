@@ -1,13 +1,13 @@
 # Morphic Chain
-Morphic Chain is a categorical-geometric structure modeling the evolution, preservation, and transformation of conceptual meanings as morphic chains over time and context.
-Each object is a stage of conceptual state, each morphism a meaning transition, and equivalence is defined by quasi-commutativity modulo rupture under a contextual Z-frame.
+Morphic Chain is a categorical-geometric structure modeling the evolution, preservation, and transformation of conceptual meanings as morphic chains over context or global Z frame.
+Each object is a stage of conceptual state, each morphism a meaning transition, and equivalence is defined by quasi-commutativity modulo under a contextual Z-frame such as mammalshown below.
 
-### Morphic Chain
+### Morphic Chain Complex
 Let D(Cₙ₋₁ | Z) := Category of Morphic Chains over Ob(Cₙ₋₁) within Z frame
 
 Objects are chain complexes A₀ → A₁ → A₂ → ...
 representing conceptual transitions (e.g. "he" → "human" → "mammal" | life)
-, which means Morphisms are chain maps that preserve morphic Identity(rupture and μ-stability) (i.e. maps between meaning-change sequences that maintain structural identity)
+, which means Morphisms are chain maps that preserve morphic Identity(rupture/Z and μ-stability) (i.e. maps between meaning-change sequences that maintain structural identity)
 
 
 ### Morphic-Chain Mirror
