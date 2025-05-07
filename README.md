@@ -35,6 +35,33 @@ f: Composed Semantic Morphism g ∘ h ∘ r
 h: Differential Morphism(Man → Woman)
 ```
 
+### quasi-natural transformation diagram
+
+**Quasi-Natural Transformation of Meaning Systems**
+```
+    η: Dᵢ ⇒ Dᵢ₊₁  | Y // Y = codomain
+    η_X ∘ Dᵢ({f₁ | Z₁, ..., fₙ | Zₙ}) ≈ Dᵢ₊₁({f′₁, ..., f′ₙ}) ∘ η_Y | Y
+    for all fᵢ: Xᵢ → Yᵢ | Zᵢ in Dᵢ,  
+    where f′ᵢ: η_X(Xᵢ) → η_Y(Yᵢ) | Zᵢ is the image morphism under meaning translation
+
+    Then: η is a quasi-natural transformation under Z-frame
+    i.e. η ∈ Mor(C) where C is the contextual meaning category
+```
+
+```
+          
+   girl   ←   puppy  newer + small + specific: axis
+     |         |
+     |        |
+   she    ←   dog        abstraction of all
+      \      /       
+       mammal
+
+```
+
+![alt text](https://raw.githubusercontent.com/No-Name-Yet-Exist/Articles/main/conceptual-topology/resources/quasi-communicative-diagram/puppy-dog-mammal-she-girl.png)
+
+
 ```
 1st Morphism: Human He is a human
 2nd Morphism: He is a human, but Human is him
