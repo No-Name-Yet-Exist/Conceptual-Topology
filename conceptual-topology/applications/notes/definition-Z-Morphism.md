@@ -66,9 +66,9 @@ We can redefine this as follows.
 *η:Fdi→Fdi | Z*
 
 In detail:
-f: A → B | R // failure of projection
-f: A ≈ B | Z_local
-f: A ~ B | Z_global 
+f: A → B | R //non-invertible projectoin
+f: A ≈ B | Z_local  // invertible
+f: A ~ B | Z_global // invertible
 ```
 
 This document and all conceptual content therein are © [No Name Yet Exist], 2025. All rights reserved. Unauthorized reproduction, distribution, or use without explicit permission is prohibited.
