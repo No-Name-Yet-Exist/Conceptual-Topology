@@ -67,3 +67,4 @@ We can redefine this as follows.
 η: A ≈ B | Z_local
 f: A ~ B | Z_global 
 
+This document and all conceptual content therein are © [No Name Yet Exist], 2025. All rights reserved. Unauthorized reproduction, distribution, or use without explicit permission is prohibited.
