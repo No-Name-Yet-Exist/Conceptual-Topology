@@ -139,3 +139,6 @@ plt.show()
 
 ### the used model
 Please refer to word2vec.md
+
+
+This document and all conceptual content therein are © [No Name Yet Exist], 2025. All rights reserved. Unauthorized reproduction, distribution, or use without explicit permission is prohibited.
