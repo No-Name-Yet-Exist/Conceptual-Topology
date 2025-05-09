@@ -43,16 +43,9 @@ Where:
 
 ### Local Validity and Theoretical Idealization
 
-This morphic structure A={−B} and reconstruction equation A−(A−B)≈A do not apply universally. They hold in local, symmetric semantic spaces—such as binary or oppositional pairs (e.g., black⇔white, true⇔false)—where:
+This morphic structure A={−B} and reconstruction equation A−(A−B)≈A do not apply universally. They hold in local, symmetric semantic spaces—such as binary or oppositional pairs (e.g., black⇔white, true⇔false)
 
-The conceptual domains are low-dimensional
-
-Semantic contrast is tightly structured and near-invertible
-
-Oppositional embeddings are stable across minor perturbations
-
-In such regions, meaning behaves quasi-reversibly. Outside these zones, semantic reconstruction becomes lossy, and the structure collapses into noise or asymmetry.
-Therefore we define:
+In such regions, meaning behaves quasi-reversibly. Outside these zones, semantic reconstruction becomes lossy and it becomes irreversible: A−(A−B)≈A collapses.
 
 A = {−B} as a theoretical symmetrical asymmetry — a structurally idealized representation of opposition that functions within locally commutative semantic diagrams, but which is not globally or universally applicable.
 
