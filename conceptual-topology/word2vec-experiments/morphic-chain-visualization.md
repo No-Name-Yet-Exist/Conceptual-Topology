@@ -1,12 +1,14 @@
-# morphic chain visualizaiton
-Firstly, we could observe  Quasi-Natural Transformation of Meaning Systems, in other words, quasi-communicative diagram in word2vec.
+# Morphic Chain Visualization
+
+We here demonstrate that quasi-natural transformation of meaning systems—in the form of quasi-commutative diagrams—can be empirically observed in Word2Vec space. 
 
 
-### First Model
-We used this model to explain Quasi-Natural Transformation of Meaning Systems in morphic chain, but it did not work as this model described in word2vec. Simply because the word canine is almost a paraphrase of dog, and even treated as more specific/individul word due to its low frequency in word2vec space.
+### First Model: Failure of Commutativity due to Semantic Equivalence
 
-![alt text](https://raw.githubusercontent.com/No-Name-Yet-Exist/Articles/main/conceptual-topology/resources/quasi-communicative-diagram/she-human-mammal-canine-dog.png)
+In this model, we attempted to demonstrate a quasi-commutative diagram using the chain:
+she → human → mammal, dog → canine → mammal.
 
+However, the word canine functions more as a synonym or paraphrase of dog, and in Word2Vec space it appears even more specific or unusual due to its relatively low frequency. Thus, the morphic transformation between dog and canine lacks sufficient structural contrast, preventing commutative structure.
 
 ```
           R
@@ -19,45 +21,82 @@ We used this model to explain Quasi-Natural Transformation of Meaning Systems in
 
 ```
 
-### Second Model
-In this second model, we introduced 3 axis fixation by integrating time axis, size axis and abstraction level as follows to stabilize the illustration of the meaning structure. And this model successfully demosntrated the quasi-communicative diagram.
+![alt text](https://raw.githubusercontent.com/No-Name-Yet-Exist/Articles/main/conceptual-topology/resources/quasi-communicative-diagram/she-human-mammal-canine-dog.png)
+
+
+
+
+### Second Model: Successful Quasi-Commutativity through Axis Fixation
+
+To stabilize the diagram, we introduced three semantic axes:
+
+    ・Temporal axis (puppy vs dog),
+
+    ・Size/specificity axis,
+
+    ・Abstraction level (girl vs she).
+
+This model successfully formed a quasi-commutative diagram in Word2Vec space, with meaningful word location.
+
+```
+          R
+   girl   ←  puppy  newer + small + specific
+     |         |
+     |    Z    |
+   she    ←   dog      abstraction of all
+      \      /       
+       mammal
+
+```
 
 ![alt text](https://raw.githubusercontent.com/No-Name-Yet-Exist/Articles/main/conceptual-topology/resources/quasi-communicative-diagram/puppy-dog-mammal-she-girl.png)
 
 
-```
-          R
-   girl  ←    puppy  newer + small + specific
-     |         |
-     |    Z    |
-   she  ←     dog      abstraction of all
-      \      /       
-       mammal
 
-```
+### Third Model: Sustained Quasi-Commutativity with Reduced Axes and Intensified Semantic Role
 
-### Third Model
-We reduced one axis, which is time axis, replacing she to female and yet still
-We could obtain similar quasi-communicative-diagram. Apparently, if we intend to observe the illustration of the digram, we need to at least maintain the 2 axis, ideally more than 3 axis to stablize the representation.
+In this model, we replaced she with female. The visualized image shows that the female did not show up as clearnly as she did, yet it still maintained the observable semantic formation.
 
 ![alt text](https://raw.githubusercontent.com/No-Name-Yet-Exist/Articles/main/conceptual-topology/resources/quasi-communicative-diagram/puppy-dog-mammal-female-girl.png)
 
 
-```
-          R
-   girl  ←    puppy  newer + small + specific
-     |         |
-     |    Z    |
-   female  ←     dog      abstraction of all
-      \      /       
-       mammal
+And the distortion created by female can be understood as female includes gender role which dog does not and female was pulled away from dog towards gender axis. To support this we added "she"(generalized or diluted femenity, which some even say she, refering to a car, runs really good). And also we added "human"(gender less), and "ape" as the categorical term for human to fill the gap between mammal and girl. As the result, we could observe the bulge created by female tries to converge into mammal through:
 
-```
+girl → she → female → human → ape → mammal
+
+
+![alt text](https://raw.githubusercontent.com/No-Name-Yet-Exist/Articles/main/conceptual-topology/resources/quasi-communicative-diagram/she-female-human.png)
+
+
+### Fourth Model: Semantic Circularity
+We noted that puppy and girl are located on the same level, so we added "baby" as Z.
+This completed the semantic circle as we intended.
+baby → girl → she → female → human → ape → mammal → dog → puppy →　baby
+
+Note: We could not use "young" since it is mostly used with human, so word2vec heavily evaluates the relation with words such as girl and undervalues the relation with puppy. For this reason, we used baby instead.
+
+
+**In this PCA, we could observe four morphic chains and the semantic formatoin circulates.**
+
+D_gender: girl - she - female 
+D_humanity: female - human - ape - mammal
+D_canine: puppy - dog - mammal
+D_baby: puppy - baby - girl
+
+η: puppy → human_girl | baby // canine to human under baby
+f: female → human // femenity to human 
+η: human → dog | mammal // human to canine under mammal
+
+![alt text](https://raw.githubusercontent.com/No-Name-Yet-Exist/Articles/main/conceptual-topology/resources/quasi-communicative-diagram/baby-morphic-circle.png)
+
+
 
 # Conclusion
-The quasi-natural transformation is demostrable in also word2vec space. The next thing we would like to experiment is that the rupture model and restoration of the rutpure by introducing Z.
 
+While our current understanding of the mechanisms behind word alignment remains provisional and requires further analysis, we have demonstrated that **quasi-natural transformations are observable** within Word2Vec embeddings. And also we could observe the circulation of morphic chains.
 
+**Next step:**
+We will explore rupture modeling, and introduce Z to represent and potentially restore collapsed morphic chains.
 
 
 ### Code we used
@@ -96,8 +135,6 @@ plt.grid(True)
 plt.axis("equal")
 plt.savefig("image.png") 
 plt.show()
-
-
 ```
 
 ### the used model
