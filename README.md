@@ -62,6 +62,23 @@ h: Differential Morphism(Man → Woman)
 ![alt text](https://raw.githubusercontent.com/No-Name-Yet-Exist/Articles/main/conceptual-topology/resources/quasi-communicative-diagram/puppy-dog-mammal-she-girl.png)
 
 
+### Semantic Circularity
+
+**baby → girl → she → female → human → ape → mammal → dog → puppy →　baby**
+
+![alt text](https://raw.githubusercontent.com/No-Name-Yet-Exist/Articles/main/conceptual-topology/resources/quasi-communicative-diagram/baby-morphic-circle.png)
+
+
+D_gender: girl - she - female 
+D_humanity: female - human - ape - mammal
+D_canine: puppy - dog - mammal
+D_baby: puppy - baby - girl
+
+η: puppy → human_girl | baby // canine to human under baby
+f: female → human // femenity to human 
+η: human → dog | mammal // human to canine under mammal
+
+
 ```
 1st Morphism: Human He is a human
 2nd Morphism: He is a human, but Human is him
