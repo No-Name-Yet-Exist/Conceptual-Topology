@@ -1,10 +1,18 @@
+最もシンプルな循環構造
 This is a dog.
-This - dog の循環構造
+This - dog 
+dog - this 
 
+三角形構造
 This dog is beatiful
 This - dog 
    \    /
   beatiful
+
+これは最もシンプルな循環構造に落とせる
+this is beatiful
+this - beatiful
+beatiful - this
 
 
 This dog is beatiful with a long tale.
