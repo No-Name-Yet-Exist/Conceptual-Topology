@@ -9,7 +9,8 @@ This - dog
    \    /
   beatiful
 
-これは最もシンプルな循環構造に落とせる
+これは最もシンプルな循環構造に落とせる: 
+意味構造自体が循環で閉じているので安定的であり、dogは文から落とせる
 this is beatiful
 this - beatiful
 beatiful - this
