@@ -3,8 +3,6 @@ We put varible Z as contituity or morphic path. However, we define it as base sp
 
 We defined Morphisms using examples, but now we can define it using formulation based on Category Theory and observation we obtained so far.
 
-![alt text](image.png)
-
 # Definition of Z
 We define a concept A as:
 
@@ -55,6 +53,8 @@ e.g. η: girl → puppy | baby
 # What is Morphism in Conceptual Topology
 CT has 3 levels of Morphisms.
 
+```
+previous definition:
 f: A → B | R
 f: A ≈ B | Z_local
 f: A ~ B | Z_global
@@ -63,8 +63,12 @@ Z: variable which ensures the continuity
 R: rupture
 
 We can redefine this as follows.
-η: Fdi→Fdi | R // failure of projection
-η: A ≈ B | Z_local
+*η:Fdi→Fdi | Z*
+
+In detail:
+f: A → B | R // failure of projection
+f: A ≈ B | Z_local
 f: A ~ B | Z_global 
+```
 
 This document and all conceptual content therein are © [No Name Yet Exist], 2025. All rights reserved. Unauthorized reproduction, distribution, or use without explicit permission is prohibited.
