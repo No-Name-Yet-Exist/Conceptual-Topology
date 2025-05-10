@@ -33,7 +33,7 @@ isomorphism アゲハ = アゲハ'
 蝶 → アゲハ蝶 → spicesは、下記で示す圏構造 Ci → Ci+1 → C+2 で対応する
 
 Theoretical Background:</br>
-https://github.com/No-Name-Yet-Exist/Articles/blob/main/conceptual-topology/applications/notes/definition-Z-Morphism.md
+https://github.com/No-Name-Yet-Exist/Articles/blob/main/conceptual-topology/theorems/definition-Z-Morphism.md
 </br>
 
 ### Category
@@ -58,7 +58,7 @@ The variable which preserves the continuity
 アゲハ蝶 → キアゲハ | Z = アゲハチョウ科
 
 Theoretical Background:</br>
-https://github.com/No-Name-Yet-Exist/Articles/blob/main/conceptual-topology/applications/notes/definition-Z-Morphism.md
+https://github.com/No-Name-Yet-Exist/Articles/blob/main/conceptual-topology/theorems/definition-Z-Morphism.md
 </br>
 
 ### rupture
