@@ -4,7 +4,7 @@ We put varible Z as contituity or morphic path. However, we define it as base sp
 We defined Morphisms using examples, but now we can define it using formulation based on Category Theory and observation we obtained so far.
 
 **Morphic Chain**</br>
-https://github.com/No-Name-Yet-Exist/Articles/blob/main/conceptual-topology/linguistical-structure/morphic-chain.md
+https://github.com/No-Name-Yet-Exist/Articles/blob/main/conceptual-topology/principles/morphic-chain.md
 
 **Morphic Chain Observation**</br>
 https://github.com/No-Name-Yet-Exist/Articles/blob/main/conceptual-topology/word2vec-experiments/morphic-chain-visualization.md
