@@ -68,6 +68,8 @@ h: Differential Morphism(Man → Woman)
 
 ![alt text](https://raw.githubusercontent.com/No-Name-Yet-Exist/Articles/main/conceptual-topology/resources/quasi-communicative-diagram/baby-morphic-circle.png)
 
+![alt text](https://raw.githubusercontent.com/No-Name-Yet-Exist/Articles/main/conceptual-topology/resources/quasi-communicative-diagram/semantic-circulation-with-arrows.png)
+
 
 D_gender: girl - she - female 
 D_humanity: female - human - ape - mammal
