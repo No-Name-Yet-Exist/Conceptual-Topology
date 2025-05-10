@@ -3,6 +3,14 @@ We put varible Z as contituity or morphic path. However, we define it as base sp
 
 We defined Morphisms using examples, but now we can define it using formulation based on Category Theory and observation we obtained so far.
 
+**Morhic Chain**</br>
+https://github.com/No-Name-Yet-Exist/Articles/blob/main/conceptual-topology/linguistical-structure/morphic-chain.md
+
+**Morphic Chain Observation**</br>
+https://github.com/No-Name-Yet-Exist/Articles/blob/main/conceptual-topology/word2vec-experiments/morphic-chain-visualization.md
+
+
+
 # Definition of Z
 We define a concept A as:
 
@@ -69,6 +77,8 @@ In this diagram, the semantic base point baby provides continuity across otherwi
 
 *η:Fdi→Fdi | Z*
 e.g. η: girl → puppy | baby
+</br>
+
 
 # What is Morphism in Conceptual Topology
 CT has 3 levels of Morphisms.
