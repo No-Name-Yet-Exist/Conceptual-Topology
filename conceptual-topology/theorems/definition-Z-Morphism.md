@@ -3,7 +3,7 @@ We put varible Z as contituity or morphic path. However, we define it as base sp
 
 We defined Morphisms using examples, but now we can define it using formulation based on Category Theory and observation we obtained so far.
 
-**Morhic Chain**</br>
+**Morphic Chain**</br>
 https://github.com/No-Name-Yet-Exist/Articles/blob/main/conceptual-topology/linguistical-structure/morphic-chain.md
 
 **Morphic Chain Observation**</br>
@@ -49,7 +49,7 @@ Z = "femininity"（Base Space B）
 
 ```
 
-**Total Space E: Meaning Space**
+**Total Space E: Meaning Space**</br>
 The total space of the conceptual bundle π: E → B.
 We call E the *meaning space*, consisting of all conceptual transitions 
 fibered over semantic base points b ∈ B (Z-frames) defined below.
