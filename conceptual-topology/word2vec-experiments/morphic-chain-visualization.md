@@ -90,7 +90,8 @@ f: female → human // femenity to human
 ![alt text](https://raw.githubusercontent.com/No-Name-Yet-Exist/Articles/main/conceptual-topology/resources/quasi-communicative-diagram/baby-morphic-circle.png)
 
 
-![alt text](https://raw.githubusercontent.com/No-Name-Yet-Exist/Articles/main/conceptual-topology/resources/quasi-communicative-diagram/semantic-circulation-with-arrows.png)
+![alt text](https://raw.githubusercontent.com/No-Name-Yet-Exist/Articles/main/conceptual-topology/resources/quasi-communicative-diagram/semantic-circulation-with-arrows-v2.png)
+
 
 
 # Conclusion
@@ -115,11 +116,10 @@ model = KeyedVectors.load_word2vec_format(model_path, binary=True)
 # 単語グループ
 words = ["puppy", "dog", "girl", "female", "mammal"]
 
-# For arrows we added two baby
-#words = ["baby","girl","she","female","human","ape","mammal","dog","puppy","baby"] 
-
 #words = ["puppy", "dog", "girl", "she", "mammal"]
 #words = ["dog", "canine", "she", "human", "mammal"]
+#words = ["baby","girl","she","female","human","ape","mammal","dog","puppy"] 
+
 
 # ベクトル取得
 vectors = [model[word] for word in words]
@@ -143,6 +143,11 @@ for i in range(len(reduced) - 1):
     end = reduced[i + 1]
     arrow = FancyArrowPatch(start, end, arrowstyle='->', mutation_scale=10, color='gray')
     plt.gca().add_patch(arrow)
+
+start = reduced[len(reduced)-1]
+end = reduced[0]
+arrow = FancyArrowPatch(start, end, arrowstyle='->', mutation_scale=10, color='gray')
+plt.gca().add_patch(arrow)
 
 plt.title("PCA of Semantic Structure (Word2Vec)")
 plt.grid(True)
