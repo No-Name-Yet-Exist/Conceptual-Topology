@@ -27,10 +27,28 @@ For each b∈B, define:
 The fiber over b is the set of morphic chains that are a continuum under Z
 π: girl → she → female | femenity
 
+```
+       E（Meaning Space）
+      /|\   
+     / | \
+    /  |  \
+girl  she  female
+  |    |     |
+  ↓    ↓     ↓
+Z = "femininity"（Base Space B）
 
-**Total Space E**
-The total space of the bundle π:E→B is the space of all conceptual transitions
-across all possible Z-frames. Think of it as the union of all fibers.
+
+
+```
+
+**Total Space E: Meaning Space**
+The total space of the conceptual bundle π: E → B.
+We call E the *meaning space*, consisting of all conceptual transitions 
+fibered over semantic base points b ∈ B (Z-frames) defined below.
+
+Each fiber Fb represents a morphic chain structured under a specific continuity frame,
+and E is their union — the total conceptual landscape.
+The total space of the bundle. We call this meaning space or conceptual space.
 
 ```
    dog     human     
@@ -42,6 +60,8 @@ across all possible Z-frames. Think of it as the union of all fibers.
       (base B)
 
 Total space E = The space which includes all of this
+
+In this diagram, the semantic base point baby provides continuity across otherwise distinct vocabularies (puppy–dog, girl–human), thereby enabling the formation of a coherent meaning space.
 
 ```
 
