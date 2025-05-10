@@ -90,6 +90,8 @@ f: female → human // femenity to human
 ![alt text](https://raw.githubusercontent.com/No-Name-Yet-Exist/Articles/main/conceptual-topology/resources/quasi-communicative-diagram/baby-morphic-circle.png)
 
 
+![alt text](https://raw.githubusercontent.com/No-Name-Yet-Exist/Articles/main/conceptual-topology/resources/quasi-communicative-diagram/semantic-circulation-with-arrows.png)
+
 
 # Conclusion
 
@@ -112,6 +114,10 @@ model = KeyedVectors.load_word2vec_format(model_path, binary=True)
 
 # 単語グループ
 words = ["puppy", "dog", "girl", "female", "mammal"]
+
+# For arrows we added two baby
+#words = ["baby","girl","she","female","human","ape","mammal","dog","puppy","baby"] 
+
 #words = ["puppy", "dog", "girl", "she", "mammal"]
 #words = ["dog", "canine", "she", "human", "mammal"]
 
@@ -129,6 +135,14 @@ for i, label in enumerate(labels):
     x, y = reduced[i]
     plt.scatter(x, y)
     plt.text(x + 0.01, y + 0.01, label, fontsize=9)
+
+#矢印付加 
+from matplotlib.patches import FancyArrowPatch
+for i in range(len(reduced) - 1):
+    start = reduced[i]
+    end = reduced[i + 1]
+    arrow = FancyArrowPatch(start, end, arrowstyle='->', mutation_scale=10, color='gray')
+    plt.gca().add_patch(arrow)
 
 plt.title("PCA of Semantic Structure (Word2Vec)")
 plt.grid(True)
