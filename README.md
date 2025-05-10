@@ -34,8 +34,8 @@ M' = man
 W' = woman
 
 r: Differential Morphism（King → Man）
-g: Differential Morphism（Woman → Queen）
 h: Differential Morphism(Man → Woman)
+g: Differential Morphism（Woman → Queen）
 f: Composed Semantic Morphism g ∘ h ∘ r 
 ```
 
