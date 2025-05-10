@@ -19,6 +19,8 @@ https://github.com/No-Name-Yet-Exist/Articles/blob/main/conceptual-topology/symb
 
 </br>
 
+# Theorems
+
 ### Definition of Object/Concept
 Why are the objects and concepts expressed as C = { a₁_vec, a₂_vec, ..., aₙ_vec }
 or A = {-B} and B = {-A} in Conceptual Topology.</br>
@@ -76,6 +78,14 @@ What is word: Yoneda × Structralism × Category Theory</br>
 https://github.com/No-Name-Yet-Exist/Articles/blob/main/conceptual-topology/theorems/emergence-of-categories.md
 
 </br>
+
+# Principles
+
+### Morphic Chain
+https://github.com/No-Name-Yet-Exist/Articles/blob/main/conceptual-topology/principles/morphic-chain.md
+
+
+# Empirical Applications
 
 ### Word2Vec x Python Experiments
 Conceptual Topology is tested with Word2Vec and Python Script.
