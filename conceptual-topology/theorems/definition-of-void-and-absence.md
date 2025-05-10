@@ -15,7 +15,7 @@ For example, the statement “There is no cup on the desk” satisfies μ(A) > 0
 but it fails condition 1, because no differentiable structure allows us to identify the cup on the desk. Therefore, it is absent as visual information within the contrast frame Z.
 
 
-1. Theorem of Non-Existence under Full Invertibility
+**Theorem of Non-Existence under Full Invertibility**</br>
 If, for any temporal slice Δt, only invertible morphisms exist between any two objects A and B, then neither A nor B is considered to exist:
 
 That is, when all morphisms f ∈ C(A, B | Z) are invertible for all Δt → 0,
@@ -24,32 +24,32 @@ In such a case, the differential structure required to define either object fail
 and thus neither A nor B can be said to exist.
 
 ```
-Let a space be S
-Sn = GenCategoryWith1Morphism(S) = { Cn1, C_n2 …. C_n} // Generate Categories
-Let assume A, B ⊂ Si
-A = {-B} and B = {-A}
+  Let a space be S
+  Sn = GenCategoryWith1Morphism(S) = { Cn1, C_n2 …. C_n} // Generate Categories
+  Let assume A, B ⊂ Si
+  A = {-B} and B = {-A}
 
-if :
-∀Δt→0, ∃f∈C(A,B∣Z) such that f is invertible
+  if :
+  ∀Δt→0, ∃f∈C(A,B∣Z) such that f is invertible
 
-then:
-id_x = A → B = B → A | Z　
+  then:
+  id_x = A → B = B → A | Z　
 
-But:
-This implies A≈B∣Z, which contradicts A={−B}, B={−A}
+  But:
+  This implies A≈B∣Z, which contradicts A={−B}, B={−A}
 
-Therefore:
-A and B do not exist as definable, distinguishable entities under Z
+  Therefore:
+  A and B do not exist as definable, distinguishable entities under Z
 ```
 
-2. Void Through the Absence of Stable Structure
+**Void Through the Absence of Stable Structure**</br>
 if:
 μ(A):=Δt→ϵlim[∃Z:C(A_t, A_t+Δt, Z) is stable] = 0
 then:
 No structurally preserved difference (i.e., continuity of contrast) exists across time.
 
 
-3. The Identity Element as Void
+**The Identity Element as Void**</br>
 We interpret the identity element as a form of void:
 
 A ⊕ Neutral = A
