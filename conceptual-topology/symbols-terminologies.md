@@ -8,6 +8,9 @@ A = {–B}
 A = {–B} ⇔ B = {–A}
 Object is always relational and oppositional
 
+Theoretical Background:
+https://github.com/No-Name-Yet-Exist/Articles/blob/main/conceptual-topology/theorems/definition-of-object-concept.md
+
 
 ### Morphism
 f: A → B | R
