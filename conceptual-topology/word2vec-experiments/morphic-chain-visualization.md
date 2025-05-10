@@ -3,6 +3,10 @@
 We here demonstrate that quasi-natural transformation of meaning systems—in the form of quasi-commutative diagrams—can be empirically observed in Word2Vec space. 
 
 
+### Morphic Chain
+https://github.com/No-Name-Yet-Exist/Articles/blob/main/conceptual-topology/principles/morphic-chain.md
+
+
 ### First Model: Failure of Commutativity due to Semantic Equivalence
 
 In this model, we attempted to demonstrate a quasi-commutative diagram using the chain:
