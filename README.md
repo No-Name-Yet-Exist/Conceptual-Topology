@@ -7,6 +7,10 @@ Conceptual Topology aims to provide a formal structure for meaning itself, bridg
 The translation is currently in progress; not all content is available in English yet.
 Please refer to the **Index** section for key definitions and core concepts.
 
+**Index**
+https://github.com/No-Name-Yet-Exist/Articles/blob/main/Index.md
+
+
 This GitHub repository serves as an archive for the following account:
 https://note.com/xoreaxeax
 

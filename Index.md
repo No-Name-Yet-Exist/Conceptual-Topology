@@ -7,23 +7,28 @@ This does not have all contents yet.
 
 ### category theory to NL (natural langauge)
 This analizes how we avoided the issues created when we apply category theory to NL.
-
+https://github.com/No-Name-Yet-Exist/Articles/blob/main/conceptual-topology/category-theory-to-NL.md
 
 ### symbols-terminologies
 This provides the systematical connection between Category Theory and Conceptual Topology.
 e.g. the definition of Object or other terminologies such as Z or morphic path.
+https://github.com/No-Name-Yet-Exist/Articles/blob/main/conceptual-topology/symbols-terminologies.md
+
 
 ### Definition of Object/Concept
 Why are the objects and concepts expressed as C = { a₁_vec, a₂_vec, ..., aₙ_vec }
-or A = {-B} and B = {-A}
+or A = {-B} and B = {-A} in Conceptual Topology.
+https://github.com/No-Name-Yet-Exist/Articles/blob/main/conceptual-topology/theorems/definition-of-object-concept.md
 
 
 ### Self-Definability Theorem
 A complete ontology must be capable of defining its own categorical structure without relying on externally invertible mappings. Conceptual Topology satisfies this condition.
+https://github.com/No-Name-Yet-Exist/Articles/blob/main/conceptual-topology/theorems/self-definability-theorem.md
 
 
 ### definition of definition
 Definition is the criterion by which the shared identity between implicitly unified entities B and C — subsumed within an undifferentiated higher-order structure A — is ruptured.
+https://github.com/No-Name-Yet-Exist/Articles/blob/main/conceptual-topology/theorems/definition-of-definition.md
 
 
 ### emergence of existence
@@ -35,10 +40,14 @@ In formal terms:
 μ(A) := lim Δt→ε [∃Z : C(Aₜ, Aₜ₊Δt, Z) is stable] > 0
 ⇒ A exists (under frame Z)
 
+https://github.com/No-Name-Yet-Exist/Articles/blob/main/conceptual-topology/theorems/definition-of-existence.md
+
+
 
 ### definition of void and absence
 When do we say that there is no cup on the desk?
 We say so when no differentiable structure corresponding to the concept "cup" exists within the frame of the desk.
+https://github.com/No-Name-Yet-Exist/Articles/blob/main/conceptual-topology/theorems/definition-of-void-and-absence.md
 
 
 ### emergence of category
@@ -52,15 +61,21 @@ What is "that". What means that exists.
 
 ### Definition of Word
 What is word: Yoneda × Structralism × Category Theory
+https://github.com/No-Name-Yet-Exist/Articles/blob/main/conceptual-topology/theorems/emergence-of-categories.md
 
 
 ### Word2Vec x Python Experiments
 Conceptual Topology is tested with Word2Vec and Python Script.
 We provide with the code and the used data set written in word2vec.md
 
+https://github.com/No-Name-Yet-Exist/Articles/tree/main/conceptual-topology/word2vec-experiments
+
+
 
 ### applications
 We provide example use cases of Conceptual Topology.
+
+https://github.com/No-Name-Yet-Exist/Articles/tree/main/conceptual-topology/applications
 
 
 This document and all conceptual content therein are © [No Name Yet Exist], 2025. All rights reserved. Unauthorized reproduction, distribution, or use without explicit permission is prohibited.
