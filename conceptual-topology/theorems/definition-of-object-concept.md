@@ -78,4 +78,31 @@ r: Regen morphism — applies −Δ to recover A from B
 Δ: Differential — the structural difference space between A and B
 ``` 
 
+# Features of Concept
+
+Any concept satisfies following.
+
+```
+CTL: id_C : C → C
+NL: A is A
+```
+
+### Void Concept
+1. C_v = ∅: Semantic Set does has no elements.
+2. Unrapturable Concept e.g. unperceivable concept
+　C_v := ∅ if ∀Δt→0, ∃f∈C(A,B∣R) such that f is invertiblee
+3. Neutral⃗ of Monoid
+
+
+### Sentence can be a concept
+You can treat sentence as a concept
+
+This is what I said.
+Pointed Object → This (Deictic Morphism) → "what I said" → Pointed Object
+
+“My father is the same father I had as a child,” but also “He’s a different person because old age changed him”
+{(Father ≈ Father’ | memory ⋀ observation) ~ (Father ≉ Father’ | appearance
+⋀ behavior ⋀ age)} | my father
+
+
 This document and all conceptual content therein are © [No Name Yet Exist], 2025. All rights reserved. Unauthorized reproduction, distribution, or use without explicit permission is prohibited.
