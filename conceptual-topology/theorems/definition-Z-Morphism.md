@@ -12,7 +12,7 @@ https://github.com/No-Name-Yet-Exist/Articles/blob/main/conceptual-topology/word
 
 
 # Definition of Z
-We define a concept A as:
+Fristly, we define a concept A as:
 
 *Fb(A)≅Nat(Hom(−,A),F)*
 
@@ -25,6 +25,31 @@ and its semantic fiber Fb​ represents how this concept appears within a Z-fram
 B is the space of continuity or morphic path
 Each element b∈B is a semantic base point such as "baby", "gender", "mammal", etc.
 These are not content themselves, but frames along which meanings are structurally preserved.
+
+All words can be a base as shown below.
+
+```
+NL: A is B because that is A' (A' is A on the different morphic chain)
+CTL: A → B | Z = A'
+
+       Z    (Z = A′)
+    A ———→ B
+    \     |
+     \    | 
+       ↘︎  ↓
+        F_{A′}  
+
+```
+
+**Veggies are healthy because that is veggies**</br>
+A = Veggies</br>
+B = healthy</br>
+A' = vegitables as representation of nutritions</br>
+
+**Car is a pig because that is a pig (metaphor for indulgence)**</br>
+A = car</br>
+B = pig</br>
+A′ = metaphorical-pig / indulgence</br>
 
 
 **Fiber Fb​: Morphic Chain**
@@ -100,5 +125,21 @@ f: A → B | R //non-invertible projectoin
 f: A ≈ B | Z_local  // invertible
 f: A ~ B | Z_global // invertible
 ```
+
+# Yoneda's Object/Concept as convergening point of morphic chains
+
+Let a conceptual space be C  
+Let B = {Z₁, Z₂, ..., Zₙ} as base space
+π: E → B を意味ファイバー束
+
+各概念 A ∈ Ob(C) が複数の fiber F_b にまたがる
+
+とすると、全体構造は：
+CT:=C,B,π:E→B,Fb,Nat(Hom(−,A),Fb)
+
+全てをまとめると
+CT:=(C,B,π:E→B,Fb:=π−1(b),A≅b⋃Nat(Hom(−,A),Fb))
+
+
 
 This document and all conceptual content therein are © [No Name Yet Exist], 2025. All rights reserved. Unauthorized reproduction, distribution, or use without explicit permission is prohibited.
