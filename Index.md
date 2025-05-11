@@ -84,6 +84,17 @@ https://github.com/No-Name-Yet-Exist/Articles/blob/main/conceptual-topology/theo
 ### Morphic Chain
 https://github.com/No-Name-Yet-Exist/Articles/blob/main/conceptual-topology/principles/morphic-chain.md
 
+</br>
+
+### Calculation Of Concepts/Meanings
+https://github.com/No-Name-Yet-Exist/Articles/blob/main/conceptual-topology/principles/calculation-of-concepts.md
+
+</br>
+
+### Semantic Morphism
+https://github.com/No-Name-Yet-Exist/Articles/blob/main/conceptual-topology/principles/semantic-morphism.md
+
+</br>
 
 # Empirical Applications
 
