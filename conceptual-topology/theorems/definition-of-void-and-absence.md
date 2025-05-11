@@ -69,4 +69,33 @@ int main(){
 }
 ```
 
+This theorem has circulating structure defined as follows:
+
+```
+   No Difference (ND)
+        ↓
+  No Continuity (NC)
+        ↓
+ No Effect / Action (NE)
+        ↓
+      ND again
+
+
+     f       g
+ND ───▶ NC ───▶ NE
+▲                 │
+│        h        │
+└────────────────┘
+
+f: ND → NC（有意な差異が見いだせない → 連続性が持てない）
+g: NC → NE（連続性がない → 有意な変化が起きない）
+h: NE → ND（有意な変化がない → 有意な差異が観測されない）
+※ここで言う有意なというのはΔtにおける連続性が担保されること
+※連続性は差異の統合概念として解釈できる
+※保存される構造は差異の不在
+
+h ∘ g ∘ f = id_ND
+
+```
+
 This document and all conceptual content therein are © [No Name Yet Exist], 2025. All rights reserved. Unauthorized reproduction, distribution, or use without explicit permission is prohibited.
