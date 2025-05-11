@@ -139,6 +139,7 @@ woman =  {Female⃗}
 
 # Meaning Preservation Communicative Diagram
 This diagram illustrates how additive semantics reconstructs conceptual continuity.
+This reconstruction equation A−(A−B)≈A do not apply universally. Specific word pairs such as black and wihte shows this result.
 
 ```
 A − (A − B) ≈ A
