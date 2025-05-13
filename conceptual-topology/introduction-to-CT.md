@@ -38,11 +38,11 @@ This reveals different clusters are symmetrically placed through mammal. puppy a
 
 **Quasi Communicative-Diagram**
 ```
-         Z = baby  
-    girl   ←   puppy    
+           
+    girl      puppy    
      |          |
      |          |
-    she    ←   dog      
+    she        dog      
       \        /      
         Mammal
 
@@ -54,6 +54,20 @@ This creates morphic circulation.
 Meaning transformation forms a closed morphic circulation over intersecting Z-frames: baby and mammal
 
 ![alt text](https://raw.githubusercontent.com/No-Name-Yet-Exist/Articles/main/conceptual-topology/resources/quasi-communicative-diagram/semantic-circulation-with-arrows-v2.png)
+
+
+**Quasi Communicative-Diagram**
+```
+        Z = baby
+    girl   ←   puppy    
+     |          |
+     |          |
+    she        dog      
+      \        /      
+        Mammal
+
+```
+
 
 
 I hypothesize that these lexical arrangements do not reflect mere coincidence, but rather manifest a deeper semantic topology, governed by morphic continuity over a Z-frame.
