@@ -1,10 +1,7 @@
 # Index
 
-### conceptual-topology
-English version. Currently the translation is in progress. 
-This does not have all contents yet.
-
-</br>
+### What is Conceptual Topology: Introduction to CT
+https://github.com/No-Name-Yet-Exist/Articles/blob/main/conceptual-topology/introduction-to-CT.md
 
 ### category theory to NL (natural langauge)
 This analizes how we avoided the issues created when we apply category theory to NL.</br>
