@@ -128,10 +128,7 @@ Example: η: girl → puppy | Z = baby
 This geometric coherence suggests a hidden layer of structure in natural language semantics—what I call "semantic geometry through conceptual topology." The theory is still evolving, including definitions for morphisms, identity, absence/void, morphic chain, ontology and so on. This model opens a path toward formalizing metaphor, analogy, and even poetic structure within a rigorous categorical and topological framework. It invites further exploration across natural language processing, translation theory, and cognitive semantics.
 
 Whole theories, codes and further examples are available at: 
-[GitHub link]
-
-I'm curious if others have observed similar configurations or attempted to formalize metaphor or meaning transitions through topological or categorical means.
-Feedback welcome.
+https://github.com/No-Name-Yet-Exist/Articles/blob/main/README.md
 
 
 ### Appendix:
