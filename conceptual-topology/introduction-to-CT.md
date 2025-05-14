@@ -11,7 +11,7 @@ By projecting 7 words—["body", "mind", "sugar", "yummy", "cake", "innocent", "
 ![alt text](https://raw.githubusercontent.com/No-Name-Yet-Exist/Articles/main/conceptual-topology/resources/metaphor-sweet-cake/semantic-geometry.png)
 
 **Figure1: Z = sugar**</br>
-This diagram reveals that clusters such as ["yummy", "cake"] and ["hungry", "innocent"] emerge symmetrically around the semantic anchor sugar, forming a quasi-balanced configuration. Notably, "body" and "cake" align across opposing poles, indicating that the concept of sweetness (Z = sugar) functions as a mediating structure—bridging semantic crevasses while simultaneously inducing an isomorphic relation between otherwise distinct lexical domains. Lexicons used are from “Yummy” (INNA, 2023).
+This diagram reveals that clusters such as ["yummy", "cake"] and ["mind", "body"] emerge symmetrically around the semantic anchor sugar, forming a quasi-balanced configuration. Notably, "body" and "cake" align across opposing poles, indicating that the concept of sweetness (Z = sugar) functions as a mediating structure—bridging semantic crevasses while simultaneously inducing an communicative relation between otherwise distinct lexical domains. Lexicons used are from “Yummy” (INNA, 2023).
 
 
 ### Different Cases
@@ -78,12 +78,12 @@ The theory behind these results, I proposed the following structure:
 CT := (C, B, π: E → B, Fb := π⁻¹(b), A ≅ b ⋃ Nat(Hom(−, A), Fb))
 
 Where:
-- C is the category of concepts (objects = words)
-- B is the base space of Z-frames (semantic continuity anchors)
-- E is the total semantic space (word vector embedding space)
-- π projects each concept to its semantic base (Z-frame)
-- Fb is the fiber (semantic morphic chain) over a base b
-- A ≅ b ⋃ Nat(Hom(−, A), Fb) interprets each concept A via its morphisms relative to its Z-frame b (Yoneda perspective defined in appendix): This is observable using specific pairs such as black and white. 
+  - C is the category of concepts (objects = words)
+  - B is the base space of Z-frames (semantic continuity anchors)
+  - E is the total semantic space (word vector embedding space)
+  - π projects each concept to its semantic base (Z-frame)
+  - Fb is the fiber (semantic morphic chain) over a base b
+  - A ≅ b ⋃ Nat(Hom(−, A), Fb) interprets each concept A via its morphisms relative to its   Z-frame b (Yoneda perspective defined in appendix): This is observable using specific pairs such as black and white. 
 ```
 
 # Morphic Chain Complexes and Semantic Dynamism
@@ -137,6 +137,51 @@ i.e. η ∈ Mor(C) where C is the contextual meaning category
 Example: η: girl → puppy | Z = baby
 ```
 
+# Communicative Diagram of Semantics
+
+![alt text](https://raw.githubusercontent.com/No-Name-Yet-Exist/Articles/main/conceptual-topology/resources/metaphor-sweet-cake/cake-yummy-body-sweet.png)
+
+```
+Under Z-frame: sugar
+        
+        g
+ Yummy <---- Mind
+   |         ↑
+ h |         | f
+   ↓         |
+ Cake  ----> Body
+
+f: Body → Mind | sugar // Bodily sweetness gives rise to a mental perception of sweetness
+g: Mind → Yummy | sugar //Mental sweetness leads to the subjective pleasure: "this is yummy."
+h: Yummy → Cake | sugar //The abstract sense of yumminess gets grounded in a concrete symbol: cake.
+
+if:
+i = h∘g∘f | sugar
+Thus:
+Cake ≅ Body | sugar // metaphor
+```
+
+### king - man + woman = queen
+This relationship can be expressed as the following semantic morphism diagram
+
+```
+       f
+    Q ——→ W
+    |     \
+  r |       \ g
+    ↓         \
+    K' ——→ M'
+        g
+K = king
+Q = queen
+M' = man
+W' = woman
+
+g: Differential Morphism（King → Man）
+h: Differential Morphism(Man → Woman)
+r: Differential Morphism（Woman → Queen）
+f: Composed Semantic Morphism r ∘ h ∘ g 
+```
 
 # Conclusion
 This geometric coherence suggests a hidden layer of structure in natural language semantics—what I call "semantic geometry through conceptual topology." The theory is still evolving, including definitions for morphisms, identity, absence/void, morphic chain, ontology and so on. This model opens a path toward formalizing metaphor, analogy, and even poetic structure within a rigorous categorical and topological framework. It invites further exploration across natural language processing, translation theory, and cognitive semantics.
@@ -173,6 +218,17 @@ and then: Word≅Nat(h∞f​,Language)
 // Self-identity of the word: word is word
 id_word ≈word
 ```
+### Appendix 2
+Meaning is calculable as follows.
+Or it can be written as set calculation as follows:
+
+Let king = {Royalty⃗, Male⃗, Human⃗}
+Let queen = {Royalty⃗, Female⃗, Human⃗}
+Let man = {Male⃗} 
+Let woman = {Female⃗} 
+
+king - man + woman = queen
+{Royalty⃗, Male⃗, Human⃗} ⊖ {Male⃗} ⊕ {Female⃗} = {Royalty⃗, Female⃗, Human⃗}
 
 
 ### Used Code
