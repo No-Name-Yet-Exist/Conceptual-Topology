@@ -14,10 +14,11 @@ By projecting 7 words—["body", "mind", "sugar", "yummy", "cake", "innocent", "
 
 
 **Figure1: Z = sugar**</br>
-This diagram reveals that clusters such as ["yummy", "cake"] and ["mind", "body"] emerge symmetrically around the semantic anchor sugar, forming a quasi-balanced configuration. Notably, "body" and "cake" align across opposing poles, indicating that the concept of sweetness (Z = sugar) functions as a mediating structure—bridging semantic crevasses while simultaneously inducing an communicative relation between otherwise distinct lexical domains. Lexicons used are from “Yummy” (INNA, 2023).
+This diagram reveals that clusters such as ["yummy", "cake"] and ["mind", "body"] emerge symmetrically around the semantic anchor sugar, forming a quasi-balanced configuration. Notably, "body" and "cake" align across opposing poles, indicating that the concept of sweetness (Z = sugar) functions as a mediating structure—bridging semantic crevasses while simultaneously inducing a communicative relation between otherwise distinct lexical domains. 
 
 Note: In colloquial English, “cake” often evokes connotations beyond dessert — frequently used as a symbol of bodily allure. Within our Z-frame (sugar), this metaphor is not accidental. Rather, “cake” and “body” form a morphic equivalence, mediated by sweetness, with semantic flows aligning across physical and cultural registers.
 
+Lexicons used are from “Yummy” (INNA, 2023).
 
 
 
@@ -225,7 +226,7 @@ Therefore, a word is a self-referential structure.
 // A concept is a structure of oppositional differences
 Let C be a concept //e.g. black
 Let OC be the opposite concept //e.g. white
-C = {−OC₁, −OC₂, ..., −OCₙ} // Yoneda × Structralism
+C = {−OC₁, −OC₂, ..., −OCₙ} // Yoneda × Structuralism
 
 // A word is a concept, and belongs to the category of words
 word ≅ C and Ob(Word) ∋ word
@@ -309,6 +310,6 @@ plt.show()
 https://code.google.com/archive/p/word2vec/
 
 ### Reference
-“Yummy”  (INNA, 2023)
+INNA, "Yummy", Global Records, 2023 
 
-This document and all conceptual content therein are © [No Name Yet Exist], 2025. All rights reserved. Unauthorized reproduction, distribution, or use without explicit permission is prohibited.
+This document and all conceptual content therein are © [No Name Yet Exist], 2025. All rights reserved. U  nauthorized reproduction, distribution, or use without explicit permission is prohibited.
