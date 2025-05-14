@@ -211,6 +211,6 @@ origin: dd3b3129b3b9ca51227083b2515969cc00967fe7e614c19b9a02486eade42e1b
 <br/>
 
 Meaning doesn’t escape.  
-Meaning moves.  
+It moves in sight.  
 *f: escape → move | reduced unpredictability*
 
