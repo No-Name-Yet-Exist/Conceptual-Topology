@@ -15,7 +15,7 @@ Morphic-Chain Mirror is a contextual correspondence between two Morphic Chains, 
 
 ```
 Mirror Morphism Definition:
-    f′: A′ → B  | Z
+    f′: A′ → B'  | Z
       → A′ ≠ A, but cod(f) = cod(f′) = B | Y // Y = codomain
 
     We define f′ as a mirror-correspondent morphism of f under a given Z-frame,
