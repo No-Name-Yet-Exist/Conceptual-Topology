@@ -10,31 +10,38 @@ By projecting 7 words—["body", "mind", "sugar", "yummy", "cake", "innocent", "
 
 ![alt text](https://raw.githubusercontent.com/No-Name-Yet-Exist/Articles/main/conceptual-topology/resources/metaphor-sweet-cake/semantic-geometry.png)
 
+
+
 **Figure1: Z = sugar**</br>
 This diagram reveals that clusters such as ["yummy", "cake"] and ["mind", "body"] emerge symmetrically around the semantic anchor sugar, forming a quasi-balanced configuration. Notably, "body" and "cake" align across opposing poles, indicating that the concept of sweetness (Z = sugar) functions as a mediating structure—bridging semantic crevasses while simultaneously inducing an communicative relation between otherwise distinct lexical domains. Lexicons used are from “Yummy” (INNA, 2023).
+
+Note: In colloquial English, “cake” often evokes connotations beyond dessert — frequently used as a symbol of bodily allure. Within our Z-frame (sugar), this metaphor is not accidental. Rather, “cake” and “body” form a morphic equivalence, mediated by sweetness, with semantic flows aligning across physical and cultural registers.
+
+
 
 
 ### Different Cases
 **Figure2: Z = body**</br>
 This reveals different clusters are symmetrically placed over body. Lexicons used are from “Yummy” (INNA, 2023).
 
-![alt text](https://raw.githubusercontent.com/No-Name-Yet-Exist/Articles/main/conceptual-topology/resources/metaphor-sweet-cake/innocent-hungry.png)
+![alt text](https://raw.githubusercontent.com/No-Name-Yet-Exist/Articles/main/conceptual-topology/resources/others/semantic-symmetry-z=body.png)
+
 
 **Figure3: Z = mind** </br>
-The lexical structure must be carefully configured for semantic coherence. While Z = body serves as a stable reference point that preserves morphic continuity, Z = mind fails to maintain lexical balance and induces structural collapse. As shown in this diagram, morphic chains lose alignment, and fiber coherence deteriorates.
+The lexical structure must be carefully configured to preserve morphic coherence. While Z = body functions as a stable semantic anchor—maintaining the commutative integrity of conceptual flows — Z = mind fails to support a coherent morphic path. As shown in this PCA projection, morphic stability breaks down, collapsing into asymmetric disruption and losing structural coherence.
 
-![alt text](https://raw.githubusercontent.com/No-Name-Yet-Exist/Articles/main/conceptual-topology/resources/metaphor-sweet-cake/z=mind.png)
+![alt text](https://raw.githubusercontent.com/No-Name-Yet-Exist/Articles/main/conceptual-topology/resources/others/semantic-asymmetry-z=mind.png)
 
 
-This observation demonstrates that Z-frame selection is not arbitrary. Effective Z-frames function as semantic attractors, enabling fiber cohesion and stable topologies. In contrast, inappropriate Z-frames—such as "mind" in this case—introduce ruptures, disconnected fibers, and distorted morphisms, leading to semantic incoherence.
+This illustrates that Z-frame selection is not arbitrary. A well-chosen Z-frame acts as a semantic attractor, stabilizing morphic trajectories across the lexical topology. In contrast, inadequate anchors—such as mind in this instance—induce morphic rupture, resulting in the disintegration of meaningful structure.
+
 Lexicons used are from “Yummy” (INNA, 2023).
-
-
 
 
 **Figure4: Z = mammal**</br>
 This reveals different clusters are symmetrically placed through mammal. puppy and girl. These lexical elements semantically converge through the conceptual anchor mammal, forming a coherent fiber structure.
 ![alt text](https://raw.githubusercontent.com/No-Name-Yet-Exist/Articles/main/conceptual-topology/resources/quasi-communicative-diagram/puppy-dog-mammal-she-girl.png)
+
 
 **Quasi Communicative-Diagram**
 ```
@@ -50,7 +57,7 @@ This reveals different clusters are symmetrically placed through mammal. puppy a
 
 
 **Figure5: Z = baby and mammal** </br>
-This creates morphic circulation.
+This projection reveals a closed morphic circulation.
 Meaning transformation forms a closed morphic circulation over intersecting Z-frames: baby and mammal
 
 ![alt text](https://raw.githubusercontent.com/No-Name-Yet-Exist/Articles/main/conceptual-topology/resources/quasi-communicative-diagram/semantic-circulation-with-arrows-v2.png)
@@ -106,6 +113,7 @@ relation between morphic chains.
 We define *girl → she → mammal* and *puppy → dog → mammal* as Morphic Chain Complex.
 
 Let D(Cₙ₋₁ | Z) := Category of Morphic Chains over Ob(Cₙ₋₁) within Z frame
+These chains represent meaning-preserving semantic flows under a given continuity frame Z.  
 
 Objects are chain complexes A₀ → A₁ → A₂ → ...
 representing conceptual transitions (e.g. "he" → "human" → "mammal" | life)
@@ -162,16 +170,19 @@ Cake ≅ Body | sugar // metaphor
 ```
 
 ### king - man + woman = queen
-This relationship can be expressed as the following semantic morphism diagram
+This relationship can be expressed as the following semantic morphism diagram.
+
+![alt text](https://raw.githubusercontent.com/No-Name-Yet-Exist/Articles/main/conceptual-topology/resources/others/king2quee.png)
 
 ```
-       f
-    Q ——→ W
-    |     \
-  r |       \ g
-    ↓         \
-    K' ——→ M'
+        f
+    Q ←————— W
+    |        ↑
+  r |        |g
+    ↓        |
+    K —————→ M'
         g
+
 K = king
 Q = queen
 M' = man
@@ -218,6 +229,7 @@ and then: Word≅Nat(h∞f​,Language)
 // Self-identity of the word: word is word
 id_word ≈word
 ```
+
 ### Appendix 2
 Meaning is calculable as follows.
 Or it can be written as set calculation as follows:
