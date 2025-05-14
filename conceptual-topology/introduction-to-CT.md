@@ -1,4 +1,5 @@
-Title: Semantic Geometry from Z-Frame Topologies: A Categorical Model of Lexical Structure
+Title: Meaning Doesn’t Escape. It Moves in Sight:
+A Categorical Framework for Semantic Geometry via Conceptual Topology
 
 # Introduction:
 Natural language exhibits variability, ambiguity, and strong context-dependence, challenging formal semantic modeling. However, through the lens of category theory and Z-frame used in this theory, certain latent regularities emerge. This paper explores the idea that word meaning is not merely a function of proximity in embedding space, but a topological structure defined by morphic continuity over conceptual anchors, called Z-frames.
@@ -124,8 +125,8 @@ representing conceptual transitions (e.g. "he" → "human" → "mammal" | life)
 
 We define Morphic-Chain Mirror as a contextual correspondence between two Morphic Chains, where conceptual structures from distinct but meaning-aligned vocabularies are mirrored through quasi-natural transformations under a Z-frame. Each mirror maps concept transitions across vocabularies while preserving morphic identity up to rupture.
 ```
-f′: A′ → B  | Z
-    → A′ ≠ A, but cod(f) = cod(f′) = B | Y // Y = codomain
+f′: A′ → B'  | Z
+    → A′ ≠ A, but cod(f) = cod(f′) | Y // Y = codomain
 
 We define f′ as a mirror-correspondent morphism of f under a given Z-frame,
 if and only if:
@@ -195,10 +196,23 @@ f: Composed Semantic Morphism r ∘ h ∘ g
 ```
 
 # Conclusion
-This geometric coherence suggests a hidden layer of structure in natural language semantics—what I call "semantic geometry through conceptual topology." The theory is still evolving, including definitions for morphisms, identity, absence/void, morphic chain, ontology and so on. This model opens a path toward formalizing metaphor, analogy, and even poetic structure within a rigorous categorical and topological framework. It invites further exploration across natural language processing, translation theory, and cognitive semantics.
+This geometric coherence suggests an underlying semantic structure in natural language—what I call "semantic geometry through conceptual topology".
+The proposed framework draws on category-theoretic notions such as morphisms, commutativity, and fiber structures, reinterpreted within the context of linguistic meaning. It opens a pathway toward formalizing metaphor, analogy, and poetic logic in a rigorously structured, yet intuitively visualizable way.
 
-Whole theories, codes and further examples are available at: 
-https://github.com/No-Name-Yet-Exist/Articles/blob/main/README.md
+The theory is still evolving, including ongoing work on the self-definability theorem, the theorem of void and absence, and potential applications of Conceptual Topology to generative grammar.
+
+I believe this framework may serve as a conceptual bridge between semantics and philosophical inquiry—especially in areas such as ontology and epistemology—mediated through the structural language of category theory.
+
+
+All codes, figures, and working notes are available here:  
+**[GitHub]** → https://github.com/No-Name-Yet-Exist/Articles/blob/main/README.md  
+(Some parts are not yet translated or well-organized, but I'm gradually working on it.)
+
+---
+
+**Note:**  
+I do not have a formal background in category theory. I began exploring these ideas about three weeks ago, with the help of an LLM and a deep curiosity to formalize what I intuitively perceived.  
+This entire trajectory—from initial intuition to structural formulation—is documented openly on Note (Japanese).
 
 
 ### Appendix:
