@@ -2,7 +2,11 @@ Title: Meaning Doesn’t Escape. It Moves in Sight:
 A Categorical Framework for Semantic Geometry via Conceptual Topology
 
 # Introduction:
-Natural language exhibits variability, ambiguity, and strong context-dependence, challenging formal semantic modeling. However, through the lens of category theory and Z-frame used in this theory, certain latent regularities emerge. This paper explores the idea that word meaning is not merely a function of proximity in embedding space, but a topological structure defined by morphic continuity over conceptual anchors, called Z-frames.
+Natural language exhibits variability, ambiguity, and strong context-dependence, challenging formal semantic modeling. However, through the lens of category theory and Z-frame used in this theory, certain latent regularities emerge. We explore the idea that word meaning is not merely a function of proximity in embedding space, but a topological structure defined by morphic continuity over conceptual anchors, called Z-frames.  
+
+Content Note: 
+
+This article engages with metaphorical language, including references to bodily and emotional imagery, drawn from vocabulary present in cultural texts such as song lyrics. The analysis is purely structural and semantic in nature, focusing on how words relate within topological meaning frameworks. No explicit content is discussed or implied, and interpretations do not rely on the literal truth of any term’s usage—consistent with the perspective of category theory, which concerns itself with relational structure, not object-level attributes.
 
 
 # Semantic Projections and Topological Formalization
@@ -24,7 +28,16 @@ Lexicons used are from “Yummy” (INNA, 2023).
 
 ### Different Cases
 **Figure2: Z = body**</br>
-This reveals different clusters are symmetrically placed over body. Lexicons used are from “Yummy” (INNA, 2023).
+This reveals distinct lexical clusters symmetrically aligned over the semantic anchor body. The morphism Hungry → Sweet/Yummy | body can be interpreted as a desiring gaze projected onto a luscious body—an interpretation directly supported by the lyric line from INNA’s “Yummy”(2023): *“Those hungry eyes / Tracin' my body lines.”*
+
+Conversely,  the inversion of the morphism can also be read causally: sweetness or yumminess evokes hunger, completing a morphic loop.
+
+Another morphism,  cake → innocent | body encodes a metaphor of virginity or naive allure.
+Innocence, connoting sweetness, is metaphorically grounded in the figure of cake — suggesting a playful or untouched body that invites desire through charm rather than overt sensuality.
+
+Note: While the person being sung about is not innocent as sung in the song, we do not evaluate the actual properties of objects in category theory. Instead, we focus exclusively on the relational structure among the words used in the lyrics. Our interpretation is grounded in how semantic morphisms operate within the Z-frame, independent of referential truth.
+
+Lexicons used are from “Yummy” (INNA, 2023).
 
 ![alt text](https://raw.githubusercontent.com/No-Name-Yet-Exist/Articles/main/conceptual-topology/resources/others/semantic-symmetry-z=body.png)
 
@@ -41,7 +54,7 @@ Lexicons used are from “Yummy” (INNA, 2023).
 
 
 **Figure4: Z = mammal**</br>
-This reveals different clusters are symmetrically placed through mammal. puppy and girl. These lexical elements semantically converge through the conceptual anchor mammal, forming a coherent fiber structure.
+This reveals different clusters are symmetrically placed through mammal. These lexical elements semantically converge through the conceptual anchor mammal, forming a coherent fiber structure.
 ![alt text](https://raw.githubusercontent.com/No-Name-Yet-Exist/Articles/main/conceptual-topology/resources/quasi-communicative-diagram/puppy-dog-mammal-she-girl.png)
 
 
@@ -76,8 +89,6 @@ Meaning transformation forms a closed morphic circulation over intersecting Z-fr
         Mammal
 
 ```
-
-
 
 I hypothesize that these lexical arrangements do not reflect mere coincidence, but rather manifest a deeper semantic topology, governed by morphic continuity over a Z-frame.
 
@@ -118,7 +129,7 @@ Let D(Cₙ₋₁ | Z) := Category of Morphic Chains over Ob(Cₙ₋₁) within Z
 These chains represent meaning-preserving semantic flows under a given continuity frame Z.  
 
 Objects are chain complexes A₀ → A₁ → A₂ → ...
-representing conceptual transitions (e.g. "he" → "human" → "mammal" | life)
+representing conceptual transitions (e.g. "she" → "human" → "mammal" | life)
 , which means Morphisms are chain maps that preserve morphic Identity(Z or rupture,which means non-invertibility) (i.e. maps between meaning-change sequences that maintain structural identity)
 
 
@@ -138,7 +149,7 @@ if and only if:
 ### Quasi-Natural Transformation of Meaning Systems
 ```
 η: Dᵢ ⇒ Dᵢ₊₁  | Y // Y = codomain
-η_X ∘ Dᵢ({f₁ | Z₁, ..., fₙ | Zₙ}) ≈ Dᵢ₊₁({f′₁, ..., f′ₙ}) ∘ η_Y | Y
+η_X ∘ Dᵢ({f₁ | Z₁, ..., fₙ | Zₙ}) ≈ Dᵢ₊₁({f′₁ | Z₁, ..., f′ₙ | Zₙ}) ∘ η_Y | Y
 for all fᵢ: Xᵢ → Yᵢ | Zᵢ in Dᵢ,  
 where f′ᵢ: η_X(Xᵢ) → η_Y(Yᵢ) | Zᵢ is the image morphism under meaning translation
 
@@ -182,13 +193,13 @@ This relationship can be expressed as the following semantic morphism diagram.
     |        ↑
   r |        |g
     ↓        |
-    K —————→ M'
+    K —————→ M
         g
 
 K = king
 Q = queen
-M' = man
-W' = woman
+M = man
+W = woman
 
 g: Differential Morphism（King → Man）
 h: Differential Morphism(Man → Woman)
