@@ -3,6 +3,8 @@
 ### What is Conceptual Topology: Introduction to CT
 https://github.com/No-Name-Yet-Exist/Articles/blob/main/conceptual_topology.md
 
+</br>
+
 ### category theory to NL (natural langauge)
 This analizes how we avoided the issues created when we apply category theory to NL.</br>
 https://github.com/No-Name-Yet-Exist/Articles/blob/main/conceptual-topology/category-theory-to-NL.md
@@ -79,6 +81,7 @@ https://github.com/No-Name-Yet-Exist/Articles/blob/main/conceptual-topology/theo
 # Principles
 
 ### Morphic Chain
+Morphic Chain is a categorical-geometric structure modeling the evolution, preservation, and transformation of conceptual meanings as morphic chains over context or global Z frame
 https://github.com/No-Name-Yet-Exist/Articles/blob/main/conceptual-topology/principles/morphic-chain.md
 
 </br>
