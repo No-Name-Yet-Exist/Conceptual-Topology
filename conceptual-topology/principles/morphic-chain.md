@@ -25,7 +25,7 @@ Mirror Morphism Definition:
 
 Quasi-Natural Transformation of Meaning Systems
     η: Dᵢ ⇒ Dᵢ₊₁  | Y // Y = codomain
-    η_X ∘ Dᵢ({f₁ | Z₁, ..., fₙ | Zₙ}) ≈ Dᵢ₊₁({f′₁, ..., f′ₙ}) ∘ η_Y | Y
+    η_X ∘ Dᵢ({f₁ | Z₁, ..., fₙ | Zₙ}) ≈ Dᵢ₊₁({f′₁ | Z₁, ..., f′ₙ | Zₙ}) ∘ η_Y | Y
     for all fᵢ: Xᵢ → Yᵢ | Zᵢ in Dᵢ,  
     where f′ᵢ: η_X(Xᵢ) → η_Y(Yᵢ) | Zᵢ is the image morphism under meaning translation
 
