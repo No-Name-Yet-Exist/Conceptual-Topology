@@ -12,8 +12,8 @@ Please refer to the **Index** section for key definitions and core concepts.
 https://github.com/No-Name-Yet-Exist/Articles/blob/main/Index.md
 
 
-This GitHub repository serves as an archive for the following account:
-https://note.com/xoreaxeax
+This GitHub is linked with:
+https://note.com/xoreaxeax/n/n3711c1318d0b
 
 
 # Commutative diagrams: The Relationship of words in category theory
