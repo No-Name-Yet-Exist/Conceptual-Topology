@@ -61,10 +61,10 @@ This reveals different clusters are symmetrically placed through mammal. These l
 **Quasi Communicative-Diagram**
 ```
            
-    girl      puppy    
+    girl      puppy    //specified: size + young
      |          |
      |          |
-    she        dog      
+    she        dog     //abstraction
       \        /      
         Mammal
 
@@ -81,10 +81,10 @@ Meaning transformation forms a closed morphic circulation over intersecting Z-fr
 **Quasi Communicative-Diagram**
 ```
         Z = baby
-    girl   ←   puppy    
+    girl   ←  puppy    //specified: size + young
      |          |
      |          |
-    she        dog      
+    she        dog     //abstraction
       \        /      
         Mammal
 
@@ -112,25 +112,25 @@ We formalize the observed phenomena in Fig2 as Morphic Chain Complex and
 relation between morphic chains.
 
 **Quasi Communicative-Diagram**
+
 ```
          Z = baby  
-    girl   ←   puppy    
+    girl   ←   puppy    //specified: size + young
      |          |
      |          |
-    she    ←   dog      
+    she        dog      //abstraction
       \        /      
         Mammal
 
 ```
+
 ### Morphic Chain Complex
 We define *girl → she → mammal* and *puppy → dog → mammal* as Morphic Chain Complex.
 
 Let D(Cₙ₋₁ | Z) := Category of Morphic Chains over Ob(Cₙ₋₁) within Z frame
 These chains represent meaning-preserving semantic flows under a given continuity frame Z.  
 
-Objects are chain complexes A₀ → A₁ → A₂ → ...
-representing conceptual transitions (e.g. "she" → "human" → "mammal" | life)
-, which means Morphisms are chain maps that preserve morphic Identity(Z or rupture,which means non-invertibility) (i.e. maps between meaning-change sequences that maintain structural identity)
+Objects are chain complexes A₀ → A₁ → A₂ → ... representing conceptual transitions (e.g. "she" → "human" → "mammal" | life), which means Morphisms are chain maps that preserve morphic Identity(Z or rupture,which means non-invertibility) (i.e. maps between meaning-change sequences that maintain structural identity)
 
 
 ### Mirror Morphism Definition:
@@ -216,20 +216,9 @@ The theory is still evolving, including ongoing work on the self-definability th
 I believe this framework may serve as a conceptual bridge between semantics and philosophical inquiry—especially in areas such as ontology and epistemology—mediated through the structural language of category theory.
 
 
-All codes, figures, and working notes are available here:  
-**[GitHub]** → https://github.com/No-Name-Yet-Exist/Articles/blob/main/README.md  
-(Some parts are not yet translated or well-organized, but I'm gradually working on it.)
-
----
-
-**Note:**  
-I do not have a formal background in category theory. I began exploring these ideas about three weeks ago, with the help of an LLM and a deep curiosity to formalize what I intuitively perceived.  
-This entire trajectory—from initial intuition to structural formulation—is documented openly on Note (Japanese).
-
-
 ### Appendix:
 
-The Definition Of Word
+**The Definition Of Word**</br>
 A word that includes itself or other words is subsumed by a higher-order concept. That concept, in turn, is structurally embedded within the word.
 Therefore, a word is a self-referential structure.
 
@@ -323,4 +312,4 @@ https://code.google.com/archive/p/word2vec/
 ### Reference
 INNA, "Yummy", Global Records, 2023 
 
-This document and all conceptual content therein are © [No Name Yet Exist], 2025. All rights reserved. U  nauthorized reproduction, distribution, or use without explicit permission is prohibited.
+This document and all conceptual content therein are © [No Name Yet Exist], 2025. All rights reserved. Unauthorized reproduction, distribution, or use without explicit permission is prohibited.
