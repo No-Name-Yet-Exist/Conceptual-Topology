@@ -8,11 +8,11 @@ The translation is currently in progress; not all content is available in Englis
 Please refer to the **Index** section for key definitions and core concepts.
 
 
-**Index**
+**Index** </br>
 https://github.com/No-Name-Yet-Exist/Articles/blob/main/Index.md
 
 
-This GitHub is linked with:
+This GitHub is linked with:</br>
 https://note.com/xoreaxeax/n/n3711c1318d0b
 
 
