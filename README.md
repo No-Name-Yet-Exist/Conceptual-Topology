@@ -1,4 +1,4 @@
-# What is Conceptual Topology: 
+# 概念位相論 / Conceptual Topology
 ### Category Theory × Semantics x Philosophy
 Conceptual Topology mainly analyzes how words, concepts, and meanings are structured and transformed, using tools from category theory and vector semantics such as word2vec. 
 
@@ -6,6 +6,7 @@ Conceptual Topology aims to provide a formal structure for meaning itself, bridg
 
 The translation is currently in progress; not all content is available in English yet.
 Please refer to the **Index** section for key definitions and core concepts.
+
 
 **Index**
 https://github.com/No-Name-Yet-Exist/Articles/blob/main/Index.md
@@ -18,25 +19,28 @@ https://note.com/xoreaxeax
 # Commutative diagrams: The Relationship of words in category theory
 
 ### king - man + woman = queen
-This relationship can be expressed as the following semantic morphism diagram
+This relationship can be expressed as the following commutative diagram.
+
+![alt text](https://raw.githubusercontent.com/No-Name-Yet-Exist/Articles/main/conceptual-topology/resources/others/king2quee.png)
 
 ```
-      f
-    K → Q
-    |     \
-  r |       \ g
-    ↓         \
-    M' ——→ W'
-        h
+        f
+    Q ←————— W
+    |        ↑
+  r |        |g
+    ↓        |
+    K —————→ M
+        g
+
 K = king
 Q = queen
-M' = man
-W' = woman
+M = man
+W = woman
 
-r: Differential Morphism（King → Man）
+g: Differential Morphism（King → Man）
 h: Differential Morphism(Man → Woman)
-g: Differential Morphism（Woman → Queen）
-f: Composed Semantic Morphism g ∘ h ∘ r 
+r: Differential Morphism（Woman → Queen）
+f: Composed Semantic Morphism r ∘ h ∘ g 
 ```
 
 ### quasi-natural transformation diagram
@@ -54,12 +58,12 @@ f: Composed Semantic Morphism g ∘ h ∘ r
 
 ```
           
-   girl   ←   puppy  newer + small + specific: axis
-     |         |
-     |        |
-   she    ←   dog        abstraction of all
-      \      /       
-       mammal
+   girl     puppy  newer + small + specific: axis
+     |   　    |
+     |     　  |
+   she   　   dog        abstraction of all
+      \     　/       
+      　mammal
 
 ```
 
@@ -70,9 +74,19 @@ f: Composed Semantic Morphism g ∘ h ∘ r
 
 **baby → girl → she → female → human → ape → mammal → dog → puppy →　baby**
 
-![alt text](https://raw.githubusercontent.com/No-Name-Yet-Exist/Articles/main/conceptual-topology/resources/quasi-communicative-diagram/baby-morphic-circle.png)
-
 ![alt text](https://raw.githubusercontent.com/No-Name-Yet-Exist/Articles/main/conceptual-topology/resources/quasi-communicative-diagram/semantic-circulation-with-arrows-v2.png)
+
+
+```
+      Z = baby
+   girl   ←   puppy  newer + small + specific: axis
+     |         |
+     |      　　|
+   she    　   dog        abstraction of all
+      \      /       
+       mammal
+
+```
 
 
 ```
@@ -122,6 +136,7 @@ g: Referential inversion morphism (Human is him)
 ```
 
 # king - man + woman = queen
+Concepts/meaning can be calculated as monoid, or semantic set as shown below.
 
 ```
 Let C be a concept
