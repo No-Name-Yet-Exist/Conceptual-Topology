@@ -1,5 +1,5 @@
-Title: Meaning Doesn’t Escape. It Moves in Sight:
-A Categorical Framework for Semantic Geometry via Conceptual Topology
+Title: Meaning in Motion: A Semantic Geometry via Conceptual Topology
+A Category-Theoretic Model of Linguistic Structure
 
 # Introduction:
 Natural language exhibits variability, ambiguity, and strong context-dependence, challenging formal semantic modeling. However, through the lens of category theory and Z-frame used in this theory, certain latent regularities emerge. We explore the idea that word meaning is not merely a function of proximity in embedding space, but a topological structure defined by morphic continuity over conceptual anchors, called Z-frames.  
