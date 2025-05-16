@@ -4,9 +4,11 @@ A Categorical Framework for Semantic Geometry via Conceptual Topology
 # Introduction:
 Natural language exhibits variability, ambiguity, and strong context-dependence, challenging formal semantic modeling. However, through the lens of category theory and Z-frame used in this theory, certain latent regularities emerge. We explore the idea that word meaning is not merely a function of proximity in embedding space, but a topological structure defined by morphic continuity over conceptual anchors, called Z-frames.  
 
-Content Note: 
+### Content Note
+This paper engages with metaphorically charged language, including references to bodily and emotional imagery, sourced from cultural texts such as song lyrics. However, all analysis is strictly structural and semantic in nature, focusing on the relational dynamics among lexical items within a category-theoretic framework.
 
-This article engages with metaphorical language, including references to bodily and emotional imagery, drawn from vocabulary present in cultural texts such as song lyrics. The analysis is purely structural and semantic in nature, focusing on how words relate within topological meaning frameworks. No explicit content is discussed or implied, and interpretations do not rely on the literal truth of any term’s usage—consistent with the perspective of category theory, which concerns itself with relational structure, not object-level attributes.
+No literal interpretation of the terms is assumed or necessary. Consistent with the categorical perspective, attention is directed toward morphic relationships and topological coherence, rather than object-level attributes or empirical claims.
+
 
 
 # Semantic Projections and Topological Formalization
@@ -208,13 +210,8 @@ f: Composed Semantic Morphism r ∘ h ∘ g
 ```
 
 # Conclusion
-This geometric coherence suggests an underlying semantic structure in natural language—what I call "semantic geometry through conceptual topology".
-The proposed framework draws on category-theoretic notions such as morphisms, commutativity, and fiber structures, reinterpreted within the context of linguistic meaning. It opens a pathway toward formalizing metaphor, analogy, and poetic logic in a rigorously structured, yet intuitively visualizable way.
-
-The theory is still evolving, including ongoing work on the self-definability theorem, the theorem of void and absence, and potential applications of Conceptual Topology to generative grammar.
-
-I believe this framework may serve as a conceptual bridge between semantics and philosophical inquiry—especially in areas such as ontology and epistemology—mediated through the structural language of category theory.
-
+This geometric coherence reveals an underlying semantic structure in natural language, formally characterized as *semantic geometry through conceptual topology*.
+The proposed framework integrates category-theoretic notions such as morphisms, commutativity, and fiber structures into the modeling of linguistic meaning, enabling a rigorous yet visually tractable formalization of metaphor, analogy, and poetic logic.
 
 ### Appendix:
 
@@ -268,25 +265,21 @@ import numpy as np
 model_path = ''
 model = KeyedVectors.load_word2vec_format(model_path, binary=True)
 
-# 単語グループ
 words = ["puppy", "dog", "girl", "female", "mammal"]
 
-# ベクトル取得
 vectors = [model[word] for word in words]
 labels = words
 
-# 次元削減（PCA）
 pca = PCA(n_components=2)
 reduced = pca.fit_transform(vectors)
 
-# プロット
 plt.figure(figsize=(10, 6))
 for i, label in enumerate(labels):
     x, y = reduced[i]
     plt.scatter(x, y)
     plt.text(x + 0.01, y + 0.01, label, fontsize=9)
 
-#矢印付加 
+#Add Arrows
 from matplotlib.patches import FancyArrowPatch
 for i in range(len(reduced) - 1):
     start = reduced[i]
