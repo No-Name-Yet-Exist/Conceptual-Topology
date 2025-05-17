@@ -239,6 +239,7 @@ Example: η: girl → puppy | Z = baby
 # Communicative Diagram of Semantics
 
 ![alt text](https://raw.githubusercontent.com/No-Name-Yet-Exist/Articles/main/conceptual-topology/resources/metaphor-sweet-cake/cake-yummy-body-sweet.png)
+(*Lexical data sourced from the song “Yummy”  perfomed by INNA, 2023.*)
 
 ```
 Under Z-frame: sugar
