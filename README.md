@@ -7,10 +7,11 @@ Conceptual Topology aims to provide a formal structure for meaning itself, bridg
 The translation is currently in progress; not all content is available in English yet.
 Please refer to the **Index** section for key definitions and core concepts.
 
+**preprint**
+https://zenodo.org/records/15455079
 
 **Index** </br>
 https://github.com/No-Name-Yet-Exist/Articles/blob/main/Index.md
-
 
 This GitHub is linked with:</br>
 https://note.com/xoreaxeax/n/n3711c1318d0b
@@ -24,10 +25,10 @@ This relationship can be expressed as the following commutative diagram.
 ![alt text](https://raw.githubusercontent.com/No-Name-Yet-Exist/Articles/main/conceptual-topology/resources/others/king2quee.png)
 
 ```
-        f
+        r
     Q ←————— W
     |        ↑
-  r |        |g
+  f |        |h
     ↓        |
     K —————→ M
         g
@@ -47,14 +48,14 @@ f: Composed Semantic Morphism r ∘ h ∘ g
 
 **Quasi-Natural Transformation of Meaning Systems**
 ```
-    η: Dᵢ ⇒ Dᵢ₊₁  | Y // Y = codomain
-    η_X ∘ Dᵢ({f₁ | Z₁, ..., fₙ | Zₙ}) ≈ Dᵢ₊₁({f′₁, ..., f′ₙ}) ∘ η_Y | Y
-    for all fᵢ: Xᵢ → Yᵢ | Zᵢ in Dᵢ,  
-    where f′ᵢ: η_X(Xᵢ) → η_Y(Yᵢ) | Zᵢ is the image morphism under meaning translation
+  η: Dᵢ ⇒ Dᵢ₊₁  | CD (CD = codomain)
+  η_X ∘ Dᵢ({f₁ | Z₁, ..., fₙ | Zₙ}) ≈ Dᵢ₊₁({f′₁ | Z₁, ..., f′ₙ | Zₙ}) ∘ η_Y | CD
+  for all fⱼ: Xⱼ → Yⱼ | Zⱼ ∈ Dᵢ,  
+  where f′ⱼ: η_X(Xⱼ) → η_Y(Yⱼ) | Zⱼ
 
-    Then: η is a quasi-natural transformation under Z-frame
-    i.e. η ∈ Mor(C) where C is the contextual meaning category
-```
+  Then, η is said to be a quasi-natural transformation under the Z-frame
+  i.e. η ∈ Mor(C) where C is the contextual meaning category
+  Example: η: girl → puppy | Z = baby
 
 ```
           
@@ -79,9 +80,9 @@ f: Composed Semantic Morphism r ∘ h ∘ g
 
 ```
       Z = baby
-   girl   ←   puppy  newer + small + specific: axis
+   girl   ←   puppy  young + small + specific: axis
      |         |
-     |      　　|
+     |      　 |
    she    　   dog        abstraction of all
       \      /       
        mammal
@@ -190,8 +191,8 @@ Therefore, a word is a self-referential structure.
 ```
 // A concept is a structure of oppositional differences
 Let C be a concept //e.g. black
-Let OC be the opposite concept //e.g. white
-C = {−OC₁, −OC₂, ..., −OCₙ} 
+//OC be the opposite concept or not relative concept (e.g., white, not pink)
+C = {−OC₁, −OC₂, ..., −OCₙ} // Yoneda's perspective × Structuralism
 
 // A word is a concept, and belongs to the category of words
 word ≅ C and Ob(Word) ∋ word
