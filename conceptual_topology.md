@@ -409,10 +409,7 @@ This theory, named 概念位相論 or Conceptual Topoloy, was proposed by **No N
 GitHub: https://github.com/No-Name-Yet-Exist/Conceptual-Topology<br/>
 Note: https://note.com/xoreaxeax/n/n3711c1318d0b
 
-Author Verification(sha-256 generated 2025-05-06):<br/>
-verification:  a1c605499b0b1833db330db066131448793009aeafe3f17ba3f87a3a3a7910da  <br/> 
-origin: dd3b3129b3b9ca51227083b2515969cc00967fe7e614c19b9a02486eade42e1b
+This is Version: 1.0
 
-This is Version: α1.1
-
-This document and all conceptual content therein are © [No Name Yet Exist], 2025. All rights reserved. Unauthorized reproduction, distribution, or use without explicit permission is prohibited.
+This document and all conceptual content therein are © [No Name Yet Exist], 2025. 
+All rights reserved. Unauthorized reproduction, distribution, or use without explicit permission is prohibited.
