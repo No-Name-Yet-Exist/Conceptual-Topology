@@ -81,7 +81,7 @@ https://github.com/No-Name-Yet-Exist/Articles/blob/main/conceptual-topology/theo
 # Principles
 
 ### Morphic Chain
-Morphic Chain is a categorical-geometric structure modeling the evolution, preservation, and transformation of conceptual meanings as morphic chains over context or global Z frame
+Morphic Chain is a categorical-geometric structure modeling the evolution, preservation, and transformation of conceptual meanings as morphic chains over context or global Z frame</br>
 https://github.com/No-Name-Yet-Exist/Articles/blob/main/conceptual-topology/principles/morphic-chain.md
 
 </br>
