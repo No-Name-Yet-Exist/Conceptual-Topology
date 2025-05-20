@@ -1,6 +1,7 @@
 # Index
 
 ### What is Conceptual Topology: Introduction to CT
+Title: Meaning in Motion: A Category-Theoretic Framework for Conceptual Topology
 https://github.com/No-Name-Yet-Exist/Articles/blob/main/conceptual_topology.md
 
 </br>
