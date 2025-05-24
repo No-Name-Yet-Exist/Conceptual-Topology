@@ -15,6 +15,8 @@ Yes is Yes.
 f: Yes → Yes
 ∴id_f
 ```
+![alt text](https://github.com/No-Name-Yet-Exist/Conceptual-Topology/blob/main/releases/resources/meaning-circulates/yes-is-yes.png?raw=true)
+
 
 **Homeormophic Relation**
 *This is a dog* *This* points a dog, which works as a morphism of pointed object to conceptual object called dog. This is observed liear structure in PCA.
@@ -26,6 +28,9 @@ g: this → this
 ∴id_g
 ```
 
+![alt text](https://github.com/No-Name-Yet-Exist/Conceptual-Topology/blob/main/releases/resources/meaning-circulates/this-is-dog.png?raw=true)
+
+
 **Communicative Triangle: This dog is beatiful**
 This sentence has a triangular communicative structure.
 
@@ -36,6 +41,7 @@ This  - dog
    \    /
   beatiful
 ```
+![alt text](https://github.com/No-Name-Yet-Exist/Conceptual-Topology/blob/main/releases/resources/meaning-circulates/this-dog-beautiful.png?raw=true)
 
 This sentence can be simplified to homeomorphic relation by dropping *dog*.
 This manipulation is supported by the firm grounding of two-way relation of sematic core.
@@ -48,16 +54,17 @@ g: this → this
 ∴id_g
 ```
 
-Sentence is composed with three word relation, thus with a long tale is treated as an additive structure.
+Sentence is composed with three word relation, thus *so much* is treated as an additive structure.
 
-She loves me so much.
+He loves me so much.
 ```
- She - loves - me
-         |    /
-        so much
+ He - loves - me
+  \         /
+    so much
 ```
 
 This structure is also observable in PCA.
+![alt text](https://github.com/No-Name-Yet-Exist/Conceptual-Topology/blob/main/releases/resources/meaning-circulates/he-loves-me-so-much.png?raw=true)
 
 
 
@@ -123,6 +130,9 @@ this sentence into 2 categories: she has dog and with long tale. As the result, 
 Note: Two PCA are artificially combined for visualization
 ```
 
+![alt text](https://github.com/No-Name-Yet-Exist/Conceptual-Topology/blob/main/releases/resources/meaning-circulates/she-has-dog.png?raw=true)
+
+![alt text](https://github.com/No-Name-Yet-Exist/Conceptual-Topology/blob/main/releases/resources/meaning-circulates/with-long-tale.png?raw=true)
 
 ```
 C₁: f: She → has 
@@ -135,9 +145,6 @@ C₃: g: tail → long
 
 We formalize this as:
 A → B → C + α
-
-
-
 
 
 It was not correct that I told you before.
