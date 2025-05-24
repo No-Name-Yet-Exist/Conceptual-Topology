@@ -1,25 +1,34 @@
 # Meaning Circulates —  Generative Semantics via Conceptual Topology
 
 ### Introduction
-Sentences have circulating structure in its meaning. We explore how sentences are structured using Principle Component Analisys (PCA)and Conceptual Topology, which is category-theoretic framework for semantics.
+Language exhibits a circulating structure in its semantics.
+This study explores how sentences are organized and interpreted by combining Principal Component Analysis (PCA) with Conceptual Topology—a category-theoretic framework for modeling semantic flow and structural meaning.
+
+Reference:
+**Meaning in Motion: A Category-Theoretic Framework for Conceptual Topology**
+https://zenodo.org/records/15455079
 
 
 # Semantic Cirulation
-By applying Conceptual Topology, we can visualize how words are combined and structured.
+By applying Conceptual Topology, we can visualize how words are combined and structure meaning.
 
-**Identity Morphism**
-*Yes* is one word sentence. This satisfies with the following structure.
-This is observed in PCA as a dot
+### Identity Morphism
+The sentence Yes is a minimal linguistic unit—a single-word sentence.
+It exhibits a semantic identity, represented by the following morphism:
 ```
 Yes is Yes.
 f: Yes → Yes
 ∴id_f
 ```
 ![alt text](https://github.com/No-Name-Yet-Exist/Conceptual-Topology/blob/main/releases/resources/meaning-circulates/yes-is-yes.png?raw=true)
+In PCA space, this is observed as a point—an unmoving semantic center.
 
 
-**Homeormophic Relation**
-*This is a dog* *This* points a dog, which works as a morphism of pointed object to conceptual object called dog. This is observed liear structure in PCA.
+### Homeomorphic Relation
+
+The sentence This is a dog expresses a basic referential mapping.
+Here, This acts as a morphism from a real-world object, projected onto a conceptual object, dog—establishing a semantic mapping from the observed to the conceptual.
+
 ```
 f: This → dog  // This is a dog
 f-1: dog → this  //The dog is this
@@ -29,10 +38,13 @@ g: this → this
 ```
 
 ![alt text](https://github.com/No-Name-Yet-Exist/Conceptual-Topology/blob/main/releases/resources/meaning-circulates/this-is-dog.png?raw=true)
+In PCA space, this is typically observed as a linear alignment—
+a directed semantic path between referent and concept,
+with identity preserved via mutual reversibility.
 
 
-**Communicative Triangle: This dog is beatiful**
-This sentence has a triangular communicative structure.
+### Communicative Triangle
+**This dog is beatiful** - This sentence exhibits a triangular communicative structure, where three elements interact to produce a unified semantic impression.
 
 ```
 This dog is beatiful
@@ -43,8 +55,12 @@ This  - dog
 ```
 ![alt text](https://github.com/No-Name-Yet-Exist/Conceptual-Topology/blob/main/releases/resources/meaning-circulates/this-dog-beautiful.png?raw=true)
 
-This sentence can be simplified to homeomorphic relation by dropping *dog*.
-This manipulation is supported by the firm grounding of two-way relation of sematic core.
+Here, This and dog form a composite subject, both pointing toward and being qualified by beautiful.
+The triangle reflects a semantic circuit—a three-point relational topology—where reference (This), substance (dog), and evaluation (beautiful) converge into a stable communicative unit.
+
+
+This sentence can be reduced to a homeomorphic relation by omitting dog.
+This reduction is semantically valid, grounded in the bidirectional relation between the referent (this) and the predicate (beautiful), forming a minimal semantic core.
 ```
 this is beatiful
 
@@ -54,23 +70,32 @@ g: this → this
 ∴id_g
 ```
 
-Sentence is composed with three word relation, thus *so much* is treated as an additive structure.
 
-He loves me so much.
+###  Additive Structure
+This sentence is composed of a core three-word relational structure, with so much functioning as an additive semantic extension.
+
+**He loves me so much.**
 ```
  He - loves - me
   \         /
     so much
 ```
 
-This structure is also observable in PCA.
 ![alt text](https://github.com/No-Name-Yet-Exist/Conceptual-Topology/blob/main/releases/resources/meaning-circulates/he-loves-me-so-much.png?raw=true)
 
+From this PCA visualization, we observe that *love* mediates between *he* and *me*, forming a semantic anchor.
+The intensifier so much extends this core structure without disrupting its internal identity.
+
+We can formalize this as:
+```
+(λx. so much(x)) (he → me | love)
+```
+This expression represents a triadic relation between *he* and *me*, mediated by *love*, and further intensified by the function *so_much* —
+an external semantic modifier that amplifies the emotional vector of the relation,
+without altering its underlying commutative structure.
 
 
-From this PCA image, we can observe love mediates he and me, thus we formalize this relation as follows.
-he → me | love
-
+# Remapping Generative Grammar
 他動詞はA verb BというFunctor性、写像性を内包する概念。
 
 
