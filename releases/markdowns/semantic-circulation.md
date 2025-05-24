@@ -1,6 +1,6 @@
 # Meaning Circulates —  Generative Semantics via Conceptual Topology
 
-### Introduction
+# Introduction
 Language exhibits a circulating structure in its semantics.
 This study explores how sentences are organized and interpreted by combining Principal Component Analysis (PCA) with Conceptual Topology—a category-theoretic framework for modeling semantic flow and structural meaning.
 
@@ -96,24 +96,25 @@ without altering its underlying commutative structure.
 
 
 # Remapping Generative Grammar
-他動詞はA verb BというFunctor性、写像性を内包する概念。
+We reinterpret Chomsky’s Generative Grammar framework through the lens of Conceptual Topology, to reveal how syntactic form is sustained through underlying semantic continuity.
 
 
-これら知識を合わせるとチョムスキーによる生成文法を以下のように書き換えることができる
+Let us consider the sentence:
 
-She has a dog with a long tale.
-上記文章を樹形図に書き直すと以下のとおりです。
+*She has a dog with a long tail.*
+
+We begin by transcribing this into a standard syntactic tree:
 
 ```
 S
-├── NP (主語)
+├── NP (subject)
 │   └── PRP: She
-├── VP (述語)
+├── VP (predicate)
 │   ├── V: has
-│   └── NP (目的語)
+│   └── NP (object)
 │       ├── Det: a
 │       ├── N: dog
-│       └── PP (前置詞句)
+│       └── PP (prepositional phrase)
 │           ├── P: with
 │           └── NP
 │               ├── Det: a
@@ -121,28 +122,61 @@ S
 │               └── N: tail
 ```
 
-She と has は同階層です。位相論的に考えればshe と has は 連続的関係、もしくは写像関係にあります。 保存される構造は動作主体です。
+### From Tree to Topology
 
-動作主体 → 動作主体が動作する
+In traditional generative grammar, *She* and *has* are placed at parallel syntactic branches.
+However, from a topological perspective, they form a continuous relation—or more precisely, a semantic morphism—preserving the role of the agent across the conceptual space.
 
-上記写像関係は一見わかりにくいですが、スペイン語で顕著です。
-Tiene un perreo con cola larga.
-(She) has a dog with a tale long.
+In this mapping:
+    She → has expresses the activation of agency
+    The morphism preserves subject continuity, even as the syntactic structure branches
 
-動作主体が省略され動詞に同化しています。つまりHomeomorphismとして動作主体が動詞に埋め込まれているか、isomorphicとして扱われています。（恐らく動作主体の区別がついているのでisomorphic）
+Thus, we begin to reinterpret syntactic hierarchy as semantic flow,
+where morphisms carry roles, and identity is preserved not through position but through structural invariance.
 
-２階層目はa dog
-３階層目は with
-４階層目はa long tale
+This mapping relation may not be immediately evident in English,
+but becomes more apparent in Spanish:
 
-犬は尻尾では無いのでwithがFunctor として写像されています。（犬の一部としての尻尾）
+**Tiene un perro con cola larga.**  
+*→ (She) has a dog with a long tail.*
+
+Here, the agent (she) is omitted and absorbed into the verb *tiene*.
+In this case, the agent is either:
+
+    homeomorphically embedded within the verb (semantic continuity is preserved through structural integration), or
+
+    treated as isomorphic to the verb phrase, assuming the agent role is still distinguishable through context.
+
+The latter interpretation is more likely, since Spanish maintains clear subject-verb agreement, indicating that the agent is not erased, but structurally mirrored.
+
+### Functorial Interpretation of Prepositions
+
+In the syntactic structure of the sentence:
+
+*She has a dog with a long tail.*
+
+The second hierarchical level is a dog,
+the third is the preposition with,
+and the fourth is a long tail.
+
+From a topological and categorical perspective, *with* acts not merely as a preposition,
+but as a Functor that maps from the conceptual object *dog* to its associated attribute tail.
+
+We can formalize this as:
+```
 F_with: Dog → a long tale
+```
 
-概念位相論的に書き直すと以下のとおりです。
+In PCA space, the full sentence She has a dog with a long tail does not appear as a single coherent structure.
+To clarify its internal semantic relations, we divide the sentence into two conceptual components:
 
+    (1) she has a dog
 
-In PCA, the structure of *she has a dog with a long tale* is not visible, so we divided 
-this sentence into 2 categories: she has dog and with long tale. As the result, this visualized "she has dog has" a communicative structure as we expected and with mediated the morphic relation between long and tale from dog
+    (2) with a long tail
+
+As a result, the first segment—she has a dog—exhibits a communicative triangular structure,
+while the second segment—with a long tail—reveals how with functions as a Functor
+mediating the morphic relation between long and tail, and indirectly linking them back to dog.
 
 ```         
                          tale
@@ -152,25 +186,134 @@ this sentence into 2 categories: she has dog and with long tale. As the result, 
    \    /                \ |
      Has                  long
 
-Note: Two PCA are artificially combined for visualization
+Note: The two PCA spaces were artificially merged for this visualization.
 ```
 
 ![alt text](https://github.com/No-Name-Yet-Exist/Conceptual-Topology/blob/main/releases/resources/meaning-circulates/she-has-dog.png?raw=true)
 
 ![alt text](https://github.com/No-Name-Yet-Exist/Conceptual-Topology/blob/main/releases/resources/meaning-circulates/with-long-tale.png?raw=true)
 
-```
-C₁: f: She → has 
-             / F // she relates to a dog
-C₂: a dog ←/
-     ↓ F_with //what kind of dog
-C₃: g: tail → long
+
+### Remapping the Syntactic Tree into Conceptual Topology Semantic Flow
+
+We reinterpret the syntactic tree structure of the sentence
+*She has a dog with a long tail*
+as a Conceptual Topology semantic flow map, where morphisms reflect meaning-preserving relations.
 
 ```
+C₁:    She → has 
+         \   /        // she relates to a dog
+          dog 
+        
+    f: She → Dog
+              ↓ F_with  // what kind of dog?
+C₂:   g: long → tail
+```
+Note: There is an interpretable structure where g ∈ Fib(F_with) —
+that is, the modifier long → tail exists within the fiber over the functor F_with.
 
-We formalize this as:
-A → B → C + α
+### Functorial Role of Transitive verb
+A transitive verb functions not only as a morphism but often as a functor—mapping between conceptual domains.
 
+Consider the verb *give*, which operates as a transformation from an implied subject to a receiver of possession.
+
+In Japanese, this becomes even clearer:
+
+ねえ、それ、ちょうだい。
+(Hey, give [that] to me.)
+
+Although the subject is omitted, the request enacts a functorial structure
+in which possession is transferred or requested across conceptual roles.
+
+```
+   [それ]     ちょうだい     
+     |          |
+私に ← Functor ← 主語
+```
+
+Rewritten in English alignment:
+```
+   [That]         Give     
+     |             |
+  Me ← Functor ← Subject
+```
+The preserved structure is the ownership relationship directed toward the speaker.
+
+We may formalize this functorial action as:
+```
+f: Owner → Owned ∈ Category A, B  
+F: A → B
+```
+Where F maps ownership structure from the domain (A) to the codomain (B),
+reflecting how possession shifts or is preserved in the linguistic operation.
+
+
+### Reconciling Functorial and Morphic Interpretations in Conceptual Topology
+
+In Conceptual Topology, treating give as a functor and love as a morphism may appear inconsistent at first glance. However, this distinction reflects not a contradiction, but a difference in structural hierarchy.
+
+**Semantic Function of love: Morphism**
+
+In sentences such as He loves me or She has a dog,
+the verb denotes a direct, unidirectional conceptual relation:
+
+```
+f: he → me | love
+g: she → dog | have
+```
+These represent basic morphisms—arrows preserving semantic identity within a single conceptual frame, typically between two arguments in a static structure.
+
+
+**Semantic Function of give: Functor**
+
+In contrast to simple binary relations, the verb give implies a semantic transformation—
+a dynamic restructuring of conceptual roles across participants.
+
+Specifically, it reorganizes a triadic structure:
+
+    subject → object → indirect object
+    i.e., giver → thing → receiver
+
+This transformation can be captured functorially:
+
+```
+f: owner → owned ∈ A, B
+F: A → B | owned object
+
+Where:
+    A = conceptual domain of giver
+    B = domain of receiver
+    F maps ownership structures from one domain to another
+```
+
+Unlike morphisms, which represent direct semantic connections,
+this functorial action transfers not only referents but semantic roles.
+It preserves internal structure while shifting possessive alignment across conceptual domains.
+
+**Example: I show you this book**
+
+We can model the sentence:
+```
+I show you this book
+I → book → you
+```
+
+**Morphic Layer**
+```
+f: person → book | sight
+This represents a direct semantic action.
+the person is semantically linked to the book through the act of perception.
+```
+
+**Functorial Layer**
+```
+F: A → B | sight
+Where:
+    A = conceptual domain of the subject (I)
+    B = perceptual domain of the receiver (you)
+    F = a functor that maps objects from the subject’s domain
+        into the perceptual space of the recipient via sight
+```
 
 It was not correct that I told you before.
 What I told you  before
