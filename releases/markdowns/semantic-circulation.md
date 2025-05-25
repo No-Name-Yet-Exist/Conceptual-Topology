@@ -59,7 +59,7 @@ with identity preserved via mutual reversibility.
 <div style="page-break-after: always;"></div>
 
 ### Communicative Triangle
-**This dog is beatiful** - This sentence exhibits a triangular communicative structure, where three elements interact to produce a unified semantic impression.
+**This dog is beatiful** - This sentence exhibits a triangular communicative structure, where three elements interact to produce a unified semantic coherence.
 
 ```
 This dog is beatiful
@@ -79,10 +79,10 @@ This reduction is semantically valid, grounded in the bidirectional relation bet
 ```
 this is beatiful
 
-f: this → beatiful
-f-1: beatiful → this
-g: this → this
-∴id_g
+f: this → beautiful
+f⁻¹: beautiful → this 
+g: this → this = f⁻¹ ∘ f
+∴ g = id_this
 ```
 
 <div style="page-break-after: always;"></div>
@@ -100,7 +100,7 @@ This sentence is composed of a core three-word relational structure, with so muc
 ![alt text](https://github.com/No-Name-Yet-Exist/Conceptual-Topology/blob/main/releases/resources/meaning-circulates/he-loves-me-so-much.png?raw=true)
 
 From this PCA visualization, we observe that *love* mediates between *he* and *me*, forming a semantic anchor.
-The intensifier so much extends this core structure without disrupting its internal identity.
+The intensifier so much extends this core structure without disrupting its internal coherence.
 
 We can formalize this as:
 ```
@@ -195,7 +195,7 @@ To clarify its internal semantic relations, we divide the sentence into two conc
 
     (1) she has a dog
 
-    (2) with a long tail
+    (2) dog with a long tail
 
 As a result, the first segment—she has a dog—exhibits a communicative triangular structure,
 while the second segment—with a long tail—reveals how with functions as a Functor
@@ -246,24 +246,23 @@ Consider the verb *give*, which operates as a transformation from an implied sub
 In Japanese, this becomes even clearer:
 
 ねえ、それ、ちょうだい。
-(Hey, give [that] to me.)
+(Hey, give [that] [to me].)
 
-Although the subject is omitted, the request enacts a functorial structure
-in which possession is transferred or requested across conceptual roles.
+Although the subject, object and indirect object are omitted, the request enacts a functorial structure in which possession is transferred or requested across conceptual roles.
 
 ```
-   [それ]     ちょうだい     
-     |          |
-私に ← Functor ← 主語
+    [それ]     ちょうだい     
+      |          |
+[私に] ← Functor ← [主語]
 ```
 
 Rewritten in English alignment:
 ```
    [That]         Give     
      |             |
-  Me ← Functor ← Subject
+ [Me] ← Functor ← [Subject]
 ```
-The preserved structure is the ownership relationship directed toward the speaker.
+The preserved structure is the ownership relationship directed toward the listener.
 
 We may formalize this functorial action as:
 ```
@@ -410,7 +409,7 @@ A  —  not
  \   /                 
    B
 ```
-Here, A and B are semantic nodes—typically subject and predicate—interrupted by a morphic rupture introduced by *not*. Depending on the sentence structure, either the subject (A) or the copular verb (is, was, etc.) may be semantically expelled from the semantic circulation, as observed in PCA analysis. This supports our hypothesis that syntactic negation (e.g., "not") introduces a non-projectable morphic path, fragmenting otherwise continuous semantic flow.
+Here, A and B are semantic nodes—typically subject and predicate—interrupted by a morphic rupture introduced by *not*. Depending on the sentence structure, either the subject or the copular verb (is, was, etc.) may be semantically expelled from the semantic circulation, as observed in PCA analysis. This supports our hypothesis that syntactic negation (e.g., "not") introduces a non-projectable morphic path, fragmenting otherwise continuous semantic flow.
 
 #### Negation as a Morphic Disruption Operator
 
@@ -443,27 +442,27 @@ We have shown that certain linguistic constructions exhibit commutative diagram 
 This work uses a minimal symbolic language to describe semantic morphisms and structural ruptures within conceptual topology. The core operators are:
 
 
-**→: Semantic Morphism**
+**→: Semantic Morphism** </br>
 Represents a composable directional relation between semantic nodes (subject → predicate, etc.)
 
-**↛: 	Morphic Rupture**
+**↛: 	Morphic Rupture** </br>
 Denotes a non-projectable path—semantic discontinuity induced by syntactic negation or structural disruption
 
-**| Z: Z frame**
+**| Z: Z frame** </br>
 Specifies a mediating component (Z) within a semantic relation.
 The Z frame clarifies the structure of meaning projection and its intermediating terms.
 
-**λx:	Semantic Operator**
+**λx:	Semantic Operator** </br>
 A higher-order modifier applied to semantic expressions (e.g., negation or intensification)
-`	`	Mediated by
 
-**(λx. OP(x)) (A → B): Functional Form**
+**(λx. OP(x)) (A → B): Functional Form** </br>
 Formalization of meaning-modifying operations acting on morphic paths
 
-**Examples**
+**Examples** </br>
+```
 (λx. Not(x)) (A ↛ B | Z)     →     Rupture under Z frame
 (λx. so_much(x)) (A → B | Z) →     Preservation & amplification under Z frame
-
+```
 
 <div style="page-break-after: always;"></div>
 
@@ -529,6 +528,6 @@ This theory, named 概念位相論 or Conceptual Topoloy, was proposed by **No N
 GitHub: https://github.com/No-Name-Yet-Exist/Conceptual-Topology<br/>
 Note: https://note.com/xoreaxeax/n/n3711c1318d0b
 
-This is Version: 1.1 GitVersion
+This is Version: 1.2
 
 This document and all conceptual content therein are © [No Name Yet Exist], 2025. All rights reserved. Unauthorized reproduction, distribution, or use without explicit permission is prohibited.
