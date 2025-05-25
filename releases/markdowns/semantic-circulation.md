@@ -1,5 +1,10 @@
 # Meaning Circulates —  Generative Semantics via Conceptual Topology
 
+Written by No Name Yet Exist </br>
+Contact: Written Below
+
+</br>
+
 # Introduction
 Language exhibits a circulating structure in its semantics.
 This study explores how sentences are organized and interpreted by combining Principal Component Analysis (PCA) with Conceptual Topology—a category-theoretic framework for modeling semantic flow and structural meaning.
@@ -8,6 +13,13 @@ Reference:
 **Meaning in Motion: A Category-Theoretic Framework for Conceptual Topology**
 https://zenodo.org/records/15455079
 
+</br>
+
+**She has a dog**
+![alt text](https://github.com/No-Name-Yet-Exist/Conceptual-Topology/blob/main/releases/resources/meaning-circulates/she-has-dog.png?raw=true)
+
+
+<div style="page-break-after: always;"></div>
 
 # Semantic Cirulation
 By applying Conceptual Topology, we can visualize how words are combined and structure meaning.
@@ -20,9 +32,11 @@ Yes is Yes.
 f: Yes → Yes
 ∴id_f
 ```
-![alt text](https://github.com/No-Name-Yet-Exist/Conceptual-Topology/blob/main/releases/resources/meaning-circulates/yes-is-yes.png?raw=true)
-In PCA space, this is observed as a point—an unmoving semantic center.
 
+In PCA space, this is observed as a point—an unmoving semantic center.
+![alt text](https://github.com/No-Name-Yet-Exist/Conceptual-Topology/blob/main/releases/resources/meaning-circulates/yes-is-yes.png?raw=true)
+
+<div style="page-break-after: always;"></div>
 
 ### Homeomorphic Relation
 
@@ -42,6 +56,7 @@ In PCA space, this is typically observed as a linear alignment—
 a directed semantic path between referent and concept,
 with identity preserved via mutual reversibility.
 
+<div style="page-break-after: always;"></div>
 
 ### Communicative Triangle
 **This dog is beatiful** - This sentence exhibits a triangular communicative structure, where three elements interact to produce a unified semantic impression.
@@ -70,6 +85,7 @@ g: this → this
 ∴id_g
 ```
 
+<div style="page-break-after: always;"></div>
 
 ###  Additive Structure
 This sentence is composed of a core three-word relational structure, with so much functioning as an additive semantic extension.
@@ -94,6 +110,7 @@ This expression represents a triadic relation between *he* and *me*, mediated by
 an external semantic modifier that amplifies the emotional vector of the relation,
 without altering its underlying commutative structure.
 
+<div style="page-break-after: always;"></div>
 
 # Remapping Generative Grammar
 We reinterpret Chomsky’s Generative Grammar framework through the lens of Conceptual Topology, to reveal how syntactic form is sustained through underlying semantic continuity.
@@ -140,14 +157,18 @@ but becomes more apparent in Spanish:
 **Tiene un perro con cola larga.**  
 *→ (She) has a dog with a long tail.*
 
+<div style="page-break-after: always;"></div>
+
 Here, the agent (she) is omitted and absorbed into the verb *tiene*.
 In this case, the agent is either:
 
-    homeomorphically embedded within the verb (semantic continuity is preserved through structural integration), or
+- homeomorphically embedded within the verb (semantic continuity is preserved through structural integration), or
 
-    treated as isomorphic to the verb phrase, assuming the agent role is still distinguishable through context.
+- treated as isomorphic to the verb phrase, assuming the agent role is still distinguishable through context.
 
 The latter interpretation is more likely, since Spanish maintains clear subject-verb agreement, indicating that the agent is not erased, but structurally mirrored.
+
+</br>
 
 ### Functorial Interpretation of Prepositions
 
@@ -166,6 +187,8 @@ We can formalize this as:
 ```
 F_with: Dog → a long tale
 ```
+
+<div style="page-break-after: always;"></div>
 
 In PCA space, the full sentence She has a dog with a long tail does not appear as a single coherent structure.
 To clarify its internal semantic relations, we divide the sentence into two conceptual components:
@@ -193,6 +216,7 @@ Note: The two PCA spaces were artificially merged for this visualization.
 
 ![alt text](https://github.com/No-Name-Yet-Exist/Conceptual-Topology/blob/main/releases/resources/meaning-circulates/with-long-tale.png?raw=true)
 
+</br>
 
 ### Remapping the Syntactic Tree into Conceptual Topology Semantic Flow
 
@@ -211,6 +235,8 @@ C₂:   g: long → tail
 ```
 Note: There is an interpretable structure where g ∈ Fib(F_with) —
 that is, the modifier long → tail exists within the fiber over the functor F_with.
+
+<div style="page-break-after: always;"></div>
 
 ### Functorial Role of Transitive verb
 A transitive verb functions not only as a morphism but often as a functor—mapping between conceptual domains.
@@ -247,10 +273,13 @@ F: A → B
 Where F maps ownership structure from the domain (A) to the codomain (B),
 reflecting how possession shifts or is preserved in the linguistic operation.
 
+</br>
 
 ### Reconciling Functorial and Morphic Interpretations in Conceptual Topology
 
 In Conceptual Topology, treating give as a functor and love as a morphism may appear inconsistent at first glance. However, this distinction reflects not a contradiction, but a difference in structural hierarchy.
+
+<div style="page-break-after: always;"></div>
 
 **Semantic Function of love: Morphism**
 
@@ -298,6 +327,8 @@ I show you this book
 I → book → you
 ```
 
+<div style="page-break-after: always;"></div>
+
 **Morphic Layer**
 ```
 f: person → book | sight
@@ -341,18 +372,16 @@ This - correct
 In the PCA projection, we observe that *is* is semantically expelled—
 it does not remain within the core meaning structure.
 
-Graphically, the configuration approximates:
-```
-This  -  Not 
-   \    /                
-     correct  
-```
+<div style="page-break-after: always;"></div>
+
+This suggests that negation introduces a structural rupture that disconnects the morphic flow of meaning, rather than simply inverting or modifying it. It breaks the projectional continuity—turning the semantic path non-compositional.
 
 ![alt text](https://github.com/No-Name-Yet-Exist/Conceptual-Topology/blob/main/releases/resources/meaning-circulates/this-is-not-right.png?raw=true)
 
 ![alt text](https://github.com/No-Name-Yet-Exist/Conceptual-Topology/blob/main/releases/resources/meaning-circulates/this-is-not-correct.png?raw=true)
 
-This suggests that negation introduces a structural rupture that disconnects the morphic flow of meaning, rather than simply inverting or modifying it. It breaks the projectional continuity—turning the semantic path non-compositional.
+
+<div style="page-break-after: always;"></div>
 
 ### Lexicalization of Negation Restores Commutativity
 When *not correct* is replaced by a semantically complete lexical item such as *wrong*,
@@ -360,6 +389,7 @@ the ruptured morphic structure regains a projectional path, enabling commutativi
 
 ![alt text](https://github.com/No-Name-Yet-Exist/Conceptual-Topology/blob/main/releases/resources/meaning-circulates/this-is-wrong.png?raw=true)
 
+<div style="page-break-after: always;"></div>
 
 ### Semantic Rupture Persists in Complex Structures
 This negation model extends beyond simple declaratives and remains valid in sentences with higher syntactic complexity.
@@ -377,11 +407,29 @@ The rupture not only displaces the negated verb phrase but also weakens or disru
 We formalize the observed semantic geometry of negation as follows:
 ```
 A  —  not  
-    \   /                 
-    B
+ \   /                 
+   B
 ```
 Here, A and B are semantic nodes—typically subject and predicate—interrupted by a morphic rupture introduced by *not*. Depending on the sentence structure, either the subject (A) or the copular verb (is, was, etc.) may be semantically expelled from the semantic circulation, as observed in PCA analysis. This supports our hypothesis that syntactic negation (e.g., "not") introduces a non-projectable morphic path, fragmenting otherwise continuous semantic flow.
 
+#### Negation as a Morphic Disruption Operator
+
+We can formalize the disruptive behavior of syntactic negation:
+
+**This is not correct**
+```
+(λx. Not(x)) (this → correct)
+```
+
+**He does not love me.**
+```
+(λx. Not(x)) (he ↛ me | love)
+```
+
+Here, Not acts as a rupture-inducing operator applied to a well-formed semantic projection from *This* to *correct*. Unlike intensifiers such as so_much, which scale the meaning while preserving structural continuity, Not destabilizes the morphic path, introducing non-compositionality into the system.
+
+
+<div style="page-break-after: always;"></div>
 
 # Conclusion
 We have shown that certain linguistic constructions exhibit commutative diagram structures, revealing an underlying semantic circulation in natural language.　Furthermore, we found that negation disrupts commutativity by introducing non-projectable morphic paths within these structures.　However, this disruption can be resolved when the negation is lexicalized into a single semantic unit—thereby restoring the composability and structural continuity of the semantic flow.
