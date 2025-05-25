@@ -315,12 +315,13 @@ Where:
         into the perceptual space of the recipient via sight
 ```
 
-It was not correct that I told you before.
-What I told you  before
+### Not as a Signal of Non-Projectional Morphic Path
+We hypothesize that negation functions as a signal of a non-projectional morphic path.
+In this framework, we define rupture (R) as a morphic discontinuity—where semantic projection breaks.
 
-The thing - I told you - before 
-(過去射としてbeforeとは写像関係 過去射は観測済み)
+*It was not correct that I told you before.*
 
+Here, the negation not ruptures the semantic path between *It* and *correct*.
 ```
    R
 It - correct
@@ -328,25 +329,62 @@ It - correct
 What I told you you before
 ```
 
-I told you のyouをどう見るか
+
+We can express this with a simplified schematic:
+
+*This is not correct*
+```
+     R
+This - correct
 
 ```
-        R
-I - told - you
-```
-Notや間接目的語はRuptureとして解釈できるのでは？
-要はNotは循環、写像不可能性を意味する: It - correct - what told youは非写像関係
+In the PCA projection, we observe that *is* is semantically expelled—
+it does not remain within the core meaning structure.
 
-Not right ≠ correct //写像構造の破綻を示す
-だから、Not right = wrong //写像不可能性をbridgeする概念を立てると可換になる
-
+Graphically, the configuration approximates:
 ```
-It - wrong
- |     | 
-What I told you you before
+This  -  Not 
+   \    /                
+     correct  
 ```
 
-間接目的語は非可逆性を意味する: youからIに戻れない Iからyouには動作の連続性として変形可能
+![alt text](https://github.com/No-Name-Yet-Exist/Conceptual-Topology/blob/main/releases/resources/meaning-circulates/this-is-not-right.png?raw=true)
+
+![alt text](https://github.com/No-Name-Yet-Exist/Conceptual-Topology/blob/main/releases/resources/meaning-circulates/this-is-not-correct.png?raw=true)
+
+This suggests that negation introduces a structural rupture that disconnects the morphic flow of meaning, rather than simply inverting or modifying it. It breaks the projectional continuity—turning the semantic path non-compositional.
+
+### Lexicalization of Negation Restores Commutativity
+When *not correct* is replaced by a semantically complete lexical item such as *wrong*,
+the ruptured morphic structure regains a projectional path, enabling commutativity:
+
+![alt text](https://github.com/No-Name-Yet-Exist/Conceptual-Topology/blob/main/releases/resources/meaning-circulates/this-is-wrong.png?raw=true)
+
+
+### Semantic Rupture Persists in Complex Structures
+This negation model extends beyond simple declaratives and remains valid in sentences with higher syntactic complexity.
+
+PCA of “He doesn’t love me that much”
+![alt text](https://github.com/No-Name-Yet-Exist/Conceptual-Topology/blob/main/releases/resources/meaning-circulates/HeDoesntLoveMeThatMuch.png?raw=true)
+
+PCA of “She doesn’t love me that much”
+![alt text](https://github.com/No-Name-Yet-Exist/Conceptual-Topology/blob/main/releases/resources/meaning-circulates/she-doesnt-love-me-that-much.png?raw=true)
+
+In both examples, the subject (“He” / “She”) is semantically expelled from the core projection structure. This suggests that negation introduces a morphic rupture strong enough to sever even structurally bound relationships, such as between subject and predicate.
+
+The rupture not only displaces the negated verb phrase but also weakens or disrupts the projectional path from the subject itself, reinforcing the hypothesis that syntactic negation introduces discontinuities in semantic geometry.
+
+We formalize the observed semantic geometry of negation as follows:
+```
+A  —  not  
+    \   /                 
+    B
+```
+Here, A and B are semantic nodes—typically subject and predicate—interrupted by a morphic rupture introduced by *not*. Depending on the sentence structure, either the subject (A) or the copular verb (is, was, etc.) may be semantically expelled from the semantic circulation, as observed in PCA analysis. This supports our hypothesis that syntactic negation (e.g., "not") introduces a non-projectable morphic path, fragmenting otherwise continuous semantic flow.
+
+
+# Conclusion
+We have shown that certain linguistic constructions exhibit commutative diagram structures, revealing an underlying semantic circulation in natural language.　Furthermore, we found that negation disrupts commutativity by introducing non-projectable morphic paths within these structures.　However, this disruption can be resolved when the negation is lexicalized into a single semantic unit—thereby restoring the composability and structural continuity of the semantic flow.
 
 
 ```python
@@ -397,5 +435,16 @@ plt.savefig("image.png")
 plt.show()
 ```
 
+### Word2Vec Data Set
+https://code.google.com/archive/p/word2vec/
+
+
+### 概念位相論 / Conceptual Topology 
+This theory, named 概念位相論 or Conceptual Topoloy, was proposed by **No Name Yet Exist**.
+
+GitHub: https://github.com/No-Name-Yet-Exist/Conceptual-Topology<br/>
+Note: https://note.com/xoreaxeax/n/n3711c1318d0b
+
+This is Version: 1.0
 
 This document and all conceptual content therein are © [No Name Yet Exist], 2025. All rights reserved. Unauthorized reproduction, distribution, or use without explicit permission is prohibited.
