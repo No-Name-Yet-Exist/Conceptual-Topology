@@ -434,6 +434,41 @@ Here, Not acts as a rupture-inducing operator applied to a well-formed semantic 
 # Conclusion
 We have shown that certain linguistic constructions exhibit commutative diagram structures, revealing an underlying semantic circulation in natural language.　Furthermore, we found that negation disrupts commutativity by introducing non-projectable morphic paths within these structures.　However, this disruption can be resolved when the negation is lexicalized into a single semantic unit—thereby restoring the composability and structural continuity of the semantic flow.
 
+</br>
+
+# Appendix
+
+### Symbolic Index
+
+This work uses a minimal symbolic language to describe semantic morphisms and structural ruptures within conceptual topology. The core operators are:
+
+
+**→: Semantic Morphism**
+Represents a composable directional relation between semantic nodes (subject → predicate, etc.)
+
+**↛: 	Morphic Rupture**
+Denotes a non-projectable path—semantic discontinuity induced by syntactic negation or structural disruption
+
+**| Z: Z frame**
+Specifies a mediating component (Z) within a semantic relation.
+The Z frame clarifies the structure of meaning projection and its intermediating terms.
+
+**λx:	Semantic Operator**
+A higher-order modifier applied to semantic expressions (e.g., negation or intensification)
+`	`	Mediated by
+
+**(λx. OP(x)) (A → B): Functional Form**
+Formalization of meaning-modifying operations acting on morphic paths
+
+**Examples**
+(λx. Not(x)) (A ↛ B | Z)     →     Rupture under Z frame
+(λx. so_much(x)) (A → B | Z) →     Preservation & amplification under Z frame
+
+
+<div style="page-break-after: always;"></div>
+
+
+### Python Code Used in This Study
 
 ```python
 import matplotlib.pyplot as plt
@@ -483,9 +518,10 @@ plt.savefig("image.png")
 plt.show()
 ```
 
+</br>
+
 ### Word2Vec Data Set
 https://code.google.com/archive/p/word2vec/
-
 
 ### 概念位相論 / Conceptual Topology 
 This theory, named 概念位相論 or Conceptual Topoloy, was proposed by **No Name Yet Exist**.
@@ -493,6 +529,6 @@ This theory, named 概念位相論 or Conceptual Topoloy, was proposed by **No N
 GitHub: https://github.com/No-Name-Yet-Exist/Conceptual-Topology<br/>
 Note: https://note.com/xoreaxeax/n/n3711c1318d0b
 
-This is Version: 1.0
+This is Version: 1.1 GitVersion
 
 This document and all conceptual content therein are © [No Name Yet Exist], 2025. All rights reserved. Unauthorized reproduction, distribution, or use without explicit permission is prohibited.
