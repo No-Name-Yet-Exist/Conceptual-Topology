@@ -50,6 +50,32 @@ and semantic equivalence holds:
 
 then semantic flow forms a monoid over Z-frame:
 M_Z = { f_n ∘ ... ∘ f_1 | all f_i under Z }
+
+```
+
+思いついたので合わせてZの形式定義を入れます
+```
+Let be f: X → Y | Z as a morphism
+
+Let be f: X → X | Z as an identity morphism
+
+f: X → Z
+f⁻¹: Z → X
+f⁻¹ ∘ f ≅ id_X
+
+f: X → Z
+g: Y → Z
+(f⁻¹ ∘ f): X → X | Z ≅ id_X
+(g⁻¹ ∘ g): Y → Y | Z ≅ id_Y
+
+Let Z as a semantic base category
+π: C ∪ D → Z
+
+f_Z: π(X) → π(Y) in Z
+
+f: X → Z
+f⁻¹: Z → X
+composition: f⁻¹ ∘ f ≅ id_X
 ```
 
 This document and all conceptual content therein are © [No Name Yet Exist], 2025. 
