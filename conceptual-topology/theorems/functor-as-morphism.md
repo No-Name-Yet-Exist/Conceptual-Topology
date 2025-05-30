@@ -55,27 +55,36 @@ M_Z = { f_n ∘ ... ∘ f_1 | all f_i under Z }
 
 思いついたので合わせてZの形式定義を入れます
 ```
-Let be f: X → Y | Z as a morphism
+Let C and D be categories with semantic projection to Z.
 
-Let be f: X → X | Z as an identity morphism
+π_C: C → Z  
+π_D: D → Z
 
-f: X → Z
-f⁻¹: Z → X
-f⁻¹ ∘ f ≅ id_X
-
-f: X → Z
-g: Y → Z
-(f⁻¹ ∘ f): X → X | Z ≅ id_X
-(g⁻¹ ∘ g): Y → Y | Z ≅ id_Y
-
-Let Z as a semantic base category
+Or jointly:  
 π: C ∪ D → Z
+
+For each X, there exists:
+
+f_X: X → Z  
+f_X⁻¹: Z → X
+
+such that:
+
+f_X⁻¹ ∘ f_X ≅ id_X
+
+For morphism f: X → Y | Z,  
+this corresponds to:
 
 f_Z: π(X) → π(Y) in Z
 
-f: X → Z
-f⁻¹: Z → X
-composition: f⁻¹ ∘ f ≅ id_X
+
+For any X, Y ∈ Ob(C ∪ D):
+
+[ X ]_Z ≅ [ Y ]_Z
+
+Then the set of semantic flow morphisms under Z forms a monoid:
+
+M_Z = { f_n ∘ ... ∘ f_1 | all f_i under Z }
 ```
 
 This document and all conceptual content therein are © [No Name Yet Exist], 2025. 
