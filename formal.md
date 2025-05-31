@@ -4,8 +4,10 @@
     - Identity Morphism
     - Mirror Morphism
     - Quasi-Natural Transformation
-3. Monoid Structure of Semantic Flow (M_Z)
-4. Cross-Category Flow Condition
+3. Semantic Shifting Morphism (>> / <<)
+4. Semantic Operator λ
+5. Monoid Structure of Semantic Flow (M_Z)
+6. Cross-Category Flow Condition
 
 </br>
 
@@ -282,7 +284,7 @@ is formalized as:
 
 </br>
 
-# Definition: Semantic Shifting Morphism (λ)
+# Definition: Semantic Shifting Morphism (>> / <<)
 
 ```
 λ: X → X | X
@@ -299,10 +301,14 @@ A >> X ≡ A ⊑ X
 
 Definition: SubsumedBy
 X >> A ≡ X ⊑ A
+
+Example:
+King >> Human
+Human >> Queen
 ```
 
 
-# Semantic Operator
+# Semantic Operator λ
 Semantic Operator λ modifies morphism as follows.
 ```
 (λx. Not(x)) (A ↛ B | Z)     →     Rupture under Z frame
