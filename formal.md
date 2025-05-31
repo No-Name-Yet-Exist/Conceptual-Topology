@@ -270,45 +270,44 @@ Then:
 
 Assuming a higher semantic frame Z' (e.g., Humanity, Social Role) that unifies king and queen frames:
 
-(k₂ ∘ k₁) ∘ e_edit ∈ M_Z'
+(k₂ ∘ k₁) ∘ λ ∈ M_Z'
 
 Thus:
 
 king - man + woman = queen
 is formalized as:  
 
-(k₂ ∘ k₁) ∘ e_edit ∈ M_Z'
-
-Note:  
-We assume here that Male → Female is semantically projectable under the editing operator λ, which remains within the Human frame.
-
+(k₂ ∘ k₁) ∘ λ ∈ M_Z'
 ```
 
+</br>
+
+# Definition: Semantic Shifting Morphism (λ)
+
 ```
-And
-king - man + woman = queen
+λ: X → X | X
+such that λ ⊕ f ∈ M_Z if and only if type compatibility holds:
 
-(k₂ ∘ k₁) ∘ m⁻¹∘ f 
-(Human → Female) ∘ (Male → Human) ∘ (Human → Royalty)
+∀ A, B, (A → B) ∘ λ is valid if:
 
-We define semantic editing on Human 
-e_edit: Human → Human | Human
+( A >> X or X >> A )
+and
+( B >> X or X >> B )
 
-where:
-// semantic editing on gender component of Human
-e_edit ≈ (m⁻¹ ∘ f)  
+Definition: Subsumption
+A >> X ≡ A ⊑ X
 
-(k₂ ∘ k₁): Human → Royalty | king
-
-
-= Human ∘ (Human → Royalty)
-= Human → Royalty | Human
-∴ Human → Royalty | Z'
-
-Note: We assume Male →　Female semantically projectable
+Definition: SubsumedBy
+X >> A ≡ X ⊑ A
 ```
 
 
+# Semantic Operator
+Semantic Operator λ modifies morphism as follows.
+```
+(λx. Not(x)) (A ↛ B | Z)     →     Rupture under Z frame
+(λx. so_much(x)) (A → B | Z) →     Preservation & amplification under Z frame
+```
 
 
 </br>
