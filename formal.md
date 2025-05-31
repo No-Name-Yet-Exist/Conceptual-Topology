@@ -1,3 +1,10 @@
+# Conceptual Topology × Category Theory As a Semantics Cage: Toward an Algebraic Topology of Meaning
+
+Written by No Name Yet Exist </br>
+Contact: Written Below
+
+</br>
+
 # Index
 1. Global Definition of Conceptual Topology
 2. Local Semantic Flow under Z-frame
@@ -14,6 +21,7 @@
     - Associativity of σ
 5. Cross-Category Flow Condition
 
+</br>
 </br>
 
 # Global Definition of Conceptual Topology: Morphic Chain Structure
@@ -511,6 +519,31 @@ f₂: cat → dog | Z
 f₃: dog → pig | Z
 Then:
 f₃ ∘ f₂ ∘ f₁: pig → pig | Z ∈ M_Z
+```
+
+
+# Appendix
+
+
+**Simplified Form of Identity Morphism:**
+
+1. f: X → X | X  (Category-theoretic identity) </br>
+　In simplified form: X </br>
+  or more explicitly: id_X </br>
+  
+2. f: X → X | Z  (Mediated identity with semantic flow)</br>
+　In simplified form: X | Z</br>
+
+</br>
+
+**σ Operator**
+
+```
+σx. Not(x){ A ↛ B | Z}     →     Rupture under Z frame
+σx. so_much(x){A → B | Z}  →     Preservation & amplification under Z frame
+σx. >>(x,y)                →     Semantic Shifting x to y (Generalization) as function form
+σx. <<(x,y)                →     Downward Shifting x to y (Specialization) as function form
+σx. >(x,y)                 →     Semantic Mapping 
 ```
 
 This document and all conceptual content therein are © [No Name Yet Exist], 2025. All rights reserved. Unauthorized reproduction, distribution, or use without explicit permission is prohibited.
