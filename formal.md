@@ -4,10 +4,15 @@
     - Identity Morphism
     - Mirror Morphism
     - Quasi-Natural Transformation
-3. Semantic Shifting Morphism (σ) 
+3. Monoid Structure of Semantic Flow (M_Z)
+    - Identity Element of M_Z 
+    - Associativity of M_Z
+4. Semantic Shifting Morphism (σ) 
     - Semantic Operator
-5. Monoid Structure of Semantic Flow (M_Z)
-6. Cross-Category Flow Condition
+    - Semantic Mapping
+    - Identity Morphism of σ
+    - Associativity of σ
+5. Cross-Category Flow Condition
 
 </br>
 
@@ -86,6 +91,16 @@ e.g. dog → perro | собака
 
 </br>
 
+**Simplified Form of Identity Morphism:**
+
+1. f: X → X | X  (Category-theoretic identity) </br>
+　In simplified form: X </br>
+  or more explicitly: id_X </br>
+  
+2. f: X → X | Z  (Mediated identity with semantic flow)</br>
+　In simplified form: X | Z</br>
+
+
 ### Mirror Morphism Definition:
 Each mirror maps conceptual transitions across vocabularies while preserving morphic identity up to rupture—that is, it allows for semantic divergence that still respects underlying structural continuity, even if exact invertibility is not preserved.
 
@@ -138,7 +153,7 @@ Example: η: girl → puppy | Z = baby
 </br>
 
 # Monoid Structure of Semantic Flow (M_Z)
-In Conceptual Topology, Z is defined as a mediating point/sematinc anchor.
+In Conceptual Topology, Z is defined as a mediating point/semantic anchor.
 ```
 Let C and D be categories with semantic projection to Z.
 
@@ -171,6 +186,7 @@ Then the set of semantic flow morphisms under Z forms a monoid:
 M_Z = { f_n ∘ ... ∘ f_1 | all f_i under Z }
 ```
 
+**Example: Queen and King**
 ```
 Let C be a concept
 C = {−OC₁, −OC₂, ..., −OCₙ} // Yoneda's lemma and structralism
@@ -214,6 +230,59 @@ Then:
 
 </br>
 
+### Identity Element of M_Z
+```
+Let: M_Z = { fₙ ∘ ... ∘ f₁ | all fᵢ: Xᵢ → Xᵢ₊₁ | Z }
+
+Define the identity element of M_Z as a family of identity morphisms over the shared Z frame:
+
+For each X ∈ Ob(C ∪ D), there exists a unique identity morphism:
+
+e_Z(X) := id_X | Z
+
+Then, for any f: X → Y | Z ∈ M_Z:
+
+e_Z(X) ∘ f = f
+f ∘ e_Z(Y) = f
+
+Therefore, the identity structure of M_Z is given by the family:
+
+{ id_X | Z | X ∈ Ob(C ∪ D) }
+
+which forms a pointwise identity across the objects under the common Z frame.  
+This ensures that M_Z satisfies the identity axiom of a monoid.
+```
+
+### Associativity of M_Z
+```
+Let:
+
+M_Z = { fₙ ∘ ... ∘ f₁ | all fᵢ: Xᵢ → Xᵢ₊₁ | Z }
+
+Then for all f, g, h ∈ M_Z:
+
+(f ∘ g) ∘ h = f ∘ (g ∘ h)
+
+Thus, the composition ∘ in M_Z is associative.
+```
+
+
+**Example:**</br>
+```
+σ_id(word) = word → σ_id = e_Z
+Note: The definition of σ is provided in the following section.
+```
+
+**Example: Cross Category Identity Morphism**
+```
+dog ∈ Ob(pet)  
+dog ∈ Ob(animal)  
+
+dog → dog | Z=domesticated  
+```
+
+</br>
+
 # Definition: Semantic Shifting Morphism (σ)
 
 ```
@@ -244,7 +313,102 @@ Semantic Operator σ modifies morphism as follows.
 σx. so_much(x){A → B | Z}  →     Preservation & amplification under Z frame
 σx. >>(x,y)                →     Semantic Shifting x to y (Generalization) as function form
 σx. <<(x,y)                →     Downward Shifting x to y (Specialization) as function form
+σx. >(x,y)                 →     Semantic Mapping 
 ```
+
+### Semantic Mapping
+```
+C_chain = { f₁, f₂, ..., fₙ } ∈ D(Cₙ₋₁ | Z)
+
+σx: D(Aₙ₋₁ | Z) > D(Bₙ₋₁ | Y) | CD
+where:
+D(Aₙ₋₁ | Z) = source morphic chain
+D(Bₙ₋₁ | Y) = target morphic chain
+CD = codomain alignment (semantic anchor)
+
+σx is not strict functorial → quasi-alignment under semantic equivalence
+
+σx ≈ η: Dᵢ ⇒ Dᵢ₊₁ | CD (Quasi-Natural Transformation interpretation)
+
+Example:
+σx. >(puppy → dog → mammal, Human) ∋ Girl → She → Mammal
+
+```
+
+### Identity Morphism of σ
+
+```
+word is word
+thus:
+word ≅ Nat(Hom(-, word), Fib(word)) 
+
+σ_id = σ such that σ(f) = f for all f ∈ Hom(X, X)
+
+σ_id(word) = word
+σ_id(f) = f  for all f: word → word | word
+
+M_Z = { f_n ∘ ... ∘ f_1 | all f_i under Z }
+σ_id ∈ M_Z
+σ ∘ σ_id = σ
+σ_id ∘ σ = σ
+∴ word is word and word is word
+```
+
+### Associativity of σ
+```
+σ₁: D(Aₙ₋₁ | Z₁) → D(Bₙ₋₁ | Z₂) | CD₁
+σ₂: D(Bₙ₋₁ | Z₂) → D(Cₙ₋₁ | Z₃) | CD₂
+
+Then the composition:
+σ_comp = σ₂ ∘ σ₁
+is a morphism:
+
+σ_comp: D(Aₙ₋₁ | Z₁) → D(Cₙ₋₁ | Z₃) | CD₃
+
+where:
+CD₃ is determined by the alignment of CD₁ and CD₂.
+
+Associativity
+For all σ₁, σ₂, σ₃ such that their domains/codomains match for composition:
+(σ₃ ∘ σ₂) ∘ σ₁ = σ₃ ∘ (σ₂ ∘ σ₁)
+
+Thus, σ operator composition is associative.
+```
+
+
+**Example:**
+```
+Step 1: Compose σ₂ ∘ σ₁
+ σ₁ = >(Canine, Mammal)  
+ σ₂ = >(Mammal, Animal)  
+ σ₃ = >(Animal, LivingBeing)
+
+ σ₂ ∘ σ₁ 
+ = >(Mammal, Animal) ∘ >(Canine, Mammal) 
+ = >(Canine, Animal)
+
+Step 2: Compose (σ₃ ∘ σ₂) ∘ σ₁
+ σ₃ ∘ σ₂ 
+ = >(Animal, LivingBeing) ∘ >(Mammal, Animal) 
+ = >(Mammal, LivingBeing)
+
+ σ₃ ∘ (σ₂ ∘ σ₁) 
+ = >(Animal, LivingBeing) ∘ >((Mammal, Animal) ∘ >(Canine, Mammal) )
+ = >(Animal, LivingBeing) ∘ >(Canine, Animal)
+ = >(Canine, LivingBeing)
+
+ (σ₃ ∘ σ₂) ∘ σ₁
+ = (>(Animal, LivingBeing) ∘ >(Mammal, Animal))∘ >(Canine, Mammal)
+ = >(Mammal, LivingBeing) ∘ >(Canine, Mammal)
+ = >(Canine, LivingBeing)
+
+Conclusion:
+ (σ₃ ∘ σ₂) ∘ σ₁ = σ₃ ∘ (σ₂ ∘ σ₁)
+ Both yield:
+ > (Canine, LivingBeing)
+```
+Note: Morphic Chain D does not require the number of objects to be more than one
+
 
 ### Example: Morphic Shifting and Cross-Z-frame Semantic Flow
 
