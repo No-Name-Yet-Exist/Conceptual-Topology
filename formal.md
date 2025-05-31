@@ -248,14 +248,21 @@ We define semantic editing morphisms λ within the Human frame:
 since:
 M_Z = { f_n ∘ ... ∘ f_1 | all f_i under Z }
 
-Thus:
-Formally:
-m⁻¹ ∘ f  | Human ⊕ (Human → Human | Human)
+Thus formally:
+λ(m⁻¹ ∘ f)
+= (Male → Human)∘(Human → Female) | Human ⊕ (Human → Human | Human)
 = Human → Human | Human
 
 where:
 m⁻¹: Male → Human  
 f: Human → Female
+
+And:
+Subsumption: ⊑
+Male ⊑ Human  
+Female ⊑ Human
+
+(Male → Human) ∘ (Human → Female) ⊑ (Human → Human)
 
 Then:
 (k₂ ∘ k₁) ∘ λ(m⁻¹ ∘ f): Human → Royalty | Human
