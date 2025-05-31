@@ -1,4 +1,42 @@
-# Identity Morphism
+# Index
+1. Global Definition of Conceptual Topology
+2. Local Semantic Flow under Z-frame
+    - Identity Morphism
+    - Mirror Morphism
+    - Quasi-Natural Transformation
+3. Monoid Structure of Semantic Flow (M_Z)
+4. Cross-Category Flow Condition
+
+</br>
+
+# Global Definition of Conceptual Topology: Morphic Chain Structure
+
+```
+CT := (C, B, π: E → B, Fb := π⁻¹(b), A ≅ b ⋃ Nat(Hom(−, A), Fb))
+
+Where:
+  - C is the category of concepts (objects = words or concepts)
+  - B is the base space of Z-frames (semantic continuity anchors)
+  - E is the total semantic space (word vector embedding space)
+  - π projects each concept to its semantic base (Z-frame)
+  - Fb is the fiber (semantic morphic chain) over a base b
+  - A ≅ b ⋃ Nat(Hom(−, A), Fb) interprets each concept A via its morphisms relative to its   Z-frame b (Yoneda perspective defined in appendix)
+```
+
+```
+        Z = baby  
+    puppy  ←   girl    //specified: size + young
+     |          |
+     |          |
+    dog        she     //abstraction
+      \        /      
+        Mammal
+
+```
+
+# Local Semantic Flow under Z Frame
+
+### Identity Morphism
 
 In Category Theory, Identity Morphism is always defined.
 ```
@@ -11,6 +49,11 @@ id_Y ∘ f = f
 However, in Conceptual Topology, morphisms are mediated by Z frame, thus
 the identity morphis is not always given unless Z is defined.
 
+**Two Types of Identity Morphism in Conceptual Topology**
+1. f: X → X | X  (Category-theoretic identity)
+2. f: X → X | Z  (Mediated identity with semantic flow)
+
+
 ```
 f: X → X | X
 such that for any f: X → Y:
@@ -22,6 +65,7 @@ e.g. f: dog → dog | dog
 
 In Conceptual Topology there is another type of identity morphism.
 This type involves semantic flow.
+
 ```
 f: X → X | Z
 
@@ -40,18 +84,6 @@ e.g. dog → perro | собака
 ### Mirror Morphism Definition:
 Each mirror maps conceptual transitions across vocabularies while preserving morphic identity up to rupture—that is, it allows for semantic divergence that still respects underlying structural continuity, even if exact invertibility is not preserved.
 
-
-```
-        Z = baby  
-    puppy  ←   girl    //specified: size + young
-     |          |
-     |          |
-    dog        she     //abstraction
-      \        /      
-        Mammal
-
-```
-
 ```
 f : X  → Y  | Z ∈ Dᵢ
 f′: X′ → Y' | Z ∈ Dᵢ₊₁
@@ -62,6 +94,17 @@ if and only if:
 
 ∃Z: rupture(f, f′ | Z) ≠ ∅ 
 ∧ cod(f) = cod(f′) | CD
+
+```
+
+```
+        Z = baby  
+    puppy  ←   girl    //specified: size + young
+     |          |
+     |          |
+    dog        she     //abstraction
+      \        /      
+        Mammal
 
 ```
 
@@ -88,21 +131,7 @@ Example: η: girl → puppy | Z = baby
 ```
 
 
-# Morphic Chain Structure
-
-```
-CT := (C, B, π: E → B, Fb := π⁻¹(b), A ≅ b ⋃ Nat(Hom(−, A), Fb))
-
-Where:
-  - C is the category of concepts (objects = words or concepts)
-  - B is the base space of Z-frames (semantic continuity anchors)
-  - E is the total semantic space (word vector embedding space)
-  - π projects each concept to its semantic base (Z-frame)
-  - Fb is the fiber (semantic morphic chain) over a base b
-  - A ≅ b ⋃ Nat(Hom(−, A), Fb) interprets each concept A via its morphisms relative to its   Z-frame b (Yoneda perspective defined in appendix)
-```
-
-# Definition of Z
+# Monoid Structure of Semantic Flow (M_Z)
 In Conceptual Topology, Z is defined as a mediating point/sematinc anchor.
 ```
 Let C and D be categories with semantic projection to Z.
@@ -137,7 +166,7 @@ Then the set of semantic flow morphisms under Z forms a monoid:
 M_Z = { f_n ∘ ... ∘ f_1 | all f_i under Z }
 ```
 
-# Functor Between Categories
+# Cross-Category Flow Condition
 Conceptual Topology allows communicative diagram across categories as long as same Z is shared: shared semantic equivalence.
 
 ```
