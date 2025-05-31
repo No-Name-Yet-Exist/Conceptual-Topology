@@ -156,7 +156,6 @@ this corresponds to:
 
 f_Z: π(X) → π(Y) in Z
 
-
 For any X, Y ∈ Ob(C ∪ D):
 
 [ X ]_Z ≅ [ Y ]_Z
@@ -180,6 +179,22 @@ and semantic equivalence holds:
 then semantic flow forms a monoid over Z-frame:
 M_Z = { f_n ∘ ... ∘ f_1 | all f_i under Z }
 
+```
+
+**Example: Cross-Category Flow under Z-frame**
+This example illustrates how morphic flow can traverse categories (livestock, pet)  
+as long as semantic equivalence under Z = domesticated is preserved.
+
+```
+(dog ≅ cat ≅ pig) | Z = domesticated
+Ob(livestock) = {pig} 
+Ob(pet) = {dog, cat}
+
+f₁: pig → cat | Z
+f₂: cat → dog | Z
+f₃: dog → pig | Z
+Then:
+f₃ ∘ f₂ ∘ f₁: pig → pig | Z ∈ M_Z
 ```
 
 This document and all conceptual content therein are © [No Name Yet Exist], 2025. All rights reserved. Unauthorized reproduction, distribution, or use without explicit permission is prohibited.
