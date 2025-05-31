@@ -211,6 +211,7 @@ Then:
 (k₂ ∘ k₁) ⊕ (q₂ ∘ q₁) ∈ M_Z'
 
 ```
+
 </br>
 
 # Definition: Semantic Shifting Morphism (σ)
@@ -241,8 +242,8 @@ Semantic Operator σ modifies morphism as follows.
 ```
 σx. Not(x){ A ↛ B | Z}     →     Rupture under Z frame
 σx. so_much(x){A → B | Z}  →     Preservation & amplification under Z frame
-σx. >>(x,y)                →     Semantic Shifting (Generalization) as function form
-σx. <<(x,y)                →     Downward Shifting (specialization) as function form
+σx. >>(x,y)                →     Semantic Shifting x to y (Generalization) as function form
+σx. <<(x,y)                →     Downward Shifting x to y (Specialization) as function form
 ```
 
 ### Example: Morphic Shifting and Cross-Z-frame Semantic Flow
@@ -313,6 +314,7 @@ is formalized as:
 
 (k₂ ∘ k₁) ∘ σ ∈ M_Z'
 ```
+
 </br>
 
 # Cross-Category Flow Condition
