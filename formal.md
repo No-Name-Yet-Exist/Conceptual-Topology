@@ -34,6 +34,8 @@ Where:
 
 ```
 
+</br>
+
 # Local Semantic Flow under Z Frame
 
 ### Identity Morphism
@@ -77,9 +79,10 @@ e.g. you → you | externalized perspective
 ```
 
 Since the identity morphism is passes through an external anchor point,
-the identity morphism is defined quasi-identical.
+the identity morphism is defined quasi-identical.</br>
 e.g. dog → perro | собака
 
+</br>
 
 ### Mirror Morphism Definition:
 Each mirror maps conceptual transitions across vocabularies while preserving morphic identity up to rupture—that is, it allows for semantic divergence that still respects underlying structural continuity, even if exact invertibility is not preserved.
@@ -130,6 +133,7 @@ i.e. η ∈ Mor(C) where C is the contextual meaning category
 Example: η: girl → puppy | Z = baby
 ```
 
+</br>
 
 # Monoid Structure of Semantic Flow (M_Z)
 In Conceptual Topology, Z is defined as a mediating point/sematinc anchor.
@@ -165,6 +169,49 @@ Then the set of semantic flow morphisms under Z forms a monoid:
 M_Z = { f_n ∘ ... ∘ f_1 | all f_i under Z }
 ```
 
+```
+Let C be a concept
+C = {−OC₁, −OC₂, ..., −OCₙ} // Yoneda's lemma and structralism
+
+king = {Royalty⃗, Male⃗, Human⃗}
+queen = {Royalty⃗, Female⃗, Human⃗} 
+man = {Male⃗}
+woman =  {Female⃗} 
+
+{Royalty⃗, Male⃗, Human⃗} ⊕ {Male⃗} ⊕ {Female⃗} 
+= {Royalty⃗, Female⃗, Human⃗} 
+= queen
+
+k₁: Royalty → Male | king  
+k₂: Male → Human | king  
+
+Then:  
+k₂ ∘ k₁: Royalty → Human | king
+
+
+q₁: Royalty → Woman | queen  
+q₂: Woman → Human | queen  
+
+Then:  
+q₂ ∘ q₁: Royalty → Human | queen
+
+
+Cross-Z-frame composition:
+
+(k₂ ∘ k₁) ⊕ (q₂ ∘ q₁)= Royalty → Human | Z'
+
+If higher Z' (e.g. "Humanity" or "Social Role") unifies Z = king and Z = queen:
+
+Then:
+(k₂ ∘ k₁) ⊕ (q₂ ∘ q₁) ∈ M_Z'
+
+```
+
+
+
+
+</br>
+
 # Cross-Category Flow Condition
 Conceptual Topology allows communicative diagram across categories as long as same Z is shared: shared semantic equivalence.
 
@@ -181,7 +228,7 @@ M_Z = { f_n ∘ ... ∘ f_1 | all f_i under Z }
 
 ```
 
-**Example: Cross-Category Flow under Z-frame**
+**Example: Cross-Category Flow under Z-frame**</br>
 This example illustrates how morphic flow can traverse categories (livestock, pet)  
 as long as semantic equivalence under Z = domesticated is preserved.
 
