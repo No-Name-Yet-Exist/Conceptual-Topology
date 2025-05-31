@@ -175,36 +175,130 @@ C = {−OC₁, −OC₂, ..., −OCₙ} // Yoneda's lemma and structralism
 
 king = {Royalty⃗, Male⃗, Human⃗}
 queen = {Royalty⃗, Female⃗, Human⃗} 
-man = {Male⃗}
-woman =  {Female⃗} 
+man = {Male⃗, Human}
+woman =  {Female⃗, Human} 
 
-{Royalty⃗, Male⃗, Human⃗} ⊕ {Male⃗} ⊕ {Female⃗} 
+{Royalty⃗, Male⃗, Human⃗} ⊖ {Male⃗} ⊕ {Female⃗} 
 = {Royalty⃗, Female⃗, Human⃗} 
 = queen
 
-k₁: Royalty → Male | king  
-k₂: Male → Human | king  
+
+k₁: Human → Male | king  
+k₂: Male → Royalty | king  
 
 Then:  
-k₂ ∘ k₁: Royalty → Human | king
+k₂ ∘ k₁: Human → Royalty | king
 
 
-q₁: Royalty → Woman | queen  
-q₂: Woman → Human | queen  
+q₁: Human → Woman | queen  
+q₂: Woman → Royalty | queen  
 
 Then:  
-q₂ ∘ q₁: Royalty → Human | queen
+q₂ ∘ q₁: Human → Royalty | queen
 
+m: Human → Male
+f: Human → Female
 
 Cross-Z-frame composition:
 
-(k₂ ∘ k₁) ⊕ (q₂ ∘ q₁)= Royalty → Human | Z'
+(k₂ ∘ k₁) ⊕ (q₂ ∘ q₁)= Human → Royalty | Z'
 
 If higher Z' (e.g. "Humanity" or "Social Role") unifies Z = king and Z = queen:
 
 Then:
 (k₂ ∘ k₁) ⊕ (q₂ ∘ q₁) ∈ M_Z'
 
+```
+
+# Example: Morphic Editing and Cross-Z-frame Semantic Flow
+
+We consider the well-known semantic analogy:
+**king - man + woman = queen**
+
+We formalize this using Conceptual Topology's morphic flow.
+
+```
+Concept Definitions
+
+Let C be a concept:
+
+// (Yoneda's lemma and structuralism — concept defined by oppositional components)
+C = {−OC₁, −OC₂, ..., −OCₙ}  
+
+We define king as:
+
+k₁: Human → Male | king  
+k₂: Male → Royalty | king  
+
+Then:  
+k₂ ∘ k₁: Human → Royalty | king
+
+We define queen as:
+q₁: Human → Woman | queen  
+q₂: Woman → Royalty | queen  
+
+Then:  
+q₂ ∘ q₁: Human → Royalty | queen
+
+We define semantic editing morphisms λ within the Human frame:
+
+λ: Human → Human | Human (A ∘ B | Human)  
+= (Human → Human | Human) ⊕ (A ∘ B | Human)  
+= Human → Human | Human
+since:
+M_Z = { f_n ∘ ... ∘ f_1 | all f_i under Z }
+
+Thus:
+Formally:
+m⁻¹ ∘ f  | Human ⊕ (Human → Human | Human)
+= Human → Human | Human
+
+where:
+m⁻¹: Male → Human  
+f: Human → Female
+
+Then:
+(k₂ ∘ k₁) ∘ λ(m⁻¹ ∘ f): Human → Royalty | Human
+
+
+Assuming a higher semantic frame Z' (e.g., Humanity, Social Role) that unifies king and queen frames:
+
+(k₂ ∘ k₁) ∘ e_edit ∈ M_Z'
+
+Thus:
+
+king - man + woman = queen
+is formalized as:  
+
+(k₂ ∘ k₁) ∘ e_edit ∈ M_Z'
+
+Note:  
+We assume here that Male → Female is semantically projectable under the editing operator λ, which remains within the Human frame.
+
+```
+
+```
+And
+king - man + woman = queen
+
+(k₂ ∘ k₁) ∘ m⁻¹∘ f 
+(Human → Female) ∘ (Male → Human) ∘ (Human → Royalty)
+
+We define semantic editing on Human 
+e_edit: Human → Human | Human
+
+where:
+// semantic editing on gender component of Human
+e_edit ≈ (m⁻¹ ∘ f)  
+
+(k₂ ∘ k₁): Human → Royalty | king
+
+
+= Human ∘ (Human → Royalty)
+= Human → Royalty | Human
+∴ Human → Royalty | Z'
+
+Note: We assume Male →　Female semantically projectable
 ```
 
 
