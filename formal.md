@@ -4,8 +4,8 @@
     - Identity Morphism
     - Mirror Morphism
     - Quasi-Natural Transformation
-3. Semantic Shifting Morphism (>> / <<)
-4. Semantic Operator λ
+3. Semantic Shifting Morphism (σ) 
+    - Semantic Operator
 5. Monoid Structure of Semantic Flow (M_Z)
 6. Cross-Category Flow Condition
 
@@ -211,8 +211,41 @@ Then:
 (k₂ ∘ k₁) ⊕ (q₂ ∘ q₁) ∈ M_Z'
 
 ```
+</br>
 
-# Example: Morphic Editing and Cross-Z-frame Semantic Flow
+# Definition: Semantic Shifting Morphism (σ)
+
+```
+σ: X → X | X
+such that σ ⊕ f ∈ M_Z if and only if type compatibility holds:
+
+∀ A, B, (A → B) ∘ σ is valid if:
+
+( A >> X or X >> A )
+and
+( B >> X or X >> B )
+
+Definition: Subsumption
+A >> X ≡ A ⊑ X
+
+Definition: SubsumedBy
+X >> A ≡ X ⊑ A
+
+Example:
+King >> Human
+Human >> Queen
+```
+
+**Semantic Operators**
+Semantic Operator σ modifies morphism as follows.
+```
+σx. Not(x){ A ↛ B | Z}     →     Rupture under Z frame
+σx. so_much(x){A → B | Z}  →     Preservation & amplification under Z frame
+σx. >>(x,y)                →     Semantic Shifting (Generalization) as function form
+σx. <<(x,y)                →     Downward Shifting (specialization) as function form
+```
+
+### Example: Morphic Shifting and Cross-Z-frame Semantic Flow
 
 We consider the well-known semantic analogy:
 **king - man + woman = queen**
@@ -242,16 +275,16 @@ q₂: Woman → Royalty | queen
 Then:  
 q₂ ∘ q₁: Human → Royalty | queen
 
-We define semantic editing morphisms λ within the Human frame:
+We define semantic editing morphisms σ within the Human frame:
 
-λ: Human → Human | Human (A ∘ B | Human)  
+σ: Human → Human | Human (A ∘ B | Human)  
 = (Human → Human | Human) ⊕ (A ∘ B | Human)  
 = Human → Human | Human
 since:
 M_Z = { f_n ∘ ... ∘ f_1 | all f_i under Z }
 
 Thus formally:
-λ(m⁻¹ ∘ f)
+σ(m⁻¹ ∘ f)
 = (Male → Human)∘(Human → Female) | Human ⊕ (Human → Human | Human)
 = Human → Human | Human
 
@@ -260,62 +293,26 @@ m⁻¹: Male → Human
 f: Human → Female
 
 And:
-Subsumption: ⊑
-Male ⊑ Human  
-Female ⊑ Human
+Male >> Human  
+Female >> Human
 
 (Male → Human) ∘ (Human → Female) ⊑ (Human → Human)
 
 Then:
-(k₂ ∘ k₁) ∘ λ(m⁻¹ ∘ f): Human → Royalty | Human
+(k₂ ∘ k₁) ∘ σ(m⁻¹ ∘ f): Human → Royalty | Human
 
 
 Assuming a higher semantic frame Z' (e.g., Humanity, Social Role) that unifies king and queen frames:
 
-(k₂ ∘ k₁) ∘ λ ∈ M_Z'
+(k₂ ∘ k₁) ∘ σ ∈ M_Z'
 
 Thus:
 
 king - man + woman = queen
 is formalized as:  
 
-(k₂ ∘ k₁) ∘ λ ∈ M_Z'
+(k₂ ∘ k₁) ∘ σ ∈ M_Z'
 ```
-
-</br>
-
-# Definition: Semantic Shifting Morphism (>> / <<)
-
-```
-λ: X → X | X
-such that λ ⊕ f ∈ M_Z if and only if type compatibility holds:
-
-∀ A, B, (A → B) ∘ λ is valid if:
-
-( A >> X or X >> A )
-and
-( B >> X or X >> B )
-
-Definition: Subsumption
-A >> X ≡ A ⊑ X
-
-Definition: SubsumedBy
-X >> A ≡ X ⊑ A
-
-Example:
-King >> Human
-Human >> Queen
-```
-
-
-# Semantic Operator λ
-Semantic Operator λ modifies morphism as follows.
-```
-(λx. Not(x)) (A ↛ B | Z)     →     Rupture under Z frame
-(λx. so_much(x)) (A → B | Z) →     Preservation & amplification under Z frame
-```
-
-
 </br>
 
 # Cross-Category Flow Condition
