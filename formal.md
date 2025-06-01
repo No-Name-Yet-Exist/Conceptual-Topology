@@ -21,7 +21,7 @@ Building on the Monoid structure of morphic flows (M|Z), the framework captures 
     - Associativity of M|Z
 4. Semantic Shifting Morphism (σ) 
     - Semantic Operator
-    - Semantic Mapping
+    - Semantic Shifting
     - Identity Morphism of σ
     - Associativity of σ
     - x Safe / Unsafe Semantic Shifting Morphism (σ)
@@ -168,19 +168,16 @@ Example: η: girl → puppy | Z = Baby
 # Monoid Structure of Semantic Flow (M|Z)
 In Conceptual Topology, Z is defined as a mediating point/semantic anchor.
 ```
-Let C and D be categories with semantic projection to Z.
+Let C and D, Z be categories,
+with semantic projection π: C ∪ D → Z, such that for each X ∈ Ob(C ∪ D):
 
-π_C: C → Z  
-π_D: D → Z
+π(X) ∈ Ob(Z)
 
-Or jointly:  
-π: C ∪ D → Z
+For each X ∈ Ob(C ∪ D), there exists morphism:
 
-For each X, there exists:
-
-f_X: X → Z  
-f_X⁻¹: Z → X
-
+f_X: X → π(X)
+f_X⁻¹: π(X) → X
+ 
 such that:
 
 f_X⁻¹ ∘ f_X ≅ id_X
@@ -192,7 +189,16 @@ f_Z: π(X) → π(Y) in Z
 
 For any X, Y ∈ Ob(C ∪ D):
 
-[ X ]_Z ≅ [ Y ]_Z
+Let [X]_Z := semantic representation of X under frame Z (i.e., π(X))
+
+Then:
+
+[ X ]_Z1 ≅ [ Y ]_Z2 | Z1, Z2 ∈ Z //or Z1, Z2 >> Z 
+which means:
+["Dog"]_Pet = [Retriever, Dachshund, Poodle, Bulldog, ...]
+["girl"]_Human = [girl, woman, person, ...]
+["Dog"]_Pet ≅ ["girl"]_Human | Life
+
 
 Then the set of semantic flow morphisms under Z forms a monoid:
 
@@ -320,7 +326,7 @@ Semantic Operator σ modifies morphism as follows.
 σ(X). so_much(x){A → B | Z}  →     Preservation & amplification under Z frame
 σ(X). >>(x,y)                →     Semantic Shifting x to y (Generalization) as function form
 σ(X). <<(x,y)                →     Downward Shifting x to y (Specialization) as function form
-σ(X). >(x,y)                 →     Semantic Mapping 
+σ(X). >(x,y)                 →     Semantic Shifting 
 ```
 
 <div style="page-break-after: always;"></div>
@@ -348,7 +354,7 @@ Subtraction (⊖):
 = queen
 ```
 
-### Semantic Mapping
+### Semantic Shifting
 ```
 C_chain = { f₁, f₂, ..., fₙ | Z} ∈ D(Cₙ₋₁ | Z)
 
@@ -667,7 +673,7 @@ Functor: F
 σ(X). so_much(x){A → B | Z}  →     Preservation & amplification under Z frame
 σ(X). >>(x,y)                →     Semantic Shifting x to y (Generalization) as function form
 σ(X). <<(x,y)                →     Downward Shifting x to y (Specialization) as function form
-σ(X). >(x,y)                 →     Semantic Mapping 
+σ(X). >(x,y)                 →     Semantic Shifting 
 ```
 
 </br>
