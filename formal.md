@@ -395,15 +395,13 @@ since: M|Z = { fₙ ∘ ... ∘ f₁ | all fᵢ: Xᵢ → Xᵢ₊₁ | Z ⋏ ∀
 
 ### Associativity of σ
 ```
-σ₁(Z₁). OP(D(Aₙ₋₁ | Z₁), Z₁) = D(Bₙ₋₁ | Z₁)
-σ₂(Z₂). OP(D(Bₙ₋₁ | Z₂), Z₂) = D(Cₙ₋₁ | Z₂)
+σ₁(Z). OP(D(Aₙ₋₁ | Z), Z) = D(Zₙ₋₁ | Z)
+σ₂(Z). OP(D(Bₙ₋₁ | Z), Z) = D(Zₙ₋₁ | Z)
 
 Then the composition σ₂ ∘ σ₁:
-σ_comp(Z₃). OP(D(Cₙ₋₁ | Z₂), D(Bₙ₋₁ | Z₁)) = D(Dₙ₋₁ | Z₃)
+σ_comp(Z). OP(D(Zₙ₋₁ | Z), D(Zₙ₋₁ | Z)) = D(Zₙ₋₁ | Z)
 
-where: Z₁, Z₂ >> Z₃ ∨ Z₁, Z₂ << Z₃
-and: Z₁, Z₂, Z₃ ∈ CD
-and: OP is not σ_unsafe
+where: OP is not σ_unsafe and under shared Z frame
 
 Associativity
 For all σ₁, σ₂, σ₃ such that their domains/codomains match for composition:
@@ -414,32 +412,13 @@ Thus, σ composition operator is associative under Monoid structure.
 
 **Example:**
 ```
-Let σ₁ = σ(Canine). >(canine → mammal, Mammal)  
-Let σ₂ = σ(Mammal). >(mammal → animal, Animal)  
-Let σ₃ = σ(Animal). >(animal → livingBeing, LivingBeing)
-
- Step 1: Compose σ₂ ∘ σ₁ 
- σ₂ ∘ σ₁ = >(mammal, animal) ∘ >(canine, mammal) 
- = >(canine, animal)
-
-Step 2: Compose (σ₃ ∘ σ₂) ∘ σ₁
- σ₃ ∘ σ₂ = >(animal, livingBeing) ∘ >(mammal, animal) 
- = >(mammal, livingBeing)
-
- σ₃ ∘ (σ₂ ∘ σ₁) 
- = >(animal, livingBeing) ∘ >((mammal, animal) ∘ >(canine, mammal) )
- = >(animal, livingBeing) ∘ >(canine, animal)
- = >(canine, livingBeing)
-
- (σ₃ ∘ σ₂) ∘ σ₁
- = (>(animal, livingBeing) ∘ >(mammal, animal))∘ >(canine, mammal)
- = >(mammal, livingBeing) ∘ >(canine, mammal)
- = >(canine, livingBeing)
+Let σ₁ = σ(Mammal). >>(canine → mammal, Life)  = (life → life | Life)
+Let σ₂ = σ(Mammal). >>(mammal → animal, Life)  = (life → life | Life)
+Let σ₃ = σ(Mammal). >>(animal → livingBeing, Life) = (life → life | Life)
 
 Conclusion:
- (σ₃ ∘ σ₂) ∘ σ₁ = σ₃ ∘ (σ₂ ∘ σ₁) =  (canine, livingBeing)
+ (σ₃ ∘ σ₂) ∘ σ₁ = σ₃ ∘ (σ₂ ∘ σ₁) =  (life → life | Life)
 ```
-Note: Morphic Chain D does not require the number of objects to be more than one
 
 <div style="page-break-after: always;"></div>
 
