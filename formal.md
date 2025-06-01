@@ -77,8 +77,6 @@ the identity morphis is not always given unless Z is defined.
 
 **Two Types of Identity Morphism in Conceptual Topology**
 1. f: X → X | X  (Category-theoretic identity)
-2. f: X → X | Z  (Mediated identity with semantic flow)
-
 
 ```
 f: X → X | X
@@ -89,8 +87,7 @@ id_Y ∘ f = f
 e.g. f: dog → dog | dog
 ```
 
-In Conceptual Topology there is another type of identity morphism.
-This type involves semantic flow.
+2. f: X → X | Z  (Mediated identity with semantic flow)
 
 ```
 f: X → X | Z
@@ -102,7 +99,7 @@ e.g. you → you | externalized perspective
      NL: you are you
 ```
 
-Since the identity morphism is passes through an external anchor point,
+Since the identity morphism passes through an external anchor point,
 the identity morphism is defined quasi-identical.</br>
 e.g. dog → perro | собака
 
@@ -163,7 +160,7 @@ where f′ⱼ: η_X(Xⱼ) → η_Y(Yⱼ) | Zⱼ
 
 Then, η is said to be a quasi-natural transformation under the Z-frame
 i.e. η ∈ Mor(C) where C is the contextual meaning category
-Example: η: girl → puppy | Z = baby
+Example: η: girl → puppy | Z = Baby
 ```
 
 <div style="page-break-after: always;"></div>
@@ -199,7 +196,7 @@ For any X, Y ∈ Ob(C ∪ D):
 
 Then the set of semantic flow morphisms under Z forms a monoid:
 
-M|Z = { f_n ∘ ... ∘ f_1 | all f_i under Z }
+M|Z = { f_n ∘ ... ∘ f_1 | all f_i | Z }
 ```
 
 <div style="page-break-after: always;"></div>
@@ -212,18 +209,18 @@ C = {−OC₁, −OC₂, ..., −OCₙ} // Yoneda's lemma and structralism
 King = {Royalty⃗, Male⃗, Human⃗}
 Queen = {Royalty⃗, Female⃗, Human⃗} 
 
-k₁: Human → Male | King  
-k₂: Male → Royalty | King  
+k₁: human → male | King  
+k₂: male → royalty | King  
 
 Then:  
-k₂ ∘ k₁: Human → Royalty | King
+k₂ ∘ k₁: human → royalty | King
 
 
-q₁: Human → Woman | Queen  
-q₂: Woman → Royalty | Queen  
+q₁: human → female | Queen  
+q₂: female → royalty | Queen  
 
 Then:  
-q₂ ∘ q₁: Human → Royalty | Queen
+q₂ ∘ q₁: human → royalty | Queen
 
 Cross-Z-frame composition:
 
@@ -244,7 +241,7 @@ Let: M|Z = { fₙ ∘ ... ∘ f₁ | all fᵢ: Xᵢ → Xᵢ₊₁ | Z }
 
 Define the identity element of M|Z as a family of identity morphisms over the shared Z frame:
 
-For each X ∈ Ob(C ∪ D), there exists a unique identity morphism:
+For each X ∈ Ob(C ∪ D), there exists a unique identity morphism under a Z frame:
 
 e|Z(X) := id_X | Z
 
@@ -284,10 +281,10 @@ Note: The definition of σ is provided in the following section.
 
 **Example: Cross Category Identity Morphism**
 ```
-dog ∈ Ob(pet)  
-dog ∈ Ob(animal)  
+dog ∈ Ob(Pet)  
+dog ∈ Ob(Animal)  
 
-dog → dog | Z=domesticated  
+dog → dog | Z=Domesticated  
 ```
 
 <div style="page-break-after: always;"></div>
@@ -295,10 +292,11 @@ dog → dog | Z=domesticated
 # Definition: Semantic Shifting Morphism (σ)
 
 ```
-σ: X → X | X
+σ: D(Xₙ₋₁ | X) → D(Xₙ₋₁ | X)
+
 such that σ ⊕ f ∈ M|Z if and only if type compatibility holds:
 
-∀ A, B, (A → B) ∘ σ is valid if:
+∀ A, B, (A → B) ∘ σ(X) is valid if:
 
 ( A >> X or X >> A )
 and
@@ -311,18 +309,21 @@ Definition: SubsumedBy
 X >> A ≡ X ⊑ A
 
 Example:
-King >> Human
-Human >> Queen
+king → king >> human → human
+  ⇒ king >> human  → valid
+
+human → human >> queen → queen
+  ⇒ human >> queen → valid
 ```
 
 **Semantic Operators**
 Semantic Operator σ modifies morphism as follows.
 ```
-σx. Not(x){ A ↛ B | Z}     →     Rupture under Z frame
-σx. so_much(x){A → B | Z}  →     Preservation & amplification under Z frame
-σx. >>(x,y)                →     Semantic Shifting x to y (Generalization) as function form
-σx. <<(x,y)                →     Downward Shifting x to y (Specialization) as function form
-σx. >(x,y)                 →     Semantic Mapping 
+σ(X). Not(x){ A ↛ B | Z}     →     Rupture under Z frame
+σ(X). so_much(x){A → B | Z}  →     Preservation & amplification under Z frame
+σ(X). >>(x,y)                →     Semantic Shifting x to y (Generalization) as function form
+σ(X). <<(x,y)                →     Downward Shifting x to y (Specialization) as function form
+σ(X). >(x,y)                 →     Semantic Mapping 
 ```
 
 
@@ -330,15 +331,15 @@ Semantic Operator σ modifies morphism as follows.
 
 ```
 Addition (⊕):
-σx. ⊕(f, Aₙ₋₁ | CD): D(Aₙ₋₁ | Z) → D(Bₙ₋₁ | Z') | CD
-σx. ⊕(f₁, f₂) : Aₙ₋₁ :={f₁, f₂}
+σ(X). ⊕(f, Aₙ₋₁ | Z): D(Aₙ₋₁ | Z) → D(Bₙ₋₁ | Z) | Z
+σ(X). ⊕(f₁, f₂) : Aₙ₋₁ :={f₁, f₂}
 
 Subtraction (⊖):
 ⊖: Aₙ₋₁ ⊖ {f_i} 
-σx. ⊖(f, Aₙ₋₁ | CD): D(Aₙ₋₁ | Z) → D(Bₙ₋₁ | Z') | CD  
+σ(X). ⊖(f, Aₙ₋₁ | Z): D(Aₙ₋₁ | Z) → D(Bₙ₋₁ | Z) | Z   
 
-- ⊕ operator is σ_safe if CD alignment is preserved.
-- ⊖ operator is potentially σ_unsafe but can be σ_safe if resulting chain preserves CD.
+- ⊕ operator is σ_safe if Z alignment is preserved.
+- ⊖ operator is potentially σ_unsafe but can be σ_safe if resulting chain preserves the underlying morphic continuity Z.
 ```
 
 **Example**
@@ -351,20 +352,22 @@ Subtraction (⊖):
 
 ### Semantic Mapping
 ```
-C_chain = { f₁, f₂, ..., fₙ } ∈ D(Cₙ₋₁ | Z)
+C_chain = { f₁, f₂, ..., fₙ | Z} ∈ D(Cₙ₋₁ | Z)
 
-σx: D(Aₙ₋₁ | Z) > D(Bₙ₋₁ | Y) | CD
+σ(X): D(Aₙ₋₁ | Z) > D(Bₙ₋₁ | Y) | Z, Y ∈ CD
 where:
 D(Aₙ₋₁ | Z) = source morphic chain
 D(Bₙ₋₁ | Y) = target morphic chain
 CD = codomain alignment (semantic anchor)
 
-σx is not strict functorial → quasi-alignment under semantic equivalence
+σ(X) is not strict functorial → quasi-alignment under semantic equivalence
 
-σx ≈ η: Dᵢ ⇒ Dᵢ₊₁ | CD (Quasi-Natural Transformation interpretation)
+σ(X) ≈ η: Dᵢ ⇒ Dᵢ₊₁ | CD (Quasi-Natural Transformation interpretation)
 
 Example:
-σx. >(puppy → dog → mammal, Human) ∋ Girl → She → Mammal
+σ(X). >(puppy → dog → mammal | Canine, Human) ∋ girl → she → mammal | Human
+ 
+where: canine, Human ∈ Mammal
 
 ```
 
@@ -391,17 +394,17 @@ M|Z = { f_n ∘ ... ∘ f_1 | all f_i under Z }
 
 ### Associativity of σ
 ```
-σ₁: D(Aₙ₋₁ | Z₁) → D(Bₙ₋₁ | Z₂) | CD₁
-σ₂: D(Bₙ₋₁ | Z₂) → D(Cₙ₋₁ | Z₃) | CD₂
+σ₁: D(Aₙ₋₁ | Z₁) → D(Bₙ₋₁ | Z₁) | Z₁
+σ₂: D(Bₙ₋₁ | Z₂) → D(Cₙ₋₁ | Z₂) | Z₂
 
 Then the composition:
 σ_comp = σ₂ ∘ σ₁
 is a morphism:
 
-σ_comp: D(Aₙ₋₁ | Z₁) → D(Cₙ₋₁ | Z₃) | CD₃
+σ_comp: D(Aₙ₋₁ | Z₁) → D(Cₙ₋₁ | Z₂) | Z₃
 
 where:
-CD₃ is determined by the alignment of CD₁ and CD₂.
+Z₁, Z₂ >> Z₃ = true
 
 Associativity
 For all σ₁, σ₂, σ₃ such that their domains/codomains match for composition:
@@ -412,43 +415,45 @@ Thus, σ operator composition is associative.
 
 **Example:**
 ```
- σ₁ = >(Canine, Mammal)  
- σ₂ = >(Mammal, Animal)  
- σ₃ = >(Animal, LivingBeing)
+ σ₁ = >(canine, mammal)  
+ σ₂ = >(mammal, animal)  
+ σ₃ = >(animal, livingBeing)
 
  Step 1: Compose σ₂ ∘ σ₁ 
- σ₂ ∘ σ₁ = >(Mammal, Animal) ∘ >(Canine, Mammal) 
- = >(Canine, Animal)
+ σ₂ ∘ σ₁ = >(mammal, animal) ∘ >(canine, mammal) 
+ = >(canine, animal)
 
 Step 2: Compose (σ₃ ∘ σ₂) ∘ σ₁
- σ₃ ∘ σ₂ = >(Animal, LivingBeing) ∘ >(Mammal, Animal) 
- = >(Mammal, LivingBeing)
+ σ₃ ∘ σ₂ = >(animal, livingBeing) ∘ >(mammal, animal) 
+ = >(mammal, livingBeing)
 
  σ₃ ∘ (σ₂ ∘ σ₁) 
- = >(Animal, LivingBeing) ∘ >((Mammal, Animal) ∘ >(Canine, Mammal) )
- = >(Animal, LivingBeing) ∘ >(Canine, Animal)
- = >(Canine, LivingBeing)
+ = >(animal, livingBeing) ∘ >((mammal, animal) ∘ >(canine, mammal) )
+ = >(animal, livingBeing) ∘ >(canine, animal)
+ = >(canine, livingBeing)
 
  (σ₃ ∘ σ₂) ∘ σ₁
- = (>(Animal, LivingBeing) ∘ >(Mammal, Animal))∘ >(Canine, Mammal)
- = >(Mammal, LivingBeing) ∘ >(Canine, Mammal)
- = >(Canine, LivingBeing)
+ = (>(animal, livingBeing) ∘ >(mammal, animal))∘ >(canine, mammal)
+ = >(mammal, livingBeing) ∘ >(canine, mammal)
+ = >(canine, livingBeing)
 
 Conclusion:
- (σ₃ ∘ σ₂) ∘ σ₁ = σ₃ ∘ (σ₂ ∘ σ₁) =  (Canine, LivingBeing)
+ (σ₃ ∘ σ₂) ∘ σ₁ = σ₃ ∘ (σ₂ ∘ σ₁) =  (canine, livingBeing)
 ```
 Note: Morphic Chain D does not require the number of objects to be more than one
 
 <div style="page-break-after: always;"></div>
 
 ### x Safe / Unsafe Semantic Shifting Morphism (σ)
-**Definition of Safe and Unsafe σ Operator**
+**Definition of Safe and Unsafe σ Operator** </br>
 Semantic Shifting Morphism (σ) can be classified based on whether it preserves the global coherence of the morphic chain.
 
 **Safe σ Operator (σ_safe)**
 Acts on the entire morphic chain as a coherent transformation.
 ```
-σ_safe: D(Aₙ₋₁ | Z) > D(Bₙ₋₁ | Z') | CD
+σ_safe: D(Aₙ₋₁ | Z) > D(Bₙ₋₁ | Z') | Z >> Z' ∨ Z << Z' 
+
+where: Z, Z'∈ CD
 ```
 
 Behaves as a Quasi-Natural Transformation
@@ -464,13 +469,13 @@ Resulting chain remains in M|Z or M_{Z'} (closed).
 
 **Example**
 ```
-σx. >(Canine, Mammal)
-σx. >(Mammal, Animal)
-σx. >(Animal, LivingBeing)
+σ₁(X). >(canine, mammal)
+σ₂(X). >(mammal, animal)
+σ₃(X). >(animal, livingBeing)
 
 Composition:
 (σ₃ ∘ σ₂) ∘ σ₁ = σ₃ ∘ (σ₂ ∘ σ₁)
-→ >(Canine, LivingBeing)
+→ >(canine, livingBeing)
 
 Entire morphic chain is preserved.
 ```
@@ -483,7 +488,7 @@ Acts locally or in a decomposed manner.
 
 Chain may collapse:
 ```
-σ_unsafe: D(Aₙ₋₁ | Z) → { rupture(f₁), rupture(f₂), ..., rupture(fₙ) }
+σ_unsafe: D(Aₙ₋₁ | Z) → { rupture(f₁), rupture(f₂), ..., rupture(fₙ) | ¬Z }
 ```
 
 ```
@@ -495,7 +500,7 @@ Cannot be captured by a Quasi-Natural Transformation globally.
 **Example**
 
 ```
-σx. Not(x) { A ↛ B | Z }
+σ(X). Not(x) { A ↛ B | Z }
 
 Result:
 rupture(A ↛ B | Z)
@@ -519,41 +524,41 @@ C = {−OC₁, −OC₂, ..., −OCₙ}
 
 We define king as:
 
-k₁: Human → Male | King  
-k₂: Male → Royalty | King  
+k₁: human → male | King  
+k₂: male → royalty | King  
 
 Then:  
-k₂ ∘ k₁: Human → Royalty | King
+k₂ ∘ k₁: human → royalty | King
 
 We define queen as:
-q₁: Human → Woman | Queen  
-q₂: Woman → Royalty | Queen  
+q₁: human → woman | Queen  
+q₂: woman → royalty | Queen  
 
 Then:  
-q₂ ∘ q₁: Human → Royalty | Queen
+q₂ ∘ q₁: human → royalty | Queen
 
 We define semantic editing morphisms σ within the Human frame:
 
-σ: Human → Human | Human (A ∘ B | Human)  
-= (Human → Human | Human) ⊕ (A ∘ B | Human)  
-= Human → Human | Human
+σ: human → human | Human (A ∘ B | Human)  
+= (human → human | Human) ⊕ (A ∘ B | Human)  
+= human → human | Human
 since:
-M|Z = { f_n ∘ ... ∘ f_1 | all f_i under Z }
+M|Z = { f_n ∘ ... ∘ f_1 | all f_i | Z }
 
 Thus formally:
 σ(m⁻¹ ∘ f)
-= (Male → Human)∘(Human → Female) | Human ⊕ (Human → Human | Human)
-= Human → Human | Human
+= (male → human)∘(human → female) | Human ⊕ (human → human | Human)
+= human → human | Human
 
 where:
-m⁻¹: Male → Human  
-f: Human → Female
+m⁻¹: male → human  
+f: human → female
 
 And:
-Male >> Human  
-Female >> Human
+male >> human  
+female >> human
 
-(Male → Human) ∘ (Human → Female) ⊑ (Human → Human)
+(male → human) ∘ (human → female) ⊑ (human → human)
 
 Then:
 (k₂ ∘ k₁) ∘ σ(m⁻¹ ∘ f): Human → Royalty | Human
@@ -595,7 +600,7 @@ This example illustrates how morphic flow can traverse categories (livestock, pe
 as long as semantic equivalence under Z = domesticated is preserved.
 
 ```
-(dog ≅ cat ≅ pig) | Z = domesticated
+(dog ≅ cat ≅ pig) | Z = Domesticated
 Ob(livestock) = {pig} 
 Ob(pet) = {dog, cat}
 
@@ -609,6 +614,12 @@ F₃ ∘ f₂ ∘ F₁: pig → pig | Z ∈ M|Z
 # Conclusion
 In this work, we have proposed a formal framework for Semantic Algebraic Operators, extending the structure of Conceptual Topology and Semantic Circulation. By introducing operators such as σ, ⊕, and ⊖, and formalizing their algebraic properties, we have shown that semantic flow can be systematically represented and manipulated. Future work will explore the development of a complete Semantic Operator Algebra and its applications in semantic DSLs, cognitive modeling, and cross-linguistic analysis.
 
+## Future Work
+
+- Full formalization of Semantic Morphism Set Algebra.
+- Extension of σ operator to modal and aspectual semantics.
+- Empirical validation using vector-based semantic spaces.
+- Application to cross-linguistic semantic flow modeling.
 
 <div style="page-break-after: always;"></div>
 
@@ -623,6 +634,7 @@ Z : Intermediating variable (semantic anchor; Z-frame)
 ↛: Ruptured morphism
 F : Cross-category morphism (used in cross-category flow under shared Z-frame)
 //: Used to narrate meaning flow of morphic chains.
+¬: Absence
 
 M|Z : Monoid of Semantic Flow under Z-frame
 R|Z := { rupture(f) | rupture(f, σ(f) | Z) ≠ ∅ }
@@ -636,11 +648,29 @@ rupture(f, σ(f) | Z) ≠ ∅ : Indicates semantic rupture
 η : Quasi-Natural Transformation: Contextual alignment between morphic chains.
 
 ⊕:  Semantic morphism set addition in σ or morphic merger such as:
-    (k₂ ∘ k₁) ⊕ (q₂ ∘ q₁) = Human → Royalty | Z'
+    (k₂ ∘ k₁) ⊕ (q₂ ∘ q₁) = human → royalty | Z'
 ⊖:  Semantic morphism set subtraction 
     Removes specified morphisms from a morphic chain or set.
 ```
 
+**Notations**
+```
+Concept / Word (lexeme):
+    - Lower case (e.g., puppy, dog, girl, she)
+
+Z Frame (semantic anchor):
+    - Upper case (e.g., Mammal, Human, Agency, Domesticated, Royalty)
+
+Type variables (A, B, X, Y, Z in formal definitions):
+    - Follow standard formal notation (uppercase) 
+
+Example:
+puppy → dog | Mammal
+A → B | Z
+
+Morphism: f, g, h
+Functor: F
+```
 
 **Simplified Form of Identity Morphism:**
 
@@ -656,11 +686,11 @@ rupture(f, σ(f) | Z) ≠ ∅ : Indicates semantic rupture
 **σ Operator**
 
 ```
-σx. Not(x){ A ↛ B | Z}     →     Rupture under Z frame
-σx. so_much(x){A → B | Z}  →     Preservation & amplification under Z frame
-σx. >>(x,y)                →     Semantic Shifting x to y (Generalization) as function form
-σx. <<(x,y)                →     Downward Shifting x to y (Specialization) as function form
-σx. >(x,y)                 →     Semantic Mapping 
+σ(X). Not(x){ A ↛ B | Z}     →     Rupture under Z frame
+σ(X). so_much(x){A → B | Z}  →     Preservation & amplification under Z frame
+σ(X). >>(x,y)                →     Semantic Shifting x to y (Generalization) as function form
+σ(X). <<(x,y)                →     Downward Shifting x to y (Specialization) as function form
+σ(X). >(x,y)                 →     Semantic Mapping 
 ```
 
 </br>
@@ -669,23 +699,23 @@ rupture(f, σ(f) | Z) ≠ ∅ : Indicates semantic rupture
 
 ```
 Addition (⊕):
-σx. ⊕(f, Aₙ₋₁ | CD): D(Aₙ₋₁ | Z) → D(Bₙ₋₁ | Z') | CD
-σx. ⊕(f₁, f₂) : Aₙ₋₁ :={f₁, f₂}
+σ(X). ⊕(f, Aₙ₋₁ | Z): D(Aₙ₋₁ | Z) → D(Bₙ₋₁ | Z) | Z
+σ(X). ⊕(f₁, f₂) : Aₙ₋₁ :={f₁, f₂}
 
 Subtraction (⊖):
 ⊖: Aₙ₋₁ ⊖ {f_i} 
-σx. ⊖(f, Aₙ₋₁ | CD): D(Aₙ₋₁ | Z) → D(Bₙ₋₁ | Z') | CD  
+σ(X). ⊖(f, Aₙ₋₁ | Z): D(Aₙ₋₁ | Z) → D(Bₙ₋₁ | Z) | Z   
 
-- ⊕ operator is σ_safe if CD alignment is preserved.
-- ⊖ operator is potentially σ_unsafe but can be σ_safe if resulting chain preserves CD.
+- ⊕ operator is σ_safe if Z alignment is preserved.
+- ⊖ operator is potentially σ_unsafe but can be σ_safe if resulting chain preserves the underlying morphic continuity Z.
 ```
 
 </br>
 
 **σ Typing Hierarchy**
 
-σ_safe: D(Aₙ₋₁ | Z) → D(Bₙ₋₁ | Z') | CD (Preserves global coherence)
-σ_unsafe: D(Aₙ₋₁ | Z) → { rupture(f₁), ..., rupture(fₙ) } (Global coherence lost)
+σ_safe: D(Aₙ₋₁ | Z) → D(Bₙ₋₁ | Z) | Z (Preserves global coherence)</br>
+σ_unsafe: D(Aₙ₋₁ | Z) → { rupture(f₁), ..., rupture(fₙ) | ¬Z } (Global coherence lost)
 
 Note: σ_safe behaves as Quasi-Natural Transformation.  
       σ_unsafe induces rupture, and cannot be captured globally.
