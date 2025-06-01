@@ -6,8 +6,7 @@ Contact: Written Below
 # Introduction
 We introduce a formal framework for Semantic Algebraic Operators, as an extension of the Conceptual Topology approach to semantic representation.
 The framework aims to model how meaning can be composed, transformed, and analyzed through algebraic operations on morphic flow structures, providing a foundation for the development of Semantic Operator Algebra. In this work, we formalize key operations such as semantic shifting (σ), semantic morphism set operators (⊕, ⊖), and cross-category flow conditions.  
-Building on the Monoid structure of morphic flows (M_Z), the framework captures both safe and rupture-inducing transformations of meaning. This establishes a foundation for future developments in Semantic Operator Algebra, with potential applications to semantic DSLs, cognitive modeling, and cross-linguistic analysis.
-
+Building on the Monoid structure of morphic flows (M|Z), the framework captures both safe and rupture-inducing transformations of meaning. This establishes a foundation for future developments in Semantic Operator Algebra, with potential applications to semantic DSLs, cognitive modeling, and cross-linguistic analysis.
 
 </br>
 
@@ -17,9 +16,9 @@ Building on the Monoid structure of morphic flows (M_Z), the framework captures 
     - Identity Morphism
     - Mirror Morphism
     - Quasi-Natural Transformation
-3. Monoid Structure of Semantic Flow (M_Z)
-    - Identity Element of M_Z 
-    - Associativity of M_Z
+3. Monoid Structure of Semantic Flow (M|Z)
+    - Identity Element of M|Z 
+    - Associativity of M|Z
 4. Semantic Shifting Morphism (σ) 
     - Semantic Operator
     - Semantic Mapping
@@ -107,7 +106,7 @@ Since the identity morphism is passes through an external anchor point,
 the identity morphism is defined quasi-identical.</br>
 e.g. dog → perro | собака
 
-</br>
+<div style="page-break-after: always;"></div>
 
 **Simplified Form of Identity Morphism:**
 
@@ -150,7 +149,7 @@ if and only if:
 For example, let *Z = abstraction*. This allows a semantic transition from *girl → she* and *puppy → dog*, treating them as mirror morphisms under a shared conceptual frame.  
 However, if we take *Z = agency*, a rupture emerges: *puppy → dog* lacks agency, while *girl → she* retains it. Hence, **rupture(f, f′ | agency) ≠ ∅**, yet *f* and *f′* still align toward the same codomain (e.g., *mammal*).
 
-</br>
+<div style="page-break-after: always;"></div>
 
 ### Quasi-Natural Transformation of Meaning Systems
 
@@ -169,7 +168,7 @@ Example: η: girl → puppy | Z = baby
 
 <div style="page-break-after: always;"></div>
 
-# Monoid Structure of Semantic Flow (M_Z)
+# Monoid Structure of Semantic Flow (M|Z)
 In Conceptual Topology, Z is defined as a mediating point/semantic anchor.
 ```
 Let C and D be categories with semantic projection to Z.
@@ -200,93 +199,86 @@ For any X, Y ∈ Ob(C ∪ D):
 
 Then the set of semantic flow morphisms under Z forms a monoid:
 
-M_Z = { f_n ∘ ... ∘ f_1 | all f_i under Z }
+M|Z = { f_n ∘ ... ∘ f_1 | all f_i under Z }
 ```
+
+<div style="page-break-after: always;"></div>
 
 **Example: Queen and King**
 ```
 Let C be a concept
 C = {−OC₁, −OC₂, ..., −OCₙ} // Yoneda's lemma and structralism
 
-king = {Royalty⃗, Male⃗, Human⃗}
-queen = {Royalty⃗, Female⃗, Human⃗} 
-man = {Male⃗, Human}
-woman =  {Female⃗, Human} 
+King = {Royalty⃗, Male⃗, Human⃗}
+Queen = {Royalty⃗, Female⃗, Human⃗} 
 
-{Royalty⃗, Male⃗, Human⃗} ⊖ {Male⃗} ⊕ {Female⃗} 
-= {Royalty⃗, Female⃗, Human⃗} 
-= queen
-
-
-k₁: Human → Male | king  
-k₂: Male → Royalty | king  
+k₁: Human → Male | King  
+k₂: Male → Royalty | King  
 
 Then:  
-k₂ ∘ k₁: Human → Royalty | king
+k₂ ∘ k₁: Human → Royalty | King
 
 
-q₁: Human → Woman | queen  
-q₂: Woman → Royalty | queen  
+q₁: Human → Woman | Queen  
+q₂: Woman → Royalty | Queen  
 
 Then:  
-q₂ ∘ q₁: Human → Royalty | queen
-
-m: Human → Male
-f: Human → Female
+q₂ ∘ q₁: Human → Royalty | Queen
 
 Cross-Z-frame composition:
 
 (k₂ ∘ k₁) ⊕ (q₂ ∘ q₁)= Human → Royalty | Z'
 
-If higher Z' (e.g. "Humanity" or "Social Role") unifies Z = king and Z = queen:
+If higher Z' (e.g. "Humanity" or "Social Role") unifies Z = King and Z = Queen:
 
 Then:
-(k₂ ∘ k₁) ⊕ (q₂ ∘ q₁) ∈ M_Z'
-
+(k₂ ∘ k₁) ⊕ (q₂ ∘ q₁) ∈ M|Z'
 ```
+The ⊕ operator enables morphic chains to merge while preserving Monoid coherence under Z', resulting in (k₂ ∘ k₁) ⊕ (q₂ ∘ q₁) ∈ M|Z'.
 
-</br>
+<div style="page-break-after: always;"></div>
 
-### Identity Element of M_Z
+### Identity Element of M|Z
 ```
-Let: M_Z = { fₙ ∘ ... ∘ f₁ | all fᵢ: Xᵢ → Xᵢ₊₁ | Z }
+Let: M|Z = { fₙ ∘ ... ∘ f₁ | all fᵢ: Xᵢ → Xᵢ₊₁ | Z }
 
-Define the identity element of M_Z as a family of identity morphisms over the shared Z frame:
+Define the identity element of M|Z as a family of identity morphisms over the shared Z frame:
 
 For each X ∈ Ob(C ∪ D), there exists a unique identity morphism:
 
-e_Z(X) := id_X | Z
+e|Z(X) := id_X | Z
 
-Then, for any f: X → Y | Z ∈ M_Z:
+Then, for any f: X → Y | Z ∈ M|Z:
 
-e_Z(X) ∘ f = f
-f ∘ e_Z(Y) = f
+e|Z(X) ∘ f = f
+f ∘ e|Z(Y) = f
 
-Therefore, the identity structure of M_Z is given by the family:
+Therefore, the identity structure of M|Z is given by the family:
 
 { id_X | Z | X ∈ Ob(C ∪ D) }
 
 which forms a pointwise identity across the objects under the common Z frame.  
-This ensures that M_Z satisfies the identity axiom of a monoid.
+This ensures that M|Z satisfies the identity axiom of a monoid.
 ```
 
-### Associativity of M_Z
+### Associativity of M|Z
 ```
 Let:
 
-M_Z = { fₙ ∘ ... ∘ f₁ | all fᵢ: Xᵢ → Xᵢ₊₁ | Z }
+M|Z = { fₙ ∘ ... ∘ f₁ | all fᵢ: Xᵢ → Xᵢ₊₁ | Z }
 
-Then for all f, g, h ∈ M_Z:
+Then for all f, g, h ∈ M|Z:
 
 (f ∘ g) ∘ h = f ∘ (g ∘ h)
 
-Thus, the composition ∘ in M_Z is associative.
+Thus, the composition ∘ in M|Z is associative.
 ```
 
+<div style="page-break-after: always;"></div>
 
 **Example:**</br>
 ```
-σ_id(word) = word → σ_id = e_Z
+σ_id(word) = word → σ_id = e|Z
 Note: The definition of σ is provided in the following section.
 ```
 
@@ -304,7 +296,7 @@ dog → dog | Z=domesticated
 
 ```
 σ: X → X | X
-such that σ ⊕ f ∈ M_Z if and only if type compatibility holds:
+such that σ ⊕ f ∈ M|Z if and only if type compatibility holds:
 
 ∀ A, B, (A → B) ∘ σ is valid if:
 
@@ -388,12 +380,14 @@ word ≅ Nat(Hom(-, word), Fib(word))
 σ_id(word) = word
 σ_id(f) = f  for all f: word → word | word
 
-M_Z = { f_n ∘ ... ∘ f_1 | all f_i under Z }
-σ_id ∈ M_Z
+M|Z = { f_n ∘ ... ∘ f_1 | all f_i under Z }
+σ_id ∈ M|Z
 σ ∘ σ_id = σ
 σ_id ∘ σ = σ
 ∴ word is word and word is word
 ```
+
+<div style="page-break-after: always;"></div>
 
 ### Associativity of σ
 ```
@@ -416,21 +410,18 @@ For all σ₁, σ₂, σ₃ such that their domains/codomains match for composit
 Thus, σ operator composition is associative.
 ```
 
-
 **Example:**
 ```
-Step 1: Compose σ₂ ∘ σ₁
  σ₁ = >(Canine, Mammal)  
  σ₂ = >(Mammal, Animal)  
  σ₃ = >(Animal, LivingBeing)
 
- σ₂ ∘ σ₁ 
- = >(Mammal, Animal) ∘ >(Canine, Mammal) 
+ Step 1: Compose σ₂ ∘ σ₁ 
+ σ₂ ∘ σ₁ = >(Mammal, Animal) ∘ >(Canine, Mammal) 
  = >(Canine, Animal)
 
 Step 2: Compose (σ₃ ∘ σ₂) ∘ σ₁
- σ₃ ∘ σ₂ 
- = >(Animal, LivingBeing) ∘ >(Mammal, Animal) 
+ σ₃ ∘ σ₂ = >(Animal, LivingBeing) ∘ >(Mammal, Animal) 
  = >(Mammal, LivingBeing)
 
  σ₃ ∘ (σ₂ ∘ σ₁) 
@@ -444,13 +435,11 @@ Step 2: Compose (σ₃ ∘ σ₂) ∘ σ₁
  = >(Canine, LivingBeing)
 
 Conclusion:
- (σ₃ ∘ σ₂) ∘ σ₁ = σ₃ ∘ (σ₂ ∘ σ₁)
- Both yield:
- > (Canine, LivingBeing)
+ (σ₃ ∘ σ₂) ∘ σ₁ = σ₃ ∘ (σ₂ ∘ σ₁) =  (Canine, LivingBeing)
 ```
 Note: Morphic Chain D does not require the number of objects to be more than one
 
-</br>
+<div style="page-break-after: always;"></div>
 
 ### x Safe / Unsafe Semantic Shifting Morphism (σ)
 **Definition of Safe and Unsafe σ Operator**
@@ -471,7 +460,7 @@ Composition is associative:
 ```
 (σ₃ ∘ σ₂) ∘ σ₁ = σ₃ ∘ (σ₂ ∘ σ₁)
 ```
-Resulting chain remains in M_Z or M_{Z'} (closed).
+Resulting chain remains in M|Z or M_{Z'} (closed).
 
 **Example**
 ```
@@ -486,7 +475,7 @@ Composition:
 Entire morphic chain is preserved.
 ```
 
-</br>
+<div style="page-break-after: always;"></div>
 
 **Unsafe σ Operator (σ_unsafe)**
 Does not preserve global coherence of the morphic chain.
@@ -513,9 +502,6 @@ rupture(A ↛ B | Z)
 → breaks the morphic flow → chain decomposes.
 ```
 
-
-
-
 ### Example: Morphic Shifting and Cross-Z-frame Semantic Flow
 
 We consider the well-known semantic analogy:
@@ -533,18 +519,18 @@ C = {−OC₁, −OC₂, ..., −OCₙ}
 
 We define king as:
 
-k₁: Human → Male | king  
-k₂: Male → Royalty | king  
+k₁: Human → Male | King  
+k₂: Male → Royalty | King  
 
 Then:  
-k₂ ∘ k₁: Human → Royalty | king
+k₂ ∘ k₁: Human → Royalty | King
 
 We define queen as:
-q₁: Human → Woman | queen  
-q₂: Woman → Royalty | queen  
+q₁: Human → Woman | Queen  
+q₂: Woman → Royalty | Queen  
 
 Then:  
-q₂ ∘ q₁: Human → Royalty | queen
+q₂ ∘ q₁: Human → Royalty | Queen
 
 We define semantic editing morphisms σ within the Human frame:
 
@@ -552,7 +538,7 @@ We define semantic editing morphisms σ within the Human frame:
 = (Human → Human | Human) ⊕ (A ∘ B | Human)  
 = Human → Human | Human
 since:
-M_Z = { f_n ∘ ... ∘ f_1 | all f_i under Z }
+M|Z = { f_n ∘ ... ∘ f_1 | all f_i under Z }
 
 Thus formally:
 σ(m⁻¹ ∘ f)
@@ -575,17 +561,18 @@ Then:
 
 Assuming a higher semantic frame Z' (e.g., Humanity, Social Role) that unifies king and queen frames:
 
-(k₂ ∘ k₁) ∘ σ ∈ M_Z'
+(k₂ ∘ k₁) ∘ σ ∈ M|Z'
 
 Thus:
 
 king - man + woman = queen
 is formalized as:  
 
-(k₂ ∘ k₁) ∘ σ ∈ M_Z'
+// Represents: shifting Gender component in Human → mapping to Royalty
+(k₂ ∘ k₁) ∘ σ ∈ M|Z'
 ```
 
-</br>
+<div style="page-break-after: always;"></div>
 
 # Cross-Category Flow Condition
 Conceptual Topology allows communicative diagram across categories as long as same Z is shared: shared semantic equivalence.
@@ -599,7 +586,7 @@ and semantic equivalence holds:
 ∀ X, Y ∈ Ob(C ∪ D), [X]_Z ≅ [Y]_Z
 
 then semantic flow forms a monoid over Z-frame:
-M_Z = { f_n ∘ ... ∘ f_1 | all f_i under Z }
+M|Z = { f_n ∘ ... ∘ f_1 | all f_i under Z }
 
 ```
 
@@ -612,11 +599,11 @@ as long as semantic equivalence under Z = domesticated is preserved.
 Ob(livestock) = {pig} 
 Ob(pet) = {dog, cat}
 
-f₁: pig → cat | Z
+F₁: pig → cat | Z
 f₂: cat → dog | Z
-f₃: dog → pig | Z
+F₃: dog → pig | Z
 Then:
-f₃ ∘ f₂ ∘ f₁: pig → pig | Z ∈ M_Z
+F₃ ∘ f₂ ∘ F₁: pig → pig | Z ∈ M|Z
 ```
 
 # Conclusion
@@ -633,11 +620,13 @@ In this work, we have proposed a formal framework for Semantic Algebraic Operato
 Z : Intermediating variable (semantic anchor; Z-frame)
 | : Frame separator (indicates morphism is mediated by Z-frame)
 →: Morphic Flow
-↛: ruptured morphism
+↛: Ruptured morphism
+F : Cross-category morphism (used in cross-category flow under shared Z-frame)
+//: Used to narrate meaning flow of morphic chains.
 
-M_Z : Monoid of Semantic Flow under Z-frame
-R_Z := { rupture(f) | rupture(f, σ(f) | Z) ≠ ∅ }
-e_Z : Identity element of M_Z
+M|Z : Monoid of Semantic Flow under Z-frame
+R|Z := { rupture(f) | rupture(f, σ(f) | Z) ≠ ∅ }
+e|Z : Identity element of M|Z
 D(Aₙ₋₁ | Z) : Morphic chain under Z frame
 
 σ : Semantic Shifting Morphism
@@ -662,7 +651,7 @@ rupture(f, σ(f) | Z) ≠ ∅ : Indicates semantic rupture
 2. f: X → X | Z  (Mediated identity with semantic flow)</br>
 　In simplified form: X | Z</br>
 
-</br>
+<div style="page-break-after: always;"></div>
 
 **σ Operator**
 
@@ -700,7 +689,15 @@ Subtraction (⊖):
 
 Note: σ_safe behaves as Quasi-Natural Transformation.  
       σ_unsafe induces rupture, and cannot be captured globally.
+</br>
 
+### 概念位相論 / Conceptual Topology 
+This theory, named 概念位相論 or Conceptual Topoloy, was proposed by **No Name Yet Exist**.
 
+GitHub: https://github.com/No-Name-Yet-Exist/Conceptual-Topology<br/>
+Note: https://note.com/xoreaxeax/n/n3711c1318d0b
+Zenodo: https://zenodo.org/records/15510119
+
+---
 
 This document and all conceptual content therein are © [No Name Yet Exist], 2025. All rights reserved. Unauthorized reproduction, distribution, or use without explicit permission is prohibited.
