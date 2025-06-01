@@ -709,9 +709,9 @@ Note: σ_safe behaves as Quasi-Natural Transformation.
 This theory, named 概念位相論 or Conceptual Topoloy, was proposed by **No Name Yet Exist**.
 
 GitHub: https://github.com/No-Name-Yet-Exist/Conceptual-Topology<br/>
-Note: https://note.com/xoreaxeax/n/n3711c1318d0b
-Zenodo: https://zenodo.org/records/15510119
+Note: https://note.com/xoreaxeax/n/n3711c1318d0b<br/>
+Zenodo: https://zenodo.org/records/15455079
 
 ---
-
-This document and all conceptual content therein are © [No Name Yet Exist], 2025. All rights reserved. Unauthorized reproduction, distribution, or use without explicit permission is prohibited.
+This document and all conceptual content therein are © [No Name Yet Exist], 2025. 
+All rights reserved. Unauthorized reproduction, distribution, or use without explicit permission is prohibited.
