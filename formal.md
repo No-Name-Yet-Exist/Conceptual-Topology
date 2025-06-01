@@ -196,7 +196,7 @@ For any X, Y ∈ Ob(C ∪ D):
 
 Then the set of semantic flow morphisms under Z forms a monoid:
 
-M|Z = { f_n ∘ ... ∘ f_1 | all f_i | Z }
+M|Z = { fₙ ∘ ... ∘ f₁ | all fᵢ: Xᵢ → Xᵢ₊₁ | Z ⋏ ∀ i, j: fᵢ ≅ fⱼ | Z }
 ```
 
 <div style="page-break-after: always;"></div>
@@ -214,7 +214,6 @@ k₂: male → royalty | King
 
 Then:  
 k₂ ∘ k₁: human → royalty | King
-
 
 q₁: human → female | Queen  
 q₂: female → royalty | Queen  
@@ -237,18 +236,18 @@ The ⊕ operator enables morphic chains to merge while preserving Monoid coheren
 
 ### Identity Element of M|Z
 ```
-Let: M|Z = { fₙ ∘ ... ∘ f₁ | all fᵢ: Xᵢ → Xᵢ₊₁ | Z }
+Let: M|Z = { fₙ ∘ ... ∘ f₁ | all fᵢ: Xᵢ → Xᵢ₊₁ | Z ⋏ ∀ i, j: fᵢ ≅ fⱼ | Z }
 
 Define the identity element of M|Z as a family of identity morphisms over the shared Z frame:
 
 For each X ∈ Ob(C ∪ D), there exists a unique identity morphism under a Z frame:
 
-e|Z(X) := id_X | Z
+e|Z_X := id_X | Z
 
 Then, for any f: X → Y | Z ∈ M|Z:
 
-e|Z(X) ∘ f = f
-f ∘ e|Z(Y) = f
+e|Z_X ∘ f = f
+f ∘ e|Z_Y = f
 
 Therefore, the identity structure of M|Z is given by the family:
 
@@ -260,9 +259,7 @@ This ensures that M|Z satisfies the identity axiom of a monoid.
 
 ### Associativity of M|Z
 ```
-Let:
-
-M|Z = { fₙ ∘ ... ∘ f₁ | all fᵢ: Xᵢ → Xᵢ₊₁ | Z }
+Let: M|Z = { fₙ ∘ ... ∘ f₁ | all fᵢ: Xᵢ → Xᵢ₊₁ | Z ⋏ ∀ i, j: fᵢ ≅ fⱼ | Z }
 
 Then for all f, g, h ∈ M|Z:
 
@@ -275,7 +272,7 @@ Thus, the composition ∘ in M|Z is associative.
 
 **Example:**</br>
 ```
-σ_id(word) = word → σ_id = e|Z
+σ_id(Word). Op(word, Word) = word → σ_id = e|Z
 Note: The definition of σ is provided in the following section.
 ```
 
@@ -326,6 +323,7 @@ Semantic Operator σ modifies morphism as follows.
 σ(X). >(x,y)                 →     Semantic Mapping 
 ```
 
+<div style="page-break-after: always;"></div>
 
 **Semantic Morphism Set Operators**
 
@@ -371,6 +369,8 @@ where: canine, Human ∈ Mammal
 
 ```
 
+<div style="page-break-after: always;"></div>
+
 ### Identity Morphism of σ
 
 ```
@@ -378,12 +378,13 @@ word is word
 thus:
 word ≅ Nat(Hom(-, word), Fib(word)) 
 
-σ_id = σ such that σ(f) = f for all f ∈ Hom(X, X)
+σ_id(Z). OP(X,Z) = σ such that σ(f) = f for all f ∈ Hom(X, X) unless OP is σ_unsafe such that word is not a word: σ(Word). Not(word ↛ word) 
 
-σ_id(word) = word
-σ_id(f) = f  for all f: word → word | word
+σ_id(Word). OP(word, Word) = word
 
-M|Z = { f_n ∘ ... ∘ f_1 | all f_i under Z }
+σ_id(Word). OP(f, Word) = f  for all f: word → word | word
+since: M|Z = { fₙ ∘ ... ∘ f₁ | all fᵢ: Xᵢ → Xᵢ₊₁ | Z ⋏ ∀ i, j: fᵢ ≅ fⱼ | Z = Word }
+
 σ_id ∈ M|Z
 σ ∘ σ_id = σ
 σ_id ∘ σ = σ
@@ -394,30 +395,28 @@ M|Z = { f_n ∘ ... ∘ f_1 | all f_i under Z }
 
 ### Associativity of σ
 ```
-σ₁: D(Aₙ₋₁ | Z₁) → D(Bₙ₋₁ | Z₁) | Z₁
-σ₂: D(Bₙ₋₁ | Z₂) → D(Cₙ₋₁ | Z₂) | Z₂
+σ₁(Z₁). OP(D(Aₙ₋₁ | Z₁), Z₁) = D(Bₙ₋₁ | Z₁)
+σ₂(Z₂). OP(D(Bₙ₋₁ | Z₂), Z₂) = D(Cₙ₋₁ | Z₂)
 
-Then the composition:
-σ_comp = σ₂ ∘ σ₁
-is a morphism:
+Then the composition σ₂ ∘ σ₁:
+σ_comp(Z₃). OP(D(Cₙ₋₁ | Z₂), D(Bₙ₋₁ | Z₁)) = D(Dₙ₋₁ | Z₃)
 
-σ_comp: D(Aₙ₋₁ | Z₁) → D(Cₙ₋₁ | Z₂) | Z₃
-
-where:
-Z₁, Z₂ >> Z₃ = true
+where: Z₁, Z₂ >> Z₃ ∨ Z₁, Z₂ << Z₃
+and: Z₁, Z₂, Z₃ ∈ CD
+and: OP is not σ_unsafe
 
 Associativity
 For all σ₁, σ₂, σ₃ such that their domains/codomains match for composition:
 (σ₃ ∘ σ₂) ∘ σ₁ = σ₃ ∘ (σ₂ ∘ σ₁)
 
-Thus, σ operator composition is associative.
+Thus, σ composition operator is associative under Monoid structure.
 ```
 
 **Example:**
 ```
- σ₁ = >(canine, mammal)  
- σ₂ = >(mammal, animal)  
- σ₃ = >(animal, livingBeing)
+Let σ₁ = σ(Canine). >(canine → mammal, Mammal)  
+Let σ₂ = σ(Mammal). >(mammal → animal, Animal)  
+Let σ₃ = σ(Animal). >(animal → livingBeing, LivingBeing)
 
  Step 1: Compose σ₂ ∘ σ₁ 
  σ₂ ∘ σ₁ = >(mammal, animal) ∘ >(canine, mammal) 
@@ -522,6 +521,9 @@ Let C be a concept:
 // (Yoneda's lemma and structuralism — concept defined by oppositional components)
 C = {−OC₁, −OC₂, ..., −OCₙ}  
 
+King = {Royalty⃗, Male⃗, Human⃗}
+Queen = {Royalty⃗, Female⃗, Human⃗} 
+
 We define king as:
 
 k₁: human → male | King  
@@ -531,42 +533,41 @@ Then:
 k₂ ∘ k₁: human → royalty | King
 
 We define queen as:
-q₁: human → woman | Queen  
-q₂: woman → royalty | Queen  
+q₁: human → female | Queen  
+q₂: female → royalty | Queen  
 
 Then:  
 q₂ ∘ q₁: human → royalty | Queen
 
+m⁻¹: male → human | Human
+f: human → female | Human
+
 We define semantic editing morphisms σ within the Human frame:
 
-σ: human → human | Human (A ∘ B | Human)  
-= (human → human | Human) ⊕ (A ∘ B | Human)  
+σ(Human). >(m⁻¹ ∘ f, Human)
+= (male → human) ∘ (human → female) | Human ⊕ (human → human | Human)
 = human → human | Human
+
 since:
-M|Z = { f_n ∘ ... ∘ f_1 | all f_i | Z }
+M|Human = { fₙ ∘ ... ∘ f₁ | all fᵢ: Xᵢ → Xᵢ₊₁ | Z ⋏ ∀ i, j: fᵢ ≅ fⱼ | Z = Human }
+
+thus:
+((male → human | Human) ∘ (human → female | Human)) ∈ M|Human 
+where: (male → human | Human) ≅ (human → female | Human) under shared morphic continuity Z
+and:
+((male → human | Human) ∘ (human → female | Human )) >> human → human | Human
 
 Thus formally:
-σ(m⁻¹ ∘ f)
+σ(Human). >(m⁻¹ ∘ f, Human)
 = (male → human)∘(human → female) | Human ⊕ (human → human | Human)
 = human → human | Human
 
-where:
-m⁻¹: male → human  
-f: human → female
-
-And:
-male >> human  
-female >> human
-
-(male → human) ∘ (human → female) ⊑ (human → human)
-
 Then:
-(k₂ ∘ k₁) ∘ σ(m⁻¹ ∘ f): Human → Royalty | Human
-
+(k₂ ∘ k₁) ∘ σ(Human). >(m⁻¹ ∘ f): Human → Royalty | Human
 
 Assuming a higher semantic frame Z' (e.g., Humanity, Social Role) that unifies king and queen frames:
 
-(k₂ ∘ k₁) ∘ σ ∈ M|Z'
+(k₂ ∘ k₁) ∘ σ(Human). >(m⁻¹ ∘ f) ∈ M|Z'
 
 Thus:
 
@@ -574,7 +575,7 @@ king - man + woman = queen
 is formalized as:  
 
 // Represents: shifting Gender component in Human → mapping to Royalty
-(k₂ ∘ k₁) ∘ σ ∈ M|Z'
+(k₂ ∘ k₁) ∘ σ(Human). >(m⁻¹ ∘ f) ∈ M|Z'
 ```
 
 <div style="page-break-after: always;"></div>
@@ -591,8 +592,7 @@ and semantic equivalence holds:
 ∀ X, Y ∈ Ob(C ∪ D), [X]_Z ≅ [Y]_Z
 
 then semantic flow forms a monoid over Z-frame:
-M|Z = { f_n ∘ ... ∘ f_1 | all f_i under Z }
-
+M|Z = { fₙ ∘ ... ∘ f₁ | all fᵢ: Xᵢ → Xᵢ₊₁ | Z ⋏ ∀ i, j: fᵢ ≅ fⱼ | Z }
 ```
 
 **Example: Cross-Category Flow under Z-frame**</br>
@@ -681,8 +681,6 @@ Functor: F
 2. f: X → X | Z  (Mediated identity with semantic flow)</br>
 　In simplified form: X | Z</br>
 
-<div style="page-break-after: always;"></div>
-
 **σ Operator**
 
 ```
@@ -719,7 +717,8 @@ Subtraction (⊖):
 
 Note: σ_safe behaves as Quasi-Natural Transformation.  
       σ_unsafe induces rupture, and cannot be captured globally.
-</br>
+
+<div style="page-break-after: always;"></div>
 
 ### 概念位相論 / Conceptual Topology 
 This theory, named 概念位相論 or Conceptual Topoloy, was proposed by **No Name Yet Exist**.
