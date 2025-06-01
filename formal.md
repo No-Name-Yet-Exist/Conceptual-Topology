@@ -19,7 +19,9 @@ Contact: Written Below
     - Semantic Mapping
     - Identity Morphism of σ
     - Associativity of σ
+    - x Safe / Unsafe Semantic Shifting Morphism (σ)
 5. Cross-Category Flow Condition
+Appendix: Simbols and Notations
 
 </br>
 </br>
@@ -122,7 +124,6 @@ if and only if:
 
 ∃Z: rupture(f, f′ | Z) ≠ ∅ 
 ∧ cod(f) = cod(f′) | CD
-
 ```
 
 ```
@@ -324,6 +325,30 @@ Semantic Operator σ modifies morphism as follows.
 σx. >(x,y)                 →     Semantic Mapping 
 ```
 
+
+**Semantic Morphism Set Operators**
+
+```
+Addition (⊕):
+σx. ⊕(f, Aₙ₋₁ | CD): D(Aₙ₋₁ | Z) → D(Bₙ₋₁ | Z') | CD
+σx. ⊕(f₁, f₂) : Aₙ₋₁ :={f₁, f₂}
+
+Subtraction (⊖):
+⊖: Aₙ₋₁ ⊖ {f_i} 
+σx. ⊖(f, Aₙ₋₁ | CD): D(Aₙ₋₁ | Z) → D(Bₙ₋₁ | Z') | CD  
+
+- ⊕ operator is σ_safe if CD alignment is preserved.
+- ⊖ operator is potentially σ_unsafe but can be σ_safe if resulting chain preserves CD.
+```
+
+**Example**
+
+```
+{Royalty⃗, Male⃗, Human⃗} ⊖ {Male⃗} ⊕ {Female⃗} 
+= {Royalty⃗, Female⃗, Human⃗} 
+= queen
+```
+
 ### Semantic Mapping
 ```
 C_chain = { f₁, f₂, ..., fₙ } ∈ D(Cₙ₋₁ | Z)
@@ -416,6 +441,71 @@ Conclusion:
  > (Canine, LivingBeing)
 ```
 Note: Morphic Chain D does not require the number of objects to be more than one
+
+</br>
+
+### x Safe / Unsafe Semantic Shifting Morphism (σ)
+**Definition of Safe and Unsafe σ Operator**
+Semantic Shifting Morphism (σ) can be classified based on whether it preserves the global coherence of the morphic chain.
+
+**Safe σ Operator (σ_safe)**
+Acts on the entire morphic chain as a coherent transformation.
+```
+σ_safe: D(Aₙ₋₁ | Z) > D(Bₙ₋₁ | Z') | CD
+```
+
+Behaves as a Quasi-Natural Transformation
+```
+σ_safe ≈ η: Dᵢ ⇒ Dᵢ₊₁ | CD
+```
+
+Composition is associative:
+```
+(σ₃ ∘ σ₂) ∘ σ₁ = σ₃ ∘ (σ₂ ∘ σ₁)
+```
+Resulting chain remains in M_Z or M_{Z'} (closed).
+
+**Example**
+```
+σx. >(Canine, Mammal)
+σx. >(Mammal, Animal)
+σx. >(Animal, LivingBeing)
+
+Composition:
+(σ₃ ∘ σ₂) ∘ σ₁ = σ₃ ∘ (σ₂ ∘ σ₁)
+→ >(Canine, LivingBeing)
+
+Entire morphic chain is preserved.
+```
+
+</br>
+
+**Unsafe σ Operator (σ_unsafe)**
+Does not preserve global coherence of the morphic chain.
+Acts locally or in a decomposed manner.
+
+Chain may collapse:
+```
+σ_unsafe: D(Aₙ₋₁ | Z) → { rupture(f₁), rupture(f₂), ..., rupture(fₙ) }
+```
+
+```
+rupture(f, σ(f) | Z) ≠ ∅
+```
+Cannot be captured by a Quasi-Natural Transformation globally.
+
+
+**Example**
+
+```
+σx. Not(x) { A ↛ B | Z }
+
+Result:
+rupture(A ↛ B | Z)
+→ breaks the morphic flow → chain decomposes.
+```
+
+
 
 
 ### Example: Morphic Shifting and Cross-Z-frame Semantic Flow
@@ -524,6 +614,31 @@ f₃ ∘ f₂ ∘ f₁: pig → pig | Z ∈ M_Z
 
 # Appendix
 
+**simbols**
+
+```
+Z : Intermediating variable (semantic anchor; Z-frame)
+| : Frame separator (indicates morphism is mediated by Z-frame)
+→: Morphic Flow
+↛: ruptured morphism
+
+M_Z : Monoid of Semantic Flow under Z-frame
+R_Z := { rupture(f) | rupture(f, σ(f) | Z) ≠ ∅ }
+e_Z : Identity element of M_Z
+D(Aₙ₋₁ | Z) : Morphic chain under Z frame
+
+σ : Semantic Shifting Morphism
+>> : Generalization relation (A >> X ≡ A ⊑ X)
+<< : Specialization relation (X >> A ≡ X ⊑ A)
+rupture(f, σ(f) | Z) ≠ ∅ : Indicates semantic rupture
+η : Quasi-Natural Transformation: Contextual alignment between morphic chains.
+
+⊕:  Semantic morphism set addition in σ or morphic merger such as:
+    (k₂ ∘ k₁) ⊕ (q₂ ∘ q₁) = Human → Royalty | Z'
+⊖:  Semantic morphism set subtraction 
+    Removes specified morphisms from a morphic chain or set.
+```
+
 
 **Simplified Form of Identity Morphism:**
 
@@ -545,5 +660,34 @@ f₃ ∘ f₂ ∘ f₁: pig → pig | Z ∈ M_Z
 σx. <<(x,y)                →     Downward Shifting x to y (Specialization) as function form
 σx. >(x,y)                 →     Semantic Mapping 
 ```
+
+</br>
+
+**Semantic Morphism Set Operators**
+
+```
+Addition (⊕):
+σx. ⊕(f, Aₙ₋₁ | CD): D(Aₙ₋₁ | Z) → D(Bₙ₋₁ | Z') | CD
+σx. ⊕(f₁, f₂) : Aₙ₋₁ :={f₁, f₂}
+
+Subtraction (⊖):
+⊖: Aₙ₋₁ ⊖ {f_i} 
+σx. ⊖(f, Aₙ₋₁ | CD): D(Aₙ₋₁ | Z) → D(Bₙ₋₁ | Z') | CD  
+
+- ⊕ operator is σ_safe if CD alignment is preserved.
+- ⊖ operator is potentially σ_unsafe but can be σ_safe if resulting chain preserves CD.
+```
+
+</br>
+
+**σ Typing Hierarchy**
+
+σ_safe: D(Aₙ₋₁ | Z) → D(Bₙ₋₁ | Z') | CD (Preserves global coherence)
+σ_unsafe: D(Aₙ₋₁ | Z) → { rupture(f₁), ..., rupture(fₙ) } (Global coherence lost)
+
+Note: σ_safe behaves as Quasi-Natural Transformation.  
+      σ_unsafe induces rupture, and cannot be captured globally.
+
+
 
 This document and all conceptual content therein are © [No Name Yet Exist], 2025. All rights reserved. Unauthorized reproduction, distribution, or use without explicit permission is prohibited.
