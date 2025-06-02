@@ -1,23 +1,25 @@
-Zero Morphism Axiom：
+Zero Morphism Axiom： 
 σ(Z).Not(f)=nf:A↛B∣Z
 
-Composition property：
-∀g:X→A∣Z,g∘nf=nf
-∀h:B→Y∣Z,nf​∘h=nf​
+Composition property： 
+∀g:X→A∣Z,　g∘nf=nf 
+∀h:B→Y∣Z, nf​∘h=nf​
 
-このとき 
-this→is→right∣Z
+対象の自然文: This is right.
+このとき this→is→right∣Z
 
-σ(Z).Not(right)=nf​:right↛this∣Z
+ここでisはmorphism的に動いている。
+is: this → right | Z
 
-g∘nf​ = nf​
+σ(Z).Not(this → right) = n_f​: this ↛ right∣Z
+g∘n_f​ = n_f
+​= "is" ∘ (right ↛ something) 
+= this ↛ right where: is: X → right
 
-"is" ∘ (right ↛ something) = right ↛ something
-where: is: g : X → right
-
-つまり
-∀g : X → this | Z, g ∘ n_f = n_f
+つまり 
+∀g : X → this | Z, g ∘ n_f = n_f 
 ∀h : right → Y | Z, n_f ∘ h = n_f
+
 
 ![alt text](https://github.com/No-Name-Yet-Exist/Conceptual-Topology/blob/main/releases/resources/meaning-circulates/this-is-not-right.png?raw=true)
 
