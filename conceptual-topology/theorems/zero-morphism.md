@@ -22,8 +22,15 @@ Applying Not() to any morphism produces a semantic zero morphism, which collapse
 ```
 
 自然言語:
-AはBでない (Left Side: g∘(A↛B∣Z))
-AでないのはB (Right Side: (A↛B∣Z)∘g)　※Bに対して Aは否定されている
+左側：Left Side: g∘(A↛B∣Z)
+"A is not B"
+AはBでない 「リンゴは果物ではない」
+
+右側: Right Side: (A↛B∣Z)∘g
+"B is not A"
+BはAでない 　※Bに対して Aは否定されている
+「果物に対してリンゴは否定されている」（e.g.「これはプラスチック製のリンゴ模型」）
+
 
 In ACT, this was called rutpure(). 
 Now defined:
