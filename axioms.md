@@ -2,10 +2,10 @@
 1. Monoid Structure of Semantic Flow (M|Z)
 2. Identity Element of M|Z
 3. Associativity of M | Z
-4. Axioms
-4.1. Unit Axiom: Identity Element of Concept
-4.2. Zero Axiom: Zero Morphism as Negation Morphism
-4.3. Composition Axiom 
+4. Axioms</br>
+    4.1. Unit Axiom: Identity Element of Concept </br>
+    4.2. Zero Axiom: Zero Morphism as Negation Morphism</br>
+    4.3. Composition Axiom </br>
 
 </br>
 
@@ -105,6 +105,7 @@ Thus, the composition ∘ in M|Z is associative.
 id_Z:= Z → Z | Z
 ∀f ∈ M∣Z: id_Z ∘ f = f  and f∘id_Z = 
 ```
+
 **Definition:**
 ```
 Statement:
@@ -146,11 +147,12 @@ f:X→Y ∣ Z
 
 **Unit Axiom2: Void Concept**
 ```
+f ∈ M|Z 
 "" ∘ f = f  and f ∘ "" = f 
 id_Z ∘ f = f and f ∘ id_Z = f
 ```
 
-Definition:
+**Definition:**
 ```
 
 The empty concept is a theoretically assumed concept, denoted as "", 
@@ -204,6 +206,12 @@ The apple is not a fruit
 Right Side: (A↛B∣Z)∘g
 "B is not A"
 This is a fruit, but this is not an apple which is a fruit.
+
+
+In ACT, this was called rutpure(). 
+Now defined:
+rupture(A,B,Z)= σ(Z).Not(g) = n_f = A↛B∣Z
+
 ```
 
 ## Composition Axiom
@@ -212,8 +220,13 @@ M|Z = { fₙ ∘ ... ∘ f₁ | all fᵢ: Xᵢ → Xᵢ₊₁ | Z ⋏ ∀ i, j: 
 
 Then for all f, g, h ∈ M|Z:
 
-(f ∘ g) ∘ h = f ∘ (g ∘ h)
+For f, g, h ∈ M|Z, 
+where:
+f:V → W | Z
+g:Y → V | Z
+h:X → Y | Z
 
+(f ∘ g) ∘ h = f ∘ (g ∘ h)
 ```
 
 
