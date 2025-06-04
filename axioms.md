@@ -1,3 +1,5 @@
+# Conceptual Topos: An Algebraic Topology of Meaning based on Conceptual Topology
+
 # Index
 1. Monoid Structure of Semantic Flow (M|Z)
 2. Identity Element of M|Z
@@ -7,9 +9,10 @@
     4.2. Zero Axiom: Zero Morphism as Negation Morphism</br>
     4.3. Composition Axiom </br>
 5. Conceptual Topos
-    5.1. Initial Object
-    5.2. Subobject Classifier Ω
-    5.3. Conceptual Topos as Fibered Topos
+    5.1. Initial Object </br>
+    5.2. Subobject Classifier Ω</br>
+    5.3. Conceptual Topos as Fibered Topos</br>
+
 </br>
 
 ## Monoid Structure of Semantic Flow (M|Z):
@@ -231,6 +234,20 @@ h:X → Y | Z
 
 (f ∘ g) ∘ h = f ∘ (g ∘ h)
 ```
+
+**Example:**
+```
+For f, g, h ∈ M|Z, 
+
+where:
+f:she → you | Human
+g:he → she | Human
+h:man → he | Human
+
+(f ∘ g) ∘ h = f ∘ (g ∘ h)
+
+```
+
 
 </br>
 
