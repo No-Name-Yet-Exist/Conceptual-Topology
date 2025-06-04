@@ -1,5 +1,25 @@
 # Conceptual Topos: An Algebraic Topology of Meaning based on Conceptual Topology
 
+Written by No Name Yet Exist </br>
+Contact: Written Below
+
+# Introduction
+Conceptual Topos v1.0 is an initial formalization of the algebraic topology of meaning 
+based on Conceptual Topology. 
+
+This version sketches core axioms and ones for Topos including:
+
+- Initial Object
+- Subobject Classifier Ω
+- Terminal Object
+- Fibered Topos structure
+- Semantic Exponential via σ operator
+
+Finite Limits (Pullbacks, Products, Equalizers) are under ongoing formalization.
+
+Future versions (v1.x) will extend the formalization.
+
+
 # Index
 1. Monoid Structure of Semantic Flow (M|Z)
 2. Identity Element of M|Z
@@ -353,7 +373,6 @@ Hom(X ⊗ A, B) ≅ Hom(X, B^A)
 
 ### Construction via σ operator
 
-
 Semantic shift operators:
 ```
 σ(X). >>(A, B)
@@ -448,16 +467,19 @@ interpreted as:
 
 χ_Pet(Dog) = True
 
+<br/>
 
 **Example 2: Apple in Pet Z-frame**
 
 χ_Pet(Apple) = False
 
+<br/>
 
 **Example 3: Girl in Human Z-frame**
 
 χ_Human(Girl) = True
 
+<br/>
 
 **Example 4: Innocent in Body Z-frame (after rupture)**
 
@@ -466,6 +488,7 @@ interpreted as:
 
 depending on whether the semantic projection is coherent.
 
+<br/>
 
 ### Relation to Rupture
 
@@ -477,9 +500,7 @@ Semantic rupture can be lifted to Ω as:
 
 Thus, **negation** and **semantic discontinuity** become **Ω-classifiable**.
 
-
 </br>
-
 
 # Conceptual Topos as Fibered Topos over Z-frame
 
@@ -550,6 +571,14 @@ with:
 - Ω as subobject classifier in Z
 - σ operator inducing internal exponential morphisms.
 
+<div style="page-break-after: always;"></div>
+
+### Conceptual Topos Named as 概念位相論 / Conceptual Topology
+This theory, named 概念位相論 or Conceptual Topoloy, was proposed by **No Name Yet Exist**.
+
+GitHub: https://github.com/No-Name-Yet-Exist/Conceptual-Topology<br/>
+Note: https://note.com/xoreaxeax/n/n3711c1318d0b<br/>
+Zenodo: https://zenodo.org/records/15455079
 
 ---
 This document and all conceptual content therein are © [No Name Yet Exist], 2025. 
