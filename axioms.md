@@ -359,9 +359,9 @@ Hom(X ⊗ A, B) ≅ Hom(X, B^A)
 
 Semantic shift operators:
 ```
-σ(X). >>(A, B)
+σ(X). >>(A, B, X)
 or
-σ(X). >(A, B)
+σ(X). >(A, B, X)
 
 act as internal exponential morphisms:
 
@@ -467,7 +467,7 @@ depending on whether the semantic projection is coherent under Z-Frame.
 
 Semantic rupture can be lifted to Ω as:
 
-σ(Not)(f: A → B | Z)
+σ(Z). Not(f: A → B | Z)
 ⇒ rupture(A,B,Z)
 ⇒ χ_Z(f) = False
 
