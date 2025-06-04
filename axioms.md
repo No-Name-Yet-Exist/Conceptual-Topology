@@ -359,13 +359,13 @@ Hom(X ⊗ A, B) ≅ Hom(X, B^A)
 
 Semantic shift operators:
 ```
-σ(X). >>(A, B, X)
+σ(Z). >>(A, B)
 or
-σ(X). >(A, B, X)
+σ(Z). >(A, B)
 
-act as internal exponential morphisms:
-
-        (A, B) ≅ B^A
+act as internal exponential morphisms within the fibered structure over the Z-frame:
+        (A, B, Z) ≅ B^A
+where the Z-frame mediates the contextual semantic continuity of the morphic shift.
 
 ```
 
