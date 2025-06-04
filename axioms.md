@@ -10,8 +10,8 @@
     4.3. Composition Axiom </br>
 5. Conceptual Topos
     5.1. Initial Object </br>
-    5.2. Finite Limits
-    5.3. Exponentials
+    5.2. Finite Limits</br>
+    5.3. Exponentials</br>
     5.4. Subobject Classifier Ω</br>
     5.5. Conceptual Topos as Fibered Topos</br>
 
@@ -330,6 +330,11 @@ This realizes the semantic universal target:
 ∀ X ∈ Ob(C ∪ D), ∃! f_terminal: X → Z | Z
 ```
 
+**Example:**
+```
+she → human | Human
+me → human | Human
+```
 
 ### Exponentials    
 
@@ -375,6 +380,7 @@ This shift realizes an internal semantic transformation corresponding to exponen
 
 Let **Ω** be an object in the Concept category, representing the **semantic truth space**.
 
+```
 For any subobject (conceptual inclusion):
 
 m: M ↪ X
@@ -382,7 +388,7 @@ m: M ↪ X
 there exists a unique characteristic morphism:
 
 χ_m: X → Ω
-
+```
 
 such that the following diagram commutes:
 
@@ -400,12 +406,13 @@ M ————→ X
 - **Ω** encodes **semantic entailment / membership / inclusion**.
 - **Z-frame membership** is naturally mapped to Ω:
 
+```
 χ_Z: X → Ω
+```
 
 interpreted as:  
 "Does X conceptually belong to Z-frame Z?"
 
----
 
 ### Examples
 
