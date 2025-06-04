@@ -336,6 +336,8 @@ she → human | Human
 me → human | Human
 ```
 
+Note: Pullbacks, Products, Equalizers under construction
+
 ### Exponentials    
 
 Conceptual Topos models exponentials via semantic shift operators.
@@ -357,6 +359,33 @@ Semantic shift operators:
 σ(X). >>(A, B)
 or
 σ(X). >(A, B)
+```
+
+# Definition: Semantic Shifting Morphism (σ)
+
+```
+σ: D(Xₙ₋₁ | X) → D(Xₙ₋₁ | X)
+
+such that σ ⊕ f ∈ M|Z if and only if type compatibility holds:
+
+∀ A, B, (A → B) ∘ σ(X) is valid if:
+
+( A >> X or X >> A )
+and
+( B >> X or X >> B )
+
+Definition: Subsumption
+A >> X ≡ A ⊑ X
+
+Definition: SubsumedBy
+X >> A ≡ X ⊑ A
+
+Example:
+king → king >> human → human
+  ⇒ king >> human  → valid
+
+human → human >> queen → queen
+  ⇒ human >> queen → valid
 ```
 
 act as internal exponential morphisms:
@@ -399,7 +428,6 @@ M ————→ X
 |       Ω
 ```
 
----
 
 ### Interpretation in Conceptual Topology
 
