@@ -10,8 +10,10 @@
     4.3. Composition Axiom </br>
 5. Conceptual Topos
     5.1. Initial Object </br>
-    5.2. Subobject Classifier Ω</br>
-    5.3. Conceptual Topos as Fibered Topos</br>
+    5.2. Finite Limits
+    5.3. Exponentials
+    5.4. Subobject Classifier Ω</br>
+    5.5. Conceptual Topos as Fibered Topos</br>
 
 </br>
 
@@ -311,6 +313,63 @@ She loves him == She "" loves him == She loves him
 </br>
 
 # Conceptual Topos
+
+### Finite Limits
+
+**Terminal Object**
+Conceptual Topos defines a terminal object as the Z-frame identity:
+
+```
+id_Z := Z → Z | Z
+
+
+Any morphism f: X → Z | Z factors uniquely through id_Z.
+
+This realizes the semantic universal target:
+
+∀ X ∈ Ob(C ∪ D), ∃! f_terminal: X → Z | Z
+```
+
+
+### Exponentials    
+
+Conceptual Topos models exponentials via semantic shift operators.
+
+### Definition
+
+```
+For any objects A, B:
+
+B^A exists such that:
+Hom(X ⊗ A, B) ≅ Hom(X, B^A)
+```
+
+### Construction via σ operator
+
+
+Semantic shift operators:
+```
+σ(X). >>(A, B)
+or
+σ(X). >(A, B)
+```
+
+act as internal exponential morphisms:
+```
+        (A, B) ≅ B^A
+```
+
+### Example
+
+```
+σ(Human). >>(puppy → dog → mammal | Canine, Human)
+≅ girl → she → mammal | Human
+```
+
+This shift realizes an internal semantic transformation corresponding to exponential behavior.
+
+
+
 
 ### Definition of Ω
 
