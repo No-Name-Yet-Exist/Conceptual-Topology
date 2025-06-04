@@ -1,4 +1,4 @@
-# Conceptual Topos: An Algebraic Topology of Meaning based on Conceptual Topology
+# Conceptual Topos As Semantic Cage: An Algebraic Topology of Meaning based on Conceptual Topology
 
 Written by No Name Yet Exist </br>
 Contact: Written Below
@@ -7,7 +7,7 @@ Contact: Written Below
 Conceptual Topos v1.0 is an initial formalization of the algebraic topology of meaning 
 based on Conceptual Topology. 
 
-This version sketches core axioms and ones for Topos including:
+This version sketches core axioms for Topos including:
 
 - Initial Object
 - Subobject Classifier Ω
@@ -17,7 +17,7 @@ This version sketches core axioms and ones for Topos including:
 
 Finite Limits (Pullbacks, Products, Equalizers) are under ongoing formalization.
 
-Future versions (v1.x) will extend the formalization.
+Future versions (v1.x) will refine the formalization and extend it.
 
 
 # Index
@@ -35,9 +35,9 @@ Future versions (v1.x) will extend the formalization.
     5.4. Subobject Classifier Ω</br>
     5.5. Conceptual Topos as Fibered Topos</br>
 
-</br>
+<div style="page-break-after: always;"></div>
 
-## Monoid Structure of Semantic Flow (M|Z):
+## 1. Monoid Structure of Semantic Flow (M|Z):
 In Conceptual Topology, Z is defined as a mediating point/semantic anchor.
 ```
 Let C and D, Z be categories,
@@ -84,9 +84,9 @@ or as a set
 D(Cₙ₋₁ | Z) ={ C₀, C₁, C₂, ... | Z }
 ```
 
-</br>
+<div style="page-break-after: always;"></div>
 
-## Identity Element of M|Z
+## 2. Identity Element of M|Z
 ```
 Let: M|Z = { fₙ ∘ ... ∘ f₁ | all fᵢ: Xᵢ → Xᵢ₊₁ | Z ⋏ ∀ i, j: fᵢ ≅ fⱼ | Z }
 
@@ -99,7 +99,7 @@ e|Z_X := id_X | Z
 Then, for any f: X → Y | Z ∈ M|Z:
 
 e|Z_X ∘ f = f
-f ∘ e|Z_Y = f
+f ∘ e|Z_Y = f   
 
 Therefore, the identity structure of M|Z is given by the family:
 
@@ -111,7 +111,7 @@ This ensures that M|Z satisfies the identity axiom of a monoid.
 
 </br>
 
-## Associativity of M | Z
+## 3. Associativity of M | Z
 ```
 Let: M|Z = { fₙ ∘ ... ∘ f₁ | all fᵢ: Xᵢ → Xᵢ₊₁ | Z ⋏ ∀ i, j: fᵢ ≅ fⱼ | Z }
 
@@ -122,11 +122,11 @@ Then for all f, g, h ∈ M|Z:
 Thus, the composition ∘ in M|Z is associative.
 ```
 
-</br>
+<div style="page-break-after: always;"></div>
 
-# Axioms
+# 4. Axioms
 
-## Identity Element
+### 4.1. Identity Element
 
 **Unit Axiom 1: Identity Element Z**
 ```
@@ -200,10 +200,11 @@ Conclusion:
 
 ```
 
+</br>
 
-## Zero Morphism: Negation Morphism
+### 4.2. Zero Morphism: Negation Morphism
 We define semantic zero morphism, negation morphism: n_f
-​In ACT as the result of applying Not() to a morphism 
+​In CT as the result of applying Not() to a morphism 
 
 ```
 g:σ(Z). Not(g){ A ↛ B | Z} = A ↛ B∣Z = n_f
@@ -236,13 +237,13 @@ Right Side: (A↛B∣Z)∘g
 This is a fruit, but this is not an apple which is a fruit.
 
 
-In ACT, this was called rutpure(). 
+In CT, this was called rutpure(). 
 Now defined:
 rupture(A,B,Z)= σ(Z).Not(g) = n_f = A↛B∣Z
 
 ```
 
-## Composition Axiom
+### 4.3. Composition Axiom
 ```
 M|Z = { fₙ ∘ ... ∘ f₁ | all fᵢ: Xᵢ → Xᵢ₊₁ | Z ⋏ ∀ i, j: fᵢ ≅ fⱼ | Z }
 
@@ -270,13 +271,11 @@ h:man → he | Human
 
 ```
 
+<div style="page-break-after: always;"></div>
 
-</br>
+# 5. Conceptual Topos
 
-
-# Initial Object
-
-### Category Level: Initial Object
+### 5.1. Category Level: Initial Object
 
 **Definition:**
 
@@ -315,26 +314,9 @@ e|Z_"" ∘ f = f
 f ∘ e|Z_"" = f  
 ```
 
+<div style="page-break-after: always;"></div>
 
-### Operational Semantics
-
-```
-In semantic flow:
-
-"" ∘ f = f  
-f ∘ "" = f  
-
-In linguistic example:
-
-Yes == "" ∘ Yes == Yes  
-She loves him == She "" loves him == She loves him  
-```
-
-</br>
-
-# Conceptual Topos
-
-### Finite Limits
+### 5.2. Finite Limits
 
 **Terminal Object**
 Conceptual Topos defines a terminal object as the Z-frame identity:
@@ -358,7 +340,9 @@ me → human | Human
 
 Note: Pullbacks, Products, Equalizers under construction
 
-### Exponentials    
+<div style="page-break-after: always;"></div>
+
+### 5.3. Exponentials    
 
 Conceptual Topos models exponentials via semantic shift operators.
 
@@ -422,9 +406,9 @@ human → human >> queen → queen
 This shift realizes an internal semantic transformation corresponding to exponential behavior.
 
 
+</br>
 
-
-### Definition of Ω
+### 5.4. Definition of Ω
 
 Let **Ω** be an object in the Concept category, representing the **semantic truth space**.
 
@@ -447,6 +431,7 @@ M ————→ X
 |       Ω
 ```
 
+<div style="page-break-after: always;"></div>
 
 ### Interpretation in Conceptual Topology
 
@@ -467,26 +452,14 @@ interpreted as:
 
 χ_Pet(Dog) = True
 
-<br/>
-
 **Example 2: Apple in Pet Z-frame**
 
 χ_Pet(Apple) = False
 
-<br/>
-
-**Example 3: Girl in Human Z-frame**
-
-χ_Human(Girl) = True
-
-<br/>
-
-**Example 4: Innocent in Body Z-frame (after rupture)**
+**Example 3: Innocent in Body Z-frame (after rupture)**
 
 χ_Body("innocent") = True / False
-
-
-depending on whether the semantic projection is coherent.
+depending on whether the semantic projection is coherent under Z-Frame.
 
 <br/>
 
@@ -495,14 +468,14 @@ depending on whether the semantic projection is coherent.
 Semantic rupture can be lifted to Ω as:
 
 σ(Not)(f: A → B | Z)
-⇒ rupture(f)
+⇒ rupture(A,B,Z)
 ⇒ χ_Z(f) = False
 
 Thus, **negation** and **semantic discontinuity** become **Ω-classifiable**.
 
-</br>
+<div style="page-break-after: always;"></div>
 
-# Conceptual Topos as Fibered Topos over Z-frame
+# 5.5. Conceptual Topos as Fibered Topos over Z-frame
 
 Conceptual Topos is structured as a **fibered topos** over the semantic base space **Z-frame**.
 
@@ -515,8 +488,9 @@ Conceptual Topos is structured as a **fibered topos** over the semantic base spa
 ```
 X → Y | Z ≡ X → Y in fiber over Z
 ```
+correspond to morphisms within the fibered structure over Z.
 
-correspond to morphisms in the fiber π⁻¹(Z), with **square commuting** over Z.
+</br>
 
 ### Initial Object and Codomain Projection
 
@@ -541,6 +515,8 @@ Fiber π⁻¹(Z_X):
 
 Thus, semantic generation naturally occurs anchored in Z-frame.
 
+<div style="page-break-after: always;"></div>
+
 ### Semantic Flow Closure
 
 - Semantic flows:
@@ -548,15 +524,18 @@ Thus, semantic generation naturally occurs anchored in Z-frame.
 ```
 X → Y | Z
 ```
+are closed within the fiber over Z, corresponding to the codomain Z of the semantic projection π.
 
-are closed in Z-frame codomain.
+
 - Rupture and negation are classified by **Ω**:
 
 ```
 χ_Z: X → Ω
 ```
 
-### Conclusion
+</br>
+
+# Conclusion
 
 Conceptual Topos is a **fibered topos** over Z-frame:
 
@@ -571,7 +550,7 @@ with:
 - Ω as subobject classifier in Z
 - σ operator inducing internal exponential morphisms.
 
-<div style="page-break-after: always;"></div>
+</br>
 
 ### Conceptual Topos Named as 概念位相論 / Conceptual Topology
 This theory, named 概念位相論 or Conceptual Topoloy, was proposed by **No Name Yet Exist**.
@@ -580,6 +559,7 @@ GitHub: https://github.com/No-Name-Yet-Exist/Conceptual-Topology<br/>
 Note: https://note.com/xoreaxeax/n/n3711c1318d0b<br/>
 Zenodo: https://zenodo.org/records/15455079
 
----
-This document and all conceptual content therein are © [No Name Yet Exist], 2025. 
-All rights reserved. Unauthorized reproduction, distribution, or use without explicit permission is prohibited.
+This is Version: 1.0
+
+----
+This document and all conceptual content therein are © [No Name Yet Exist], 2025. All rights reserved. Unauthorized reproduction, distribution, or use without explicit permission is prohibited.
