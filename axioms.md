@@ -356,7 +356,6 @@ interpreted as:
 depending on whether the semantic projection is coherent.
 
 
-
 ### Relation to Rupture
 
 Semantic rupture can be lifted to Ω as:
@@ -365,21 +364,7 @@ Semantic rupture can be lifted to Ω as:
 ⇒ rupture(f)
 ⇒ χ_Z(f) = False
 
-
 Thus, **negation** and **semantic discontinuity** become **Ω-classifiable**.
-
-
-
-### Integration with Z-frame
-
-By introducing Ω, the Z-frame is enhanced from **projection-only** to **structured semantic classifier**:
-
-| Element | Before Ω | After Ω |
-|---------|----------|---------|
-| π: C → Z | semantic anchor | semantic anchor + classifier |
-| Z-frame membership | implicit | explicit χ_Z: C → Ω |
-| Rupture | rupture(f) ≠ ∅ | χ_Z(f) = False |
-| Topos condition | incomplete | Ω completes the condition |
 
 
 </br>
@@ -453,7 +438,6 @@ with:
 - Morphic Chains as fibers π⁻¹(Z)
 - Ω as subobject classifier in Z
 - σ operator inducing internal exponential morphisms.
-
 
 
 ---
