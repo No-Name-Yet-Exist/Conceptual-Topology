@@ -359,9 +359,14 @@ Semantic shift operators:
 σ(X). >>(A, B)
 or
 σ(X). >(A, B)
+
+act as internal exponential morphisms:
+
+        (A, B) ≅ B^A
+
 ```
 
-# Definition: Semantic Shifting Morphism (σ)
+**Definition: Semantic Shifting Morphism (σ)**
 
 ```
 σ: D(Xₙ₋₁ | X) → D(Xₙ₋₁ | X)
@@ -386,11 +391,6 @@ king → king >> human → human
 
 human → human >> queen → queen
   ⇒ human >> queen → valid
-```
-
-act as internal exponential morphisms:
-```
-        (A, B) ≅ B^A
 ```
 
 ### Example
