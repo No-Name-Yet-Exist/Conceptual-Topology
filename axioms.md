@@ -4,22 +4,22 @@ Written by No Name Yet Exist </br>
 Contact: Written Below
 
 # Introduction
-Conceptual Topos v1.0 is an initial formalization of the algebraic topology of meaning 
+Conceptual Topos v1.1 is an initial formalization of the algebraic topology of meaning 
 based on Conceptual Topology. 
 
 This version sketches core axioms for Topos including:
 
 - Initial Object
-- Equalizer
+- Finite Limits (Product, Equalizer, Pullback)
 - Subobject Classifier Ω
-- Terminal Object
 - Fibered Topos structure
 - Semantic Exponential via σ operator
 
 Future versions (v1.x) will refine the formalization and extend it.
 
-In this version, the term fiber is used informally to describe the structural cohesion of morphic chains under a shared Z-frame.The current framework is not yet a strict fibered topos in the categorical sense (i.e., it does not yet enforce cartesian liftings or full pullback structure). Formal connection to fibered topos is an intended direction for future versions.This document lays the foundation toward that goal. 
+In this version, the term fiber is used informally to describe the structural cohesion of morphic chains under a shared Z-frame.The current framework is not yet a strict fibered topos in the categorical sense. Formal connection to fibered topos is an intended direction for future versions.This document lays the foundation toward that goal. 
 
+<div style="page-break-after: always;"></div>
 
 # Index
 1. Fibered Conceptual Topology
@@ -30,16 +30,17 @@ In this version, the term fiber is used informally to describe the structural co
     5.1. Unit Axiom: Identity Element of Concept </br>
     5.2. Zero Axiom: Zero Morphism as Negation Morphism</br>
     5.3. Composition Axiom </br>
-6. Conceptual Topos
+6. Conceptual Topos</br>
     6.1. Initial Object </br>
     6.2. Finite Limits</br>
     6.3. Exponentials</br>
-      - Pullback: Quasi-Natural Transformation
+      - Pullback: Quasi-Natural Transformation</br>
       - Equalizer: Mirror Morphism
-      - Product: σ operator
+      - Product: σ operator</br>
+      
     6.4. Subobject Classifier Ω</br>
     6.5. Conceptual Topos as Fibered Topos</br>
-7. Global Semantic Space: Total Conceptual Space (TCS)
+7. Global Semantic Space: Total Conceptual Space (TCS)</br>
 
 <div style="page-break-after: always;"></div>
 
@@ -68,6 +69,8 @@ Where:
         Mammal
 
 ```
+
+<div style="page-break-after: always;"></div>
 
 ## 2. Monoid Structure of Semantic Flow (M|Z):
 In Conceptual Topology, Z is defined as a mediating point/semantic anchor.
@@ -453,7 +456,7 @@ p₁ ∘ u = q₁, p₂ ∘ u = q₂.
 
 <div style="page-break-after: always;"></div>
 
-**Equalizer: Mirror Morphism**
+### Equalizer: Mirror Morphism
 
 ```
 Equalizer of two morphisms f, g: 
@@ -505,7 +508,7 @@ if and only if:
           Y = Y′ (codomain = C)
 ```
 
-**Product: σ operator⊕**
+### Product: σ operator⊕
 ```
 In any category C, the Product of A and B is an object A × B equipped with projections:
 
@@ -524,7 +527,7 @@ there exists a unique morphism u: X → A × B such that:
 π₂ ∘ u = f₂
 ```
 
-Addition (⊕):
+**Addition (⊕):**</br>
 σ(Z) serves as the mediating operator ensuring that the composed morphic chain remains within the semantic fiber over Z.
 ```
 Defined as:
@@ -546,7 +549,11 @@ puppy → dog
 
 σ(Human). ⊕(girl → she, puppy → dog | Mammal) → Product(girl → she → puppy → dog | Mammal) | Mammal
 → composite meaning space
+```
 
+<div style="page-break-after: always;"></div>
+
+```
 Diagram:
 
     Product(girl → she, puppy → dog) ∈ D(Cₙ₋₁ | Z = Mammal)
@@ -645,6 +652,7 @@ there exists a unique characteristic morphism:
 
 χ_m: X → Ω
 ```
+<div style="page-break-after: always;"></div>
 
 such that the following diagram commutes:
 
@@ -655,7 +663,7 @@ M ————→ X
 |       Ω
 ```
 
-<div style="page-break-after: always;"></div>
+</br>
 
 ### Interpretation in Conceptual Topology
 
@@ -777,14 +785,10 @@ M|TCS = { fₙ ∘ ... ∘ f₁ | all fᵢ:  M|Zᵢ →  M|Zᵢ₊₁ | TCS ⋏ 
 We can regard M|TCS as the composition space of conceptual perspectives: 
 Here, each M|Z functions as a semantic symbolization or perspective lens, and M|TCS represents global flows across chained perspectives.
 
-
-This defines the monoid of semantic flows over TCS.
-
-Monoid Closure Property:
-Composition in M|TCS is closed:
+**Monoid Closure Property:**
 ```
+Composition in M|TCS is closed:
 ∀ f, g ∈ M|TCS, f ∘ g ∈ M|TCS
-
 
 The identity morphism is preserved:
 
@@ -793,8 +797,7 @@ The identity morphism is preserved:
 
 Thus, M|TCS forms a closed monoid under composition.
 
-Completeness Statement:
-
+**Completeness Statement:**
 ```
 For any pair of concepts X, Y:
 
@@ -802,16 +805,12 @@ For any pair of concepts X, Y:
 ```
 That is, any conceptual pair X and Y can be connected via a morphic flow under TCS.
 
-### Interpretation
-
-The Total Conceptual Space (TCS) serves as a global semantic anchor, ensuring that the entire morphic flow space is closed and complete under the conceptual topology.  
-Thus, Conceptual Topos is **complete and closed** under M|TCS.
-
+<div style="page-break-after: always;"></div>
 
 ### Fibered Structure and Lifting
 Each local M|Z can be lifted into M∣TCS via semantic shifting σ:
 ```
-∀M∣Z,∃σ:M∣Z→M∣TCS
+∀M∣Z, ∃σ: M∣Z > M∣Z | TCS
 ```
 Thus, the global base space TCSTCSTCS ensures that the entire morphic flow space is both complete and coherent.
 
@@ -825,6 +824,8 @@ Thus, the global base space TCSTCSTCS ensures that the entire morphic flow space
 **Example:**
 ```
 can → person | TCS
+→ Metaphoric reading: "The can represents the absent person."
+→ Ironic reading: "We are all cans under capitalism." 
 ```
 
 ### Summary:
@@ -846,7 +847,7 @@ with:
 - Ω as subobject classifier in Z
 - σ operator inducing internal exponential morphisms.
 
-</br>
+<div style="page-break-after: always;"></div>
 
 ### Conceptual Topos Named as 概念位相論 / Conceptual Topology
 This theory, named 概念位相論 or Conceptual Topoloy, was proposed by **No Name Yet Exist**.
