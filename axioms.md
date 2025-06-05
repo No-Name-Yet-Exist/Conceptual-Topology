@@ -469,7 +469,7 @@ Diagram:
 
 In conceptual topology this was defined as mirror morphism:
 
-'''
+```
 f : X  → Y  | Z ∈ Dᵢ
 f′: X′ → Y' | Z ∈ Dᵢ₊₁
   ⇒X′ ≠ X, but cod(f) = cod(f′) | CD ( common codomain)
@@ -744,7 +744,7 @@ are closed within the fiber over Z, corresponding to the codomain Z of the seman
 Conceptual Topos is a **fibered topos** over Z-frame:
 
 ```
-π: C ∪ D → Z
+CT := (C, B, π: E → B, Fb := π⁻¹(b), A ≅ b ⋃ Nat(Hom(−, A), Fb))
 ```
 
 with:
@@ -763,7 +763,7 @@ GitHub: https://github.com/No-Name-Yet-Exist/Conceptual-Topology<br/>
 Note: https://note.com/xoreaxeax/n/n3711c1318d0b<br/>
 Zenodo: https://zenodo.org/records/15455079
 
-This is Version: 1.0
+This is Version: 1.1
 
 ----
 This document and all conceptual content therein are © [No Name Yet Exist], 2025. All rights reserved. Unauthorized reproduction, distribution, or use without explicit permission is prohibited.
