@@ -15,32 +15,31 @@ This version sketches core axioms for Topos including:
 - Fibered Topos structure
 - Semantic Exponential via σ operator
 
-Finite Limits (Pullbacks, Products, Equalizers) are under ongoing formalization.
-
 Future versions (v1.x) will refine the formalization and extend it.
 
 
 # Index
-1. Monoid Structure of Semantic Flow (M|Z)
-2. Identity Element of M|Z
-3. Associativity of M | Z
-4. Axioms</br>
-    4.1. Unit Axiom: Identity Element of Concept </br>
-    4.2. Zero Axiom: Zero Morphism as Negation Morphism</br>
-    4.3. Composition Axiom </br>
-5. Conceptual Topos
-    5.1. Initial Object </br>
-    5.2. Finite Limits</br>
-    5.3. Exponentials</br>
+1. Fibered Conceptual Topology
+2. Monoid Structure of Semantic Flow (M|Z)
+3. Identity Element of M|Z
+4. Associativity of M | Z
+5. Axioms</br>
+    5.1. Unit Axiom: Identity Element of Concept </br>
+    5.2. Zero Axiom: Zero Morphism as Negation Morphism</br>
+    5.3. Composition Axiom </br>
+6. Conceptual Topos
+    6.1. Initial Object </br>
+    6.2. Finite Limits</br>
+    6.3. Exponentials</br>
       - Pullback: Quasi-Natural Transformation
       - Equalizer: Mirror Morphism
-      - Product: σ(X). ⊕(A,B,X)
-    5.4. Subobject Classifier Ω</br>
-    5.5. Conceptual Topos as Fibered Topos</br>
+      - Product: σ operator
+    6.4. Subobject Classifier Ω</br>
+    6.5. Conceptual Topos as Fibered Topos</br>
 
 <div style="page-break-after: always;"></div>
 
-# Fibered Conceptual Topology:
+# 1. Fibered Conceptual Topology:
 Fibered Conceptual Topology provides a semantic geometric framework wherein each Z-frame (semantic anchor) acts as a base space, with semantic morphic flows forming fibers over these anchors. The Yoneda-like interpretation captures concepts as bundles of semantic relations within and across Z-frames. This fibered structure serves as the foundation for further constructions in Conceptual Topos. 
 
 ```
@@ -66,7 +65,7 @@ Where:
 
 ```
 
-## 1. Monoid Structure of Semantic Flow (M|Z):
+## 2. Monoid Structure of Semantic Flow (M|Z):
 In Conceptual Topology, Z is defined as a mediating point/semantic anchor.
 ```
 Let C and D, Z be categories,
@@ -115,7 +114,7 @@ D(Cₙ₋₁ | Z) ={ C₀, C₁, C₂, ... | Z }
 
 <div style="page-break-after: always;"></div>
 
-## 2. Identity Element of M|Z
+## 3. Identity Element of M|Z
 ```
 Let: M|Z = { fₙ ∘ ... ∘ f₁ | all fᵢ: Xᵢ → Xᵢ₊₁ | Z ⋏ ∀ i, j: fᵢ ≅ fⱼ | Z }
 
@@ -140,7 +139,7 @@ This ensures that M|Z satisfies the identity axiom of a monoid.
 
 </br>
 
-## 3. Associativity of M | Z
+## 4. Associativity of M | Z
 ```
 Let: M|Z = { fₙ ∘ ... ∘ f₁ | all fᵢ: Xᵢ → Xᵢ₊₁ | Z ⋏ ∀ i, j: fᵢ ≅ fⱼ | Z }
 
@@ -153,9 +152,9 @@ Thus, the composition ∘ in M|Z is associative.
 
 <div style="page-break-after: always;"></div>
 
-# 4. Axioms
+# 5. Axioms
 
-### 4.1. Identity Element
+### 5.1. Identity Element
 
 **Unit Axiom 1: Identity Element Z**
 ```
@@ -231,7 +230,7 @@ Conclusion:
 
 </br>
 
-### 4.2. Zero Morphism: Negation Morphism
+### 5.2. Zero Morphism: Negation Morphism
 We define semantic zero morphism, negation morphism: n_f
 ​In CT as the result of applying Not() to a morphism 
 
@@ -272,7 +271,7 @@ rupture(A,B,Z)= σ(Z).Not(g) = n_f = A↛B∣Z
 
 ```
 
-### 4.3. Composition Axiom
+### 5.3. Composition Axiom
 ```
 M|Z = { fₙ ∘ ... ∘ f₁ | all fᵢ: Xᵢ → Xᵢ₊₁ | Z ⋏ ∀ i, j: fᵢ ≅ fⱼ | Z }
 
@@ -302,9 +301,9 @@ h:man → he | Human
 
 <div style="page-break-after: always;"></div>
 
-# 5. Conceptual Topos
+# 6. Conceptual Topos
 
-### 5.1. Category Level: Initial Object
+### 6.1. Category Level: Initial Object
 
 **Definition:**
 
@@ -345,7 +344,7 @@ f ∘ e|Z_"" = f
 
 <div style="page-break-after: always;"></div>
 
-### 5.2. Finite Limits
+### 6.2. Finite Limits
 
 **Terminal Object**
 Conceptual Topos defines a terminal object as the Z-frame identity:
@@ -547,7 +546,7 @@ Diagram:
 
 ```
 
-### 5.3. Exponentials    
+### 6.3. Exponentials    
 
 Conceptual Topos models exponentials via semantic shift operators.
 
@@ -613,7 +612,7 @@ This shift realizes an internal semantic transformation corresponding to exponen
 
 </br>
 
-### 5.4. Definition of Ω
+### 6.4. Definition of Ω
 
 Let **Ω** be an object in the Concept category, representing the **semantic truth space**.
 
@@ -680,7 +679,7 @@ Thus, **negation** and **semantic discontinuity** become **Ω-classifiable**.
 
 <div style="page-break-after: always;"></div>
 
-# 5.5. Conceptual Topos as Fibered Topos over Z-frame
+# 6.5. Conceptual Topos as Fibered Topos over Z-frame
 
 Conceptual Topos is structured as a **fibered topos** over the semantic base space **Z-frame**.
 
