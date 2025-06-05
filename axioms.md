@@ -583,9 +583,15 @@ or
 
 act as internal exponential morphisms within the fibered structure over the Z-frame:
         (A, B, Z) ≅ B^A
-where the Z-frame mediates the contextual semantic continuity of the morphic shift.
+where the Z-frame mediates the semantic continuity and contextual grounding of the morphic shift. 
+```
+We define Exponential objects via σ operator as semantic abstraction mechanisms:
+```
+B^A:=σ(Z).>(A,B)
 
 ```
+Full Exponential Law formalization will be provided in later version.
+
 
 **Definition: Semantic Shifting Morphism (σ)**
 
