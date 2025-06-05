@@ -439,8 +439,6 @@ Quasi-Natural Transformation Diagram:
 
 ![alt text](https://raw.githubusercontent.com/No-Name-Yet-Exist/Articles/main/conceptual-topology/resources/quasi-communicative-diagram/semantic-circulation-with-arrows-v2.png)
 
-Note: Products, Equalizers under construction
-
 <div style="page-break-after: always;"></div>
 
 **Equalizer: Mirror Morphism**
@@ -456,7 +454,8 @@ f ∘ e = g ∘ e
 
 and universal property:
 
-∀ h: X → A such that f ∘ h = g ∘ h, ∃! unique u: X → Eq(f,g)
+∀ h: X → A such that f ∘ h = g ∘ h, 
+∃! unique u: X → Eq(f,g)
 
 Diagram:
 
@@ -472,12 +471,14 @@ Diagram:
 In conceptual topology this was defined as mirror morphism:
 
 '''
-f : X → Y | Z ∈ Dᵢ  
-f′: X′ → Y' | Z ∈ Dᵢ₊₁  
-⇒ X′ ≠ X, but cod(f) = cod(f′) | CD (common codomain)  
-We define f′ as mirror-correspondent morphism of f under a given Z-frame,  
-if and only if:  
-∃Z: rupture(f, f′ | Z) ≠ ∅  
+f : X  → Y  | Z ∈ Dᵢ
+f′: X′ → Y' | Z ∈ Dᵢ₊₁
+  ⇒X′ ≠ X, but cod(f) = cod(f′) | CD ( common codomain)
+
+We define f′ as a mirror-correspondent morphism of f under a given Z-frame,
+if and only if:
+
+∃Z: rupture(f, f′ | Z) ≠ ∅ 
 ∧ cod(f) = cod(f′) | CD
 
 
@@ -493,21 +494,58 @@ if and only if:
 ```
 
 **Product: σ operator⊕**
-
 ```
-Addition (⊕):
+In any category C, the Product of A and B is an object A × B equipped with projections:
 
-σ(Z). ⊕(f₁, f₂, Z) → semantic Product under Z-frame
+π₁: A × B → A  
+π₂: A × B → B
+
+with universal property:
+For any object X with morphisms:
+
+f₁: X → A  
+f₂: X → B
+
+there exists a unique morphism u: X → A × B such that:
+
+π₁ ∘ u = f₁  
+π₂ ∘ u = f₂
+```
+
+Addition (⊕):
+```
+σ(Z). ⊕(Aₙ₋₁, Bₙ₋₁, Z) → semantic Product under Z-frame
+
+Defined as:
+σ(Z). ⊕(Aₙ₋₁, Bₙ₋₁, Z) = D(Cₙ₋₁ | CD) 
+
+where: 
+Aₙ₋₁:= girl → she
+Bₙ₋₁:= puppy → dog
+
+σ(Z). ⊕(Aₙ₋₁, Bₙ₋₁, Z) = D(Cₙ₋₁ | CD) 
 
 Example:
 
 girl → she
 puppy → dog
 
-σ(Human). ⊕(girl → she, puppy → dog) → Product(puppy, she) | Mammal
+σ(Human). ⊕(girl → she, puppy → dog | Mammal) → Product(girl → she → puppy → dog | Mammal) | Mammal
 → composite meaning space
-```
 
+Diagram:
+
+    Product(girl → she, puppy → dog) ∈ D(Cₙ₋₁ | Z = Mammal)
+
+             Product Object (P)
+              /           \
+             /             \
+      π₁   /                 \  π₂
+         v                   v
+  girl → she            puppy → dog
+
+
+```
 
 ### 5.3. Exponentials    
 
