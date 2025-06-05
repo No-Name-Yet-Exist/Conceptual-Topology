@@ -338,7 +338,78 @@ she → human | Human
 me → human | Human
 ```
 
-Note: Pullbacks, Products, Equalizers under construction
+### Pullback
+```
+Given morphisms:
+
+f: girl → mammal  
+g: puppy → mammal
+
+Pullback of (f, g) is:
+
+P = Baby  
+p₁: Baby → girl  
+p₂: Baby → puppy
+
+with commuting condition:
+
+f ∘ p₁ = g ∘ p₂  ≈ mapping to common semantic frame (mammal)
+
+Diagram:
+
+      Baby
+     /    \
+  p₁ /      \ p₂
+   /          \
+girl          puppy
+   \          /
+    \        /
+     v      v
+     mammal (semantic anchor / codomain)
+
+```
+
+This previously defined as Quasi-Natural Transformation:
+```
+η: Dᵢ ⇒ Dᵢ₊₁  | CD (CD = codomain)
+η_X ∘ Dᵢ({f₁ | Z₁, ..., fₙ | Zₙ}) ≈ Dᵢ₊₁({f′₁ | Z₁, ..., f′ₙ | Zₙ}) ∘ η_Y | CD
+for all fⱼ: Xⱼ → Yⱼ | Zⱼ ∈ Dᵢ,  
+where f′ⱼ: η_X(Xⱼ) → η_Y(Yⱼ) | Zⱼ
+
+Then, η is said to be a quasi-natural transformation under the Z-frame
+i.e. η ∈ Mor(C) where C is the contextual meaning category
+
+η_X ∘ Dᵢ({girl → mammal | Z₁}) ≈ Dᵢ₊₁({puppy → mammal | Z₂}) ∘ η_Y
+
+
+Pullback Diagram
+      Mammal
+     /     \
+    /       \
+girl         puppy
+   \         /
+    \       /
+     Baby  (semantic anchor / common Z-frame)
+
+
+Example: η: girl → puppy | Z = Baby
+
+
+Quasi-Natural Transformation Diagram:
+        Z = baby
+    puppy  ←   girl    //specified: size + young
+     |          |
+     |          |
+    dog        she     //abstraction
+      \        /      
+        Mammal
+
+```
+![alt text](https://raw.githubusercontent.com/No-Name-Yet-Exist/Articles/main/conceptual-topology/resources/quasi-communicative-diagram/puppy-dog-mammal-she-girl.png)
+
+![alt text](https://raw.githubusercontent.com/No-Name-Yet-Exist/Articles/main/conceptual-topology/resources/quasi-communicative-diagram/semantic-circulation-with-arrows-v2.png)
+
+Note: Products, Equalizers under construction
 
 <div style="page-break-after: always;"></div>
 
