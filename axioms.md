@@ -10,12 +10,15 @@ based on Conceptual Topology.
 This version sketches core axioms for Topos including:
 
 - Initial Object
+- Equalizer
 - Subobject Classifier Ω
 - Terminal Object
 - Fibered Topos structure
 - Semantic Exponential via σ operator
 
 Future versions (v1.x) will refine the formalization and extend it.
+
+In this version, the term fiber is used informally to describe the structural cohesion of morphic chains under a shared Z-frame.The current framework is not yet a strict fibered topos in the categorical sense (i.e., it does not yet enforce cartesian liftings or full pullback structure). Formal connection to fibered topos is an intended direction for future versions.This document lays the foundation toward that goal. 
 
 
 # Index
@@ -36,6 +39,7 @@ Future versions (v1.x) will refine the formalization and extend it.
       - Product: σ operator
     6.4. Subobject Classifier Ω</br>
     6.5. Conceptual Topos as Fibered Topos</br>
+7. Global Semantic Space: Total Conceptual Space (TCS)
 
 <div style="page-break-after: always;"></div>
 
@@ -433,6 +437,15 @@ Quasi-Natural Transformation Diagram:
       \        /      
         Mammal
 
+
+For any X with morphisms 
+q₁: X → girl and q₂: X → puppy satisfying f ∘ q₁ = g ∘ q₂, 
+
+there exists unique u: X → Baby 
+
+such that:
+p₁ ∘ u = q₁, p₂ ∘ u = q₂.
+
 ```
 ![alt text](https://raw.githubusercontent.com/No-Name-Yet-Exist/Articles/main/conceptual-topology/resources/quasi-communicative-diagram/puppy-dog-mammal-she-girl.png)
 
@@ -465,7 +478,7 @@ Diagram:
          A
     f ↘     ↙ g
         B
-````
+```
 
 In conceptual topology this was defined as mirror morphism:
 
@@ -512,17 +525,19 @@ there exists a unique morphism u: X → A × B such that:
 ```
 
 Addition (⊕):
+σ(Z) serves as the mediating operator ensuring that the composed morphic chain remains within the semantic fiber over Z.
 ```
-σ(Z). ⊕(Aₙ₋₁, Bₙ₋₁, Z) → semantic Product under Z-frame
-
 Defined as:
-σ(Z). ⊕(Aₙ₋₁, Bₙ₋₁, Z) = D(Cₙ₋₁ | CD) 
+σ(Z). ⊕(Aₙ₋₁, Bₙ₋₁, Z) = D(Cₙ₋₁ | CD)  → semantic Product under Z-frame
 
 where: 
 Aₙ₋₁:= girl → she
 Bₙ₋₁:= puppy → dog
 
 σ(Z). ⊕(Aₙ₋₁, Bₙ₋₁, Z) = D(Cₙ₋₁ | CD) 
+
+For any pair of morphic chains 1Aₙ₋₁, Bₙ₋₁​, the operation σ(Z).⊕(Aₙ₋₁, Bₙ₋₁) defines an object P ∈ D(Cₙ₋₁ | Z)P∈D(Cn−1​∣Z) with projections π₁, π₂​ satisfying the product universal property.
+
 
 Example:
 
@@ -542,7 +557,6 @@ Diagram:
       π₁   /                 \  π₂
          v                   v
   girl → she            puppy → dog
-
 
 ```
 
@@ -738,6 +752,57 @@ are closed within the fiber over Z, corresponding to the codomain Z of the seman
 ```
 
 </br>
+
+
+### 7. Global Semantic Space: Total Conceptual Space (TCS)
+
+We define the Total Conceptual Space (TCS) as the global semantic anchor:
+
+```
+Z = TCS = Total Conceptual Space
+```
+
+### Definition of M|TCS:
+
+The global morphic flow space under TCS is defined as:
+
+```
+M | TCS = { fₙ ∘ ... ∘ f₁ | all fᵢ: Xᵢ → Xᵢ₊₁ | TCS ⋏ ∀ i,j: fᵢ ≅ fⱼ | TCS }
+```
+
+This defines the monoid of semantic flows over TCS.
+
+Monoid Closure Property:
+Composition in M|TCS is closed:
+```
+∀ f, g ∈ M|TCS, f ∘ g ∈ M|TCS
+
+
+The identity morphism is preserved:
+
+∀ f ∈ M|TCS, f ∘ id = f = id ∘ f
+```
+
+Thus, M|TCS forms a closed monoid under composition.
+
+Completeness Statement:
+
+```
+For any pair of concepts X, Y:
+
+∀ X, Y ∈ Ob(C), ∃ f ∈ Mor(C), such that f: X → Y | TCS
+```
+
+That is, any conceptual pair X and Y can be connected via a morphic flow under TCS.
+
+Note:Each local M|Z can be lifted into M|TCS via semantic shifting (σ), ensuring global closure.
+
+
+### Interpretation
+
+The Total Conceptual Space (TCS) serves as a global semantic anchor, ensuring that the entire morphic flow space is closed and complete under the conceptual topology.  
+Thus, Conceptual Topos is **complete and closed** under M|TCS.
+
 
 # Conclusion
 
