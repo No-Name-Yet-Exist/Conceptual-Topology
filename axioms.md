@@ -32,6 +32,9 @@ Future versions (v1.x) will refine the formalization and extend it.
     5.1. Initial Object </br>
     5.2. Finite Limits</br>
     5.3. Exponentials</br>
+      - Pullback: Quasi-Natural Transformation
+      - Equalizer: Mirror Morphism
+      - Product: σ(X). ⊕(A,B,X)
     5.4. Subobject Classifier Ω</br>
     5.5. Conceptual Topos as Fibered Topos</br>
 
@@ -365,6 +368,7 @@ me → human | Human
 ```
 
 ### Pullback
+
 ```
 Given morphisms:
 
@@ -438,6 +442,72 @@ Quasi-Natural Transformation Diagram:
 Note: Products, Equalizers under construction
 
 <div style="page-break-after: always;"></div>
+
+**Equalizer: Mirror Morphism**
+
+```
+Equalizer of two morphisms f, g: 
+A → B is an object Eq(f,g) with morphism 
+e: Eq(f,g) → A
+
+such that:
+
+f ∘ e = g ∘ e
+
+and universal property:
+
+∀ h: X → A such that f ∘ h = g ∘ h, ∃! unique u: X → Eq(f,g)
+
+Diagram:
+
+      Eq(f, g)
+         |
+         e
+         v
+         A
+    f ↘     ↙ g
+        B
+````
+
+In conceptual topology this was defined as mirror morphism:
+
+'''
+f : X → Y | Z ∈ Dᵢ  
+f′: X′ → Y' | Z ∈ Dᵢ₊₁  
+⇒ X′ ≠ X, but cod(f) = cod(f′) | CD (common codomain)  
+We define f′ as mirror-correspondent morphism of f under a given Z-frame,  
+if and only if:  
+∃Z: rupture(f, f′ | Z) ≠ ∅  
+∧ cod(f) = cod(f′) | CD
+
+
+        Eq(f, f′)
+          |
+          e
+          v
+      X        X′
+       \      /
+        \    /
+         v  v
+          Y = Y′ (codomain = C)
+```
+
+**Product: σ operator⊕**
+
+```
+Addition (⊕):
+
+σ(Z). ⊕(f₁, f₂, Z) → semantic Product under Z-frame
+
+Example:
+
+girl → she
+puppy → dog
+
+σ(Human). ⊕(girl → she, puppy → dog) → Product(puppy, she) | Mammal
+→ composite meaning space
+```
+
 
 ### 5.3. Exponentials    
 
