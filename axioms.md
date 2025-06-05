@@ -751,8 +751,7 @@ are closed within the fiber over Z, corresponding to the codomain Z of the seman
 χ_Z: X → Ω
 ```
 
-</br>
-
+<div style="page-break-after: always;"></div>
 
 ### 7. Global Semantic Space: Total Conceptual Space (TCS)
 
@@ -815,6 +814,11 @@ Thus, the global base space TCSTCSTCS ensures that the entire morphic flow space
           \       |       /
            \      |      /
              →  M|TCS  ←
+```
+
+**Example:**
+```
+can → person | TCS
 ```
 
 ### Summary:
