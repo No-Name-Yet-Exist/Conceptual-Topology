@@ -767,8 +767,11 @@ Z = TCS = Total Conceptual Space
 The global morphic flow space under TCS is defined as:
 
 ```
-M | TCS = { fₙ ∘ ... ∘ f₁ | all fᵢ: Xᵢ → Xᵢ₊₁ | TCS ⋏ ∀ i,j: fᵢ ≅ fⱼ | TCS }
+M|TCS = { fₙ ∘ ... ∘ f₁ | all fᵢ:  M|Zᵢ →  M|Zᵢ₊₁ | TCS ⋏ ∀ i, j: fᵢ ≅ fⱼ | TCS }
 ```
+We can regard M|TCS as the composition space of conceptual perspectives: 
+Here, each M|Z functions as a semantic symbolization or perspective lens, and M|TCS represents global flows across chained perspectives.
+
 
 This defines the monoid of semantic flows over TCS.
 
@@ -794,6 +797,12 @@ For any pair of concepts X, Y:
 ```
 That is, any conceptual pair X and Y can be connected via a morphic flow under TCS.
 
+### Interpretation
+
+The Total Conceptual Space (TCS) serves as a global semantic anchor, ensuring that the entire morphic flow space is closed and complete under the conceptual topology.  
+Thus, Conceptual Topos is **complete and closed** under M|TCS.
+
+
 ### Fibered Structure and Lifting
 Each local M|Z can be lifted into M∣TCS via semantic shifting σ:
 ```
@@ -801,14 +810,15 @@ Each local M|Z can be lifted into M∣TCS via semantic shifting σ:
 ```
 Thus, the global base space TCSTCSTCS ensures that the entire morphic flow space is both complete and coherent.
 
+```
+        M|Z₁     M|Z₂     M|Z₃
+          \       |       /
+           \      |      /
+             →  M|TCS  ←
+```
+
 ### Summary:
 The Total Conceptual Space (TCS) functions as the global base space of the conceptual topology. All local Z-frames are fibered over TCS, and semantic flows can be lifted via σ operators into M∣TCS. Thus, Conceptual Topos is complete and globally coherent under M∣TCS.
-
-
-### Interpretation
-
-The Total Conceptual Space (TCS) serves as a global semantic anchor, ensuring that the entire morphic flow space is closed and complete under the conceptual topology.  
-Thus, Conceptual Topos is **complete and closed** under M|TCS.
 
 
 # Conclusion
