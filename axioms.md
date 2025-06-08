@@ -27,8 +27,8 @@ In this version, the term fiber is used informally to describe the structural co
     - Definition: Semantic Shifting Morphism (σ)
     - Identity Morphism of σ
     - Associativity of σ
-    - Safe / Unsafe Semantic Shifting Morphism (σ)
     - Functorial Interpretation of σ
+    - Safe / Unsafe Semantic Shifting Morphism (σ)
 2. Monoid Structure of Semantic Flow (M|Z)
 3. Identity Element of M|Z
 4. Associativity of M | Z
