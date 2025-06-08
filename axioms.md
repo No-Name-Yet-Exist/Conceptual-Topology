@@ -23,12 +23,16 @@ In this version, the term fiber is used informally to describe the structural co
 
 # Index
 1. Fibered Conceptual Topology
-  1.1. σ Operator as Functor
+  1.1.Local Semantic Flow under Z-frame
+    - Identity Morphism
+    - Mirror Morphism
+    - Quasi-Natural Transformation(QNT)
+  1.2. σ Operator as Functor</br>
     - Definition: Semantic Shifting Morphism (σ)
     - Identity Morphism of σ
     - Associativity of σ
     - Functorial Interpretation of σ
-    - Safe / Unsafe Semantic Shifting Morphism (σ)
+    - Safe / Unsafe Semantic Shifting Morphism (σ) </br>
 2. Monoid Structure of Semantic Flow (M|Z)
 3. Identity Element of M|Z
 4. Associativity of M | Z
@@ -47,6 +51,7 @@ In this version, the term fiber is used informally to describe the structural co
     6.4. Subobject Classifier Ω</br>
     6.5. Conceptual Topos as Fibered Topos</br>
 7. Global Semantic Space: Total Conceptual Space (TCS)</br>
+Appendix: Simbols and Notations
 
 <div style="page-break-after: always;"></div>
 
@@ -75,8 +80,114 @@ Where:
         Mammal
 
 ```
+<div style="page-break-after: always;"></div>
 
-### 1.1. σ Operator as Functor
+# 1.1. Local Semantic Flow under Z Frame
+
+### Identity Morphism
+
+In Category Theory, Identity Morphism is always defined.
+```
+id_X: X → X
+such that for any f: X → Y:
+f ∘ id_X = f
+id_Y ∘ f = f
+```
+
+However, in Conceptual Topology, morphisms are mediated by Z frame, thus
+the identity morphis is not always given unless Z is defined.
+
+**Two Types of Identity Morphism in Conceptual Topology**
+1. f: X → X | X  (Category-theoretic identity)
+
+```
+f: X → X | X
+such that for any f: X → Y:
+f ∘ id_X = f
+id_Y ∘ f = f
+
+e.g. f: dog → dog | dog
+```
+
+2. f: X → X | Z  (Mediated identity with semantic flow)
+
+```
+f: X → X | Z
+
+f: X → Z
+f⁻¹: Z → X
+f⁻¹ ∘ f ≅ id_X
+e.g. you → you | externalized perspective
+     NL: you are you
+```
+
+Since the identity morphism passes through an external anchor point,
+the identity morphism is defined quasi-identical.</br>
+e.g. dog → perro | собака
+
+<div style="page-break-after: always;"></div>
+
+**Simplified Form of Identity Morphism:**
+
+1. f: X → X | X  (Category-theoretic identity) </br>
+　In simplified form: X </br>
+  or more explicitly: id_X </br>
+  
+2. f: X → X | Z  (Mediated identity with semantic flow)</br>
+　In simplified form: X | Z</br>
+
+
+### Mirror Morphism Definition:
+Each mirror maps conceptual transitions across vocabularies while preserving morphic identity up to rupture—that is, it allows for semantic divergence that still respects underlying structural continuity, even if exact invertibility is not preserved.
+
+```
+f : X  → Y  | Z ∈ Dᵢ
+f′: X′ → Y' | Z ∈ Dᵢ₊₁
+  ⇒X′ ≠ X, but cod(f) = cod(f′) | CD (CD = codomain)
+
+We define f′ as a mirror-correspondent morphism of f under a given Z-frame,
+if and only if:
+
+∃Z: rupture(f, f′ | Z) ≠ ∅ 
+∧ cod(f) = cod(f′) | CD
+```
+
+```
+        Z = baby  
+    puppy  ←   girl    //specified: size + young
+     |          |
+     |          |
+    dog        she     //abstraction
+      \        /      
+        Mammal
+
+```
+
+**Note:** **Z: rupture(f, f′ | Z) ≠ ∅** means that there exists a Z-frame under which *f* and *f′* exhibit structural divergence—i.e., they are not fully invertible but still converge at the codomain level.
+
+For example, let *Z = abstraction*. This allows a semantic transition from *girl → she* and *puppy → dog*, treating them as mirror morphisms under a shared conceptual frame.  
+However, if we take *Z = agency*, a rupture emerges: *puppy → dog* lacks agency, while *girl → she* retains it. Hence, **rupture(f, f′ | agency) ≠ ∅**, yet *f* and *f′* still align toward the same codomain (e.g., *mammal*).
+
+<div style="page-break-after: always;"></div>
+
+### Quasi-Natural Transformation of Meaning Systems
+
+A **Morphic Chain Mirror** is a contextual correspondence between two morphic chains drawn from distinct but meaning-aligned vocabularies. This correspondence is realized through a **quasi-natural transformation** under a shared intermidiating Z-frame.
+
+```
+η: Dᵢ ⇒ Dᵢ₊₁  | CD (CD = codomain)
+η_X ∘ Dᵢ({f₁ | Z₁, ..., fₙ | Zₙ}) ≈ Dᵢ₊₁({f′₁ | Z₁, ..., f′ₙ | Zₙ}) ∘ η_Y | CD
+for all fⱼ: Xⱼ → Yⱼ | Zⱼ ∈ Dᵢ,  
+where f′ⱼ: η_X(Xⱼ) → η_Y(Yⱼ) | Zⱼ
+
+Then, η is said to be a quasi-natural transformation under the Z-frame
+i.e. η ∈ Mor(C) where C is the contextual meaning category
+Example: η: girl → puppy | Z = Baby
+```
+
+<div style="page-break-after: always;"></div>
+
+### 1.2. σ Operator as Functor
 <div style="page-break-after: always;"></div>
 
 ### Definition: Semantic Shifting Morphism (σ)
@@ -106,7 +217,7 @@ human → human >> queen → queen
   ⇒ human >> queen → valid
 ```
 
-**Semantic Operators**
+### Semantic Operators
 Semantic Operator σ modifies morphism as follows.
 ```
 σ(X). Not(x){ A ↛ B | Z}     →     Rupture under Z frame
@@ -118,7 +229,7 @@ Semantic Operator σ modifies morphism as follows.
 
 <div style="page-break-after: always;"></div>
 
-**Semantic Morphism Set Operators**
+### Semantic Morphism Set Operators
 
 ```
 Addition (⊕):
@@ -213,9 +324,9 @@ Conclusion:
  (σ₃ ∘ σ₂) ∘ σ₁ = σ₃ ∘ (σ₂ ∘ σ₁) =  (life → life | Life)
 ```
 
-### σ Operator as Kan Extension
+### σ Mapping Operator as Kan Extension
 
-**σ as Functor**
+**σ mapping as Functor**
 ```
 A Functor F: C → D is a mapping between categories satisfying:
 
@@ -224,10 +335,10 @@ A Functor F: C → D is a mapping between categories satisfying:
 - Identity preservation: F(id_X) = id_{F(X)}
 - Composition preservation: F(f ∘ g) = F(f) ∘ F(g)
 
-We define σ: D(Aₙ₋₁ | Z) → D(Bₙ₋₁ | Z') as such a Functor.
+We define σ: D(Aₙ₋₁ | Z) > D(Bₙ₋₁ | Z') as such a Functor.
 ```
 
-### σ operator as Kan Extension (Formal Definition)
+**σ Mapping operator as Kan Extension**
 ```
 Let:
 
@@ -236,7 +347,7 @@ Let:
 
 Define:
 
-σ_safe ≈ Lan_σ : D(Aₙ₋₁ | Z) → D(Bₙ₋₁ | Z')
+σ_safe ≈ Lan_σ : D(Aₙ₋₁ | Z) > D(Bₙ₋₁ | Z')
 
 such that:
 
@@ -1105,6 +1216,102 @@ with:
 - Morphic Chains as fibers π⁻¹(Z)
 - Ω as subobject classifier in Z
 - σ operator inducing internal exponential morphisms.
+
+<div style="page-break-after: always;"></div>
+
+# Appendix
+**simbols**
+
+```
+Z : Intermediating variable (semantic anchor; Z-frame)
+| : Frame separator (indicates morphism is mediated by Z-frame)
+→: Morphic Flow
+↛: Ruptured morphism
+F : Cross-category morphism (used in cross-category flow under shared Z-frame)
+//: Used to narrate meaning flow of morphic chains.
+¬: Absence
+
+M|Z : Monoid of Semantic Flow under Z-frame
+R|Z := { rupture(f) | rupture(f, σ(f) | Z) ≠ ∅ }
+e|Z : Identity element of M|Z
+D(Aₙ₋₁ | Z) : Morphic chain under Z frame
+
+σ : Semantic Shifting Morphism
+>> : Generalization relation (A >> X ≡ A ⊑ X)
+<< : Specialization relation (X >> A ≡ X ⊑ A)
+rupture(f, σ(f) | Z) ≠ ∅ : Indicates semantic rupture
+η : Quasi-Natural Transformation: Contextual alignment between morphic chains.
+
+⊕:  Semantic morphism set addition in σ or morphic merger such as:
+    (k₂ ∘ k₁) ⊕ (q₂ ∘ q₁) = human → royalty | Z'
+⊖:  Semantic morphism set subtraction 
+    Removes specified morphisms from a morphic chain or set.
+```
+
+**Notations**
+```
+Concept / Word (lexeme):
+    - Lower case (e.g., puppy, dog, girl, she)
+
+Z Frame (semantic anchor):
+    - Upper case (e.g., Mammal, Human, Agency, Domesticated, Royalty)
+
+Type variables (A, B, X, Y, Z in formal definitions):
+    - Follow standard formal notation (uppercase) 
+
+Example:
+puppy → dog | Mammal
+A → B | Z
+
+Morphism: f, g, h
+Functor: F
+```
+
+**Simplified Form of Identity Morphism:**
+
+1. f: X → X | X  (Category-theoretic identity) </br>
+　In simplified form: X </br>
+  or more explicitly: id_X </br>
+  
+2. f: X → X | Z  (Mediated identity with semantic flow)</br>
+　In simplified form: X | Z</br>
+
+**σ Operator**
+
+```
+σ(X). Not(x){ A ↛ B | Z}     →     Rupture under Z frame
+σ(X). so_much(x){A → B | Z}  →     Preservation & amplification under Z frame
+σ(X). >>(x,y)                →     Semantic Shifting x to y (Generalization) as function form
+σ(X). <<(x,y)                →     Downward Shifting x to y (Specialization) as function form
+σ(X). >(x,y)                 →     Semantic Shifting 
+```
+
+</br>
+
+**Semantic Morphism Set Operators**
+
+```
+Addition (⊕):
+σ(X). ⊕(f, Aₙ₋₁ | Z): D(Aₙ₋₁ | Z) → D(Bₙ₋₁ | Z) | Z
+σ(X). ⊕(f₁, f₂) : Aₙ₋₁ :={f₁, f₂}
+
+Subtraction (⊖):
+⊖: Aₙ₋₁ ⊖ {f_i} 
+σ(X). ⊖(f, Aₙ₋₁ | Z): D(Aₙ₋₁ | Z) → D(Bₙ₋₁ | Z) | Z   
+
+- ⊕ operator is σ_safe if Z alignment is preserved.
+- ⊖ operator is potentially σ_unsafe but can be σ_safe if resulting chain preserves the underlying morphic continuity Z.
+```
+
+</br>
+
+**σ Typing Hierarchy**
+
+σ_safe: D(Aₙ₋₁ | Z) → D(Bₙ₋₁ | Z) | Z (Preserves global coherence)</br>
+σ_unsafe: D(Aₙ₋₁ | Z) → { rupture(f₁), ..., rupture(fₙ) | ¬Z } (Global coherence lost)
+
+Note: σ_safe behaves as Quasi-Natural Transformation.  
+      σ_unsafe induces rupture, and cannot be captured globally.
 
 <div style="page-break-after: always;"></div>
 
