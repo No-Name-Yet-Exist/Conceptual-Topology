@@ -27,18 +27,15 @@ In this version, the term fiber is used informally to describe the structural co
     - Identity Morphism
     - Mirror Morphism
     - Quasi-Natural Transformation(QNT)</br>
-
   1.2. σ Operator as Functor</br>
     - Definition: Semantic Shifting Morphism (σ)
     - Identity Morphism of σ
     - Associativity of σ</br>
-
   1.3. σ Operator as Kan Extension
     - Functorial properties of σ
     - σ operator as Kan Extension
     - Relation to Quasi-Natural Transoformation
     - Safe / Unsafe Semantic Shifting Morphism (σ) </br>
-
 2. Monoid Structure of Semantic Flow (M|Z)
 3. Identity Element of M|Z
 4. Associativity of M | Z
@@ -46,7 +43,6 @@ In this version, the term fiber is used informally to describe the structural co
     5.1. Unit Axiom: Identity Element of Concept </br>
     5.2. Zero Axiom: Zero Morphism as Negation Morphism</br>
     5.3. Composition Axiom </br>
-    
 6. Conceptual Topos</br>
     6.1. Initial Object </br>
     6.2. Finite Limits</br>
