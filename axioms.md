@@ -24,18 +24,18 @@ In this version, the term fiber is used informally to describe the structural co
 # Index
 1. Fibered Conceptual Topology</br>
   1.1.Local Semantic Flow under Z-frame</br>
-    - Identity Morphism
-    - Mirror Morphism
-    - Quasi-Natural Transformation(QNT)</br>
+      - Identity Morphism
+      - Mirror Morphism
+      - Quasi-Natural Transformation(QNT)</br>
   1.2. σ Operator as Functor</br>
-    - Definition: Semantic Shifting Morphism (σ)
-    - Identity Morphism of σ
-    - Associativity of σ</br>
+      - Definition: Semantic Shifting Morphism (σ)
+      - Identity Morphism of σ
+      - Associativity of σ</br>
   1.3. σ Operator as Kan Extension
-    - Functorial properties of σ
-    - σ operator as Kan Extension
-    - Relation to Quasi-Natural Transoformation
-    - Safe / Unsafe Semantic Shifting Morphism (σ) </br>
+      - Functorial properties of σ
+      - σ operator as Kan Extension
+      - Relation to Quasi-Natural Transoformation
+      - Safe / Unsafe Semantic Shifting Morphism (σ) </br>
 2. Monoid Structure of Semantic Flow (M|Z)
 3. Identity Element of M|Z
 4. Associativity of M | Z
@@ -440,6 +440,28 @@ girl → she → mammal
 ```
 
 This formalization guarantees that the Quasi-Natural Transformation property observed in the original Semantic Cage structure is preserved and generalized through the Kan Extension framework, providing a categorical foundation for semantic flow lifting.
+
+**Kan Extension as Horizontal Semantic Mapping**
+
+Conceptually, σ operator as Kan Extension performs not only lifting of morphic chains but also acts as a horizontal mapping across Z-frames, shifting semantic flow from Fiber over Z to Fiber over Z'.
+
+Diagrammatically, this can be visualized as a horizontal shift:
+
+```
+Fiber over Z (Mammal):
+
+puppy → dog → mammal
+girl → she → mammal
+
+↓↓↓↓↓↓ Kan Extension σ(Life)
+
+Fiber over Z' (Life):
+
+girl → she → mammal → Life  
+puppy → dog → mammal → Life
+```
+Applying σ(Life) results in a horizontal lifting of codomain alignment
+
 
 
 <div style="page-break-after: always;"></div>
