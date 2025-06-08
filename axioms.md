@@ -1,4 +1,4 @@
-# Conceptual Topos As Semantic Cage: An Algebraic Topology of Meaning based on Conceptual Topology
+# Conceptual Topos As Conceptual Cage: An Algebraic Topology of Meaning based on Conceptual Topology
 
 Written by No Name Yet Exist </br>
 Contact: Written Below
@@ -13,7 +13,7 @@ This version sketches core axioms for Topos including:
 - Finite Limits (Product, Equalizer, Pullback)
 - Subobject Classifier Ω
 - Fibered Topos structure
-- Semantic Exponential via σ operator
+- Conceptual Exponential via σ operator
 
 Future versions (v1.x) will refine the formalization and extend it.
 
@@ -23,23 +23,23 @@ In this version, the term fiber is used informally to describe the structural co
 
 # Index
 1. Fibered Conceptual Topology</br>
-  1.1.Local Semantic Flow under Z-frame</br>
+  1.1.Local Conceptual Flow under Z-frame</br>
       - Identity Morphism</br>
       - Mirror Morphism</br>
       - Quasi-Natural Transformation(QNT)</br>
   1.2. σ Operator as Functor</br>
-      - Definition: Semantic Shifting Morphism (σ)</br>
+      - Definition: Conceptual Shifting Morphism (σ)</br>
       - Identity Morphism of σ</br>
       - Associativity of σ</br>
   1.3. σ Operator as Kan Extension
       - Functorial properties of σ</br>
       - σ operator as Kan Extension</br>
       - Relation to Quasi-Natural Transoformation</br>
-      - Safe / Unsafe Semantic Shifting Morphism (σ) </br>
-  1.4. Kan Extension as Horizontal Semantic Shifting</br>
-      - Recursive Kan Extension as Universal Product of Semantic Shifting</br>
+      - Safe / Unsafe Conceptual Shifting Morphism (σ) </br>
+  1.4. Kan Extension as Horizontal Conceptual Shifting</br>
+      - Recursive Kan Extension as Universal Product of Conceptual Shifting</br>
       - ∞-Morphic Interpretation of Recusive Ken Extension</br>
-2. Monoid Structure of Semantic Flow (M|Z)
+2. Monoid Structure of Conceptual Flow (M|Z)
 3. Identity Element of M|Z
 4. Associativity of M | Z
 5. Axioms</br>
@@ -56,23 +56,23 @@ In this version, the term fiber is used informally to describe the structural co
       
     6.4. Subobject Classifier Ω</br>
     6.5. Conceptual Topos as Fibered Topos</br>
-7. Global Semantic Space: Total Conceptual Space (TCS)</br>
+7. Global Conceptual Space: Total Conceptual Space (TCS)</br>
 Appendix: Simbols and Notations
 
 <div style="page-break-after: always;"></div>
 
 # 1. Fibered Conceptual Topology:
-Fibered Conceptual Topology provides a semantic geometric framework wherein each Z-frame (semantic anchor) acts as a base space, with semantic morphic flows forming fibers over these anchors. The Yoneda-like interpretation captures concepts as bundles of semantic relations within and across Z-frames. This fibered structure serves as the foundation for further constructions in Conceptual Topos. 
+Fibered Conceptual Topology provides a conceptual geometric framework wherein each Z-frame (conceptual anchor) acts as a base space, with conceptual morphic flows forming fibers over these anchors. The Yoneda-like interpretation captures concepts as bundles of conceptual relations within and across Z-frames. This fibered structure serves as the foundation for further constructions in Conceptual Topos. 
 
 ```
 CT := (C, B, π: E → B, Fb := π⁻¹(b), A ≅ b ⋃ Nat(Hom(−, A), Fb))
 
 Where:
   - C is the category of concepts (objects = words or concepts)
-  - B is the base space of Z-frames (semantic continuity anchors)
-  - E is the total semantic space (word vector embedding space)
-  - π projects each concept to its semantic base (Z-frame)
-  - Fb is the fiber (semantic morphic chain) over a base b
+  - B is the base space of Z-frames (conceptual continuity anchors)
+  - E is the total conceptual space (word vector embedding space)
+  - π projects each concept to its conceptual base (Z-frame)
+  - Fb is the fiber (conceptual morphic chain) over a base b
   - A ≅ b ⋃ Nat(Hom(−, A), Fb) interprets each concept A via its morphisms relative to its   Z-frame b (Yoneda perspective defined in appendix)
 ```
 
@@ -88,7 +88,7 @@ Where:
 ```
 <div style="page-break-after: always;"></div>
 
-### 1.1. Local Semantic Flow under Z Frame
+### 1.1. Local Conceptual Flow under Z Frame
 
 ### Identity Morphism
 
@@ -115,7 +115,7 @@ id_Y ∘ f = f
 e.g. f: dog → dog | dog
 ```
 
-2. f: X → X | Z  (Mediated identity with semantic flow)
+2. f: X → X | Z  (Mediated identity with conceptual flow)
 
 ```
 f: X → X | Z
@@ -139,12 +139,12 @@ e.g. dog → perro | собака
 　In simplified form: X </br>
   or more explicitly: id_X </br>
   
-2. f: X → X | Z  (Mediated identity with semantic flow)</br>
+2. f: X → X | Z  (Mediated identity with conceptual flow)</br>
 　In simplified form: X | Z</br>
 
 
 ### Mirror Morphism Definition:
-Each mirror maps conceptual transitions across vocabularies while preserving morphic identity up to rupture—that is, it allows for semantic divergence that still respects underlying structural continuity, even if exact invertibility is not preserved.
+Each mirror maps conceptual transitions across vocabularies while preserving morphic identity up to rupture—that is, it allows for conceptual divergence that still respects underlying structural continuity, even if exact invertibility is not preserved.
 
 ```
 f : X  → Y  | Z ∈ Dᵢ
@@ -171,7 +171,7 @@ if and only if:
 
 **Note:** **Z: rupture(f, f′ | Z) ≠ ∅** means that there exists a Z-frame under which *f* and *f′* exhibit structural divergence—i.e., they are not fully invertible but still converge at the codomain level.
 
-For example, let *Z = abstraction*. This allows a semantic transition from *girl → she* and *puppy → dog*, treating them as mirror morphisms under a shared conceptual frame.  
+For example, let *Z = abstraction*. This allows a conceptual transition from *girl → she* and *puppy → dog*, treating them as mirror morphisms under a shared conceptual frame.  
 However, if we take *Z = agency*, a rupture emerges: *puppy → dog* lacks agency, while *girl → she* retains it. Hence, **rupture(f, f′ | agency) ≠ ∅**, yet *f* and *f′* still align toward the same codomain (e.g., *mammal*).
 
 <div style="page-break-after: always;"></div>
@@ -195,7 +195,7 @@ Example: η: girl → puppy | Z = Baby
 
 ### 1.2. σ Operator as Functor
 
-### Definition: Semantic Shifting Morphism (σ)
+### Definition: Conceptual Shifting Morphism (σ)
 
 ```
 σ: D(Xₙ₋₁ | X) → D(Xₙ₋₁ | X)
@@ -222,19 +222,19 @@ human → human >> queen → queen
   ⇒ human >> queen → valid
 ```
 
-### Semantic Operators
-Semantic Operator σ modifies morphism as follows.
+### Conceptual Operators
+Conceptual Operator σ modifies morphism as follows.
 ```
 σ(X). Not(x){ A ↛ B | Z}     →     Rupture under Z frame
 σ(X). so_much(x){A → B | Z}  →     Preservation & amplification under Z frame
-σ(X). >>(x,y)                →     Semantic Shifting x to y (Generalization) as function form
+σ(X). >>(x,y)                →     Conceptual Shifting x to y (Generalization) as function form
 σ(X). <<(x,y)                →     Downward Shifting x to y (Specialization) as function form
-σ(X). >(x,y)                 →     Semantic Shifting 
+σ(X). >(x,y)                 →     Conceptual Shifting 
 ```
 
 <div style="page-break-after: always;"></div>
 
-### Semantic Morphism Set Operators
+### Conceptual Morphism Set Operators
 
 ```
 Addition (⊕):
@@ -257,7 +257,7 @@ Subtraction (⊖):
 = queen
 ```
 
-### Semantic Mapping
+### Conceptual Mapping
 ```
 C_chain = { f₁, f₂, ..., fₙ | Z} ∈ D(Cₙ₋₁ | Z)
 
@@ -265,9 +265,9 @@ C_chain = { f₁, f₂, ..., fₙ | Z} ∈ D(Cₙ₋₁ | Z)
 where:
 D(Aₙ₋₁ | Z) = source morphic chain
 D(Bₙ₋₁ | Y) = target morphic chain
-CD = codomain alignment (semantic anchor)
+CD = codomain alignment (conceptual anchor)
 
-σ(X) is not strict functorial → quasi-alignment under semantic equivalence
+σ(X) is not strict functorial → quasi-alignment under conceptual equivalence
 
 σ(X) ≈ η: Dᵢ ⇒ Dᵢ₊₁ | CD (Quasi-Natural Transformation interpretation)
 
@@ -331,7 +331,7 @@ Conclusion:
 
 ### 1.3. σ Operator as Kan Extension
 
-**Functorial Properties of σ mapping**
+**Functorial Properties of σ mapping**</br>
 ```
 A Functor F: C → D is a mapping between categories satisfying:
 
@@ -343,7 +343,7 @@ A Functor F: C → D is a mapping between categories satisfying:
 We define σ: D(Aₙ₋₁ | Z) >> D(Bₙ₋₁ | Z') as such a Functor.
 ```
 
-**σ Operator as Kan Extension**
+**σ Operator as Kan Extension**</br>
 ```
 Let:
 
@@ -379,7 +379,7 @@ Therefore:
 Lan_σ (G ∘ f) = (Lan_σ G) ∘ (Lan_σ f)
 ```
 
-**Relation to Qasi-Natural Transformation**
+**Relation to Qasi-Natural Transformation**</br>
 
 The σ mapping operator, defined as a Functor σ: D(Aₙ₋₁ | Z) >> D(Bₙ₋₁ | Z'), exhibits structural alignment with Quasi-Natural Transformation (QNT) in the following way:
 
@@ -403,7 +403,7 @@ In the original formulation of QNT in this framework:
 In this diagram, Quasi-Natural Transformation η aligns morphic chains between puppy → dog → mammal and girl → she → mammal within a shared codomain mammal (under Z-frame "Mammal").
 ```
 
-the Quasi-Natural Transformation mediates semantic flow correspondence across different morphic chain categories under a shared or shifted Z-frame.
+the Quasi-Natural Transformation mediates conceptual flow correspondence across different morphic chain categories under a shared or shifted Z-frame.
 
 In the Kan Extension formalization:
 
@@ -418,7 +418,7 @@ More precisely, for any object d ∈ D(Bₙ₋₁ | Z'):
 ```
 Lan_σ (D(Aₙ₋₁ | Z))(d) := colim_{(c, f: σ(c) → d)} D(Aₙ₋₁ | Z)(c)
 ```
-yields a canonical mapping from the semantic flow space under Z to the corresponding semantic flow space under Z', respecting the structural continuity required by QNT.
+yields a canonical shifting from the conceptual flow space under Z to the corresponding conceptual flow space under Z', respecting the structural continuity required by QNT.
 
 Thus:
 ```
@@ -439,14 +439,14 @@ girl → she → mammal
         v       v σ(Life)
            Life
 
-σ(Life) acts as a Kan Extension operator, lifting semantic morphic chains from Fiber over Z = Mammal to Fiber over Z' = Life. The lifting ensures coherent semantic projection across Z-frames, preserving flow alignment while generalizing to a higher conceptual space.
+σ(Life) acts as a Kan Extension operator, lifting conceptual morphic chains from Fiber over Z = Mammal to Fiber over Z' = Life. The lifting ensures coherent conceptual projection across Z-frames, preserving flow alignment while generalizing to a higher conceptual space.
 ```
 
-This formalization guarantees that the Quasi-Natural Transformation property observed in the original Semantic Cage structure is preserved and generalized through the Kan Extension framework, providing a categorical foundation for semantic flow lifting.
+This formalization guarantees that the Quasi-Natural Transformation property observed in the original Conceptual Cage structure is preserved and generalized through the Kan Extension framework, providing a categorical foundation for conceptual flow lifting.
 
-### 1.4. Kan Extension as Horizontal Semantic Shifting
+### 1.4. Kan Extension as Horizontal Conceptual Shifting
 
-Conceptually, σ operator as Kan Extension performs not only lifting of morphic chains but also acts as a horizontal mapping across Z-frames, shifting semantic flow from Fiber over Z to Fiber over Z'.
+Conceptually, σ operator as Kan Extension performs not only lifting of morphic chains but also acts as a horizontal mapping across Z-frames, shifting conceptual flow from Fiber over Z to Fiber over Z'.
 
 Diagrammatically, this can be visualized as a horizontal shift:
 
@@ -467,10 +467,10 @@ Applying σ(Life) results in a horizontal lifting of codomain alignment
 
 </br>
 
-**Recursive Kan Extension as Universal Product of Semantic Shiftings**
-Conceptually, Recursive Kan Extension can be understood as constructing a universal product of sequential semantic shiftings (σ operators) across Z-frames:
+**Recursive Kan Extension as Universal Product of Conceptual Shiftings**</br>
+Conceptually, Recursive Kan Extension can be understood as constructing a universal product of sequential conceptual shiftings (σ operators) across Z-frames:
 
-**Semantic Ladder Structure:**
+**Conceptual Ladder Structure:**</br>
 ```
 Fiber over Z₀  
     ↓ σ₁  
@@ -479,24 +479,26 @@ Fiber over Z₁
 Fiber over Z₂  
     ↓ σ₃  
 Fiber over Z₃  
-    ↓ ...  
+    ↓ ... 
+
+NL: turtle → reptile → animal → ... 
 ```
 
-**Universal Product Perspective:**
-At each stage, the application of σₙ corresponds to forming a semantic projection from Fiber over Zₙ₋₁ to Fiber over Zₙ.
+**Universal Product Perspective:**</br>
+At each stage, the application of σₙ corresponds to forming a conceptual projection from Fiber over Zₙ₋₁ to Fiber over Zₙ.
 
 The entire ladder:
 ```
 Lan_{σₙ} ∘ ... ∘ Lan_{σ₃} ∘ Lan_{σ₂} ∘ Lan_{σ₁}
 ```
-can be viewed as constructing a universal semantic product of the sequence:
+can be viewed as constructing a universal conceptual product of the sequence:
 
 Π_{i=1..n} Lan_{σᵢ}(Fiber over Zᵢ₋₁) → Fiber over Zₙ
 
 Interpretation:
-  Each Lan_{σᵢ} acts as a projection arrow into the "semantic product space" being constructed across the ladder.
+  Each Lan_{σᵢ} acts as a projection arrow into the "conceptual product space" being constructed across the ladder.
 
-  The resulting shifting corresponds to a universal morphic cone whose colimit aligns the entire sequence into the semantic flow under Zₙ.
+  The resulting shifting corresponds to a universal morphic cone whose colimit aligns the entire sequence into the conceptual flow under Zₙ.
 
 **Diagram (Universal Product View):**
 ```
@@ -509,29 +511,31 @@ Interpretation:
                 Fiber over Z₃
                    ↓ ...
             ---------------------
-          Universal Semantic Product
-           (Semantic Cone → Fiber over Zₙ)
+          Universal Conceptual Product
+           (Conceptual Cone → Fiber over Zₙ)
+
+           NL: turtle → reptile → animal → ... | Universal Conceptual Product = Animal
 ```
 
-**Formal Expression:**
+**Formal Expression:**</br>
 ```
 Universal_Product ≈ colim_{Z₀ → Z₁ → Z₂ → ... → Zₙ} (Lan_{σᵢ}(Fiber over Zᵢ₋₁))
 ```
 
-**∞-Morphic Interpretation of Recusive Ken Extension**
-Viewed categorically, this recursive construction aligns with the notion of ∞-morphisms or higher morphic flows, where each application of Lan_{σᵢ} corresponds to a morphism in an extended semantic category, and their collective composition forms an ∞-structured cone:
+**∞-Morphic Interpretation of Recusive Ken Extension**</br>
+Viewed categorically, this recursive construction aligns with the notion of ∞-morphisms or higher morphic flows, where each application of Lan_{σᵢ} corresponds to a morphism in an extended conceptual category, and their collective composition forms an ∞-structured cone:
 
 ```
 ∞-Universal Product ≈ colim_{Z₀ → Z₁ → Z₂ → ... → Zₙ} (Lan_{σᵢ}(Fiber over Zᵢ₋₁))
 ```
 
-This interpretation enables the Conceptual Topos or Conceptual Topology to naturally support recursive, layered semantic flow, where mappings can extend across arbitrarily many Z-frames while preserving structural coherence.
+This interpretation enables the Conceptual Topos or Conceptual Topology to naturally support recursive, layered conceptual flow, where mappings can extend across arbitrarily many Z-frames while preserving structural coherence.
 
 <div style="page-break-after: always;"></div>
 
-### Safe / Unsafe Semantic Shifting Morphism (σ)
+### Safe / Unsafe Conceptual Shifting Morphism (σ)
 **Definition of Safe and Unsafe σ Operator** </br>
-Semantic Shifting Morphism (σ) can be classified based on whether it preserves the global coherence of the morphic chain.
+Conceptual Shifting Morphism (σ) can be classified based on whether it preserves the global coherence of the morphic chain.
 
 **Safe σ Operator (σ_safe)**
 Acts on the entire morphic chain as a coherent transformation.
@@ -594,11 +598,11 @@ rupture(A ↛ B | Z)
 
 <div style="page-break-after: always;"></div>
 
-# 2. Monoid Structure of Semantic Flow (M|Z):
-In Conceptual Topology, Z is defined as a mediating point/semantic anchor.
+# 2. Monoid Structure of Conceptual Flow (M|Z):
+In Conceptual Topology, Z is defined as a mediating point/conceptual anchor.
 ```
 Let C and D, Z be categories,
-with semantic projection π: C ∪ D → Z, such that for each X ∈ Ob(C ∪ D):
+with conceptual projection π: C ∪ D → Z, such that for each X ∈ Ob(C ∪ D):
 
 π(X) ∈ Ob(Z)
 
@@ -618,7 +622,7 @@ f_Z: π(X) → π(Y) in Z
 
 For any X, Y ∈ Ob(C ∪ D):
 
-Let [X]_Z := semantic representation of X under frame Z (i.e., π(X))
+Let [X]_Z := conceptual representation of X under frame Z (i.e., π(X))
 
 Then:
 
@@ -628,7 +632,7 @@ which means:
 ["girl"]_Human = [girl, woman, person, ...]
 ["Dog"]_Pet ≅ ["girl"]_Human | Life
 
-Then the set of semantic flow morphisms under Z forms a monoid:
+Then the set of conceptual flow morphisms under Z forms a monoid:
 
 M|Z = { fₙ ∘ ... ∘ f₁ | all fᵢ: Xᵢ → Xᵢ₊₁ | Z ⋏ ∀ i, j: fᵢ ≅ fⱼ | Z }
 
@@ -749,7 +753,7 @@ Formal Definition:
 
 Justification:
 
-The empty concept "" represents no lexical or semantic content. 
+The empty concept "" represents no lexical or conceptual content. 
 Composing any morphism f with the empty concept does not alter the flow of meaning.
 Conclusion:
 
@@ -760,7 +764,7 @@ Conclusion:
 </br>
 
 ### 5.2. Zero Morphism: Negation Morphism
-We define semantic zero morphism, negation morphism: n_f
+We define conceptual zero morphism, negation morphism: n_f
 ​In CT as the result of applying Not() to a morphism 
 
 ```
@@ -782,7 +786,7 @@ g: A→B(A↛B∣Z)∘g=A↛B∣Z
 
 
 Interpretation:
-Applying Not() to any morphism produces a semantic zero morphism, which collapses any further semantic flow.
+Applying Not() to any morphism produces a conceptual zero morphism, which collapses any further conceptual flow.
 
 Natural Language:
 Left Side: g∘(A↛B∣Z)
@@ -884,7 +888,7 @@ id_Z := Z → Z | Z
 
 Any morphism f: X → Z | Z factors uniquely through id_Z.
 
-This realizes the semantic universal target:
+This realizes the conceptual universal target:
 
 ∀ X ∈ Ob(C ∪ D), ∃! f_terminal: X → Z | Z
 ```
@@ -911,7 +915,7 @@ p₂: Baby → puppy
 
 with commuting condition:
 
-f ∘ p₁ = g ∘ p₂  ≈ mapping to common semantic frame (mammal)
+f ∘ p₁ = g ∘ p₂  ≈ mapping to common conceptual frame (mammal)
 
 Diagram:
 
@@ -923,7 +927,7 @@ girl          puppy
    \          /
     \        /
      v      v
-     mammal (semantic anchor / codomain)
+     mammal (conceptual anchor / codomain)
 
 ```
 
@@ -947,7 +951,7 @@ Pullback Diagram
 girl         puppy
    \         /
     \       /
-     Baby  (semantic anchor / common Z-frame)
+     Baby  (conceptual anchor / common Z-frame)
 
 
 Example: η: girl → puppy | Z = Baby
@@ -1050,10 +1054,10 @@ there exists a unique morphism u: X → A × B such that:
 ```
 
 **Addition (⊕):**</br>
-σ(Z) serves as the mediating operator ensuring that the composed morphic chain remains within the semantic fiber over Z.
+σ(Z) serves as the mediating operator ensuring that the composed morphic chain remains within the conceptual fiber over Z.
 ```
 Defined as:
-σ(Z). ⊕(Aₙ₋₁, Bₙ₋₁, Z) = D(Cₙ₋₁ | CD)  → semantic Product under Z-frame
+σ(Z). ⊕(Aₙ₋₁, Bₙ₋₁, Z) = D(Cₙ₋₁ | CD)  → conceptual Product under Z-frame
 
 where: 
 Aₙ₋₁:= girl → she
@@ -1091,7 +1095,7 @@ Diagram:
 
 ### 6.3. Exponentials    
 
-Conceptual Topos models exponentials via semantic shift operators.
+Conceptual Topos models exponentials via conceptual shift operators.
 
 ### Definition
 
@@ -1104,7 +1108,7 @@ Hom(X ⊗ A, B) ≅ Hom(X, B^A)
 
 ### Construction via σ operator
 
-Semantic shift operators:
+Conceptual shift operators:
 ```
 σ(Z). >>(A, B)
 or
@@ -1112,9 +1116,9 @@ or
 
 act as internal exponential morphisms within the fibered structure over the Z-frame:
         (A, B, Z) ≅ B^A
-where the Z-frame mediates the semantic continuity and contextual grounding of the morphic shift. 
+where the Z-frame mediates the conceptual continuity and contextual grounding of the morphic shift. 
 ```
-We define Exponential objects via σ operator as semantic abstraction mechanisms:
+We define Exponential objects via σ operator as conceptual abstraction mechanisms:
 ```
 B^A:=σ(Z).>(A,B)
 
@@ -1122,7 +1126,7 @@ B^A:=σ(Z).>(A,B)
 Full Exponential Law formalization will be provided in later version.
 
 
-**Definition: Semantic Shifting Morphism (σ)**
+**Definition: Conceptual Shifting Morphism (σ)**
 
 ```
 σ: D(Xₙ₋₁ | X) → D(Xₙ₋₁ | X)
@@ -1156,14 +1160,14 @@ human → human >> queen → queen
 ≅ girl → she → mammal | Human
 ```
 
-This shift realizes an internal semantic transformation corresponding to exponential behavior.
+This shift realizes an internal conceptual transformation corresponding to exponential behavior.
 
 
 </br>
 
 ### 6.4. Definition of Ω
 
-Let **Ω** be an object in the Concept category, representing the **semantic truth space**.
+Let **Ω** be an object in the Concept category, representing the **conceptual truth space**.
 
 ```
 For any subobject (conceptual inclusion):
@@ -1189,7 +1193,7 @@ M ————→ X
 
 ### Interpretation in Conceptual Topology
 
-- **Ω** encodes **semantic entailment / membership / inclusion**.
+- **Ω** encodes **conceptual entailment / membership / inclusion**.
 - **Z-frame membership** is naturally mapped to Ω:
 
 ```
@@ -1213,29 +1217,29 @@ interpreted as:
 **Example 3: Innocent in Body Z-frame (after rupture)**
 
 χ_Body("innocent") = True / False
-depending on whether the semantic projection is coherent under Z-Frame.
+depending on whether the conceptual projection is coherent under Z-Frame.
 
 <br/>
 
 ### Relation to Rupture
 
-Semantic rupture can be lifted to Ω as:
+Conceptual rupture can be lifted to Ω as:
 
 σ(Z). Not(f: A → B | Z)
 ⇒ rupture(A,B,Z)
 ⇒ χ_Z(f) = False
 
-Thus, **negation** and **semantic discontinuity** become **Ω-classifiable**.
+Thus, **negation** and **conceptual discontinuity** become **Ω-classifiable**.
 
 <div style="page-break-after: always;"></div>
 
 # 6.5. Conceptual Topos as Fibered Topos over Z-frame
 
-Conceptual Topos is structured as a **fibered topos** over the semantic base space **Z-frame**.
+Conceptual Topos is structured as a **fibered topos** over the conceptual base space **Z-frame**.
 
 ### Z-frame as Fibered Structure
 
-- Let π: C ∪ D → Z be the semantic projection.
+- Let π: C ∪ D → Z be the conceptual projection.
 - Each fiber π⁻¹(Z) forms a category of morphic chains **D(Cₙ₋₁ | Z)**.
 - Morphisms of the form:
 
@@ -1248,7 +1252,7 @@ correspond to morphisms within the fibered structure over Z.
 
 ### Initial Object and Codomain Projection
 
-- The **Initial Object ""** serves as the semantic origin.
+- The **Initial Object ""** serves as the conceptual origin.
 - It projects into the codomain via:
 
 ```
@@ -1267,18 +1271,18 @@ Fiber π⁻¹(Z_X):
     "" → X → Y
 ```
 
-Thus, semantic generation naturally occurs anchored in Z-frame.
+Thus, conceptual generation naturally occurs anchored in Z-frame.
 
 <div style="page-break-after: always;"></div>
 
-### Semantic Flow Closure
+### Conceptual Flow Closure
 
-- Semantic flows:
+- Conceptual flows:
 
 ```
 X → Y | Z
 ```
-are closed within the fiber over Z, corresponding to the codomain Z of the semantic projection π.
+are closed within the fiber over Z, corresponding to the codomain Z of the conceptual projection π.
 
 
 - Rupture and negation are classified by **Ω**:
@@ -1289,9 +1293,9 @@ are closed within the fiber over Z, corresponding to the codomain Z of the seman
 
 <div style="page-break-after: always;"></div>
 
-### 7. Global Semantic Space: Total Conceptual Space (TCS)
+### 7. Global Conceptual Space: Total Conceptual Space (TCS)
 
-We define the Total Conceptual Space (TCS) as the global semantic anchor:
+We define the Total Conceptual Space (TCS) as the global conceptual anchor:
 
 ```
 Z = TCS = Total Conceptual Space
@@ -1305,7 +1309,7 @@ The global morphic flow space under TCS is defined as:
 M|TCS = { fₙ ∘ ... ∘ f₁ | all fᵢ:  M|Zᵢ →  M|Zᵢ₊₁ | TCS ⋏ ∀ i, j: fᵢ ≅ fⱼ | TCS }
 ```
 We can regard M|TCS as the composition space of conceptual perspectives: 
-Here, each M|Z functions as a semantic symbolization or perspective lens, and M|TCS represents global flows across chained perspectives.
+Here, each M|Z functions as a conceptual symbolization or perspective lens, and M|TCS represents global flows across chained perspectives.
 
 **Monoid Closure Property:**
 ```
@@ -1330,7 +1334,7 @@ That is, any conceptual pair X and Y can be connected via a morphic flow under T
 <div style="page-break-after: always;"></div>
 
 ### Fibered Structure and Lifting
-Each local M|Z can be lifted into M∣TCS via semantic shifting σ:
+Each local M|Z can be lifted into M∣TCS via conceptual shifting σ:
 ```
 ∀M∣Z, ∃σ: M∣Z > M∣Z | TCS
 ```
@@ -1351,7 +1355,7 @@ can → person | TCS
 ```
 
 ### Summary:
-The Total Conceptual Space (TCS) functions as the global base space of the conceptual topology. All local Z-frames are fibered over TCS, and semantic flows can be lifted via σ operators into M∣TCS. Thus, Conceptual Topos is complete and globally coherent under M∣TCS.
+The Total Conceptual Space (TCS) functions as the global base space of the conceptual topology. All local Z-frames are fibered over TCS, and conceptual flows can be lifted via σ operators into M∣TCS. Thus, Conceptual Topos is complete and globally coherent under M∣TCS.
 
 
 # Conclusion
@@ -1375,7 +1379,7 @@ with:
 **simbols**
 
 ```
-Z : Intermediating variable (semantic anchor; Z-frame)
+Z : Intermediating variable (conceptual anchor; Z-frame)
 | : Frame separator (indicates morphism is mediated by Z-frame)
 →: Morphic Flow
 ↛: Ruptured morphism
@@ -1383,20 +1387,20 @@ F : Cross-category morphism (used in cross-category flow under shared Z-frame)
 //: Used to narrate meaning flow of morphic chains.
 ¬: Absence
 
-M|Z : Monoid of Semantic Flow under Z-frame
+M|Z : Monoid of Conceptual Flow under Z-frame
 R|Z := { rupture(f) | rupture(f, σ(f) | Z) ≠ ∅ }
 e|Z : Identity element of M|Z
 D(Aₙ₋₁ | Z) : Morphic chain under Z frame
 
-σ : Semantic Shifting Morphism
+σ : Conceptual Shifting Morphism
 >> : Generalization relation (A >> X ≡ A ⊑ X)
 << : Specialization relation (X >> A ≡ X ⊑ A)
-rupture(f, σ(f) | Z) ≠ ∅ : Indicates semantic rupture
+rupture(f, σ(f) | Z) ≠ ∅ : Indicates conceptual rupture
 η : Quasi-Natural Transformation: Contextual alignment between morphic chains.
 
-⊕:  Semantic morphism set addition in σ or morphic merger such as:
+⊕:  Conceptual morphism set addition in σ or morphic merger such as:
     (k₂ ∘ k₁) ⊕ (q₂ ∘ q₁) = human → royalty | Z'
-⊖:  Semantic morphism set subtraction 
+⊖:  Conceptual morphism set subtraction 
     Removes specified morphisms from a morphic chain or set.
 ```
 
@@ -1405,7 +1409,7 @@ rupture(f, σ(f) | Z) ≠ ∅ : Indicates semantic rupture
 Concept / Word (lexeme):
     - Lower case (e.g., puppy, dog, girl, she)
 
-Z Frame (semantic anchor):
+Z Frame (conceptual anchor):
     - Upper case (e.g., Mammal, Human, Agency, Domesticated, Royalty)
 
 Type variables (A, B, X, Y, Z in formal definitions):
@@ -1425,7 +1429,7 @@ Functor: F
 　In simplified form: X </br>
   or more explicitly: id_X </br>
   
-2. f: X → X | Z  (Mediated identity with semantic flow)</br>
+2. f: X → X | Z  (Mediated identity with conceptual flow)</br>
 　In simplified form: X | Z</br>
 
 **σ Operator**
@@ -1433,14 +1437,14 @@ Functor: F
 ```
 σ(X). Not(x){ A ↛ B | Z}     →     Rupture under Z frame
 σ(X). so_much(x){A → B | Z}  →     Preservation & amplification under Z frame
-σ(X). >>(x,y)                →     Semantic Shifting x to y (Generalization) as function form
+σ(X). >>(x,y)                →     Conceptual Shifting x to y (Generalization) as function form
 σ(X). <<(x,y)                →     Downward Shifting x to y (Specialization) as function form
-σ(X). >(x,y)                 →     Semantic Shifting 
+σ(X). >(x,y)                 →     Conceptual Shifting 
 ```
 
 </br>
 
-**Semantic Morphism Set Operators**
+**Conceptual Morphism Set Operators**
 
 ```
 Addition (⊕):
