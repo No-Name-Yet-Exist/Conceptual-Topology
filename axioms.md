@@ -26,11 +26,11 @@ In this version, the term fiber is used informally to describe the structural co
   1.1.Local Semantic Flow under Z-frame</br>
     - Identity Morphism
     - Mirror Morphism
-    - Quasi-Natural Transformation(QNT)
+    - Quasi-Natural Transformation(QNT)</br>
   1.2. σ Operator as Functor</br>
     - Definition: Semantic Shifting Morphism (σ)
     - Identity Morphism of σ
-    - Associativity of σ
+    - Associativity of σ</br>
   1.3. σ Operator as Kan Extension
     - Functorial properties of σ Mapping
     - σ Mapping operator as Kan Extension
