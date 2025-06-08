@@ -85,7 +85,7 @@ Where:
 ```
 <div style="page-break-after: always;"></div>
 
-# 1.1. Local Semantic Flow under Z Frame
+### 1.1. Local Semantic Flow under Z Frame
 
 ### Identity Morphism
 
@@ -190,7 +190,7 @@ Example: η: girl → puppy | Z = Baby
 
 <div style="page-break-after: always;"></div>
 
-# 1.2. σ Operator as Functor
+### 1.2. σ Operator as Functor
 
 ### Definition: Semantic Shifting Morphism (σ)
 
@@ -326,7 +326,7 @@ Conclusion:
  (σ₃ ∘ σ₂) ∘ σ₁ = σ₃ ∘ (σ₂ ∘ σ₁) =  (life → life | Life)
 ```
 
-# 1.3. σ Operator as Kan Extension
+### 1.3. σ Operator as Kan Extension
 
 **Functorial Properties of σ mapping**
 ```
@@ -340,7 +340,7 @@ A Functor F: C → D is a mapping between categories satisfying:
 We define σ: D(Aₙ₋₁ | Z) >> D(Bₙ₋₁ | Z') as such a Functor.
 ```
 
-**σ operator as Kan Extension**
+**σ Operator as Kan Extension**
 ```
 Let:
 
@@ -349,7 +349,7 @@ Let:
 
 Define:
 
-σ_safe ≈ Lan_σ : D(Aₙ₋₁ | Z) > D(Bₙ₋₁ | Z')
+σ_safe ≈ Lan_σ : D(Aₙ₋₁ | Z) >> D(Bₙ₋₁ | Z')
 
 such that:
 
@@ -408,7 +408,7 @@ In the Kan Extension formalization:
 Lan_σ (D(Aₙ₋₁ | Z)) = D(Bₙ₋₁ | Z')
 ```
 
-the lifting of the entire functor D(Aₙ₋₁ | Z) under σ corresponds to constructing a universal Quasi-Natural Transformation from D(Aₙ₋₁ | Z) to D(Bₙ₋₁ | Z').
+the lifting of the entire functor D(Aₙ₋₁ | Z) under σ corresponds to constructing a universal QNT from D(Aₙ₋₁ | Z) to D(Bₙ₋₁ | Z').
 
 More precisely, for any object d ∈ D(Bₙ₋₁ | Z'):
 
@@ -461,8 +461,6 @@ girl → she → mammal → Life
 puppy → dog → mammal → Life
 ```
 Applying σ(Life) results in a horizontal lifting of codomain alignment
-
-
 
 <div style="page-break-after: always;"></div>
 
@@ -531,7 +529,7 @@ rupture(A ↛ B | Z)
 
 <div style="page-break-after: always;"></div>
 
-## 2. Monoid Structure of Semantic Flow (M|Z):
+# 2. Monoid Structure of Semantic Flow (M|Z):
 In Conceptual Topology, Z is defined as a mediating point/semantic anchor.
 ```
 Let C and D, Z be categories,
@@ -580,7 +578,7 @@ D(Cₙ₋₁ | Z) ={ C₀, C₁, C₂, ... | Z }
 
 <div style="page-break-after: always;"></div>
 
-## 3. Identity Element of M|Z
+# 3. Identity Element of M|Z
 ```
 Let: M|Z = { fₙ ∘ ... ∘ f₁ | all fᵢ: Xᵢ → Xᵢ₊₁ | Z ⋏ ∀ i, j: fᵢ ≅ fⱼ | Z }
 
@@ -605,7 +603,7 @@ This ensures that M|Z satisfies the identity axiom of a monoid.
 
 </br>
 
-## 4. Associativity of M | Z
+# 4. Associativity of M | Z
 ```
 Let: M|Z = { fₙ ∘ ... ∘ f₁ | all fᵢ: Xᵢ → Xᵢ₊₁ | Z ⋏ ∀ i, j: fᵢ ≅ fⱼ | Z }
 
@@ -1406,6 +1404,10 @@ Note: σ_safe behaves as Quasi-Natural Transformation.
 
 ### Conceptual Topos Named as 概念位相論 / Conceptual Topology
 This theory, named 概念位相論 or Conceptual Topoloy, was proposed by **No Name Yet Exist**.
+
+Meaning no longer escapes.
+It circulates within the morphic fibration.
+We, once again, govern the topology of meaning.
 
 GitHub: https://github.com/No-Name-Yet-Exist/Conceptual-Topology<br/>
 Note: https://note.com/xoreaxeax/n/n3711c1318d0b<br/>
