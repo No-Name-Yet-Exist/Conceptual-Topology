@@ -531,7 +531,7 @@ Diagram:
   Z₀  Z₁  Z₂  Z₃
 
         ↓  
-        
+
 M|Zₙ (colimit of Ladder)
 ```
 
@@ -542,7 +542,7 @@ In this case:
 
 or as monoid structure:
 
-M|Zₙ { fₙ ∘ ... ∘ f₁ | all fᵢ: Xᵢ → Xᵢ₊₁ | Zₙ ⋏ ∀ i, j: fᵢ ≅ fⱼ | Zₙ }
+M|Zₙ { Fₙ ∘ ... ∘ F₁ | all Fᵢ: Fᵢ → Fᵢ₊₁ | Zₙ ⋏ ∀ i, j: Fᵢ ≅ Fⱼ | Zₙ }
 ```
 
 **∞-Morphic Interpretation of Recusive Ken Extension**</br>
