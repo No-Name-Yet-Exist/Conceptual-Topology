@@ -1405,9 +1405,9 @@ Note: σ_safe behaves as Quasi-Natural Transformation.
 ### Conceptual Topos Named as 概念位相論 / Conceptual Topology
 This theory, named 概念位相論 or Conceptual Topoloy, was proposed by **No Name Yet Exist**.
 
-Meaning no longer escapes.
-It circulates within the morphic fibration.
-We, once again, govern the topology of meaning.
+Meaning no longer escapes.<br/>
+It circulates within the morphic fibration.<br/>
+We, once again, govern the topology of meaning.<br/>
 
 GitHub: https://github.com/No-Name-Yet-Exist/Conceptual-Topology<br/>
 Note: https://note.com/xoreaxeax/n/n3711c1318d0b<br/>
