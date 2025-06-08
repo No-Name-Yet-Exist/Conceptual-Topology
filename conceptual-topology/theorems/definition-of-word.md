@@ -6,8 +6,8 @@ Therefore, a word is a self-referential structure.
 ```
 // A concept is a structure of oppositional differences
 Let C be a concept //e.g. black
-Let OC be the opposite concept //e.g. white
-C = {−OC₁, −OC₂, ..., −OCₙ}
+//OC be the opposite concept or not relative concept (e.g., white, not pink)
+C = {−OC₁, −OC₂, ..., −OCₙ} // Yoneda's perspective × Structuralism
 
 // A word is a concept, and belongs to the category of words
 word ≅ C and Ob(Word) ∋ word
