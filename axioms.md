@@ -23,7 +23,7 @@ In this version, the term fiber is used informally to describe the structural co
 
 # Index
 1. Fibered Conceptual Topology
-  1.1.Local Semantic Flow under Z-frame
+  1.1.Local Semantic Flow under Z-frame</br>
     - Identity Morphism
     - Mirror Morphism
     - Quasi-Natural Transformation(QNT)
@@ -31,7 +31,10 @@ In this version, the term fiber is used informally to describe the structural co
     - Definition: Semantic Shifting Morphism (σ)
     - Identity Morphism of σ
     - Associativity of σ
-    - Functorial Interpretation of σ
+  1.3. σ Operator as Kan Extension
+    - Functorial properties of σ Mapping
+    - σ Mapping operator as Kan Extension
+    - Relation to Quasi-Natural Transoformation
     - Safe / Unsafe Semantic Shifting Morphism (σ) </br>
 2. Monoid Structure of Semantic Flow (M|Z)
 3. Identity Element of M|Z
@@ -187,7 +190,7 @@ Example: η: girl → puppy | Z = Baby
 
 <div style="page-break-after: always;"></div>
 
-### 1.2. σ Operator as Functor
+# 1.2. σ Operator as Functor
 <div style="page-break-after: always;"></div>
 
 ### Definition: Semantic Shifting Morphism (σ)
@@ -324,9 +327,9 @@ Conclusion:
  (σ₃ ∘ σ₂) ∘ σ₁ = σ₃ ∘ (σ₂ ∘ σ₁) =  (life → life | Life)
 ```
 
-### σ Mapping Operator as Kan Extension
+# 1.3. σ Operator as Kan Extension
 
-**σ mapping as Functor**
+**Functorial Properties of σ mapping**
 ```
 A Functor F: C → D is a mapping between categories satisfying:
 
@@ -373,6 +376,40 @@ Therefore:
 ∀ f ∈ Mor(D(Aₙ₋₁ | Z)),  
 Lan_σ (G ∘ f) = (Lan_σ G) ∘ (Lan_σ f)
 ```
+
+**Relation to Qasi-Natural Transformation**
+
+The σ mapping operator, defined as a Functor σ: D(Aₙ₋₁ | Z) > D(Bₙ₋₁ | Z'), exhibits structural alignment with Quasi-Natural Transformation (QNT) in the following way:
+
+In the original formulation of QNT in this framework:
+
+```
+η: Dᵢ ⇒ Dᵢ₊₁ | CD (codomain)
+η_X ∘ Dᵢ({f₁ | Z₁, ..., fₙ | Zₙ}) ≈ Dᵢ₊₁({f′₁ | Z₁, ..., f′ₙ | Zₙ}) ∘ η_Y
+```
+
+the Quasi-Natural Transformation mediates semantic flow correspondence across different morphic chain categories under a shared or shifted Z-frame.
+
+In the Kan Extension formalization:
+
+```
+Lan_σ (D(Aₙ₋₁ | Z)) = D(Bₙ₋₁ | Z')
+```
+
+the lifting of the entire functor D(Aₙ₋₁ | Z) under σ corresponds to constructing a universal Quasi-Natural Transformation from D(Aₙ₋₁ | Z) to D(Bₙ₋₁ | Z').
+
+More precisely, for any object d ∈ D(Bₙ₋₁ | Z'):
+
+```
+Lan_σ (D(Aₙ₋₁ | Z))(d) := colim_{(c, f: σ(c) → d)} D(Aₙ₋₁ | Z)(c)
+```
+yields a canonical mapping from the semantic flow space under Z to the corresponding semantic flow space under Z', respecting the structural continuity required by QNT.
+
+Thus:
+```
+σ_safe ≈ Left Kan Extension ≈ Universal Quasi-Natural Transformation between D(Aₙ₋₁ | Z) and D(Bₙ₋₁ | Z')
+```
+This formalization guarantees that the Quasi-Natural Transformation property observed in the original Semantic Cage structure is preserved and generalized through the Kan Extension framework, providing a categorical foundation for semantic flow lifting.
 
 
 <div style="page-break-after: always;"></div>
