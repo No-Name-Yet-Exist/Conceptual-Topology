@@ -37,7 +37,7 @@ In this version, the term fiber is used informally to describe the structural co
       - Relation to Quasi-Natural Transoformation</br>
       - Safe / Unsafe Conceptual Shifting Morphism (σ) </br>
   1.4. Kan Extension as Horizontal Conceptual Shifting</br>
-      - Recursive Kan Extension as Universal Product of Conceptual Shifting</br>
+      - Iterated Colimit Perspective</br>
       - ∞-Morphic Interpretation of Recusive Ken Extension</br>
 2. Monoid Structure of Conceptual Flow (M|Z)
 3. Identity Element of M|Z
@@ -468,7 +468,7 @@ Applying σ(Life) results in a horizontal lifting of codomain alignment
 </br>
 
 **Recursive Kan Extension as Universal Product of Conceptual Shiftings**</br>
-Conceptually, Recursive Kan Extension can be understood as constructing a universal product of sequential conceptual shiftings (σ operators) across Z-frames:
+Conceptually, Recursive Kan Extension can be understood as constructing an iterated colimit of sequential conceptual shiftings (σ operators) across Z-frames:
 
 **Conceptual Ladder Structure:**</br>
 ```
@@ -484,23 +484,23 @@ Fiber over Z₃
 NL: turtle → reptile → animal → ... 
 ```
 
-**Universal Product Perspective:**</br>
+**Iterated Colimit Perspective:**</br>
 At each stage, the application of σₙ corresponds to forming a conceptual projection from Fiber over Zₙ₋₁ to Fiber over Zₙ.
 
 The entire ladder:
-```
+
 Lan_{σₙ} ∘ ... ∘ Lan_{σ₃} ∘ Lan_{σ₂} ∘ Lan_{σ₁}
+
+can be viewed formally as an iterated colimit over the sequence of Z-frames:
+
 ```
-can be viewed as constructing a universal conceptual product of the sequence:
+colim_{Z₀ → Z₁ → Z₂ → ... → Zₙ} (Lan_{σᵢ}(Fiber over Zᵢ₋₁))
+```
 
-Π_{i=1..n} Lan_{σᵢ}(Fiber over Zᵢ₋₁) → Fiber over Zₙ
+**Interpretation:**</br>
+Each Lan_{σᵢ} acts as a conceptual lifting operation, progressively shifting semantic flow across Z-frame layers. The cumulative structure forms an iterated conceptual cone, whose colimit aligns the entire sequence into the semantic flow space under Zₙ.
 
-Interpretation:
-  Each Lan_{σᵢ} acts as a projection arrow into the "conceptual product space" being constructed across the ladder.
-
-  The resulting shifting corresponds to a universal morphic cone whose colimit aligns the entire sequence into the conceptual flow under Zₙ.
-
-**Diagram (Universal Product View):**
+Diagram (Iterated Colimit View):
 ```
                 Fiber over Z₀
                    ↓ σ₁
@@ -511,15 +511,15 @@ Interpretation:
                 Fiber over Z₃
                    ↓ ...
             ---------------------
-          Universal Conceptual Product
-           (Conceptual Cone → Fiber over Zₙ)
+          Iterated Colimit (Semantic Cone)
+           → Fiber over Zₙ
 
-           NL: turtle → reptile → animal → ... | Universal Conceptual Product = Animal
+NL: turtle → reptile → animal → ... | Iterated Colimit Result = Muti Celluar Organism
 ```
 
-**Formal Expression:**</br>
+Formal Expression:
 ```
-Universal_Product ≈ colim_{Z₀ → Z₁ → Z₂ → ... → Zₙ} (Lan_{σᵢ}(Fiber over Zᵢ₋₁))
+Iterated_Colimit ≈ colim_{Z₀ → Z₁ → Z₂ → ... → Zₙ} (Lan_{σᵢ}(Fiber over Zᵢ₋₁))
 ```
 
 **∞-Morphic Interpretation of Recusive Ken Extension**</br>
