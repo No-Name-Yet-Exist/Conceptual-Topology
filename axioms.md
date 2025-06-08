@@ -32,8 +32,8 @@ In this version, the term fiber is used informally to describe the structural co
     - Identity Morphism of σ
     - Associativity of σ</br>
   1.3. σ Operator as Kan Extension
-    - Functorial properties of σ Mapping
-    - σ Mapping operator as Kan Extension
+    - Functorial properties of σ
+    - σ operator as Kan Extension
     - Relation to Quasi-Natural Transoformation
     - Safe / Unsafe Semantic Shifting Morphism (σ) </br>
 2. Monoid Structure of Semantic Flow (M|Z)
@@ -191,7 +191,6 @@ Example: η: girl → puppy | Z = Baby
 <div style="page-break-after: always;"></div>
 
 # 1.2. σ Operator as Functor
-<div style="page-break-after: always;"></div>
 
 ### Definition: Semantic Shifting Morphism (σ)
 
@@ -338,10 +337,10 @@ A Functor F: C → D is a mapping between categories satisfying:
 - Identity preservation: F(id_X) = id_{F(X)}
 - Composition preservation: F(f ∘ g) = F(f) ∘ F(g)
 
-We define σ: D(Aₙ₋₁ | Z) > D(Bₙ₋₁ | Z') as such a Functor.
+We define σ: D(Aₙ₋₁ | Z) >> D(Bₙ₋₁ | Z') as such a Functor.
 ```
 
-**σ Mapping operator as Kan Extension**
+**σ operator as Kan Extension**
 ```
 Let:
 
@@ -379,13 +378,26 @@ Lan_σ (G ∘ f) = (Lan_σ G) ∘ (Lan_σ f)
 
 **Relation to Qasi-Natural Transformation**
 
-The σ mapping operator, defined as a Functor σ: D(Aₙ₋₁ | Z) > D(Bₙ₋₁ | Z'), exhibits structural alignment with Quasi-Natural Transformation (QNT) in the following way:
+The σ mapping operator, defined as a Functor σ: D(Aₙ₋₁ | Z) >> D(Bₙ₋₁ | Z'), exhibits structural alignment with Quasi-Natural Transformation (QNT) in the following way:
 
 In the original formulation of QNT in this framework:
 
 ```
 η: Dᵢ ⇒ Dᵢ₊₁ | CD (codomain)
 η_X ∘ Dᵢ({f₁ | Z₁, ..., fₙ | Zₙ}) ≈ Dᵢ₊₁({f′₁ | Z₁, ..., f′ₙ | Zₙ}) ∘ η_Y
+```
+
+**Diagram:**
+```
+        Z = baby  
+    puppy  ←   girl    //specified: size + young
+     |          |
+     |          |
+    dog        she     //abstraction
+      \        /      
+        Mammal
+
+In this diagram, Quasi-Natural Transformation η aligns morphic chains between puppy → dog → mammal and girl → she → mammal within a shared codomain mammal (under Z-frame "Mammal").
 ```
 
 the Quasi-Natural Transformation mediates semantic flow correspondence across different morphic chain categories under a shared or shifted Z-frame.
@@ -409,6 +421,24 @@ Thus:
 ```
 σ_safe ≈ Left Kan Extension ≈ Universal Quasi-Natural Transformation between D(Aₙ₋₁ | Z) and D(Bₙ₋₁ | Z')
 ```
+
+**Diagram:**
+```
+puppy → dog → mammal
+      \         |
+       \        |
+        v       v σ(Life)
+           Life
+
+girl → she → mammal
+      \         |
+       \        |
+        v       v σ(Life)
+           Life
+
+σ(Life) acts as a Kan Extension operator, lifting semantic morphic chains from Fiber over Z = Mammal to Fiber over Z' = Life. The lifting ensures coherent semantic projection across Z-frames, preserving flow alignment while generalizing to a higher conceptual space.
+```
+
 This formalization guarantees that the Quasi-Natural Transformation property observed in the original Semantic Cage structure is preserved and generalized through the Kan Extension framework, providing a categorical foundation for semantic flow lifting.
 
 
