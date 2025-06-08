@@ -4,7 +4,7 @@ Written by No Name Yet Exist </br>
 Contact: Written Below
 
 # Introduction
-Conceptual Topos v1.1 is an initial formalization of the algebraic topology of meaning 
+Conceptual Topos v1.2 is an initial formalization of the algebraic topology of meaning 
 based on Conceptual Topology. 
 
 This version sketches core axioms for Topos including:
@@ -23,22 +23,26 @@ In this version, the term fiber is used informally to describe the structural co
 
 # Index
 1. Fibered Conceptual Topology</br>
-  1.1.Local Conceptual Flow under Z-frame</br>
+    1.1.Local Conceptual Flow under Z-frame</br>
       - Identity Morphism</br>
       - Mirror Morphism</br>
       - Quasi-Natural Transformation(QNT)</br>
-  1.2. σ Operator as Functor</br>
+
+    1.2. σ Operator as Functor</br>
       - Definition: Conceptual Shifting Morphism (σ)</br>
       - Identity Morphism of σ</br>
       - Associativity of σ</br>
-  1.3. σ Operator as Kan Extension
+
+    1.3. σ Operator as Kan Extension
       - Functorial properties of σ</br>
       - σ operator as Kan Extension</br>
-      - Relation to Quasi-Natural Transoformation</br>
+      - Relation to Quasi-Natural Transformation</br>
       - Safe / Unsafe Conceptual Shifting Morphism (σ) </br>
-  1.4 Kan Extension as Horizontal Conceptual Shifting and Cone Structure</br>
+
+    1.4 Kan Extension as Horizontal Conceptual Shifting and Cone Structure</br>
       - Iterated Colimit Perspective</br>
       - ∞-Morphic Interpretation of Recusive Ken Extension</br>
+
 2. Monoid Structure of Conceptual Flow (M|Z)
 3. Identity Element of M|Z
 4. Associativity of M | Z
@@ -53,7 +57,7 @@ In this version, the term fiber is used informally to describe the structural co
       - Pullback: Quasi-Natural Transformation</br>
       - Equalizer: Mirror Morphism
       - Product: σ operator</br>
-      
+  
     6.4. Subobject Classifier Ω</br>
     6.5. Conceptual Topos as Fibered Topos</br>
 7. Global Conceptual Space: Total Conceptual Space (TCS)</br>
@@ -300,8 +304,6 @@ since: M|Z = { fₙ ∘ ... ∘ f₁ | all fᵢ: Xᵢ → Xᵢ₊₁ | Z ⋏ ∀
 ∴ word is word and word is word
 ```
 
-<div style="page-break-after: always;"></div>
-
 ### Associativity of σ
 ```
 σ₁(Z). OP(D(Aₙ₋₁ | Z), Z) = D(Zₙ₋₁ | Z)
@@ -328,6 +330,8 @@ Let σ₃ = σ(Mammal). >>(animal → livingBeing, Life) = (life → life | Life
 Conclusion:
  (σ₃ ∘ σ₂) ∘ σ₁ = σ₃ ∘ (σ₂ ∘ σ₁) =  (life → life | Life)
 ```
+
+<div style="page-break-after: always;"></div>
 
 ### 1.3. σ Operator as Kan Extension
 
@@ -421,6 +425,9 @@ Lan_σ (D(Aₙ₋₁ | Z))(d) := colim_{(c, f: σ(c) → d)} D(Aₙ₋₁ | Z)(c
 yields a canonical shifting from the conceptual flow space under Z to the corresponding conceptual flow space under Z', respecting the structural continuity required by QNT.
 
 Thus:
+
+<div style="page-break-after: always;"></div>
+
 ```
 σ_safe ≈ Left Kan Extension ≈ Universal Quasi-Natural Transformation between D(Aₙ₋₁ | Z) and D(Bₙ₋₁ | Z')
 ```
@@ -443,6 +450,8 @@ girl → she → mammal
 ```
 
 This formalization guarantees that the Quasi-Natural Transformation property observed in the original Conceptual Cage structure is preserved and generalized through the Kan Extension framework, providing a categorical foundation for conceptual flow lifting.
+
+<div style="page-break-after: always;"></div>
 
 ### 1.4 Kan Extension as Horizontal Conceptual Shifting and Cone Structure
 
@@ -484,6 +493,8 @@ Fiber over Z₃
 NL: turtle → reptile → animal → ... 
 ```
 
+<div style="page-break-after: always;"></div>
+
 **Iterated Colimit Perspective:**</br>
 At each stage, the application of σₙ corresponds to forming a conceptual projection from Fiber over Zₙ₋₁ to Fiber over Zₙ.
 
@@ -511,7 +522,7 @@ Diagram (Iterated Colimit View):
                 Fiber over Z₃
                    ↓ ...
             ---------------------
-          Iterated Colimit (Semantic Cone)
+          Iterated Colimit (Conceptual Cone)
            → Fiber over Zₙ
 
 NL: tortoise → turtle → reptile → animal → ... | Iterated Colimit Result = Muti Celluar Organism
@@ -523,6 +534,8 @@ Iterated_Colimit ≈ colim_{Z₀ → Z₁ → Z₂ → ... → Zₙ} (Lan_{σᵢ
 ```
 
 This conceptual ladder forms an iterated semantic cone, whose colimit aligns the entire Z-frame sequence into the unified semantic flow space under Zₙ.
+
+<div style="page-break-after: always;"></div>
 
 Diagram:
 ```
@@ -544,6 +557,8 @@ or as monoid structure:
 
 M|Zₙ { Fₙ ∘ ... ∘ F₁ | all Fᵢ: Fᵢ → Fᵢ₊₁ | Zₙ ⋏ ∀ i, j: Fᵢ ≅ Fⱼ | Zₙ }
 ```
+
+<div style="page-break-after: always;"></div>
 
 **∞-Morphic Interpretation of Recusive Ken Extension**</br>
 Viewed categorically, this recursive construction aligns with the notion of ∞-morphisms or higher morphic flows, where each application of Lan_{σᵢ} corresponds to a morphism in an extended conceptual category, and their collective composition forms an ∞-structured cone:
@@ -580,8 +595,9 @@ Fiber over Z₁   Fiber over Z₂   Fiber over Z₃   ...   Fiber over Zₙ
 
 This interpretation enables the Conceptual Topos or Conceptual Topology to naturally support recursive, layered conceptual flow, where mappings can extend across arbitrarily many Z-frames while preserving structural coherence.
 
+<div style="page-break-after: always;"></div>
 
-**Example: Iterated Kan Extension of Morphic Ladder**</br>
+**Example: Iterated Kan Extension of Conceptual Ladder**</br>
 
 **Step 1:**
 ```
@@ -1516,6 +1532,8 @@ Morphism: f, g, h
 Functor: F
 ```
 
+<div style="page-break-after: always;"></div>
+
 **Simplified Form of Identity Morphism:**
 
 1. f: X → X | X  (Category-theoretic identity) </br>
@@ -1575,7 +1593,8 @@ GitHub: https://github.com/No-Name-Yet-Exist/Conceptual-Topology<br/>
 Note: https://note.com/xoreaxeax/n/n3711c1318d0b<br/>
 Zenodo: https://zenodo.org/records/15455079
 
-This is Version: 1.1
+This is Version: 1.2
 
 ----
-This document and all conceptual content therein are © [No Name Yet Exist], 2025. All rights reserved. Unauthorized reproduction, distribution, or use without explicit permission is prohibited.
+This document and all conceptual content therein are © [No Name Yet Exist], 2025. 
+All rights reserved. Unauthorized reproduction, distribution, or use without explicit permission is prohibited.
