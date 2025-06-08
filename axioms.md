@@ -36,7 +36,7 @@ In this version, the term fiber is used informally to describe the structural co
       - σ operator as Kan Extension</br>
       - Relation to Quasi-Natural Transoformation</br>
       - Safe / Unsafe Conceptual Shifting Morphism (σ) </br>
-  1.4. Kan Extension as Horizontal Conceptual Shifting</br>
+  1.4 Kan Extension as Horizontal Conceptual Shifting and Cone Structure</br>
       - Iterated Colimit Perspective</br>
       - ∞-Morphic Interpretation of Recusive Ken Extension</br>
 2. Monoid Structure of Conceptual Flow (M|Z)
@@ -444,7 +444,7 @@ girl → she → mammal
 
 This formalization guarantees that the Quasi-Natural Transformation property observed in the original Conceptual Cage structure is preserved and generalized through the Kan Extension framework, providing a categorical foundation for conceptual flow lifting.
 
-### 1.4. Kan Extension as Horizontal Conceptual Shifting
+### 1.4 Kan Extension as Horizontal Conceptual Shifting and Cone Structure
 
 Conceptually, σ operator as Kan Extension performs not only lifting of morphic chains but also acts as a horizontal mapping across Z-frames, shifting conceptual flow from Fiber over Z to Fiber over Z'.
 
@@ -467,7 +467,7 @@ Applying σ(Life) results in a horizontal lifting of codomain alignment
 
 </br>
 
-**Recursive Kan Extension as Universal Product of Conceptual Shiftings**</br>
+**Recursive Kan Extension as Iterated Colimit of Conceptual Shiftings**</br>
 Conceptually, Recursive Kan Extension can be understood as constructing an iterated colimit of sequential conceptual shiftings (σ operators) across Z-frames:
 
 **Conceptual Ladder Structure:**</br>
@@ -491,7 +491,7 @@ The entire ladder:
 
 Lan_{σₙ} ∘ ... ∘ Lan_{σ₃} ∘ Lan_{σ₂} ∘ Lan_{σ₁}
 
-can be viewed formally as an iterated colimit over the sequence of Z-frames:
+can be viewed formally as an iterated colimit over the sequence of Z-frames, forming a conceptual cone over the diagram:
 
 ```
 colim_{Z₀ → Z₁ → Z₂ → ... → Zₙ} (Lan_{σᵢ}(Fiber over Zᵢ₋₁))
@@ -514,7 +514,7 @@ Diagram (Iterated Colimit View):
           Iterated Colimit (Semantic Cone)
            → Fiber over Zₙ
 
-NL: turtle → reptile → animal → ... | Iterated Colimit Result = Muti Celluar Organism
+NL: tortoise → turtle → reptile → animal → ... | Iterated Colimit Result = Muti Celluar Organism
 ```
 
 Formal Expression:
@@ -522,11 +522,60 @@ Formal Expression:
 Iterated_Colimit ≈ colim_{Z₀ → Z₁ → Z₂ → ... → Zₙ} (Lan_{σᵢ}(Fiber over Zᵢ₋₁))
 ```
 
+This conceptual ladder forms an iterated semantic cone, whose colimit aligns the entire Z-frame sequence into the unified semantic flow space under Zₙ.
+
+Diagram:
+```
+        Zₙ
+    ↙ ↓   ↓ ➘
+  Z₀  Z₁  Z₂  Z₃
+
+        ↓  
+        
+M|Zₙ (colimit of Ladder)
+```
+
+A cone on a diagram F: J → C is a universal natural transformation from a constant diagram ΔX to F.
+In this case:
+```
+Δ(Fiber over Zₙ) ⇒ Ladder of Lan_{σᵢ}(Fiber over Zᵢ₋₁)
+
+or as monoid structure:
+
+M|Zₙ { fₙ ∘ ... ∘ f₁ | all fᵢ: Xᵢ → Xᵢ₊₁ | Zₙ ⋏ ∀ i, j: fᵢ ≅ fⱼ | Zₙ }
+```
+
 **∞-Morphic Interpretation of Recusive Ken Extension**</br>
 Viewed categorically, this recursive construction aligns with the notion of ∞-morphisms or higher morphic flows, where each application of Lan_{σᵢ} corresponds to a morphism in an extended conceptual category, and their collective composition forms an ∞-structured cone:
 
 ```
 ∞-Universal Product ≈ colim_{Z₀ → Z₁ → Z₂ → ... → Zₙ} (Lan_{σᵢ}(Fiber over Zᵢ₋₁))
+```
+
+Diagram:
+```
+Z₀ → Z₁ → Z₂ → Z₃ → ... → Zₙ
+ |     |     |     |        |
+Lan_{σ₁}  Lan_{σ₂}  Lan_{σ₃}  ... Lan_{σₙ}
+ |     |     |     |        |
+ v     v     v     v        v
+Fiber over Z₁   Fiber over Z₂   Fiber over Z₃   ...   Fiber over Zₙ
+       ↘ ↘ ↘ ↘ ↘
+         ↓ ↓ ↓ ↓
+colim (Lan_{σᵢ} Fiber over Zᵢ₋₁)
+```
+
+NL Diagram:
+```
+tortoise → turtle → reptile → ... → Zₙ
+  |         |     |     |           |
+Lan_{σ₁}  Lan_{σ₂}  Lan_{σ₃}  ... Lan_{σₙ}
+ |     |     |     |        |
+ v     v     v     v        v
+Fiber over Z₁   Fiber over Z₂   Fiber over Z₃   ...   Fiber over Zₙ
+       ↘ ↘ ↘ ↘ ↘
+         ↓ ↓ ↓ ↓
+  Multi-Cellular Organism
 ```
 
 This interpretation enables the Conceptual Topos or Conceptual Topology to naturally support recursive, layered conceptual flow, where mappings can extend across arbitrarily many Z-frames while preserving structural coherence.
