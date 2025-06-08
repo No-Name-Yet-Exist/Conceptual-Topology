@@ -22,7 +22,7 @@ In this version, the term fiber is used informally to describe the structural co
 <div style="page-break-after: always;"></div>
 
 # Index
-1. Fibered Conceptual Topology
+1. Fibered Conceptual Topology</br>
   1.1.Local Semantic Flow under Z-frame</br>
     - Identity Morphism
     - Mirror Morphism
