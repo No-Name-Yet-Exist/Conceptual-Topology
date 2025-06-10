@@ -1,4 +1,4 @@
-# 概念位相論 / Conceptual Topology
+# 概念位相論 / Conceptual Topology As Conceptual Topos
 ### Category Theory × Semantics x Philosophy
 Conceptual Topology mainly analyzes how words, concepts, and meanings are structured and transformed, using tools from category theory and vector semantics such as word2vec. 
 
@@ -7,11 +7,14 @@ Conceptual Topology aims to provide a formal structure for meaning itself, bridg
 The translation is currently in progress; not all content is available in English yet.
 Please refer to the **Index** section for key definitions and core concepts.
 
-**preprint**
+### preprint
 https://zenodo.org/records/15455079
 
-**Index** </br>
+### Index
 https://github.com/No-Name-Yet-Exist/Articles/blob/main/Index.md
+
+### Formal Definitions
+https://github.com/No-Name-Yet-Exist/Articles/blob/main/axioms.md
 
 This GitHub is linked with:</br>
 https://note.com/xoreaxeax/n/n3711c1318d0b
