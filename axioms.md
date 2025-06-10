@@ -7,7 +7,7 @@ Contact: Written Below
 Conceptual Topos v1.2 is an initial formalization of the algebraic topology of meaning 
 based on Conceptual Topology. 
 
-This version sketches core axioms for Topos including:
+This version sketches core axioms for Topos.
 
 - Initial Object
 - Finite Limits (Product, Equalizer, Pullback)
@@ -366,18 +366,17 @@ Lan_σ (D(Aₙ₋₁ | Z))(d) := colim_{(c, f: σ(c) → d)} D(Aₙ₋₁ | Z)(c
 And:
 
 For any morphism h: d → d' in D(Bₙ₋₁ | Z'),  
-Lan_σ (h) is defined to preserve functoriality:
+Lan_σ (h) is defined to preserve functoriality
 
 Lan_σ (h) ∘ Lan_σ (f) = Lan_σ (h ∘ f)
 
 Therefore:
 
 σ_safe satisfies:
-
 - Object-level safe lifting: Ob(D(Aₙ₋₁ | Z)) → Ob(D(Bₙ₋₁ | Z'))
 - Morphism-level safe lifting: Mor(D(Aₙ₋₁ | Z)) → Mor(D(Bₙ₋₁ | Z'))
 
-σ_safe ≈ Left Kan Extension guarantees the Quasi-Natural Transformation property:
+σ_safe ≈ Left Kan Extension guarantees the Quasi-Natural Transformation property
 
 ∀ f ∈ Mor(D(Aₙ₋₁ | Z)),  
 Lan_σ (G ∘ f) = (Lan_σ G) ∘ (Lan_σ f)
@@ -385,10 +384,9 @@ Lan_σ (G ∘ f) = (Lan_σ G) ∘ (Lan_σ f)
 
 **Relation to Qasi-Natural Transformation**</br>
 
-The σ mapping operator, defined as a Functor σ: D(Aₙ₋₁ | Z) >> D(Bₙ₋₁ | Z'), exhibits structural alignment with Quasi-Natural Transformation (QNT) in the following way:
+The σ mapping operator, defined as a Functor σ: D(Aₙ₋₁ | Z) >> D(Bₙ₋₁ | Z'), exhibits structural alignment with Quasi-Natural Transformation (QNT) in the following way.
 
-In the original formulation of QNT in this framework:
-
+In the original formulation of QNT in this framework
 ```
 η: Dᵢ ⇒ Dᵢ₊₁ | CD (codomain)
 η_X ∘ Dᵢ({f₁ | Z₁, ..., fₙ | Zₙ}) ≈ Dᵢ₊₁({f′₁ | Z₁, ..., f′ₙ | Zₙ}) ∘ η_Y
@@ -407,15 +405,14 @@ In the original formulation of QNT in this framework:
 In this diagram, Quasi-Natural Transformation η aligns morphic chains between puppy → dog → mammal and girl → she → mammal within a shared codomain mammal (under Z-frame "Mammal").
 ```
 
-the Quasi-Natural Transformation mediates conceptual flow correspondence across different morphic chain categories under a shared or shifted Z-frame.
+The Quasi-Natural Transformation mediates conceptual flow correspondence across different morphic chain categories under a shared or shifted Z-frame.
 
 In the Kan Extension formalization:
-
 ```
 Lan_σ (D(Aₙ₋₁ | Z)) = D(Bₙ₋₁ | Z')
 ```
 
-the lifting of the entire functor D(Aₙ₋₁ | Z) under σ corresponds to constructing a universal QNT from D(Aₙ₋₁ | Z) to D(Bₙ₋₁ | Z').
+The lifting of the entire functor D(Aₙ₋₁ | Z) under σ corresponds to constructing a universal QNT from D(Aₙ₋₁ | Z) to D(Bₙ₋₁ | Z').
 
 More precisely, for any object d ∈ D(Bₙ₋₁ | Z'):
 
@@ -457,8 +454,7 @@ This formalization guarantees that the Quasi-Natural Transformation property obs
 
 Conceptually, σ operator as Kan Extension performs not only lifting of morphic chains but also acts as a horizontal mapping across Z-frames, shifting conceptual flow from Fiber over Z to Fiber over Z'.
 
-Diagrammatically, this can be visualized as a horizontal shift:
-
+Diagrammatically, this can be visualized as a horizontal shift.
 ```
 Fiber over Z (Mammal):
 
@@ -477,7 +473,7 @@ Applying σ(Life) results in a horizontal lifting of codomain alignment
 </br>
 
 **Recursive Kan Extension as Iterated Colimit of Conceptual Shiftings**</br>
-Conceptually, Recursive Kan Extension can be understood as constructing an iterated colimit of sequential conceptual shiftings (σ operators) across Z-frames:
+Conceptually, Recursive Kan Extension can be understood as constructing an iterated colimit of sequential conceptual shiftings (σ operators) across Z-frames.
 
 **Conceptual Ladder Structure:**</br>
 ```
@@ -499,13 +495,13 @@ NL: turtle → reptile → animal → ...
 At each stage, the application of σₙ corresponds to forming a conceptual projection from Fiber over Zₙ₋₁ to Fiber over Zₙ.
 
 The entire ladder:
-
-Lan_{σₙ} ∘ ... ∘ Lan_{σ₃} ∘ Lan_{σ₂} ∘ Lan_{σ₁}
-
-can be viewed formally as an iterated colimit over the sequence of Z-frames, forming a conceptual cone over the diagram:
-
 ```
-colim_{Z₀ → Z₁ → Z₂ → ... → Zₙ} (Lan_{σᵢ}(Fiber over Zᵢ₋₁))
+Lan_{σₙ} ∘ ... ∘ Lan_{σ₃} ∘ Lan_{σ₂} ∘ Lan_{σ₁}
+```
+
+can be viewed formally as an iterated colimit over the sequence of Z-frames, forming a conceptual cone over the diagram.
+```
+colim_{Z₀ → Z₁ → Z₂ → ... → Zₙ} (Lan_{σᵢ}(π⁻¹(Zᵢ₋₁)))
 ```
 
 **Interpretation:**</br>
@@ -530,7 +526,7 @@ NL: tortoise → turtle → reptile → animal → ... | Iterated Colimit Result
 
 Formal Expression:
 ```
-Iterated_Colimit ≈ colim_{Z₀ → Z₁ → Z₂ → ... → Zₙ} (Lan_{σᵢ}(Fiber over Zᵢ₋₁))
+Iterated_Colimit ≈ colim_{Z₀ → Z₁ → Z₂ → ... → Zₙ} (Lan_{σᵢ}(π⁻¹(Zᵢ₋₁)))
 ```
 
 This conceptual ladder forms an iterated semantic cone, whose colimit aligns the entire Z-frame sequence into the unified semantic flow space under Zₙ.
@@ -551,20 +547,19 @@ M|Zₙ (colimit of Ladder)
 A cone on a diagram F: J → C is a universal natural transformation from a constant diagram ΔX to F.
 In this case:
 ```
-Δ(Fiber over Zₙ) ⇒ Ladder of Lan_{σᵢ}(Fiber over Zᵢ₋₁)
+Δ(π⁻¹(Zₙ)) ⇒ Ladder of Lan_{σᵢ}(π⁻¹(Zᵢ₋₁))
 
-or as monoid structure:
-
+or as monoid structure
 M|Zₙ { Fₙ ∘ ... ∘ F₁ | all Fᵢ: Fᵢ → Fᵢ₊₁ | Zₙ ⋏ ∀ i, j: Fᵢ ≅ Fⱼ | Zₙ }
 ```
 
 <div style="page-break-after: always;"></div>
 
 **∞-Morphic Interpretation of Recusive Ken Extension**</br>
-Viewed categorically, this recursive construction aligns with the notion of ∞-morphisms or higher morphic flows, where each application of Lan_{σᵢ} corresponds to a morphism in an extended conceptual category, and their collective composition forms an ∞-structured cone:
+Viewed categorically, this recursive construction aligns with the notion of ∞-morphisms or higher morphic flows, where each application of Lan_{σᵢ} corresponds to a morphism in an extended conceptual category, and their collective composition forms an ∞-structured cone.
 
 ```
-∞-Universal Product ≈ colim_{Z₀ → Z₁ → Z₂ → ... → Zₙ} (Lan_{σᵢ}(Fiber over Zᵢ₋₁))
+∞-Universal Product ≈ colim_{Z₀ → Z₁ → Z₂ → ... → Zₙ} (Lan_{σᵢ}(π⁻¹(Zᵢ₋₁)))
 ```
 
 Diagram:
@@ -577,7 +572,7 @@ Lan_{σ₁}  Lan_{σ₂}  Lan_{σ₃}  ... Lan_{σₙ}
 Fiber over Z₁   Fiber over Z₂   Fiber over Z₃   ...   Fiber over Zₙ
        ↘ ↘ ↘ ↘ ↘
          ↓ ↓ ↓ ↓
-colim (Lan_{σᵢ} Fiber over Zᵢ₋₁)
+colim (Lan_{σᵢ}(π⁻¹(Zᵢ₋₁)))
 ```
 
 NL Diagram:
@@ -613,7 +608,7 @@ Lan_{σ₁}(Fiber over Turtle) → Fiber over Reptile
 Z₂ = Animal  
 σ₂ = σ(Animal): Reptile → Animal  
 
-Lan_{σ₂}(Fiber over Reptile) → Fiber over Animal
+Lan_{σ₂}(π⁻¹(Reptile)) → π⁻¹(Animal)
 ```
 
 **Step 3:**
@@ -621,17 +616,17 @@ Lan_{σ₂}(Fiber over Reptile) → Fiber over Animal
 Z₃ = Life  
 σ₃ = σ(Life): Animal → Life  
 
-Lan_{σ₃}(Fiber over Animal) → Fiber over Life
+Lan_{σ₃}(Fiber over π⁻¹(Animal)) → π⁻¹(Life)
 ```
 
 **Composition:**
 ```
-Lan_{σ₃} ∘ Lan_{σ₂} ∘ Lan_{σ₁}(Fiber over Turtle)  
+Lan_{σ₃} ∘ Lan_{σ₂} ∘ Lan_{σ₁}(π⁻¹(Turtle))  
 ```
 
 **Colimit:**
 ```
-colim_{Z₀ → Z₁ → Z₂ → Z₃} Lan_{σᵢ}(Fiber over Zᵢ₋₁) ≈ Fiber over Z₃ = Fiber over Life
+colim_{Z₀ → Z₁ → Z₂ → Z₃} Lan_{σᵢ}(π⁻¹(Zᵢ₋₁)) ≈ π⁻¹(Z₃) = π⁻¹(Life)
 ```
 
 **NL:**
@@ -639,6 +634,70 @@ colim_{Z₀ → Z₁ → Z₂ → Z₃} Lan_{σᵢ}(Fiber over Zᵢ₋₁) ≈ F
 Turtle → Reptile → Animal → Life  
 ```
 Conceptual flow lifted across Z-frame layers as iterated Kan Extensions, converging to the unified flow under Life.
+
+
+### Universal Property of `Lan_{σᵢ}`
+
+Given a base conceptual shifting operator
+```
+σᵢ: Z_{i-1} >> Zᵢ
+```
+we define Lan_{σᵢ} for corresponding fiber categories
+```
+Lan_{σᵢ} : π⁻¹(Z_{i-1}) → π⁻¹(Zᵢ)
+```
+
+To satisfy the following **universal property**, for any functor
+```
+H: π⁻¹(Z_{i-1}) → E
+```
+
+and any functor
+```
+K: π⁻¹(Zᵢ) → E
+```
+
+with a natural transformation
+```
+α: H ⇒ K ∘ σᵢ^*
+```
+
+(where `σᵢ^*` is the pullback functor along `σᵢ`),  
+there exists a unique natural transformation
+```
+β: Lan_{σᵢ}(H) ⇒ K
+```
+
+such that the following diagram commutes
+```
+H
+↓ α
+K ∘ σᵢ^*
+↑
+Lan_{σᵢ}(H) ∘ σᵢ^*
+```
+
+In formal terms
+```
+Nat(H, K ∘ σᵢ^*) ≅ Nat(Lan_{σᵢ}(H), K)
+```
+
+Iterated Kan Extension Ladder
+
+The **iterated Kan extension** over the Z-frame ladder
+
+```
+Z₀ → Z₁ → Z₂ → ... → Zₙ
+
+π⁻¹(Z₀) → π⁻¹(Z₁) → π⁻¹(Z₂) → ... → π⁻¹(Zₙ)
+
+Lan_{σₙ} ∘ ... ∘ Lan_{σ₁}(π⁻¹(Z₀)) → π⁻¹(Zₙ)
+```
+
+Iterated colimit approximates the **unified conceptual flow**
+```
+Iterated_Colimit ≅ colim_{Z₀ → Z₁ → ... → Zₙ} (Lan_{σᵢ}(π⁻¹(Z_{i-1})))
+```
 
 <div style="page-break-after: always;"></div>
 
@@ -745,7 +804,7 @@ Then the set of conceptual flow morphisms under Z forms a monoid:
 
 M|Z = { fₙ ∘ ... ∘ f₁ | all fᵢ: Xᵢ → Xᵢ₊₁ | Z ⋏ ∀ i, j: fᵢ ≅ fⱼ | Z }
 
-This is also defined as Morphic Chain:
+This is also defined as Morphic Chain.
 
 Let **D(Cₙ₋₁ | Z)** := Category of Morphic Chains over **Ob(Cₙ₋₁)** within a given Z-frame.
 where:D(Cₙ₋₁ | Z) ={ C₀ → C₁ → C₂ → ... | Z }
