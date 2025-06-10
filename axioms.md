@@ -13,7 +13,7 @@ We no longer describe meaning merely through signs and chains of signifiers,
 but as flows — morphisms between concepts mediated by contextual anchors called Z-frames.
 These frames act as semantic coordinates, situating each concept within a space of possible interpretation.
 
-A dog is not just “a dog” It is depending on the frame Z through which it is seen. </br>
+A dog is not just “a dog.” It is depending on the frame Z through which it is seen. </br>
 dog | Domesticated </br>
 dog | Mammal</br>
 dog | Son</br>
@@ -22,10 +22,9 @@ In this model, concepts are objects, interpretive movements are arrows, and sema
 
 We define categories like C|Z, where morphisms f: A → B | Z are conceptual transformations under a shared meaning frame. We introduce operators like σ that model semantic shifting, generalization, or abstraction across frames and we show that these operators exhibit functorial and even Kan-extension-like behavior.
 
-Meaning is no longer like a mirage.
+Meaning is no longer like a mirage. 
 It circulates within a space that is structured, closed, and composable.
-
-Welcome to the algebraic topology of meaning, it is the new era of human expression.
+We are no longer chasing meaning. We are building it from its space. 
 
 Note:
 In this version, the term fiber is used informally to describe the structural cohesion of morphic chains under a shared Z-frame.The current framework is not yet a strict fibered topos in the categorical sense. Formal connection to fibered topos is an intended direction for future versions.This document lays the foundation toward that goal. 
