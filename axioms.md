@@ -4,26 +4,37 @@ Written by No Name Yet Exist </br>
 Contact: Written Below
 
 # Introduction
-Conceptual Topos v1.2 is an initial formalization of the algebraic topology of meaning 
-based on Conceptual Topology. 
+Meaning was once considered fluid, ungraspable — a vapor that escaped the structures we tried to impose.  But what if meaning does not escape? What if it moves, and that movement can be mapped, composed, and classified? This theory, Conceptual Topology (概念位相論) As Conceptual Topos, begins with a radical yet simple claim.
+    
+*Meaning does not escape.*
+*It just topologizes within the abstract cage.*
 
-This version sketches core axioms for Topos.
+We no longer describe meaning merely through signs and chains of signifiers,
+but as flows — morphisms between concepts mediated by contextual anchors called Z-frames.
+These frames act as semantic coordinates, situating each concept within a space of possible interpretation.
 
-- Initial Object
-- Finite Limits (Product, Equalizer, Pullback)
-- Subobject Classifier Ω
-- Fibered Topos structure
-- Conceptual Exponential via σ operator
+A dog is not just “a dog” It is depending on the frame Z through which it is seen. </br>
+dog | Domesticated </br>
+dog | Mammal</br>
+dog | Son</br>
 
-Future versions (v1.x) will refine the formalization and extend it.
+In this model, concepts are objects, interpretive movements are arrows, and semantic coherence is topological.
 
+We define categories like C|Z, where morphisms f: A → B | Z are conceptual transformations under a shared meaning frame. We introduce operators like σ that model semantic shifting, generalization, or abstraction across frames and we show that these operators exhibit functorial and even Kan-extension-like behavior.
+
+Meaning is no longer like a mirage.
+It circulates within a space that is structured, closed, and composable.
+
+Welcome to the algebraic topology of meaning, it is the new era of human expression.
+
+Note:
 In this version, the term fiber is used informally to describe the structural cohesion of morphic chains under a shared Z-frame.The current framework is not yet a strict fibered topos in the categorical sense. Formal connection to fibered topos is an intended direction for future versions.This document lays the foundation toward that goal. 
 
 <div style="page-break-after: always;"></div>
 
 # Index
 1. Fibered Conceptual Topology</br>
-    1.1. Conceptual Topology structured by Category Theory</br>
+    1.1. A Z-framed Conceptual Category</br>
       - Category</br>
       - Object
       - Morphisms
@@ -96,11 +107,23 @@ Where:
 ```
 <div style="page-break-after: always;"></div>
 
-### 1.1. Conceptual Topology structured by Category Theory
+### 1.1. A Z-framed Conceptual Category
+
+A Z-framed Conceptual Category is a structure (C, Z, Hom, id, ∘).
+- Ob(C) is a set of conceptual entities.
+- Z is a set of conceptual frames.
+- Hom(X, Y | Z) is the set of morphisms from X to Y within Z-frame.
+- For each X, there exists an identity morphism id_X: X → X | Z or id_X: X → X | X.
+- Composition ∘ is a partial operation defined as
+
+```
+   For f: X → Y | Z₁ and g: Y → Z | Z₂,
+   g ∘ f: X → Z | Z₃ is defined iff ∃ Z₃ ∈ Z such that Z₁ ⊆ Z₃ and Z₂ ⊆ Z₃.
+```
 
 ### Category
 
-We define a **Z-framed Conceptual Category** `C|Z` (e.g. dog|Domesticated) ,in simple notation `Concept` (e.g. Dog, Button...), as a category enriched over semantic frames `Z`.
+We define a **Z-framed Conceptual Category** `C|Z` (e.g. dog|Domesticated), in simple notation `Concept` (e.g. Dog, Button...), as a category enriched over semantic frames `Z`.
 
 Notation: We denote a morphism f: X → Y mediated by Z-frame as `f: X → Y | Z`.
 This represents a meaning-preserving conceptual flow within the frame Z.
@@ -164,6 +187,24 @@ If `f: computer → smartphone | Gadget`, `g: smartphone → mobile GPS | Gadget
 h ∘ (g ∘ f) = computer → navigation | Travel
 ```
 Here, `Instrument` is a higher Z-frame that subsumes both `Gadget` and `Travel`.
+
+Let C|Z be a Conceptual Category with partial composition ∘_Z.
+
+**Partial Composition in Z-Framed Category**
+
+```
+Typing judgment
+  f: A → B | Z ∈ Hom(A, B | Z)
+
+Composition judgment
+  If f: A → B | Z₁ and g: B → C | Z₂,
+  and ∃Z such that Z₁ ⊆ Z and Z₂ ⊆ Z, or Z₁ = Z₂ = Z
+  then define:
+      g ∘ f : A → C | Z
+
+This defines a partial composition operation:
+∘ : Hom(A, B | Z₁) × Hom(B, C | Z₂) ⇀ Hom(A, C | Z)
+```
 
 ### Identity Morphism
 
