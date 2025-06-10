@@ -59,6 +59,7 @@ f: Composed Semantic Morphism r ∘ h ∘ g
   Then, η is said to be a quasi-natural transformation under the Z-frame
   i.e. η ∈ Mor(C) where C is the contextual meaning category
   Example: η: girl → puppy | Z = baby
+```
 
 ```
           
@@ -213,6 +214,7 @@ and then: Word≅Nat(h∞f​,Language)
 // Self-identity of the word: word is word
 id_word ≈word
 ```
+
 <br/>
 <br/>  
 ---
@@ -225,7 +227,9 @@ This document and all conceptual content therein are © [No Name Yet Exist], 202
 <br/>
 <br/>
 
-Meaning doesn’t escape.  
-It moves in sight.  
-*f: escape → move | reduced unpredictability*
+~~Meaning doesn’t escape.~~
+~~It moves in sight.~~  
+~~f: escape → move | reduced unpredictability~~
 
+*Meaning no longer moves.*
+*It just topologizes within the abstract cage.*
