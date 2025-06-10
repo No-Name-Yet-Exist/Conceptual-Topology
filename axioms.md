@@ -139,6 +139,8 @@ Where:
     π: A functor projecting each morphism in C to its semantic frame in Z
 ```
 
+<div style="page-break-after: always;"></div>
+
 **Object Level Z-Frame Structure**
 
 ```
@@ -183,12 +185,17 @@ computer → she | person
 Without Z, computer may refer to a machine, a metaphor, a role, or even ambiguity between literal and historical meanings.</br>
 With Z = person, computer is interpreted as a historical computing worker (pre-digital era), resolving ambiguity via structural semantic framing.
 
-**Fibered Structure**
-For each object Z ∈ Ob(Z), define the fiber over Z as
-```
-π⁻¹(Z) := { f ∈ Mor(C) | π(f) = Z }
-```
+<div style="page-break-after: always;"></div>
 
+**Fibered Structure**
+```
+For each Z ∈ Ob(Z), define the local fiber:
+π⁻¹(Z) := { f ∈ Mor(C) | π(f) = Z }
+
+Over the total base Z, the full fibered category is:
+π⁻¹(Z) := { fᵢ ∈ Mor(C) | π(fᵢ) = Zᵢ for some Zᵢ ∈ Ob(Z) }
+
+```
 This is the subcategory C|Z, where all morphisms are constrained to operate within the same Z-frame.
 
 ### Functoriality
@@ -210,29 +217,31 @@ Here, Z is the least upper bound (or unifying context) of Z₁ and Z₂.
 
 ### Category
 
-We define a **Z-framed Conceptual Category** `C|Z` (e.g. dog|Domesticated), in simple notation `Concept` (e.g. Dog, Button...), as a category enriched over semantic frames `Z`.
+We define a Z-framed Conceptual Category **C|Z** (e.g. dog|Domesticated), in simple notation **Concept** (e.g. Dog, Button...), as a category enriched over semantic frames Z.
 
-Notation: We denote a morphism f: X → Y mediated by Z-frame as `f: X → Y | Z`.
+Notation: We denote a morphism f: X → Y mediated by Z-frame as f: X → Y | Z.
 This represents a meaning-preserving conceptual flow within the frame Z.
 
 ### Objects
-**Ob(C|Z)**: A set of **conceptual entities** (lexical terms, abstract notions).
-Examples: `dog`, `she`, `computer`, `king`, etc.
+**Ob(C|Z)**: A set of conceptual entities (lexical terms, abstract notions).</br>
+Examples: dog, she, computer, king, etc.
 
 ### Morphisms
 Each morphism is defined mediated by a Z-frame.
 **Hom(X, Y | Z)** = { f | f: X → Y | Z },  
-where `Z ∈ Ob(Z Frames)` represents a **semantic anchor** or **contextual frame**.
+where Z ∈ Ob(Z Frames) represents a semantic anchor or contextual frame.
 
-A morphism `f: X → Y | Z` is interpreted as
+A morphism f: X → Y | Z is interpreted as
 "X conceptually maps to Y within the semantic continuity defined by Z."
-Z gives the **interpretive coherence** or semantic clarification(e.g., `dog → pet | Domesticated`).
+Z gives the interpretive coherence or semantic clarification(e.g., dog → pet | Domesticated).
+
+<div style="page-break-after: always;"></div>
 
 ### Composition
 Composition is defined only within a shared Z-frame or subsuming Z frame of local Z frames.
 
 **1. Within the same Z-frame**
-If `f: A → B | Z`, `g: B → C | Z`, then `g ∘ f` is defined iff Z is shared.
+If f: A → B | Z, g: B → C | Z, then g ∘ f is defined iff Z is shared.
 ```
 f: computer →　smartphone | Gadget
 g: smartphone → mobile GPS | Gadget
@@ -241,9 +250,9 @@ g ∘ f = computer →　mobile GPS | Gadget
 
 **2. Across compatible Z-frames (via σ-mediated composition)**
 
-Composition across different Z-frames (i.e., σ-mediated composition) is possible when the individual Z-frames are compatible under a higher semantic frame. This higher frame `Z` must be able to subsume both the local frames `Z₁` and `Z₂` by the conditions `Z₁ ⊆ Z` and `Z₂ ⊆ Z`. This condition ensures that both morphisms can coexist within the same larger context, preserving the continuity of meaning across frames.
+Composition across different Z-frames (i.e., σ-mediated composition) is possible when the individual Z-frames are compatible under a higher semantic frame. This higher frame Z must be able to subsume both the local frames Z₁ and Z₂ by the conditions Z₁ ⊆ Z and Z₂ ⊆ Z. This condition ensures that both morphisms can coexist within the same larger context, preserving the continuity of meaning across frames.
 
-If `f: A → B | Z₁`, `g: B → C | Z₂`, then `g ∘ f` is defined iff there exists a higher frame Z such that `Z₁⊆Z` and `Z₂ ⊆ Z`.
+If f: A → B | Z₁, g: B → C | Z₂, then g ∘ f is defined iff there exists a higher frame Z such that Z₁⊆Z and Z₂ ⊆ Z.
 
 ```
 f: computer →　smartphone | Gadget
@@ -256,24 +265,28 @@ g ∘ f = computer → knife | Instrument
 where Instrument ⊇ Gadget, Tool
 ```
 
-This composition is associative within a Z-frame:
-
-If `f: A → B | Z`, `g: B → C | Z`, `h: C → D | Z`, then `(h ∘ g) ∘ f = h ∘ (g ∘ f)`.
-
+This composition is associative within a Z-frame
+```
+If: f: A → B | Z, g: B → C | Z, h: C → D | Z
+then: (h ∘ g) ∘ f = h ∘ (g ∘ f).
+```
 This guarantees that within a single Z-frame, composition behaves as expected according to the standard rules of category theory.
 
 **σ-mediated Composition:**</br>
 
-In the case of σ-mediated composition, associativity holds when all involved Z-frames are subsumed by a common higher Z-frame. Let `f: A → B | Z₁`, `g: B → C | Z₂`, and `h: C → D | Z₃`.
+In the case of σ-mediated composition, associativity holds when all involved Z-frames are subsumed by a common higher Z-frame. Let f: A → B | Z₁, g: B → C | Z₂, and h: C → D | Z₃.
 
-For the composition `(h ∘ g) ∘ f = h ∘ (g ∘ f)` to be valid, there must exist a higher Z-frame `Z` such that `Z₁ ⊆ Z`, `Z₂ ⊆ Z`, and `Z₃ ⊆ Z`. This ensures that all morphisms can coexist within the same conceptual space, and the meaning flow is preserved across the frames.
+For the composition (h ∘ g) ∘ f = h ∘ (g ∘ f) to be valid, there must exist a higher Z-frame Z such that Z₁ ⊆ Z, Z₂ ⊆ Z, and Z₃ ⊆ Z. This ensures that all morphisms can coexist within the same conceptual space, and the meaning flow is preserved across the frames.
+
+<div style="page-break-after: always;"></div>
 
 **Example:**</br>
-If `f: computer → smartphone | Gadget`, `g: smartphone → mobile GPS | Gadget`, and `h: mobile GPS → navigation | Travel`, then the composite morphism is defined as 
+If f: computer → smartphone | Gadget, g: smartphone → mobile GPS | Gadget, and h: mobile GPS → navigation | Travel, then the composite morphism is defined as 
 ```
 h ∘ (g ∘ f) = computer → navigation | Travel
 ```
-Here, `Instrument` is a higher Z-frame that subsumes both `Gadget` and `Travel`.
+
+Here, Instrument is a higher Z-frame that subsumes both Gadget and Travel.
 
 Let C|Z be a Conceptual Category with partial composition ∘_Z.
 
@@ -305,6 +318,8 @@ id_Y ∘ f = f
 
 However, in Conceptual Topology, morphisms are mediated by Z frame, thus
 the identity morphis is not always given unless Z is defined.
+
+<div style="page-break-after: always;"></div>
 
 **Two Types of Identity Morphism in Conceptual Topology**
 1. f: X → X | X  (Category-theoretic identity)
@@ -843,6 +858,7 @@ Turtle → Reptile → Animal → Life
 ```
 Conceptual flow lifted across Z-frame layers as iterated Kan Extensions, converging to the unified flow under Life.
 
+<div style="page-break-after: always;"></div>
 
 ### Universal Property of `Lan_{σᵢ}`
 
@@ -885,6 +901,8 @@ In formal terms
 Nat(H, K ∘ σᵢ^*) ≅ Nat(Lan_{σᵢ}(H), K)
 ```
 
+<div style="page-break-after: always;"></div>
+
 **NL Diagram:**
 The operation `smartphone → GPS` maintains the structural coherence under Gadget when lifting it to Instrument.
 ```
@@ -899,13 +917,6 @@ The operation `smartphone → GPS` maintains the structural coherence under Gadg
     "smartphone → GPS" | Gadget ≅ "smartphone → GPS" | Instrument
     where: gadget → instrument | Z = E and instrument → gadget | Z = E
      
-```
-
-More Simply:
-```
-  Gadget → Instrument
-     ↓         ↓
-  smartphone → GPS
 ```
 
 **Example:**
@@ -935,6 +946,8 @@ colim_{Z₁ → Z₂ → Z₃} (Lan_{σᵢ}(π⁻¹(Zᵢ)))
 
 ∴Lan_{σ₂}(Lan_{σ₁}(king - man + woman)) ≅ queen
 ```
+
+<div style="page-break-after: always;"></div>
 
 **Diagram:**
 ```
@@ -980,6 +993,8 @@ f: smartphone → GPS | Z₂
 ```
 
 Let σ₁: Z₁ → Z₂ be a contextual shift from Z₁ = Gadget to Z₂ = Instrument. To interpret this transformation from the perspective of Z₁, we apply the pullback functor σ₁^*.
+
+<div style="page-break-after: always;"></div>
 
 This yields
 ```
@@ -1964,7 +1979,7 @@ GitHub: https://github.com/No-Name-Yet-Exist/Conceptual-Topology<br/>
 Note: https://note.com/xoreaxeax/n/n3711c1318d0b<br/>
 Zenodo: https://zenodo.org/records/15455079
 
-This is Version: 1.2
+This is Version: 1.3
 
 ----
 This document and all conceptual content therein are © [No Name Yet Exist], 2025. 
