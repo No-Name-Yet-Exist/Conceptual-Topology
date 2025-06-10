@@ -325,10 +325,14 @@ the identity morphis is not always given unless Z is defined.
 1. f: X → X | X  (Category-theoretic identity)
 
 ```
-f: X → X | X
-such that for any f: X → Y:
-f ∘ id_X = f
-id_Y ∘ f = f
+For every object X, there exists a mediated identity morphism
+  id_X: X → X | Z
+
+such that for Z = X (i.e., the identity is mediated by the object itself),  
+we define
+  f: X → X | X  
+  f ∘ id_X = f  
+  id_X ∘ f = f
 
 e.g. f: dog → dog | dog
 ```
