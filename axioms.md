@@ -102,6 +102,9 @@ Where:
 
 We define a **Z-framed Conceptual Category** `C|Z` (e.g. dog|Domesticated) ,in simple notation `Concept` (e.g. Dog, Button...), as a category enriched over semantic frames `Z`.
 
+Notation: We denote a morphism f: X → Y mediated by Z-frame as `f: X → Y | Z`.
+This represents a meaning-preserving conceptual flow within the frame Z.
+
 ### Objects
 **Ob(C|Z)**: A set of **conceptual entities** (lexical terms, abstract notions).
 Examples: `dog`, `she`, `computer`, `king`, etc.
@@ -142,6 +145,25 @@ then the composite morphism becomes
 g ∘ f = computer → knife | Instrument  
 where Instrument ⊇ Gadget, Tool
 ```
+
+This composition is associative within a Z-frame:
+
+If `f: A → B | Z`, `g: B → C | Z`, `h: C → D | Z`, then `(h ∘ g) ∘ f = h ∘ (g ∘ f)`.
+
+This guarantees that within a single Z-frame, composition behaves as expected according to the standard rules of category theory.
+
+**σ-mediated Composition:**</br>
+
+In the case of σ-mediated composition, associativity holds when all involved Z-frames are subsumed by a common higher Z-frame. Let `f: A → B | Z₁`, `g: B → C | Z₂`, and `h: C → D | Z₃`.
+
+For the composition `(h ∘ g) ∘ f = h ∘ (g ∘ f)` to be valid, there must exist a higher Z-frame `Z` such that `Z₁ ⊆ Z`, `Z₂ ⊆ Z`, and `Z₃ ⊆ Z`. This ensures that all morphisms can coexist within the same conceptual space, and the meaning flow is preserved across the frames.
+
+**Example:**</br>
+If `f: computer → smartphone | Gadget`, `g: smartphone → mobile GPS | Gadget`, and `h: mobile GPS → navigation | Travel`, then the composite morphism is defined as 
+```
+h ∘ (g ∘ f) = computer → navigation | Travel
+```
+Here, `Instrument` is a higher Z-frame that subsumes both `Gadget` and `Travel`.
 
 ### Identity Morphism
 
@@ -242,6 +264,15 @@ where f′ⱼ: η_X(Xⱼ) → η_Y(Yⱼ) | Zⱼ
 Then, η is said to be a quasi-natural transformation under the Z-frame
 i.e. η ∈ Mor(C) where C is the contextual meaning category
 Example: η: girl → puppy | Z = Baby
+```
+
+**Diagram:**
+```
+  girl → she → mammal
+     |              |
+     | η_X      η_Y |
+     v              v
+  puppy → dog → mammal
 ```
 
 <div style="page-break-after: always;"></div>
