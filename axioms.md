@@ -13,7 +13,7 @@ We no longer describe meaning merely through signs and chains of signifiers,
 but as flows — morphisms between concepts mediated by contextual anchors called Z-frames.
 These frames act as semantic coordinates, situating each concept within a space of possible interpretation.
 
-A dog is not just “a dog.” It is depending on the frame Z through which it is seen. </br>
+A dog is not simply “a dog.” It is interpreted through the semantic frame Z in which it is embedded.</br>
 dog | Domesticated </br>
 dog | Mammal</br>
 dog | Son</br>
@@ -34,6 +34,7 @@ While we refer to “fibers” to describe morphic coherence over a shared Z-fra
 # Index
 1. Fibered Conceptual Topology</br>
     1.1. A Z-framed Conceptual Category</br>
+      - Z-Frame
       - Category</br>
       - Object
       - Morphisms
@@ -41,6 +42,7 @@ While we refer to “fibers” to describe morphic coherence over a shared Z-fra
       - Identity Morphism</br>
       - Mirror Morphism</br>
       - Quasi-Natural Transformation(QNT)</br>
+
 
     1.2. σ Operator as Functor</br>
       - Definition: Conceptual Shifting Morphism (σ)</br>
@@ -116,8 +118,90 @@ A Z-framed Conceptual Category is a structure (C, Z, Hom, id, ∘).
 - Composition ∘ is a partial operation defined as
 
 ```
-   For f: X → Y | Z₁ and g: Y → Z | Z₂,
-   g ∘ f: X → Z | Z₃ is defined iff ∃ Z₃ ∈ Z such that Z₁ ⊆ Z₃ and Z₂ ⊆ Z₃.
+For f: X → Y | Z₁ and g: Y → Z | Z₂,
+g ∘ f: X → Z | Z₃ is defined iff ∃ Z₃ ∈ Z such that Z₁ ⊆ Z₃ and Z₂ ⊆ Z₃.
+```
+
+### Z-Frame
+Z-frame has multi-functionality as a conceptual frame: Category, Fiber and Morphism level object.
+
+We define a Z-Indexed Fibered Conceptual Category as a tuple
+```
+(C, Z, π: C → Z)
+
+Where:
+    C: A category of conceptual morphisms (objects: concepts, morphisms: semantic transformations)
+    Z: A category of semantic frames (Z-frames), representing interpretive contexts or domains
+    π: A functor projecting each morphism in C to its semantic frame in Z
+```
+
+**Object Level Z-Frame Structure**
+
+```
+Let:
+Ob(C) be a set of conceptual entities (dog, she, king, ...)
+Ob(Z) be a set of semantic frames (Domesticated, Mammal, Abstract, ...)
+
+Each morphism in C is typed as
+f: A → B | Z  ∈ Hom(A, B | Z)
+
+This is realized through a retractive structure mediated by Z
+f: A → Z  
+g: Z → A
+
+such that
+g ∘ f ≅ id_A | Z
+
+In diagrammatic terms
+
+   A
+   | \
+   |  \
+   v   v
+   Z → A   (g ∘ f = id_A | Z)
+
+Alternatively, to express conceptual flow under Z
+f: A → Z  
+g: Z → B
+such that
+g ∘ f ≅ A → B | Z
+
+This means that A is transformed to B under the interpretation frame Z. The flow between A and B is mediated by Z, and Z ensures that the interpretation of both A and B is consistent under the same frame.
+```
+
+**Note: Disambiguation and Structural Integrity**
+When multiple interpretations (or semantic frames) exist such as *computer*, Z acts as a disambiguating factor, ensuring that the meanings of A and B are not left to chance but are structurally ensured by their relationships to Z.
+
+**Example:**
+```
+computer → she | person
+```
+Without Z, computer may refer to a machine, a metaphor, a role, or even ambiguity between literal and historical meanings.</br>
+With Z = person, computer is interpreted as a historical computing worker (pre-digital era), resolving ambiguity via structural semantic framing.
+
+**Fibered Structure**
+For each object Z ∈ Ob(Z), define the fiber over Z as
+```
+π⁻¹(Z) := { f ∈ Mor(C) | π(f) = Z }
+```
+
+This is the subcategory C|Z, where all morphisms are constrained to operate within the same Z-frame.
+
+### Functoriality
+π must satisfy the functor laws
+
+```
+For any identity morphism id_A | Z in C
+π(id_A | Z) = id_Z
+
+For any composable morphisms f: A → B | Z₁, g: B → C | Z₂ with Z₁, Z₂ ⊆ Z, the composition is
+
+g ∘ f: A → C | Z
+
+and:
+π(g ∘ f) = Z
+
+Here, Z is the least upper bound (or unifying context) of Z₁ and Z₂.
 ```
 
 ### Category
@@ -143,7 +227,7 @@ Z gives the **interpretive coherence** or semantic clarification(e.g., `dog → 
 ### Composition
 Composition is defined only within a shared Z-frame or subsuming Z frame of local Z frames.
 
-1. Within the same Z-frame
+**1. Within the same Z-frame**
 If `f: A → B | Z`, `g: B → C | Z`, then `g ∘ f` is defined iff Z is shared.
 ```
 f: computer →　smartphone | Gadget
@@ -151,7 +235,7 @@ g: smartphone → mobile GPS | Gadget
 g ∘ f = computer →　mobile GPS | Gadget
 ```
 
-2. Across compatible Z-frames (via σ-mediated composition)
+**2. Across compatible Z-frames (via σ-mediated composition)**
 
 Composition across different Z-frames (i.e., σ-mediated composition) is possible when the individual Z-frames are compatible under a higher semantic frame. This higher frame `Z` must be able to subsume both the local frames `Z₁` and `Z₂` by the conditions `Z₁ ⊆ Z` and `Z₂ ⊆ Z`. This condition ensures that both morphisms can coexist within the same larger context, preserving the continuity of meaning across frames.
 
