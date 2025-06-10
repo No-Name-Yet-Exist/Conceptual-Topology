@@ -118,25 +118,24 @@ A Z-framed Conceptual Category is a structure (C, Z, Hom, id, ∘).
 - Ob(C) is a set of conceptual entities.
 - Z is a set of conceptual frames.
 - Hom(X, Y | Z) is the set of morphisms from X to Y within Z-frame.
-- For each X, there exists an identity morphism id_X: X → X | Z or id_X: X → X | X.
+- For each X, there exists an identity morphism id_X|Z: X → X | Z or id_X: X → X | X.
 - Composition ∘ is a partial operation defined as
 
 ```
 For f: X → Y | Z₁ and g: Y → Z | Z₂,
-g ∘ f: X → Z | Z₃ is defined iff ∃ Z₃ ∈ Z such that Z₁ ⊆ Z₃ and Z₂ ⊆ Z₃.
+g ∘ f: X → Z | Z₃ is defined iff ∃ Z₃ ∈ Z such that Z₁ ⊆ Z₃ and Z₂ ⊆ Z₃
 ```
 
 ### Z-Frame
 Z-frame has multi-functionality as a conceptual frame: Category, Fiber and Morphism level object.
-
 We define a Z-Indexed Fibered Conceptual Category as a tuple
 ```
 (C, Z, π: C → Z)
 
 Where:
     C: A category of conceptual morphisms (objects: concepts, morphisms: semantic transformations)
-    Z: A category of semantic frames (Z-frames), representing interpretive contexts or domains
-    π: A functor projecting each morphism in C to its semantic frame in Z
+    Z: A category of conceptual frames (Z-frames), representing interpretive contexts or domains
+    π: A functor projecting each morphism in C to its conceptual frame in Z
 ```
 
 <div style="page-break-after: always;"></div>
@@ -175,7 +174,7 @@ g ∘ f ≅ A → B | Z
 This means that A is transformed to B under the interpretation frame Z. The flow between A and B is mediated by Z, and Z ensures that the interpretation of both A and B is consistent under the same frame.
 ```
 
-**Note: Disambiguation and Structural Integrity**
+**Disambiguation and Structural Integrity**
 When multiple interpretations (or semantic frames) exist such as *computer*, Z acts as a disambiguating factor, ensuring that the meanings of A and B are not left to chance but are structurally ensured by their relationships to Z.
 
 **Example:**
@@ -202,8 +201,8 @@ This is the subcategory C|Z, where all morphisms are constrained to operate with
 π must satisfy the functor laws
 
 ```
-For any identity morphism id_A | Z in C
-π(id_A | Z) = id_Z
+For any identity morphism id_A|A in C
+π(id_A|A) = id_Z|Z
 
 For any composable morphisms f: A → B | Z₁, g: B → C | Z₂ with Z₁, Z₂ ⊆ Z, the composition is
 
@@ -215,9 +214,9 @@ and:
 Here, Z is the least upper bound (or unifying context) of Z₁ and Z₂.
 ```
 
-### Category
+### Category:
 
-We define a Z-framed Conceptual Category **C|Z** (e.g. dog|Domesticated), in simple notation **Concept** (e.g. Dog, Button...), as a category enriched over semantic frames Z.
+We define a Z-framed Conceptual Category **C|Z** (e.g. dog|Domesticated), C|C in simple notation **Concept** (e.g. Dog, Button...), as a category enriched over semantic frames Z.
 
 Notation: We denote a morphism f: X → Y mediated by Z-frame as f: X → Y | Z.
 This represents a meaning-preserving conceptual flow within the frame Z.
@@ -268,27 +267,29 @@ where Instrument ⊇ Gadget, Tool
 This composition is associative within a Z-frame
 ```
 If: f: A → B | Z, g: B → C | Z, h: C → D | Z
-then: (h ∘ g) ∘ f = h ∘ (g ∘ f).
+then: (h ∘ g) ∘ f | Z = h ∘ (g ∘ f) | Z.
 ```
 This guarantees that within a single Z-frame, composition behaves as expected according to the standard rules of category theory.
 
 **σ-mediated Composition:**</br>
 
 In the case of σ-mediated composition, associativity holds when all involved Z-frames are subsumed by a common higher Z-frame. Let f: A → B | Z₁, g: B → C | Z₂, and h: C → D | Z₃.
+ (h ∘ g) ∘ f | Z = h ∘ (g ∘ f) | Z is valid
+ where Z₁ ⊆ Z, Z₂ ⊆ Z, and Z₃ ⊆ Z.
 
-For the composition (h ∘ g) ∘ f = h ∘ (g ∘ f) to be valid, there must exist a higher Z-frame Z such that Z₁ ⊆ Z, Z₂ ⊆ Z, and Z₃ ⊆ Z. This ensures that all morphisms can coexist within the same conceptual space, and the meaning flow is preserved across the frames.
+This ensures that all morphisms can coexist within the same conceptual space, and the meaning flow is preserved across the frames.
 
 <div style="page-break-after: always;"></div>
 
 **Example:**</br>
 If f: computer → smartphone | Gadget, g: smartphone → mobile GPS | Gadget, and h: mobile GPS → navigation | Travel, then the composite morphism is defined as 
 ```
-h ∘ (g ∘ f) = computer → navigation | Travel
+h ∘ (g ∘ f) | Travel  = computer → navigation | Travel
+where: Gadget ⊆ Travel is defined
 ```
-
 Here, Instrument is a higher Z-frame that subsumes both Gadget and Travel.
 
-Let C|Z be a Conceptual Category with partial composition ∘_Z.
+Let C|Z be a Conceptual Category with partial composition ∘|Z.
 
 **Partial Composition in Z-Framed Category**
 
@@ -298,7 +299,7 @@ Typing judgment
 
 Composition judgment
   If f: A → B | Z₁ and g: B → C | Z₂,
-  and ∃Z such that Z₁ ⊆ Z and Z₂ ⊆ Z, or Z₁ = Z₂ = Z
+  and ∃Z such that Z₁ ⊆ Z and Z₂ ⊆ Z
   then define:
       g ∘ f : A → C | Z
 
@@ -1137,7 +1138,7 @@ M|Z = { fₙ ∘ ... ∘ f₁ | all fᵢ: Xᵢ → Xᵢ₊₁ | Z ⋏ ∀ i, j: 
 
 This is also defined as Morphic Chain.
 
-Let **D(Cₙ₋₁ | Z)** := Category of Morphic Chains over **Ob(Cₙ₋₁)** within a given Z-frame.
+Let D(Cₙ₋₁ | Z) := Category of Morphic Chains over **Ob(Cₙ₋₁)** within a given Z-frame.
 where:D(Cₙ₋₁ | Z) ={ C₀ → C₁ → C₂ → ... | Z }
 
 or as a set
