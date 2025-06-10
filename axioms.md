@@ -23,7 +23,11 @@ In this version, the term fiber is used informally to describe the structural co
 
 # Index
 1. Fibered Conceptual Topology</br>
-    1.1.Local Conceptual Flow under Z-frame</br>
+    1.1. Conceptual Topology structured by Category Theory</br>
+      - Category</br>
+      - Object
+      - Morphisms
+      - Composition
       - Identity Morphism</br>
       - Mirror Morphism</br>
       - Quasi-Natural Transformation(QNT)</br>
@@ -92,7 +96,52 @@ Where:
 ```
 <div style="page-break-after: always;"></div>
 
-### 1.1. Local Conceptual Flow under Z Frame
+### 1.1. Conceptual Topology structured by Category Theory
+
+### Category
+
+We define a **Z-framed Conceptual Category** `C|Z` (e.g. dog|Domesticated) ,in simple notation `Concept` (e.g. Dog, Button...), as a category enriched over semantic frames `Z`.
+
+### Objects
+**Ob(C|Z)**: A set of **conceptual entities** (lexical terms, abstract notions).
+Examples: `dog`, `she`, `computer`, `king`, etc.
+
+### Morphisms
+Each morphism is defined mediated by a Z-frame.
+**Hom(X, Y | Z)** = { f | f: X → Y | Z },  
+where `Z ∈ Ob(Z Frames)` represents a **semantic anchor** or **contextual frame**.
+
+A morphism `f: X → Y | Z` is interpreted as
+"X conceptually maps to Y within the semantic continuity defined by Z."
+Z gives the **interpretive coherence** or semantic clarification(e.g., `dog → pet | Domesticated`).
+
+### Composition
+Composition is defined only within a shared Z-frame or subsuming Z frame of local Z frames.
+
+1. Within the same Z-frame
+If `f: A → B | Z`, `g: B → C | Z`, then `g ∘ f` is defined iff Z is shared.
+```
+f: computer →　smartphone | Gadget
+g: smartphone → mobile GPS | Gadget
+g ∘ f = computer →　mobile GPS | Gadget
+```
+
+2. Across compatible Z-frames (via σ-mediated composition)
+
+Composition across different Z-frames (i.e., σ-mediated composition) is possible when the individual Z-frames are compatible under a higher semantic frame. This higher frame `Z` must be able to subsume both the local frames `Z₁` and `Z₂` by the conditions `Z₁ ⊆ Z` and `Z₂ ⊆ Z`. This condition ensures that both morphisms can coexist within the same larger context, preserving the continuity of meaning across frames.
+
+If `f: A → B | Z₁`, `g: B → C | Z₂`, then `g ∘ f` is defined iff there exists a higher frame Z such that `Z₁⊆Z` and `Z₂ ⊆ Z`.
+
+```
+f: computer →　smartphone | Gadget
+g: match → knife | Tool
+
+If there exists a higher frame Instrument that subsumes both Gadget and Tool, 
+then the composite morphism becomes
+
+g ∘ f = computer → knife | Instrument  
+where Instrument ⊇ Gadget, Tool
+```
 
 ### Identity Morphism
 
