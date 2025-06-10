@@ -26,8 +26,8 @@ Meaning is no longer like a mirage.
 It circulates within a space that is structured, closed, and composable.
 We are no longer chasing meaning. We are building it from its space. 
 
-Note:
-In this version, the term fiber is used informally to describe the structural cohesion of morphic chains under a shared Z-frame.The current framework is not yet a strict fibered topos in the categorical sense. Formal connection to fibered topos is an intended direction for future versions.This document lays the foundation toward that goal. 
+Note: 
+While we refer to “fibers” to describe morphic coherence over a shared Z-frame, this current formulation is not yet a strict fibered topos in the categorical sense. Rather, this document serves as the semantic scaffolding toward that formalization.
 
 <div style="page-break-after: always;"></div>
 
