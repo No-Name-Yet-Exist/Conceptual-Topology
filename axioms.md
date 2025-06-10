@@ -310,10 +310,10 @@ This defines a partial composition operation:
 
 In Category Theory, Identity Morphism is always defined.
 ```
-id_X: X → X
-such that for any f: X → Y:
-f ∘ id_X = f
-id_Y ∘ f = f
+For every morphism f: A → B,  
+there exist identity morphisms id_A: A → A and id_B: B → B such that  
+  f ∘ id_A = f  
+  id_B ∘ f = f
 ```
 
 However, in Conceptual Topology, morphisms are mediated by Z frame, thus
