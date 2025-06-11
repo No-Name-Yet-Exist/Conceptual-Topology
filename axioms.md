@@ -1883,7 +1883,7 @@ g: X' → Y' | Z'
 ```
 
 **For reference**
-In the composition A → Z → B, the mediating Z can be interpreted as the distance between A and B. We define this as Z = ||A − B||, and denote the norm as ||Z||.
+In the composition A → Z → B, the mediating Z can be interpreted as the distance between A and B. We define this as Z = ||A − B||, and denote the norm as ||Z||. In retraction A → Z → A　also behaves as a conceptual identity or coherent transformation via cosine similarity hinged on Z when Z is scalarized as ||Z|| under PCA projection.
 ```
 f: A → Z  
 g: Z → A
@@ -1912,8 +1912,8 @@ We categorize flow structures based on the type of morphism.
 
 **Self Identity Morphism: Triangle**
 ```
-   || A'||
-A' ------→ A'
+   || Z'||
+Z' ------→ Z'
 ↑    ↑  　 ↑
 |    |σ(Z')|
 |    |     |
@@ -1921,10 +1921,10 @@ A  ------→ B
    || Z ||
 
 f: A  → B  | Z
-g: A' → A' | A'
+g: Z' → Z' | Z'
 
-since || A'|| = 0
-     A
+since || Z'|| = 0
+     Z'
      ↑
    / | \
   /  |  \
