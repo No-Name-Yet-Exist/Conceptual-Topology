@@ -273,10 +273,12 @@ This guarantees that within a single Z-frame, composition behaves as expected ac
 
 **σ-mediated Composition:**</br>
 
-In the case of σ-mediated composition, associativity holds when all involved Z-frames are subsumed by a common higher Z-frame. Let f: A → B | Z₁, g: B → C | Z₂, and h: C → D | Z₃.
+In the case of σ-mediated composition, associativity holds when all involved Z-frames are subsumed by a common higher Z-frame. 
+```
+Let f: A → B | Z₁, g: B → C | Z₂, and h: C → D | Z₃
  (h ∘ g) ∘ f | Z = h ∘ (g ∘ f) | Z is valid
  where Z₁ ⊆ Z, Z₂ ⊆ Z, and Z₃ ⊆ Z.
-
+```
 This ensures that all morphisms can coexist within the same conceptual space, and the meaning flow is preserved across the frames.
 
 <div style="page-break-after: always;"></div>
@@ -363,7 +365,7 @@ e.g. dog → perro | собака
   or more explicitly: id_X </br>
   
 2. f: X → X | Z  (Mediated identity with conceptual flow)</br>
-　In simplified form: X | Z</br>
+　In simplified form: X Z</br>
 
 
 ### Mirror Morphism Definition:
@@ -1856,6 +1858,136 @@ can → person | TCS
 
 ### Summary:
 The Total Conceptual Space (TCS) functions as the global base space of the conceptual topology. All local Z-frames are fibered over TCS, and conceptual flows can be lifted via σ operators into M∣TCS. Thus, Conceptual Topos is complete and globally coherent under M∣TCS.
+
+# 8. Empirical Data for Conceptual Topology
+
+We tested this framework, Conceptual Topology, using Principal Component Analysis(PCA).
+
+Firstly, we define the primal conceptual flow diagram according to the definition of Z as retractive flow.
+```
+   || Z'||
+X' ------→ Y'
+↑    ↑  　 ↑
+|    |σ(Z')|
+|    |     |
+X  ------→ Y
+   || Z ||
+
+f: X  → Y  | Z
+g: X' → Y' | Z'
+```
+
+**For reference**
+A → Z → B, the mediating Z can be interpreted as the distance between A and B.
+```
+f: A → Z  
+g: Z → A
+
+such that
+g ∘ f ≅ id_A | Z
+
+In diagrammatic terms
+
+   A
+   | \
+   |  \
+   v   v
+   Z → A   (g ∘ f = id_A | Z)
+
+Alternatively, to express conceptual flow under Z
+f: A → Z  
+g: Z → B
+such that
+g ∘ f ≅ A → B | Z
+```
+
+We classify the flow structure depending on the morphism type.
+
+**Self Identity Morphism: Triangle**
+```
+   || A'||
+A' ------→ A'
+↑    ↑  　 ↑
+|    |σ(Z')|
+|    |     |
+A  ------→ B
+   || Z ||
+
+f: A  → B  | Z
+g: A' → A' | A'
+
+since || A'|| =0
+     A
+     ↑
+   / | \
+  /  |  \
+ A ----→ B
+  || Z ||
+```
+
+**She has a dog**
+![alt text](https://github.com/No-Name-Yet-Exist/Conceptual-Topology/blob/main/releases/resources/meaning-circulates/she-has-dog.png?raw=true)
+
+There are several interpretations, yet this explains the diagram better than others.
+σ(possession) unifies *she* and *dog* as the owner and the one owned.
+```
+    has
+     ↑
+   / | \
+  /  |  \
+she ----→ dog
+  || Z ||
+```
+
+**Trapezoid**
+```
+   || Z'||
+A' ------→ B'
+↑    ↑  　 ↑
+|    |σ(Z')|
+|    |     |
+A  ------→ B
+   || Z ||
+
+f: A  → B  | Z
+g: A' → B' | Z'
+
+since || Z'|| - || Z|| > 0 
+    
+    || Z' ||    
+    A --→ B' 
+   /   ↑   \
+  /    |    \
+ A --------→ B
+    || Z ||
+```
+
+**king, man , woman, queen**
+![alt text](https://github.com/No-Name-Yet-Exist/Conceptual-Topology/blob/main/releases/resources/communicative-king-to-queen.png?raw=true)
+
+**Rectangle**
+```
+   || Z'||
+A' ------→ B'
+↑    ↑  　 ↑
+|    |σ(Z')|
+|    |     |
+A  ------→ B
+   || Z ||
+
+f: A  → B  | Z
+g: A' → B' | Z'
+
+since || Z'|| = || Z ||
+
+   || Z'||
+A' ------→ B'
+↑    ↑  　 ↑
+|    |σ(Z')|
+|    |     |
+A  ------→ B
+   || Z ||
+```
 
 
 # Conclusion
