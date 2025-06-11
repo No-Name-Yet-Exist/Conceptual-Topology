@@ -1880,6 +1880,20 @@ X  ------→ Y
 
 f: X  → Y  | Z
 g: X' → Y' | Z'
+
+
+In 3 dimensional visualization
+
+       Z′ Θ = Z_similarity
+     /    \
+    /      \
+  X′ ------→ Y′
+  ↑ || Z′ || ↑
+  |          | σ(Z′) 
+  |          |
+  X --------→ Y
+    || Z || = Z disparity
+
 ```
 
 **For reference**
