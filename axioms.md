@@ -81,8 +81,10 @@ While we refer to “fibers” to describe morphic coherence over a shared Z-fra
     6.4. Subobject Classifier Ω</br>
     6.5. Conceptual Topos as Fibered Topos</br>
 7. Global Conceptual Space: Total Conceptual Space (TCS)</br>
-8. Empirical Data for Conceptual Topology
-Appendix: Simbols and Notations
+8. Empirical Data for Conceptual Topology</br>
+Appendix: </br>
+    - Simbols and Notations
+    - Python Code and Dataset
 
 <div style="page-break-after: always;"></div>
 
@@ -1906,6 +1908,8 @@ g ∘ f ≅ A → B | Z
 
 We categorize flow structures based on the type of morphism.
 
+<div style="page-break-after: always;"></div>
+
 **Self Identity Morphism: Triangle**
 ```
    || A'||
@@ -1931,6 +1935,9 @@ since || A'|| = 0
 **She has a dog**
 ![alt text](https://github.com/No-Name-Yet-Exist/Conceptual-Topology/blob/main/releases/resources/meaning-circulates/she-has-dog.png?raw=true)
 
+
+<div style="page-break-after: always;"></div>
+
 While multiple interpretations are possible, this diagram offers the most coherent explanation. The morphism σ(possession) unifies she and dog under the relation of ownership: the owner and the owned.
 ```
     has
@@ -1940,6 +1947,7 @@ While multiple interpretations are possible, this diagram offers the most cohere
 she ----→ dog
   || Z ||
 ```
+
 
 **Trapezoid**
 
@@ -1969,6 +1977,8 @@ since || Z'|| - || Z|| > 0
 The trapezoid structure observed in king, man, woman, and queen can be interpreted as preserving the same major Z-axis—in this case, gender.
 Note: Z may also represent a multi-dimensional conceptual frame.
 ![alt text](https://github.com/No-Name-Yet-Exist/Conceptual-Topology/blob/main/releases/resources/communicative-king-to-queen.png?raw=true)
+
+<div style="page-break-after: always;"></div>
 
 **Rectangle**
 ```
@@ -2111,6 +2121,61 @@ Note: σ_safe behaves as Quasi-Natural Transformation.
 
 <div style="page-break-after: always;"></div>
 
+### Python Code Used in This Study
+
+```python
+import matplotlib.pyplot as plt
+from sklearn.decomposition import PCA
+from gensim.models import KeyedVectors
+import numpy as np
+
+model_path = ''
+model = KeyedVectors.load_word2vec_format(model_path, binary=True)
+
+words = ["this","dog"]
+
+
+# ベクトル取得
+vectors = [model[word] for word in words]
+labels = words
+
+# 次元削減（PCA）
+pca = PCA(n_components=2)
+reduced = pca.fit_transform(vectors)
+
+# プロット
+plt.figure(figsize=(10, 6))
+for i, label in enumerate(labels):
+    x, y = reduced[i]
+    plt.scatter(x, y)
+    plt.text(x + 0.01, y + 0.01, label, fontsize=9)
+
+#矢印付加 
+
+from matplotlib.patches import FancyArrowPatch
+for i in range(len(reduced) - 1):
+    start = reduced[i]
+    end = reduced[i + 1]
+    arrow = FancyArrowPatch(start, end, arrowstyle='->', mutation_scale=10, color='gray')
+    plt.gca().add_patch(arrow)
+
+start = reduced[len(reduced)-1]
+end = reduced[0]
+arrow = FancyArrowPatch(start, end, arrowstyle='->', mutation_scale=10, color='gray')
+plt.gca().add_patch(arrow)
+
+plt.title("PCA of Semantic Geometry (Word2Vec)")
+plt.grid(True)
+plt.axis("equal")
+plt.savefig("image.png") 
+plt.show()
+```
+
+</br>
+
+### Word2Vec Data Set
+https://code.google.com/archive/p/word2vec/
+
 ### Conceptual Topos Named as 概念位相論 / Conceptual Topology
 This theory, named 概念位相論 or Conceptual Topoloy, was proposed by **No Name Yet Exist**.
 
@@ -2122,7 +2187,7 @@ GitHub: https://github.com/No-Name-Yet-Exist/Conceptual-Topology<br/>
 Note: https://note.com/xoreaxeax/n/n3711c1318d0b<br/>
 Zenodo: https://zenodo.org/records/15455079
 
-This is Version: 1.4
+This is Version: 1.4.1
 
 ----
 This document and all conceptual content therein are © [No Name Yet Exist], 2025. 
