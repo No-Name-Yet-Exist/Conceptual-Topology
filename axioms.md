@@ -81,6 +81,7 @@ While we refer to “fibers” to describe morphic coherence over a shared Z-fra
     6.4. Subobject Classifier Ω</br>
     6.5. Conceptual Topos as Fibered Topos</br>
 7. Global Conceptual Space: Total Conceptual Space (TCS)</br>
+8. Empirical Data for Conceptual Topology
 Appendix: Simbols and Notations
 
 <div style="page-break-after: always;"></div>
@@ -1859,11 +1860,13 @@ can → person | TCS
 ### Summary:
 The Total Conceptual Space (TCS) functions as the global base space of the conceptual topology. All local Z-frames are fibered over TCS, and conceptual flows can be lifted via σ operators into M∣TCS. Thus, Conceptual Topos is complete and globally coherent under M∣TCS.
 
+<div style="page-break-after: always;"></div>
+
 # 8. Empirical Data for Conceptual Topology
 
 We tested this framework, Conceptual Topology, using Principal Component Analysis(PCA).
 
-Firstly, we define the primal conceptual flow diagram according to the definition of Z as retractive flow.
+First, we define the core conceptual flow diagram, interpreting Z as a retractive flow.
 ```
    || Z'||
 X' ------→ Y'
@@ -1878,7 +1881,7 @@ g: X' → Y' | Z'
 ```
 
 **For reference**
-A → Z → B, the mediating Z can be interpreted as the distance between A and B.
+In the composition A → Z → B, the mediating Z can be interpreted as the distance between A and B. We define this as Z = ||A − B||, and denote the norm as ||Z||.
 ```
 f: A → Z  
 g: Z → A
@@ -1901,7 +1904,7 @@ such that
 g ∘ f ≅ A → B | Z
 ```
 
-We classify the flow structure depending on the morphism type.
+We categorize flow structures based on the type of morphism.
 
 **Self Identity Morphism: Triangle**
 ```
@@ -1916,7 +1919,7 @@ A  ------→ B
 f: A  → B  | Z
 g: A' → A' | A'
 
-since || A'|| =0
+since || A'|| = 0
      A
      ↑
    / | \
@@ -1928,8 +1931,7 @@ since || A'|| =0
 **She has a dog**
 ![alt text](https://github.com/No-Name-Yet-Exist/Conceptual-Topology/blob/main/releases/resources/meaning-circulates/she-has-dog.png?raw=true)
 
-There are several interpretations, yet this explains the diagram better than others.
-σ(possession) unifies *she* and *dog* as the owner and the one owned.
+While multiple interpretations are possible, this diagram offers the most coherent explanation. The morphism σ(possession) unifies she and dog under the relation of ownership: the owner and the owned.
 ```
     has
      ↑
@@ -1940,6 +1942,7 @@ she ----→ dog
 ```
 
 **Trapezoid**
+
 ```
    || Z'||
 A' ------→ B'
@@ -1963,6 +1966,8 @@ since || Z'|| - || Z|| > 0
 ```
 
 **king, man , woman, queen**
+The trapezoid structure observed in king, man, woman, and queen can be interpreted as preserving the same major Z-axis—in this case, gender.
+Note: Z may also represent a multi-dimensional conceptual frame.
 ![alt text](https://github.com/No-Name-Yet-Exist/Conceptual-Topology/blob/main/releases/resources/communicative-king-to-queen.png?raw=true)
 
 **Rectangle**
@@ -1989,6 +1994,7 @@ A  ------→ B
    || Z ||
 ```
 
+Rectangular structure signifies that Z and Z' is equivalent. This structural alignment suggests that the conceptual flow preserves its semantic frame, without requiring a shift in Z. Although the rectangular structure—corresponding to morphism preserving the conceptual frame Z—has not yet been observed in PCA projections, it remains a theoretically valid configuration. Detecting such a structure would signify complete semantic coherence between source and target morphisms.
 
 # Conclusion
 
@@ -2116,7 +2122,7 @@ GitHub: https://github.com/No-Name-Yet-Exist/Conceptual-Topology<br/>
 Note: https://note.com/xoreaxeax/n/n3711c1318d0b<br/>
 Zenodo: https://zenodo.org/records/15455079
 
-This is Version: 1.3
+This is Version: 1.4
 
 ----
 This document and all conceptual content therein are © [No Name Yet Exist], 2025. 
