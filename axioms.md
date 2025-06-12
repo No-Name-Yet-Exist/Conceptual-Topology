@@ -1670,11 +1670,13 @@ A: condition — "you press"
 B: result — "it opens"
 B^A: if A, then B: "press → open"
 eval:B^A × A → B: "it opens"
-λf: X → B^A: the result under the condition 
+λf: X → B^A: the result under the condition
+  you press → extract the general law under the condition you press then "press → open"
 ```
 
 We formalize this as eval function in CTL(Conceptual Topology Language). We employ programing style to track dynamic transformation of conceptual flow.
-```
+
+```python
 def exponential(a: Concept, b: Concept, z: Frame) -> ConceptualMorphism::
   """
   Construct exponential object B^A under Z-frame.
