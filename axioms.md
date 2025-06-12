@@ -82,6 +82,10 @@ While we refer to “fibers” to describe morphic coherence over a shared Z-fra
     6.5. Conceptual Topos as Fibered Topos</br>
 7. Global Conceptual Space: Total Conceptual Space (TCS)</br>
 8. Empirical Data for Conceptual Topology</br>
+    8.1. Conceptual Flow Classification
+    8.2. Cone Structure: Kan Extension
+    8.3. Universal Product
+
 Appendix: </br>
     - Simbols and Notations
     - Python Code and Dataset
@@ -1293,6 +1297,13 @@ g: A→B(A↛B∣Z)∘g=A↛B∣Z
 Interpretation:
 Applying Not() to any morphism produces a conceptual zero morphism, which collapses any further conceptual flow.
 
+NL Diagram:
+```
+this ─────→ correct       ← (monomorphism)
+  |                         ↑
+  └─────→ not(correct) ────┘   ← rupture: zero morphism
+```
+
 Natural Language:
 Left Side: g∘(A↛B∣Z)
 "A is not B"
@@ -1481,9 +1492,6 @@ such that:
 p₁ ∘ u = q₁, p₂ ∘ u = q₂.
 
 ```
-![alt text](https://raw.githubusercontent.com/No-Name-Yet-Exist/Articles/main/conceptual-topology/resources/quasi-communicative-diagram/puppy-dog-mammal-she-girl.png)
-
-![alt text](https://raw.githubusercontent.com/No-Name-Yet-Exist/Articles/main/conceptual-topology/resources/quasi-communicative-diagram/semantic-circulation-with-arrows-v2.png)
 
 <div style="page-break-after: always;"></div>
 
@@ -1866,6 +1874,7 @@ The Total Conceptual Space (TCS) functions as the global base space of the conce
 
 # 8. Empirical Data for Conceptual Topology
 
+### 8.1. Conceptual Flow Classification
 We tested this framework, Conceptual Topology, using Principal Component Analysis(PCA).
 
 First, we define the core conceptual flow diagram, interpreting Z as a retractive flow.
@@ -1880,7 +1889,6 @@ X  ------→ Y
 
 f: X  → Y  | Z
 g: X' → Y' | Z'
-
 
 In 3 dimensional visualization
 
@@ -2019,6 +2027,93 @@ A  ------→ B
 ```
 
 Rectangular structure signifies that Z and Z' is equivalent. This structural alignment suggests that the conceptual flow preserves its semantic frame, without requiring a shift in Z. Although the rectangular structure—corresponding to morphism preserving the conceptual frame Z—has not yet been observed in PCA projections, it remains a theoretically valid configuration. Detecting such a structure would signify complete semantic coherence between source and target morphisms.
+
+<div style="page-break-after: always;"></div>
+
+### Zero Morphism
+
+NL Diagram:
+```
+this ─────→ correct       ← 
+  |                         ↑
+  └─────→ not(correct) ────┘   ← rupture: zero morphism
+
+g:σ(Z). Not(g){ A ↛ B | Z} = A ↛ B∣Z = n_f
+where: g: this → correct
+∀g: g ∘ n_f = n_f and n_f ∘ g = n_f
+```
+
+From the above formula, *is* was expelled from commutative structure and *not* replaced *is* complted conceptual circulation.
+
+![alt text](https://github.com/No-Name-Yet-Exist/Conceptual-Topology/blob/main/releases/resources/meaning-circulates/this-is-not-right.png?raw=true)
+
+![alt text](https://github.com/No-Name-Yet-Exist/Conceptual-Topology/blob/main/releases/resources/meaning-circulates/this-is-not-correct.png?raw=true)
+
+
+If a lexicon A which satisfy with *not B ⊆ A* such as *wrong* can recover the conceptual flow.
+![alt text](https://github.com/No-Name-Yet-Exist/Conceptual-Topology/blob/main/releases/resources/meaning-circulates/this-is-wrong.png?raw=true)
+
+<div style="page-break-after: always;"></div>
+
+### 8.2. Cone Structre: Kan Extension
+We can observe iterated coliit and QNT in PCA.
+```
+Dᵢ ≈ colim_{puppy → dog → mammal} (Lan_{σᵢ}(π⁻¹(Mammal)))
+Dᵢ₊₁  ≈ colim_{girl → she → mammal} (Lan_{σᵢ}(π⁻¹(Mammal)))
+
+Here Defined QNT Between Dᵢ and Dᵢ₊₁ 
+η: Dᵢ ⇒ Dᵢ₊₁  | CD = Mammal
+η_X ∘ Dᵢ({f₁ | Z₁, ..., fₙ | Zₙ}) ≈ Dᵢ₊₁({f′₁ | Z₁, ..., f′ₙ | Zₙ}) ∘ η_Y | CD
+for all fⱼ: Xⱼ → Yⱼ | Zⱼ ∈ Dᵢ,  
+where f′ⱼ: η_X(Xⱼ) → η_Y(Yⱼ) | Zⱼ
+
+Then, η is said to be a quasi-natural transformation under the Z-frame
+i.e. η ∈ Mor(C) where C is the contextual meaning category
+Example: η: girl → puppy | Z = Baby
+```
+
+![alt text](https://raw.githubusercontent.com/No-Name-Yet-Exist/Articles/main/conceptual-topology/resources/quasi-communicative-diagram/puppy-dog-mammal-she-girl.png)
+
+<div style="page-break-after: always;"></div>
+
+### 8.3. Universal Product
+
+We did not define universal product in the above sectoins, yet this is observable in PCA.
+
+```
+Let C be a category.
+Let A,B∈Ob(C) be objects.
+
+A product of Aand B is an object P∈Ob(C) together with morphisms
+    π_A:P → A
+
+such that for any object X∈Ob(C) with morphisms
+    f:X→A
+    g:X→B
+
+there exists a unique morphism ⟨f,g⟩
+    X→P
+
+such that the following diagram commutes
+    πA∘⟨f,g⟩=f, πB∘⟨f,g⟩=g
+
+
+        Mammal
+        /   \
+       /     \
+      /       \
+     f         g
+    /           \
+   v             v
+Puppy <-- P --> Girl
+     π_A       π_B
+
+       P = Baby
+
+```
+![alt text](https://raw.githubusercontent.com/No-Name-Yet-Exist/Articles/main/conceptual-topology/resources/quasi-communicative-diagram/semantic-circulation-with-arrows-v2.png)
+
+<div style="page-break-after: always;"></div>
 
 # Conclusion
 
