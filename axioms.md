@@ -83,8 +83,9 @@ While we refer to “fibers” to describe morphic coherence over a shared Z-fra
 7. Global Conceptual Space: Total Conceptual Space (TCS)</br>
 8. Empirical Data for Conceptual Topology</br>
     8.1. Conceptual Flow Classification
-    8.2. Cone Structure: Kan Extension
-    8.3. Universal Product
+    8.2. Zero Morphism
+    3.3. Cone Structure: Kan Extension and QNT
+    8.4. Universal Product
 
 Appendix: </br>
     - Simbols and Notations
@@ -1879,17 +1880,17 @@ We tested this framework, Conceptual Topology, using Principal Component Analysi
 
 First, we define the core conceptual flow diagram, interpreting Z as a retractive flow.
 ```
-   || Z'||
-X' ------→ Y'
-↑    ↑  　 ↑
-|    |σ(Z')|
-|    |     |
-X  ------→ Y
-   || Z ||
+   || Z'||              
+X' ------→ Y'       
+↑    ↑  　 ↑        
+|    |σ(Z')|        
+|    |     |        
+X  ------→ Y        
+   || Z ||          
 
-f: X  → Y  | Z
-g: X' → Y' | Z'
-
+f: X  → Y  | Z          
+g: X' → Y' | Z'     
+    
 In 3 dimensional visualization
 
        Z′ Θ = Z_similarity
@@ -1901,10 +1902,9 @@ In 3 dimensional visualization
   |          |
   X --------→ Y
     || Z || = Z disparity
-
 ```
 
-**For reference**
+**For reference:**
 In the composition A → Z → B, the mediating Z can be interpreted as the distance between A and B. We define this as Z = ||A − B||, and denote the norm as ||Z||. In retraction A → Z → A　also behaves as a conceptual identity or coherent transformation via cosine similarity hinged on Z when Z is scalarized as ||Z|| under PCA projection.
 ```
 f: A → Z  
@@ -1912,8 +1912,6 @@ g: Z → A
 
 such that
 g ∘ f ≅ id_A | Z
-
-In diagrammatic terms
 
    A
    | \
@@ -1927,10 +1925,7 @@ g: Z → B
 such that
 g ∘ f ≅ A → B | Z
 ```
-
 We categorize flow structures based on the type of morphism.
-
-<div style="page-break-after: always;"></div>
 
 **Self Identity Morphism: Triangle**
 ```
@@ -1941,9 +1936,6 @@ Z' ------→ Z'
 |    |     |
 A  ------→ B
    || Z ||
-
-f: A  → B  | Z
-g: Z' → Z' | Z'
 
 since || Z'|| = 0
      Z'
@@ -1956,7 +1948,6 @@ since || Z'|| = 0
 
 **She has a dog**
 ![alt text](https://github.com/No-Name-Yet-Exist/Conceptual-Topology/blob/main/releases/resources/meaning-circulates/she-has-dog.png?raw=true)
-
 
 <div style="page-break-after: always;"></div>
 
@@ -1995,7 +1986,7 @@ since || Z'|| - || Z|| > 0
     || Z ||
 ```
 
-**king, man , woman, queen**
+**king, man , woman, queen**</br>
 The trapezoid structure observed in king, man, woman, and queen can be interpreted as preserving the same major Z-axis—in this case, gender.
 Note: Z may also represent a multi-dimensional conceptual frame.
 ![alt text](https://github.com/No-Name-Yet-Exist/Conceptual-Topology/blob/main/releases/resources/communicative-king-to-queen.png?raw=true)
@@ -2030,20 +2021,22 @@ Rectangular structure signifies that Z and Z' is equivalent. This structural ali
 
 <div style="page-break-after: always;"></div>
 
-### Zero Morphism
+### 8.2. Zero Morphism
 
 NL Diagram:
 ```
-this ─────→ correct       ← 
-  |                         ↑
-  └─────→ not(correct) ────┘   ← rupture: zero morphism
+        f
+this ───────→ correct
+  │             ↑
+  │             │
+  └── n_f ──→ not
 
-g:σ(Z). Not(g){ A ↛ B | Z} = A ↛ B∣Z = n_f
-where: g: this → correct
-∀g: g ∘ n_f = n_f and n_f ∘ g = n_f
+          n_f: zero morphism
+      f ∘ n_f = n_f, n_f ∘ f = n_f
+
 ```
 
-From the above formula, *is* was expelled from commutative structure and *not* replaced *is* complted conceptual circulation.
+From the above formula, *is* was expelled from commutative structure and *not* replaced *is* completed conceptual circulation.
 
 ![alt text](https://github.com/No-Name-Yet-Exist/Conceptual-Topology/blob/main/releases/resources/meaning-circulates/this-is-not-right.png?raw=true)
 
@@ -2055,8 +2048,8 @@ If a lexicon A which satisfy with *not B ⊆ A* such as *wrong* can recover the 
 
 <div style="page-break-after: always;"></div>
 
-### 8.2. Cone Structre: Kan Extension
-We can observe iterated coliit and QNT in PCA.
+### 8.3. Cone Structre: Kan Extension and QNT
+We can observe iterated colimit and QNT in PCA.
 ```
 Dᵢ ≈ colim_{puppy → dog → mammal} (Lan_{σᵢ}(π⁻¹(Mammal)))
 Dᵢ₊₁  ≈ colim_{girl → she → mammal} (Lan_{σᵢ}(π⁻¹(Mammal)))
@@ -2076,27 +2069,22 @@ Example: η: girl → puppy | Z = Baby
 
 <div style="page-break-after: always;"></div>
 
-### 8.3. Universal Product
-
-We did not define universal product in the above sectoins, yet this is observable in PCA.
-
+### 8.4. Universal Product
+We did not define universal product in the above sections, yet this is observable in PCA.
 ```
-Let C be a category.
-Let A,B∈Ob(C) be objects.
+Let C be a category and let A,B ∈Ob(C) be objects.
 
-A product of Aand B is an object P∈Ob(C) together with morphisms
+A product of A and B is an object P∈Ob(C) together with morphisms
     π_A:P → A
 
 such that for any object X∈Ob(C) with morphisms
-    f:X→A
-    g:X→B
+    f:X→A, g:X→B
 
-there exists a unique morphism ⟨f,g⟩
+there exists a unique morphism ⟨f,g⟩ 
     X→P
 
 such that the following diagram commutes
-    πA∘⟨f,g⟩=f, πB∘⟨f,g⟩=g
-
+    π_A∘⟨f,g⟩=f, π_B∘⟨f,g⟩=g
 
         Mammal
         /   \
@@ -2104,12 +2092,9 @@ such that the following diagram commutes
       /       \
      f         g
     /           \
-   v             v
+   v  P = Baby   v
 Puppy <-- P --> Girl
      π_A       π_B
-
-       P = Baby
-
 ```
 ![alt text](https://raw.githubusercontent.com/No-Name-Yet-Exist/Articles/main/conceptual-topology/resources/quasi-communicative-diagram/semantic-circulation-with-arrows-v2.png)
 
@@ -2296,7 +2281,7 @@ GitHub: https://github.com/No-Name-Yet-Exist/Conceptual-Topology<br/>
 Note: https://note.com/xoreaxeax/n/n3711c1318d0b<br/>
 Zenodo: https://zenodo.org/records/15455079
 
-This is Version: 1.4.1
+This is Version: 1.4.2
 
 ----
 This document and all conceptual content therein are © [No Name Yet Exist], 2025. 
