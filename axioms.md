@@ -1637,6 +1637,63 @@ We define Exponential objects via σ operator as conceptual abstraction mechanis
 B^A:=σ(Z).>(A,B)
 
 ```
+
+**Exponentials as If: Conditional Statement**
+
+```
+       X × A
+         | \
+         |  \
+         |   \  f
+         |    \
+         v     v
+      B^A × A → B
+         |      
+       eval      
+```
+
+**In NL Diagram:**
+```
+       X × "you press" ----
+         |                 \
+         |                  \
+      λf |                   \ f 
+         |                    \
+         v                     v
+"press→open" × "you press"  → "it opens"
+         |                     ^
+         |_____________________|
+                    eval                         
+  
+
+A: condition — "you press"
+B: result — "it opens"
+B^A: if A, then B: "press → open"
+eval:B^A × A → B: "it opens"
+λf: X → B^A: the result under the condition 
+```
+
+We formalize this as eval function in CTL(Conceptual Topology Language). We employ programing style to track dynamic transformation of conceptual flow.
+```
+def exponential(a: Concept, b: Concept, z: Frame) -> ConceptualMorphism::
+  """
+  Construct exponential object B^A under Z-frame.
+  Represents: 'if a then b' interpreted within context c.
+  """
+  return σ(z).>(a, b)  // represents B^A
+
+def eval(f: Conceptual Morphism, a: Concept, z: Frame) → Concept:
+  return f × a | z
+
+Example:
+//if press then open → it opens
+eval("press", "open", "door") → door → opened door | Door
+
+//if press then open + you press → it opens
+f = exponential("press", "open", "door")
+eval(f, "you press") → open | Door
+```
+
 Full Exponential Law formalization will be provided in later version.
 
 
