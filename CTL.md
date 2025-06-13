@@ -1,4 +1,4 @@
-# Conceptual Topology Logic: Semantic Logic
+# Conceptual Topology Language: Semantic Logic
 
 # Logical Operations in Conceptual Topology
 
