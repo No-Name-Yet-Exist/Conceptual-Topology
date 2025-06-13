@@ -24,17 +24,25 @@ girl ⇔ woman | Human ∧ Femenity
 
 **XOR**
 ```
+Example1:
 using z-space Female
 p ⊻ q := (p ∨ q) ⊖ (p ∧ q)
 girl ⊻ woman
 = (girl ∨ woman)  ⊖  (girl ∧ woman)
 = (female)  ⊖  (female)
 = ""
+
+Example2:
+using z-space Human
+prince = (king ∧ man) ∧ young
+princess = (queen ∧ woman) ∧ young
+prince ⊻ princess  = genderness
 ```
 
 **king - man + woman = queen**</br>
+```
 queen = (king ∨ man) ∧ woman | Human
-
+```
 
 <div style="page-break-after: always;"></div>
 
