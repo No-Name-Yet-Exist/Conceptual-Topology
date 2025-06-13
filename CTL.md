@@ -14,6 +14,14 @@
 | p = q          | `girl = girl`        | Identiy Morphism (conceptual identity) |
 | ∃x. P(x)       | `∃ dog. dog ∈ pet`   | Co-limit (existential quantification) |
 | ∀x. P(x)       | `∀ dog. dog ∈ mammal`| Limit (universal quantification) |
+
+**XOR**
+```
+p ⊻ q := (p ∨ q) ⊖ (p ∧ q)
+girl ⊻ woman | female
+= (girl ∨ woman | female )  ⊖  (girl ∧ woman | female )
+= (female | female )  ⊖  (female | female)
+= ""
 ---
 
 CTL Example is simplified version. You need to clarify the Z frame as follows.
