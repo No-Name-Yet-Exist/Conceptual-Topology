@@ -529,16 +529,16 @@ word is word
 thus:
 word ≅ Nat(Hom(-, word), Fib(word)) 
 
-σ_id(Z). OP(X,Z) = σ such that σ(f) = f for all f ∈ Hom(X, X) unless OP is σ_unsafe such that word is not a word: σ(Word). Not(word ↛ word) 
+σ_id(Z). OP(X,Z) = σ such that σ(f,Z) = f for all f ∈ Hom(X, X, Z) unless OP is σ_unsafe such that word is not a word: σ(Word). Not(word ↛ word) 
 
 σ_id(Word). OP(word, Word) = word
 
 σ_id(Word). OP(f, Word) = f  for all f: word → word | word
 since: M|Z = { fₙ ∘ ... ∘ f₁ | all fᵢ: Xᵢ → Xᵢ₊₁ | Z ⋏ ∀ i, j: fᵢ ≅ fⱼ | Z = Word }
 
-σ_id ∈ M|Z
-σ ∘ σ_id = σ
-σ_id ∘ σ = σ
+σ_id(Word) ∈ M|Word
+σ(Word) ∘ σ_id(Word) = σ(Word)
+σ_id(Word) ∘ σ(Word) = σ(Word)
 ∴ word is word and word is word
 ```
 
