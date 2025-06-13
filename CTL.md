@@ -18,9 +18,9 @@
 **XOR**
 ```
 p ⊻ q := (p ∨ q) ⊖ (p ∧ q)
-girl ⊻ woman | female
-= (girl ∨ woman | female )  ⊖  (girl ∧ woman | female )
-= (female | female )  ⊖  (female | female)
+girl ⊻ woman | Female
+= (girl ∨ woman | Female )  ⊖  (girl ∧ woman | Female )
+= (female | Female )  ⊖  (female | Female)
 = ""
 ---
 
@@ -40,3 +40,6 @@ girl ⇔ woman | Human ∧ Femenity
 | `σ(X)`  | Meaning shifting operator (shifting, Not, so_much, etc.) |
 | `⊕, ⊖`  | Meaning composition and removal operations   |
 | `Eq(f, g)` | Semantic equivalence constraint (Equalizer) |
+
+This document and all conceptual content therein are © [No Name Yet Exist], 2025. 
+All rights reserved. Unauthorized reproduction, distribution, or use without explicit permission is prohibited.
