@@ -32,7 +32,6 @@ Note: The logical oprations can be applied also to Z frame.
 girl ⇔ woman | Human ∧ Femenity
 ```
 
-
 ## Additional Definitions for Conceptual Topology
 
 | Symbol  | Description                                  |
@@ -43,6 +42,32 @@ girl ⇔ woman | Human ∧ Femenity
 | `⊕, ⊖`  | Meaning composition and removal operations   |
 | `Eq(f, g)` | Semantic equivalence constraint (Equalizer) |
 
+# Application
+
+```python
+def exponential(a: Concept, b: Concept, z: Frame) -> ConceptualMorphism::
+  """
+  Construct exponential object B^A under Z-frame.
+  Represents: 'if a then b' interpreted within context c.
+  """
+  return σ(z).>(a, b)  // represents B^A
+
+def eval(f: Conceptual Morphism, a: Concept, z: Frame) → Concept:
+  return f × a | z
+
+//if press then open → it opens
+val1 = eval("press", "open", "door") → door → opened door | Door
+
+//if press then open + you press → it opens
+f = exponential("press", "open", "door")
+val2 = eval(f, "you press") → open | Door // open → open | Dorr
+
+// if means truth = χ(val1, val2)  
+// χ: entailment classifier → Ω
+if val1 ⇒ val2:
+    print("This is about door being opened")
+
+```
 
 **simbols**
 
