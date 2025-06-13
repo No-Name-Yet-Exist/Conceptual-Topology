@@ -1,21 +1,26 @@
-# Conceptual Topology Language: Semantic Logic
+# Conceptual Topology Language (CTL): A Categorical Framework for Semantic Computation
+A minimal semantic calculus based on category-theoretic structure, modeling logical operations (AND, OR, XOR, NOT, implication) over contextual frames (Z-frames), and enabling semantic evaluation via conceptual morphisms. This α-version demonstrates the construction of exponential objects, semantic XOR, and Z-dependent entailment classification (χ).
 
 # Logical Operations in Conceptual Topology
+Following CTL Examples are simplified version. You need to clarify the Z frame as follows.
+```
+girl ⇔ woman | Human ∧ Femenity
+```
 
 | Logical Symbol | CTL Example         | Categorical Structure       |
 |----------------|---------------------|-----------------------------|
-| ⊤ (true)       | The concept of truth | Terminal object `1`         |
-| ⊥ (false)      | A null concept       | Initial object `0` or Zero morphism |
-| ¬p (not p)     | `σ(Z).Not(f)`        | Zero morphism (rupture)     |
-| ¬¬p            | `Equalizer(σ∘σ, id)` | Equalizer (closure of negation) |
-| p ∧ q          | `girl ∧ dog ≅ mammal` | Pullback (common intersection) |
-| p ∨ q          | `dog ∨ cat ≅ pet`    | Coproduct (union of categories) |
-| p ⇒ q          | `dog ⇒ mammal`      | Exponential object (`Hom(p, q)`) |
-| p ⇔ q          | `girl ⇔ woman`     | Isomorphism (bidirectional morphism)|
-| p = q          | `girl = girl`        | Identiy Morphism (conceptual identity) |
-| p ≒ q          | `girl = girl`        | Isomorphism  (conceptual identity) |
-| ∃x. P(x)       | `∃ dog. dog ∈ pet`   | Co-limit (existential quantification) |
-| ∀x. P(x)       | `∀ dog. dog ∈ mammal`| Limit (universal quantification) |
+| ⊤ (true)       | The concept of truth | Terminal object 1         |
+| ⊥ (false)      | A null concept       | Initial object 0 or Zero morphism |
+| ¬p (not p)     | `σ(Z).Not(f)        | Zero morphism (rupture)     |
+| ¬¬p            | Equalizer(σ∘σ, id) | Equalizer (closure of negation) |
+| p ∧ q          | girl ∧ dog ≅ mammal | Pullback (common intersection) |
+| p ∨ q          | dog ∨ cat ≅ pet    | Coproduct (union of categories) |
+| p ⇒ q          | dog ⇒ mammal      | Exponential object (Hom(p, q)) |
+| p ⇔ q          | girl ⇔ woman     | Isomorphism (bidirectional morphism)|
+| p = q          | girl = girl        | Identiy Morphism (conceptual identity) |
+| p ≅ q          | girl = woman        | Isomorphism  (conceptual identity) |
+| ∃x. P(x)       | ∃ dog. dog ∈ pet   | Co-limit (existential quantification) |
+| ∀x. P(x)       | ∀ dog. dog ∈ mammal| Limit (universal quantification) |
 
 **XOR**
 ```
@@ -26,33 +31,19 @@ girl ⊻ woman | Female
 = ""
 ```
 
-CTL Example is simplified version. You need to clarify the Z frame as follows.
-Note: The logical oprations can be applied also to Z frame.
-```
-girl ⇔ woman | Human ∧ Femenity
-```
-
-## Additional Definitions for Conceptual Topology
-
-| Symbol  | Description                                  |
-|---------|----------------------------------------------|
-| `↛`    | Rupture: Disruption of morphism (i.e., negation, non-constructive) |
-| `| Z`   | Z-frame: Semantic contextual anchoring        |
-| `σ(X)`  | Meaning shifting operator (shifting, Not, so_much, etc.) |
-| `⊕, ⊖`  | Meaning composition and removal operations   |
-| `Eq(f, g)` | Semantic equivalence constraint (Equalizer) |
+<div style="page-break-after: always;"></div>
 
 # Application
 
 ```python
-def exponential(a: Concept, b: Concept, z: Frame) -> ConceptualMorphism::
+func exponential(a: Concept, b: Concept, z: Frame) -> ConceptualMorphism:
   """
   Construct exponential object B^A under Z-frame.
-  Represents: 'if a then b' interpreted within context c.
+  Represents: 'if a then b' interpreted within context z.
   """
   return σ(z).>(a, b)  // represents B^A
 
-def eval(f: Conceptual Morphism, a: Concept, z: Frame) → Concept:
+func eval(f: Conceptual Morphism, a: Concept, z: Frame) → Concept:
   return f × a | z
 
 //if press then open → it opens
@@ -68,6 +59,8 @@ if val1 ⇒ val2:
     print("This is about door being opened")
 
 ```
+
+<div style="page-break-after: always;"></div>
 
 **simbols**
 
@@ -165,5 +158,21 @@ Note: σ_safe behaves as Quasi-Natural Transformation.
       σ_unsafe induces rupture, and cannot be captured globally.
 
 
+<div style="page-break-after: always;"></div>
+
+This is version α 1.0
+
+### Conceptual Topos Named as 概念位相論 / Conceptual Topology
+This theory, named 概念位相論 or Conceptual Topoloy, was proposed by **No Name Yet Exist**.
+
+Meaning no longer escapes.<br/>
+It circulates within the morphic fibration.<br/>
+We, once again, govern the topology of meaning.<br/>
+
+GitHub: https://github.com/No-Name-Yet-Exist/Conceptual-Topology<br/>
+Note: https://note.com/xoreaxeax/n/n3711c1318d0b<br/>
+Zenodo: https://zenodo.org/records/15455079
+
+----
 This document and all conceptual content therein are © [No Name Yet Exist], 2025. 
 All rights reserved. Unauthorized reproduction, distribution, or use without explicit permission is prohibited.
