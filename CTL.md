@@ -24,12 +24,17 @@ girl ⇔ woman | Human ∧ Femenity
 
 **XOR**
 ```
+using z-space Female
 p ⊻ q := (p ∨ q) ⊖ (p ∧ q)
-girl ⊻ woman | Female
-= (girl ∨ woman | Female )  ⊖  (girl ∧ woman | Female )
-= (female | Female )  ⊖  (female | Female)
+girl ⊻ woman
+= (girl ∨ woman)  ⊖  (girl ∧ woman)
+= (female)  ⊖  (female)
 = ""
 ```
+
+**king - man + woman = queen**</br>
+queen = (king ∨ man) ∧ woman | Human
+
 
 <div style="page-break-after: always;"></div>
 
