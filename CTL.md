@@ -15,6 +15,7 @@ girl ⇔ woman | Human ∧ Femenity
 | ¬¬p            | Equalizer(σ∘σ, id) | Equalizer (closure of negation) |
 | p ∧ q          | girl ∧ dog ≅ mammal | Pullback (common intersection) |
 | p ∨ q          | dog ∨ cat ≅ pet    | Coproduct (union of categories) |
+| p ⊻ q          | man ∨ woman ≅ genderness | p ⊻ q := (p ∨ q) ⊖ (p ∧ q) |
 | p ⇒ q          | dog ⇒ mammal      | Exponential object (Hom(p, q)) |
 | p ⇔ q          | girl ⇔ woman     | Isomorphism (bidirectional morphism)|
 | p = q          | girl = girl        | Identiy Morphism (conceptual identity) |
@@ -22,15 +23,16 @@ girl ⇔ woman | Human ∧ Femenity
 | ∃x. P(x)       | ∃ dog. dog ∈ pet   | Co-limit (existential quantification) |
 | ∀x. P(x)       | ∀ dog. dog ∈ mammal| Limit (universal quantification) |
 
-**XOR**
-```
+<div style="page-break-after: always;"></div>
+
+**XOR** </br>
 Example1:
+```
 using z-space Female
 p ⊻ q := (p ∨ q) ⊖ (p ∧ q)
 girl ⊻ woman
 = (girl ∨ woman)  ⊖  (girl ∧ woman)
-= (female)  ⊖  (female)
-= ""
+= age-attribute
 ```
 
 Diagram:
@@ -49,9 +51,12 @@ Diagram:
        girl ∨ woman   ← Coproduct
 ```
 
+<div style="page-break-after: always;"></div>
+
 Example 2:
 ```
 using z-space Human
+
 prince = (king ∧ man) ∧ young
 princess = (queen ∧ woman) ∧ young
 prince ⊻ princess  = genderness
@@ -80,7 +85,7 @@ Diagram:
              \       /                \       /
           prince ∨ princess        prince ∧ princess      
                 ｜                        ｜
-                ｜────────────⊖───────────｜
+                ｜────────────⊖──────────｜
                               | 
                               ∨
                        prince ⊻ princess
@@ -90,9 +95,21 @@ Diagram:
 
 ```
 
+**Double Negation As Xor**
+
+```
+x ⊻ ¬x1 = ""
+x ⊻ "" = x
+x ⊻ ¬x1 ⊻ ¬x2 = x
+
+x: kind
+¬x1: unkind
+¬x2: not unkind
+```
+
 <div style="page-break-after: always;"></div>
 
-**AND in Diagran**
+**AND in Diagram**
 ```
 prince = (king ∧ man) ∧ young
 
@@ -139,7 +156,7 @@ Diagram:
     king      man             king    man
       \        /                \      /
        \      /                  \    /
-     king ∨ man               king ∧ man      
+     king ∨ man                king ∧ man      
          ｜                        ｜
          ｜────────────⊖──────────｜
                        | 
@@ -149,7 +166,7 @@ Diagram:
                        ∨              ｜
                      Royalty        woman
                        ｜             ｜
-                       ｜ ────────────｜
+                       ｜─────────────｜
                               ｜
                              queen   
 ```
@@ -283,7 +300,7 @@ Note: σ_safe behaves as Quasi-Natural Transformation.
 
 <div style="page-break-after: always;"></div>
 
-This is version α 1.0
+This is version α 1.1
 
 ### Conceptual Topos Named as 概念位相論 / Conceptual Topology
 This theory, named 概念位相論 or Conceptual Topoloy, was proposed by **No Name Yet Exist**.
@@ -297,5 +314,8 @@ Note: https://note.com/xoreaxeax/n/n3711c1318d0b<br/>
 Zenodo: https://zenodo.org/records/15455079
 
 ----
-This document and all conceptual content therein are © [No Name Yet Exist], 2025. 
-All rights reserved. Unauthorized reproduction, distribution, or use without explicit permission is prohibited.
+ © 2025 No Name Yet Exist.
+ This work is licensed under a Creative Commons Attribution-NonCommercial-NoDerivatives 4.0
+ International License (CC BY-NC-ND 4.0).
+ You may cite or reference this work with proper attribution.
+ Commercial use, modification, or redistribution is prohibited without explicit permission.
