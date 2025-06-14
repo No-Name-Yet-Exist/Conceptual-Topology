@@ -11,7 +11,7 @@ girl ⇔ woman | Human ∧ Femenity
 |----------------|---------------------|-----------------------------|
 | ⊤ (true)       | The concept of truth | Terminal object 1         |
 | ⊥ (false)      | A null concept       | Initial object 0 or Zero morphism |
-| ¬p (not p)     | `σ(Z).Not(f)        | Zero morphism (rupture)     |
+| ¬p (not p)     | σ(Z).Not(f)        | Zero morphism (rupture)     |
 | ¬¬p            | Equalizer(σ∘σ, id) | Equalizer (closure of negation) |
 | p ∧ q          | girl ∧ dog ≅ mammal | Pullback (common intersection) |
 | p ∨ q          | dog ∨ cat ≅ pet    | Coproduct (union of categories) |
@@ -37,6 +37,25 @@ using z-space Human
 prince = (king ∧ man) ∧ young
 princess = (queen ∧ woman) ∧ young
 prince ⊻ princess  = genderness
+```
+
+**AND in Diagran**
+```
+prince = (king ∧ man) ∧ young
+
+      Human
+     /    \
+  p₁ /      \ p₂
+   /          \
+king         man
+   \          /       Human
+    \        /         /
+      ↘    ↙        ↙       
+         P        young
+         \         /
+          \       /
+            ↘   ↙
+             prince
 ```
 
 **king - man + woman = queen**</br>
