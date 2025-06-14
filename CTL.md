@@ -43,6 +43,20 @@ prince ⊻ princess  = genderness
 ```
 prince = (king ∧ man) ∧ young
 
+Let:
+ Z = Human
+ A = king
+ B = man
+ C = young
+
+Then:
+ P₁ = A ∧ B | Z        (Pullback: adult male royalty)
+ P₂ = P₁ ∧ C | Z       (Pullback: adds age attribute)
+
+Therefore:
+ prince := P₂ | Z
+
+
       Human
      /    \
   p₁ /      \ p₂
@@ -51,11 +65,11 @@ king         man
    \          /       Human
     \        /         /
       ↘    ↙        ↙       
-         P        young
+    king × man    young
          \         /
           \       /
             ↘   ↙
-             prince
+            prince
 ```
 
 **king - man + woman = queen**</br>
