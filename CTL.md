@@ -98,16 +98,15 @@ Diagram:
 **Double Negation As Xor**
 ```
 not unkind
-= ¬x1 ⊻ ¬x1 ⊻ x
+= n ⊻ n ⊻ x
 = x
+where: 
+n: not, un-
+x: kind
 
-Example:
+Actual Calculation:
 unkind ⊻ unkind = ""
 "" ⊻ kind = kind
-
-x: kind
-¬x1: unkind
-x': not unkind
 ```
 
 <div style="page-break-after: always;"></div>
