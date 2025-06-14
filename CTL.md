@@ -104,9 +104,9 @@ where:
 n: not, un-
 x: kind
 
-Actual Calculation:
-unkind ⊻ unkind = ""
-"" ⊻ kind = kind
+n ⊻ n ⊻ x corresponds to 
+    not un kind
+     n   n  x
 ```
 
 <div style="page-break-after: always;"></div>
