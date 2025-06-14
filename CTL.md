@@ -96,6 +96,8 @@ Diagram:
 ```
 
 **Double Negation As Xor**
+Xor can express double negation. This simplifies morphic flow. And this formulation *n ⊻ n ⊻ x*
+reveals underlying semantic structure of language.
 ```
 not unkind
 = n ⊻ n ⊻ x
@@ -107,6 +109,12 @@ x: kind
 n ⊻ n ⊻ x corresponds to 
     not un kind
      n   n  x
+
+楽しくないわけじゃない
+  x   n      n
+  → x ⊻ n ⊻ n = x
+
+Associativity ensures the interchangeability of the calculation.
 ```
 
 <div style="page-break-after: always;"></div>
