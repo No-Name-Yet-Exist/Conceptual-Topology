@@ -31,12 +31,64 @@ girl ⊻ woman
 = (girl ∨ woman)  ⊖  (girl ∧ woman)
 = (female)  ⊖  (female)
 = ""
+```
+
+Diagram:
+```
+           Female
+          /     \
+      girl       woman
+        \         /
+         \       /
+       girl ∧ woman   ← Pullback
+            |
+            v
+       girl ⊻ woman   ← XOR
+            ^
+            |
+       girl ∨ woman   ← Coproduct
+```
 
 Example2:
+```
 using z-space Human
 prince = (king ∧ man) ∧ young
 princess = (queen ∧ woman) ∧ young
 prince ⊻ princess  = genderness
+```
+
+Diagram:
+```
+            
+          /     \
+      girl       woman
+        \         /
+         \       /
+       girl ∧ woman   ← Pullback
+            |
+            v
+       girl ⊻ woman   ← XOR
+            ^
+            |
+       girl ∨ woman   ← Coproduct
+```
+
+Diagram:
+```
+               Human                   Human
+               /   \                   /   \
+        prince       princess    prince    princess
+            \         /              \         /
+             \       /                \       /
+          prince ∨ princess        prince ∧ princess      
+                ｜                        ｜
+                ｜────────────────────────｜
+                              | XOR
+                              ∨
+                       prince ⊻ princess
+                              |
+                              ∨
+                          Genderness
 ```
 
 **AND in Diagran**
