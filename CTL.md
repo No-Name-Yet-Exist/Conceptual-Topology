@@ -80,15 +80,17 @@ Diagram:
              \       /                \       /
           prince ∨ princess        prince ∧ princess      
                 ｜                        ｜
-                ｜────────────────────────｜
-                              | ⊖
+                ｜────────────⊖───────────｜
+                              | 
                               ∨
                        prince ⊻ princess
-                              |
+                              | 
                               ∨
                           Genderness
 
 ```
+
+<div style="page-break-after: always;"></div>
 
 **AND in Diagran**
 ```
@@ -110,8 +112,8 @@ Therefore:
 
       Human
      /    \
-  p₁ /      \ p₂
-   /          \
+    /       \ 
+   /         \
 king         man
    \          /       Human
     \        /         /
@@ -123,9 +125,33 @@ king         man
             prince
 ```
 
+<div style="page-break-after: always;"></div>
+
 **king - man + woman = queen**</br>
 ```
-queen = (king ∨ man) ∧ woman | Human
+queen = (king ⊻ man) ∧ woman | Human
+```
+
+Diagram:
+```
+        Human                    Human
+        /   \                    /   \
+    king      man             king    man
+      \        /                \      /
+       \      /                  \    /
+     king ∨ man               king ∧ man      
+         ｜                        ｜
+         ｜────────────⊖──────────｜
+                       | 
+                       ∨
+                  king ⊻ man
+                       |            Human
+                       ∨              ｜
+                     Royalty        woman
+                       ｜             ｜
+                       ｜ ────────────｜
+                              ｜
+                             queen   
 ```
 
 <div style="page-break-after: always;"></div>
