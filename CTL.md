@@ -70,10 +70,10 @@ Let:
   g = A ∧ B | Z    // Pullback
 
 Then:
-  h = f ⊻ g | Z    // Difference morphism: Genderness
+  h = f ⊻ g | Z    // Difference morphism: genderness
 
 Therefore:
-  Genderness = prince　⊻ princess | Z
+  genderness = prince　⊻ princess | Z
 ```
 
 Diagram:
@@ -91,7 +91,7 @@ Diagram:
                        prince ⊻ princess
                               | 
                               ∨
-                          Genderness
+                          genderness
 
 ```
 
@@ -118,17 +118,20 @@ Commutativity and Associativity ensures the interchangeability of the calculatio
 ```
 
 Here we hypothesize () signifies the semantic cohesion, 
-thus *not unhappy* does not recover to *happy*.
+thus *not unhappy* does not fully recover to *happy*. (Semantic equality still holds.)
 ```
 not unhappy ≠ happy
  n ⊻ (n ⊻ x)
 
-I didn't say iI amd not happy
-   n                 n   x
+I didn't say I am not happy
+   n               n   x
+```
 
 The formalization will be as follows.
-  n ⊻ (n ⊻ x) ≒ x   // approx recovery: pragmatic cancellation
-  n ⊻ n ⊻ x = x     // strict algebraic reduction
+```
+// XOR-based semantic negation
+∀x.  n ⊻ n ⊻ x = x             // strict reversible case
+     n ⊻ (n ⊻ x) ≒ x        // cohesive partial case
 ```
 
 <div style="page-break-after: always;"></div>
