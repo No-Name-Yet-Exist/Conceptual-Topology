@@ -95,7 +95,7 @@ Diagram:
 
 ```
 
-**Double Negation As Xor**
+**Double Negation As XOR**
 Xor can express double negation. This simplifies morphic flow. And this formulation *n ⊻ n ⊻ x*
 reveals underlying semantic structure of language.
 ```
@@ -112,9 +112,23 @@ n ⊻ n ⊻ x corresponds to
 
 楽しくないわけじゃない
   x   n      n
-  → x ⊻ n ⊻ n = x
+  → x ⊻ n ⊻ n = x 
 
-Associativity ensures the interchangeability of the calculation.
+Commutativity and Associativity ensures the interchangeability of the calculation.
+```
+
+Here we hypothesize () signifies the semantic cohesion, 
+thus *not unhappy* does not recover to *happy*.
+```
+not unhappy ≠ happy
+ n ⊻ (n ⊻ x)
+
+I didn't say iI amd not happy
+   n                 n   x
+
+The formalization will be as follows.
+  n ⊻ (n ⊻ x) ≒ x   // approx recovery: pragmatic cancellation
+  n ⊻ n ⊻ x = x     // strict algebraic reduction
 ```
 
 <div style="page-break-after: always;"></div>
