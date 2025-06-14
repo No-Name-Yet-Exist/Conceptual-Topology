@@ -73,22 +73,6 @@ Therefore:
 
 Diagram:
 ```
-            
-          /     \
-      girl       woman
-        \         /
-         \       /
-       girl ∧ woman   ← Pullback
-            |
-            v
-       girl ⊻ woman   ← XOR
-            ^
-            |
-       girl ∨ woman   ← Coproduct
-```
-
-Diagram:
-```
                Human                   Human
                /   \                   /   \
         prince       princess    prince    princess
