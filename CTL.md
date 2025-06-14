@@ -327,7 +327,7 @@ Note: σ_safe behaves as Quasi-Natural Transformation.
 
 <div style="page-break-after: always;"></div>
 
-This is version α 1.1
+This is version α 1.1.1
 
 ### Conceptual Topos Named as 概念位相論 / Conceptual Topology
 This theory, named 概念位相論 or Conceptual Topoloy, was proposed by **No Name Yet Exist**.
@@ -341,8 +341,5 @@ Note: https://note.com/xoreaxeax/n/n3711c1318d0b<br/>
 Zenodo: https://zenodo.org/records/15455079
 
 ----
- © 2025 No Name Yet Exist.
- This work is licensed under a Creative Commons Attribution-NonCommercial-NoDerivatives 4.0
- International License (CC BY-NC-ND 4.0).
- You may cite or reference this work with proper attribution.
- Commercial use, modification, or redistribution is prohibited without explicit permission.
+This document and all conceptual content therein are © [No Name Yet Exist], 2025. 
+All rights reserved. Unauthorized reproduction, distribution, or use without explicit permission is prohibited.
