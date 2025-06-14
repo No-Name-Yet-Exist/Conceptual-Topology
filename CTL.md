@@ -49,12 +49,26 @@ Diagram:
        girl ∨ woman   ← Coproduct
 ```
 
-Example2:
+Example 2:
 ```
 using z-space Human
 prince = (king ∧ man) ∧ young
 princess = (queen ∧ woman) ∧ young
 prince ⊻ princess  = genderness
+
+More precisely
+Let:
+  A = prince
+  B = princess
+  Z = Human
+  f = A ∨ B | Z    // Coproduct
+  g = A ∧ B | Z    // Pullback
+
+Then:
+  h = f ⊻ g | Z    // Difference morphism: Genderness
+
+Therefore:
+  Genderness = prince　⊻ princess | Z
 ```
 
 Diagram:
@@ -83,12 +97,13 @@ Diagram:
           prince ∨ princess        prince ∧ princess      
                 ｜                        ｜
                 ｜────────────────────────｜
-                              | XOR
+                              | ⊖
                               ∨
                        prince ⊻ princess
                               |
                               ∨
                           Genderness
+
 ```
 
 **AND in Diagran**
