@@ -127,7 +127,7 @@ no desigual
  → n ⊻ n ⊻ x = x
 ```
 Commutativity and Associativity ensures the interchangeability of the calculation.
-and negation is treated as a semantic unit n (formally, n ∈ M_Not|Z ⊂ M|TCS),  
+and negation is treated as a semantic unit n (formally, n ∈ M|Negation ⊂ M|TCS),  
 and XOR is applied over the Total Conceptual Space (TCS).
 
 
