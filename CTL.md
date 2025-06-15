@@ -125,7 +125,7 @@ no desigual
 не неинтересно
  n  n   x 
  → n ⊻ n ⊻ x = x
-
+```
 Commutativity and Associativity ensures the interchangeability of the calculation.
 
 Triple Negation
