@@ -113,7 +113,26 @@ n ⊻ n ⊻ x corresponds to
   x   n      n
   → x ⊻ n ⊻ n = x 
 
+
+not un kind
+ n   n  x
+　→ n ⊻ n ⊻ x = x
+
+no desigual 
+ n  n   x 
+ → n ⊻ n ⊻ x = x
+
+не неинтересно
+ n  n   x 
+ → n ⊻ n ⊻ x = x
+
 Commutativity and Associativity ensures the interchangeability of the calculation.
+
+Triple Negation
+```
+너무 안 나쁘지 않아 
+     n₁   xn₂  n₃
+→ n₃ ⊻ n₂ ⊻ n₁ ⊻ x = n ⊻ x
 ```
 
 Here we hypothesize () signifies the semantic cohesion, 
