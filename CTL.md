@@ -22,6 +22,8 @@ girl ⇔ woman | Human ∧ Femenity
 | p ≅ q          | girl = woman        | Isomorphism  (conceptual identity) |
 | ∃x. P(x)       | ∃ dog. dog ∈ pet   | Co-limit (existential quantification) |
 | ∀x. P(x)       | ∀ dog. dog ∈ mammal| Limit (universal quantification) |
+| p ⊕ q        | man ⊕ young = guy   | Kan Extension or σ(Z). ⊕(Aₙ₋₁, Bₙ₋₁, Z) |
+| p ⊖ q        | guy ⊖ young = man   | σ(X). ⊖(f, Aₙ₋₁) |
 
 <div style="page-break-after: always;"></div>
 
@@ -55,17 +57,8 @@ Diagram:
 
 Example 2:
 ```
-using z-space Human
-
-Let:
-king, man, queen, woman, prince, princess|Human
-young, genderness | Attribute
-
-prince = (king ∧ man) ⊕ young|Attribute
-princess = (queen ∧ woman) ⊕ young|Attribute
 prince ⊻ princess  = genderness|Attribute
 
-More precisely
 Let:
   A = prince
   B = princess
@@ -99,7 +92,9 @@ Diagram:
 
 ```
 
-**Double Negation As XOR**
+<div style="page-break-after: always;"></div>
+
+**Double Negation As XOR**</br>
 Xor can express double negation. This simplifies morphic flow. And this formulation *n ⊻ n ⊻ x*
 reveals underlying semantic structure of language.
 ```
@@ -140,10 +135,10 @@ The formalization will be as follows.
 
 <div style="page-break-after: always;"></div>
 
-**AND and ⊕ in Diagram**
+**⊕ in Diagram**
 ```
 using Z-frame Human
-prince = (king ∧ man) ⊕ young|Attribute
+prince = (king ⊕ man) ⊕ young|Attribute
 
 Let:
  Z = Human
@@ -152,8 +147,8 @@ Let:
  C = young
 
 Then:
- P₁ = A ∧ B | Z        (Pullback: adult male royalty)
- P₂ = P₁ ⊕ C | Z       (Pullback: adds age attribute)
+ P₁ = A ⊕ B | Z       
+ P₂ = P₁ ⊕ C | Z      
 
 Therefore:
  prince := P₂ | Z
@@ -173,7 +168,7 @@ king         man
             ↘   ↙
             prince
 ```
-**Note: ∧ vs ⊕**
+**∧ vs ⊕**</br>
 ∧ strictly requires shared meaning and a shared Z-frame. </br>
 ⊕ offers safe addition to the meaning and does not strictly require a shared Z-frame.  
 However, the presence of a common superordinate Z-frame (e.g. Mammal) is preferable for ensuring semantic continuity.
@@ -187,15 +182,11 @@ Aₙ₋₁:= girl → she | Human
 Bₙ₋₁:= puppy → dog | Canine
 
 σ(Human). ⊕(girl → she, puppy → dog | Mammal) → M|Z(girl → she → puppy → dog | Mammal) | Mammal
-→ composite meaning space
 ```
-
-
-<div style="page-break-after: always;"></div>
 
 **king - man + woman = queen**</br>
 ```
-queen = (king ⊻ man) ∧ woman | Human
+queen = (king ⊻ man) ⊕ woman | Human
 ```
 
 Diagram:
@@ -215,7 +206,7 @@ Diagram:
                        ∨              ｜
                     royalty         woman
                        ｜             ｜
-                       ｜─────────────｜
+                       ｜─────⊕──────｜
                               ｜
                              queen   
 ```
