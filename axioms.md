@@ -1290,7 +1290,7 @@ g: A→B
 g∘(A↛B∣Z) = A↛ B∣Z
 
 Right Side
-g: A→B(A↛B∣Z)∘g=A↛B∣Z
+g: A→B (A↛B∣Z) ∘ g = A↛B∣Z
 
 
 Interpretation:
@@ -1571,7 +1571,6 @@ there exists a unique morphism u: X → A × B such that:
 ```
 Defined as:
 σ(Z). ⊕(Aₙ₋₁, Bₙ₋₁, Z) = D(Cₙ₋₁ | CD) = M_C|CD
-
 
 Example:
 Aₙ₋₁:= girl → she | Human
