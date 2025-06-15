@@ -32,7 +32,7 @@ using z-space Female
 p ⊻ q := (p ∨ q) ⊖ (p ∧ q)
 girl ⊻ woman
 = (girl ∨ woman)  ⊖  (girl ∧ woman)
-= age-attribute
+= age-attribute|Attribute
 ```
 
 Diagram:
@@ -57,9 +57,13 @@ Example 2:
 ```
 using z-space Human
 
-prince = (king ∧ man) ∧ young
-princess = (queen ∧ woman) ∧ young
-prince ⊻ princess  = genderness
+Let:
+king, man, queen, woman, prince, princess|Human
+young, genderness | Attribute
+
+prince = (king ∧ man) ⊕ young|Attribute
+princess = (queen ∧ woman) ⊕ young|Attribute
+prince ⊻ princess  = genderness|Attribute
 
 More precisely
 Let:
@@ -73,7 +77,7 @@ Then:
   h = f ⊻ g | Z    // Difference morphism: genderness
 
 Therefore:
-  genderness = prince　⊻ princess | Z
+  genderness|Attribute = prince　⊻ princess | Z
 ```
 
 Diagram:
@@ -136,9 +140,10 @@ The formalization will be as follows.
 
 <div style="page-break-after: always;"></div>
 
-**AND in Diagram**
+**AND and ⊕ in Diagram**
 ```
-prince = (king ∧ man) ∧ young
+using Z-frame Human
+prince = (king ∧ man) ⊕ young|Attribute
 
 Let:
  Z = Human
@@ -148,7 +153,7 @@ Let:
 
 Then:
  P₁ = A ∧ B | Z        (Pullback: adult male royalty)
- P₂ = P₁ ∧ C | Z       (Pullback: adds age attribute)
+ P₂ = P₁ ⊕ C | Z       (Pullback: adds age attribute)
 
 Therefore:
  prince := P₂ | Z
@@ -159,7 +164,7 @@ Therefore:
     /       \ 
    /         \
 king         man
-   \          /       Human
+   \          /       Attribute
     \        /         /
       ↘    ↙        ↙       
     king × man    young
@@ -168,6 +173,21 @@ king         man
             ↘   ↙
             prince
 ```
+**Note: ∧ vs ⊕**
+∧ strictly requires shared meaning, yet ⊕ offers safe addition to the meaning. This can be differentiated by Z-frame.
+
+**Definition of ⊕ Operator**
+```
+σ(Z). ⊕(Aₙ₋₁, Bₙ₋₁, Z) = D(Cₙ₋₁ | CD) = M_C|CD
+
+Example:
+Aₙ₋₁:= girl → she | Human
+Bₙ₋₁:= puppy → dog | Canine
+
+σ(Human). ⊕(girl → she, puppy → dog | Mammal) → M|Z(girl → she → puppy → dog | Mammal) | Mammal
+→ composite meaning space
+```
+
 
 <div style="page-break-after: always;"></div>
 
