@@ -527,9 +527,9 @@ where: canine, Human ∈ Mammal
 ```
 word is word
 thus:
-word ≅ Nat(Hom(-, word), Fib(word)) 
+word ≅ Nat(Hom(-, word | Word), Fib(word)) 
 
-σ_id(Z). OP(X,Z) = σ such that σ(f,Z) = f for all f ∈ Hom(X, X, Z) unless OP is σ_unsafe such that word is not a word: σ(Word). Not(word ↛ word) 
+σ_id(Z). OP(X,Z) = σ such that σ(f,Z) = f for all f ∈ Hom(X, X | Z) unless OP is σ_unsafe such that word is not a word: σ(Word). Not(word ↛ word) 
 
 σ_id(Word). OP(word, Word) = word
 
@@ -539,7 +539,7 @@ since: M|Z = { fₙ ∘ ... ∘ f₁ | all fᵢ: Xᵢ → Xᵢ₊₁ | Z ⋏ ∀
 σ_id(Word) ∈ M|Word
 σ(Word) ∘ σ_id(Word) = σ(Word)
 σ_id(Word) ∘ σ(Word) = σ(Word)
-∴ word is word and word is word
+∴ word is word
 ```
 
 ### Associativity of σ
@@ -553,7 +553,7 @@ Then the composition σ₂ ∘ σ₁:
 where: OP is not σ_unsafe and under shared Z frame
 
 Associativity
-For all σ₁, σ₂, σ₃ such that their domains/codomains match for composition:
+For all σ₁(Z), σ₂(Z), σ₃(Z) such that their domains/codomains match for composition:
 (σ₃ ∘ σ₂) ∘ σ₁ = σ₃ ∘ (σ₂ ∘ σ₁)
 
 Thus, σ composition operator is associative under Monoid structure.
@@ -1112,43 +1112,43 @@ rupture(A ↛ B | Z)
 In Conceptual Topology, Z is defined as a mediating point/conceptual anchor.
 ```
 Let C and D, Z be categories,
-with conceptual projection π: C ∪ D → Z, such that for each X ∈ Ob(C ∪ D):
+with conceptual projection π: C ∪ D → Z, such that for each X ∈ Ob(C ∪ D)
 
 π(X) ∈ Ob(Z)
 
-For each X ∈ Ob(C ∪ D), there exists morphism:
+For each X ∈ Ob(C ∪ D), there exists morphism
 
 f_X: X → π(X)
 f_X⁻¹: π(X) → X
  
-such that:
+such that
 
 f_X⁻¹ ∘ f_X ≅ id_X
 
 For morphism f: X → Y | Z,  
 this corresponds to:
 
-f_Z: π(X) → π(Y) in Z
+f_Z: π(X) → π(Y) | Z
 
-For any X, Y ∈ Ob(C ∪ D):
+For any X, Y ∈ Ob(C ∪ D)
 
 Let [X]_Z := conceptual representation of X under frame Z (i.e., π(X))
 
 Then:
 
 [ X ]_Z1 ≅ [ Y ]_Z2 | Z1, Z2 ∈ Z //or Z1, Z2 >> Z 
-which means:
+which means
 ["Dog"]_Pet = [Retriever, Dachshund, Poodle, Bulldog, ...]
 ["girl"]_Human = [girl, woman, person, ...]
 ["Dog"]_Pet ≅ ["girl"]_Human | Life
 
-Then the set of conceptual flow morphisms under Z forms a monoid:
+Then the set of conceptual flow morphisms under Z forms a monoid
 
 M|Z = { fₙ ∘ ... ∘ f₁ | all fᵢ: Xᵢ → Xᵢ₊₁ | Z ⋏ ∀ i, j: fᵢ ≅ fⱼ | Z }
 
 This is also defined as Morphic Chain.
 
-Let D(Cₙ₋₁ | Z) := Category of Morphic Chains over **Ob(Cₙ₋₁)** within a given Z-frame.
+Let D(Cₙ₋₁ | Z) := Category of Morphic Chains over Ob(Cₙ₋₁) within a given Z-frame.
 where:D(Cₙ₋₁ | Z) ={ C₀ → C₁ → C₂ → ... | Z }
 
 or as a set
@@ -1297,6 +1297,7 @@ g: A→B(A↛B∣Z)∘g=A↛B∣Z
 
 Interpretation:
 Applying Not() to any morphism produces a conceptual zero morphism, which collapses any further conceptual flow.
+```
 
 NL Diagram:
 ```
@@ -1306,6 +1307,7 @@ this ─────→ correct       ← (monomorphism)
 ```
 
 Natural Language:
+```
 Left Side: g∘(A↛B∣Z)
 "A is not B"
 The apple is not a fruit
@@ -1318,7 +1320,6 @@ This is a fruit, but this is not an apple which is a fruit.
 In CT, this was called rutpure(). 
 Now defined:
 rupture(A,B,Z)= σ(Z).Not(g) = n_f = A↛B∣Z
-
 ```
 
 ### 5.3. Composition Axiom
