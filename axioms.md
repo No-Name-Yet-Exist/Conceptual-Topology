@@ -588,13 +588,11 @@ We define σ: D(Aₙ₋₁ | Z) >> D(Bₙ₋₁ | Z') as such a Functor.
 **σ Operator as Kan Extension**</br>
 ```
 Let:
-
-- D(Aₙ₋₁ | Z) := Category of Morphic Chains over Z-frame Z
-- D(Bₙ₋₁ | Z') := Category of Morphic Chains over Z'-frame Z'
+ D(Aₙ₋₁ | Z) := Category of Morphic Chains over Z-frame Z
+ D(Bₙ₋₁ | Z') := Category of Morphic Chains over Z'-frame Z'
 
 Define:
-
-σ_safe ≈ Lan_σ : D(Aₙ₋₁ | Z) >> D(Bₙ₋₁ | Z')
+ σ_safe = Lan_σ : D(Aₙ₋₁ | Z) >> D(Bₙ₋₁ | Z')
 
 such that:
 
@@ -611,10 +609,10 @@ Lan_σ (h) ∘ Lan_σ (f) = Lan_σ (h ∘ f)
 Therefore:
 
 σ_safe satisfies:
-- Object-level safe lifting: Ob(D(Aₙ₋₁ | Z)) → Ob(D(Bₙ₋₁ | Z'))
-- Morphism-level safe lifting: Mor(D(Aₙ₋₁ | Z)) → Mor(D(Bₙ₋₁ | Z'))
+  Object-level safe lifting: Ob(D(Aₙ₋₁ | Z)) → Ob(D(Bₙ₋₁ | Z'))
+  Morphism-level safe lifting: Mor(D(Aₙ₋₁ | Z)) → Mor(D(Bₙ₋₁ | Z'))
 
-σ_safe ≈ Left Kan Extension guarantees the Quasi-Natural Transformation property
+σ_safe = Left Kan Extension guarantees the Quasi-Natural Transformation property
 
 ∀ f ∈ Mor(D(Aₙ₋₁ | Z)),  
 Lan_σ (G ∘ f) = (Lan_σ G) ∘ (Lan_σ f)
@@ -864,7 +862,7 @@ Lan_{σ₃} ∘ Lan_{σ₂} ∘ Lan_{σ₁}(π⁻¹(Turtle))
 
 **Colimit:**
 ```
-colim_{Z₀ → Z₁ → Z₂ → Z₃} Lan_{σᵢ}(π⁻¹(Zᵢ₋₁)) ≈ π⁻¹(Z₃) = π⁻¹(Life)
+colim_{Z₀ → Z₁ → Z₂ → Z₃} Lan_{σᵢ}(π⁻¹(Zᵢ₋₁)) = π⁻¹(Z₃) = π⁻¹(Life)
 ```
 
 **NL:**
@@ -1057,7 +1055,7 @@ where: Z, Z'∈ CD
 
 Behaves as a Quasi-Natural Transformation
 ```
-σ_safe ≈ η: Dᵢ ⇒ Dᵢ₊₁ | CD
+σ_safe = η: Dᵢ ⇒ Dᵢ₊₁ | CD
 ```
 
 Composition is associative:
@@ -1572,23 +1570,17 @@ there exists a unique morphism u: X → A × B such that:
 σ(Z) serves as the mediating operator ensuring that the composed morphic chain remains within the conceptual fiber over Z.
 ```
 Defined as:
-σ(Z). ⊕(Aₙ₋₁, Bₙ₋₁, Z) = D(Cₙ₋₁ | CD)  → conceptual Product under Z-frame
+σ(Z). ⊕(Aₙ₋₁, Bₙ₋₁, Z) = D(Cₙ₋₁ | CD)  
+  → conceptual Product under Z-frame or M|CD
 
-where: 
-Aₙ₋₁:= girl → she
-Bₙ₋₁:= puppy → dog
-
-σ(Z). ⊕(Aₙ₋₁, Bₙ₋₁, Z) = D(Cₙ₋₁ | CD) 
-
-For any pair of morphic chains 1Aₙ₋₁, Bₙ₋₁​, the operation σ(Z).⊕(Aₙ₋₁, Bₙ₋₁) defines an object P ∈ D(Cₙ₋₁ | Z)P∈D(Cn−1​∣Z) with projections π₁, π₂​ satisfying the product universal property.
-
+For any pair of morphic chains Aₙ₋₁, Bₙ₋₁​, the operation σ(Z).⊕(Aₙ₋₁, Bₙ₋₁) defines an object P ∈ D(Cₙ₋₁ | Z) with projections π₁, π₂​ satisfying the product universal property.
 
 Example:
+Aₙ₋₁:= girl → she | Human
+Bₙ₋₁:= puppy → dog | Canine
 
-girl → she
-puppy → dog
 
-σ(Human). ⊕(girl → she, puppy → dog | Mammal) → Product(girl → she → puppy → dog | Mammal) | Mammal
+σ(Human). ⊕(girl → she, puppy → dog | Mammal) → M|Z(girl → she → puppy → dog | Mammal) | Mammal
 → composite meaning space
 ```
 
