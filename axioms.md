@@ -1570,15 +1570,12 @@ there exists a unique morphism u: X → A × B such that:
 σ(Z) serves as the mediating operator ensuring that the composed morphic chain remains within the conceptual fiber over Z.
 ```
 Defined as:
-σ(Z). ⊕(Aₙ₋₁, Bₙ₋₁, Z) = D(Cₙ₋₁ | CD)  
-  → conceptual Product under Z-frame or M|CD
+σ(Z). ⊕(Aₙ₋₁, Bₙ₋₁, Z) = D(Cₙ₋₁ | CD) = M_C|CD
 
-For any pair of morphic chains Aₙ₋₁, Bₙ₋₁​, the operation σ(Z).⊕(Aₙ₋₁, Bₙ₋₁) defines an object P ∈ D(Cₙ₋₁ | Z) with projections π₁, π₂​ satisfying the product universal property.
 
 Example:
 Aₙ₋₁:= girl → she | Human
 Bₙ₋₁:= puppy → dog | Canine
-
 
 σ(Human). ⊕(girl → she, puppy → dog | Mammal) → M|Z(girl → she → puppy → dog | Mammal) | Mammal
 → composite meaning space
