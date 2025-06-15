@@ -77,7 +77,7 @@ Then:
   h = f ⊻ g | Z    // Difference morphism: genderness
 
 Therefore:
-  genderness|Attribute = prince　⊻ princess | Z
+  genderness|Attribute = (prince　⊻ princess | Human)
 ```
 
 Diagram:
@@ -174,7 +174,9 @@ king         man
             prince
 ```
 **Note: ∧ vs ⊕**
-∧ strictly requires shared meaning, yet ⊕ offers safe addition to the meaning. This can be differentiated by Z-frame.
+∧ strictly requires shared meaning and a shared Z-frame. </br>
+⊕ offers safe addition to the meaning and does not strictly require a shared Z-frame.  
+However, the presence of a common superordinate Z-frame (e.g. Mammal) is preferable for ensuring semantic continuity.
 
 **Definition of ⊕ Operator**
 ```
@@ -211,7 +213,7 @@ Diagram:
                   king ⊻ man
                        |            Human
                        ∨              ｜
-                     Royalty        woman
+                    royalty         woman
                        ｜             ｜
                        ｜─────────────｜
                               ｜
