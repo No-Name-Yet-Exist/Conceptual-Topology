@@ -764,7 +764,7 @@ NL: tortoise → turtle → reptile → animal → ... | Iterated Colimit Result
 
 Formal Expression:
 ```
-Iterated_Colimit ≈ colim_{Z₀ → Z₁ → Z₂ → ... → Zₙ} (Lan_{σᵢ}(π⁻¹(Zᵢ₋₁)))
+Iterated_Colimit = colim_{Z₀ → Z₁ → Z₂ → ... → Zₙ} (Lan_{σᵢ}(π⁻¹(Zᵢ₋₁)))
 ```
 
 This conceptual ladder forms an iterated semantic cone, whose colimit aligns the entire Z-frame sequence into the unified semantic flow space under Zₙ.
@@ -797,7 +797,7 @@ M|Zₙ { Fₙ ∘ ... ∘ F₁ | all Fᵢ: Fᵢ → Fᵢ₊₁ | Zₙ ⋏ ∀ i,
 Viewed categorically, this recursive construction aligns with the notion of ∞-morphisms or higher morphic flows, where each application of Lan_{σᵢ} corresponds to a morphism in an extended conceptual category, and their collective composition forms an ∞-structured cone.
 
 ```
-∞-Universal Product ≈ colim_{Z₀ → Z₁ → Z₂ → ... → Zₙ} (Lan_{σᵢ}(π⁻¹(Zᵢ₋₁)))
+∞-Universal Product = colim_{Z₀ → Z₁ → Z₂ → ... → Zₙ} (Lan_{σᵢ}(π⁻¹(Zᵢ₋₁)))
 ```
 
 Diagram:
@@ -2111,8 +2111,8 @@ If a lexicon A which satisfy with *not B ⊆ A* such as *wrong* can recover the 
 ### 8.3. Cone Structre: Kan Extension and QNT
 We can observe iterated colimit and QNT in PCA.
 ```
-Dᵢ ≈ colim_{puppy → dog → mammal} (Lan_{σᵢ}(π⁻¹(Mammal)))
-Dᵢ₊₁  ≈ colim_{girl → she → mammal} (Lan_{σᵢ}(π⁻¹(Mammal)))
+Dᵢ = colim_{puppy → dog → mammal} (Lan_{σᵢ}(π⁻¹(Mammal)))
+Dᵢ₊₁ = colim_{girl → she → mammal} (Lan_{σᵢ}(π⁻¹(Mammal)))
 
 Here Defined QNT Between Dᵢ and Dᵢ₊₁ 
 η: Dᵢ ⇒ Dᵢ₊₁  | CD = Mammal
