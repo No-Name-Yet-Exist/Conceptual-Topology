@@ -82,14 +82,14 @@ While we refer to “fibers” to describe morphic coherence over a shared Z-fra
     6.5. Conceptual Topos as Fibered Topos</br>
 7. Global Conceptual Space: Total Conceptual Space (TCS)</br>
 8. Empirical Data for Conceptual Topology</br>
-    8.1. Conceptual Flow Classification
-    8.2. Zero Morphism
-    3.3. Cone Structure: Kan Extension and QNT
-    8.4. Universal Product
+    8.1. Conceptual Flow Classification</br>
+    8.2. Zero Morphism</br>
+    3.3. Cone Structure: Kan Extension and QNT</br>
+    8.4. Universal Product</br>
 
 Appendix: </br>
-    - Simbols and Notations
-    - Python Code and Dataset
+    - Simbols and Notations</br>
+    - Python Code and Dataset</br>
 
 <div style="page-break-after: always;"></div>
 
@@ -220,6 +220,32 @@ and:
 π(g ∘ f) = Z
 
 Here, Z is the least upper bound (or unifying context) of Z₁ and Z₂.
+```
+
+**Categorical Expression of Subsumption and Composition**
+```
+Let Z, Z' ⊆ Z'
+f: A → B | Z
+where:
+  f₁: A → Z
+  f₂: Z → B
+  f = f₂ ∘ f₁
+  
+  thus: A → Z → B
+
+g: B → C | Z'
+where:
+  g₁: B → Z'
+  g₂: Z' → C
+  g = g₂ ∘ g₁
+  
+  thus, B → Z' → C
+
+Z subsuming composition is expressed as follows.
+if:
+h: Z → Z′
+then:
+g ∘ f | Z' ​= g₂ ∘ h ∘ f₁
 ```
 
 ### Category:
