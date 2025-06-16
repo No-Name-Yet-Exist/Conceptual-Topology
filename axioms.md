@@ -253,7 +253,7 @@ In Diagram:
 ```
    f₁        h         g₂
 A ─────→ Z ─────→ Z′ ─────→ C
-         ↑        ↑
+         |        ↑
          f₂       g₁
          ↓        |
          B ──────→
@@ -266,12 +266,21 @@ g: dog →　cat | Mammal
 g ∘ f: fox → cat | Mammal
 where: Canine, Mammal ⊆ Mammal
 
-   f₁        h         g₂
+      f₁             h             g₂
 fox ─────→ Canine ─────→ Mammal′ ─────→ cat 
-             ↑             ↑
+             |             ↑
              f₂            g₁
              ↓             |
             dog ───────────→
+
+
+
+                                 h axis
+Lan(fox → dog | Canine) → fox → dog
+                                 ↓  lifted along Canine to Mammal axis h
+                                dog → cat | Mammal = fox → cat | Mammal
+                                       ↑
+                                    Extended from fox
 ```
 
 ### Category:
@@ -997,7 +1006,7 @@ Lan_σ(F)(d) = colimit (σ(c) → d)(F(c))
         
                  σ
   Canine ─────────────────▶ Mammal
-   fox, dog              σ(fox), σ(dog)
+   fox, dog              σ(fox), σ(dog), cat
 
      │                         │
      │  F                      │ Lan_σ(F)
@@ -1028,7 +1037,7 @@ Note:
   The transition (dog → cat | Life) is interpreted as a Quasi-Natural Transformation (QNT):
 
   η: dog ⇒ cat | Mammal
-  dog → Life ∘ η_Y ≈ η_X ∘ dog → Life
+  dog → Life ∘ η_Y ≈ η_X ∘ cat → Life
   NL: "Cat is a dog, and dog is a cat — basically, under the Life frame."
 ```
 
