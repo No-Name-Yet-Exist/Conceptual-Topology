@@ -241,10 +241,11 @@ where:
   
   thus, B → Z' → C
 
+
 Z subsuming composition is expressed as follows.
-if:
-h: Z → Z′
-then:
+
+g ∘ f = g₂ ​∘ (g₁ ​∘ f₂) ​∘ f₁
+h:= g₁ ​∘ f₂​: Z → Z′
 g ∘ f | Z' ​= g₂ ∘ h ∘ f₁
 ```
 
