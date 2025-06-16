@@ -259,6 +259,22 @@ A ─────→ Z ─────→ Z′ ─────→ C
          B ──────→
 ```
 
+In NL Diagram:
+```
+f: fox → dog | Canine
+g: dog →　cat | Mammal
+g ∘ f: fox → cat | Mammal
+where: Canine, Mammal ⊆ Mammal
+
+   f₁        h         g₂
+fox ─────→ Canine ─────→ Mammal′ ─────→ cat 
+             ↑             ↑
+             f₂            g₁
+             ↓             |
+            dog ───────────→
+            
+```
+
 ### Category:
 
 We define a Z-framed Conceptual Category **C|Z** (e.g. dog|Domesticated), C|C in simple notation **Concept** (e.g. Dog, Button...), as a category enriched over semantic frames Z.
