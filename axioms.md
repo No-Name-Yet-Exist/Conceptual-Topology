@@ -225,6 +225,7 @@ Here, Z is the least upper bound (or unifying context) of Z₁ and Z₂.
 **Categorical Expression of Subsumption and Composition**
 ```
 Let Z, Z' ⊆ Z'
+
 f: A → B | Z
 where:
   f₁: A → Z
@@ -241,12 +242,21 @@ where:
   
   thus, B → Z' → C
 
-
 Z subsuming composition is expressed as follows.
 
 g ∘ f = g₂ ​∘ (g₁ ​∘ f₂) ​∘ f₁
 h:= g₁ ​∘ f₂​: Z → Z′
 g ∘ f | Z' ​= g₂ ∘ h ∘ f₁
+```
+
+In Diagram:
+```
+   f₁        h         g₂
+A ─────→ Z ─────→ Z′ ─────→ C
+         ↑        ↑
+         f₂       g₁
+         ↓        |
+         B ──────→
 ```
 
 ### Category:
