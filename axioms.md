@@ -272,7 +272,6 @@ fox ─────→ Canine ─────→ Mammal′ ─────→ ca
              f₂            g₁
              ↓             |
             dog ───────────→
-            
 ```
 
 ### Category:
@@ -983,6 +982,54 @@ The operation `smartphone → GPS` maintains the structural coherence under Gadg
     "smartphone → GPS" | Gadget ≅ "smartphone → GPS" | Instrument
     where: gadget → instrument | Z = E and instrument → gadget | Z = E
      
+```
+
+**NL Example 2**
+```
+A functor F: Canine → Life
+A functor σ: Canine → Mammal
+
+Then the left Kan extension of F along σ is a functor.
+Lan_σ(F): Mammal → Life
+
+Object d ∈ Mammal, c ∈ Canine, d,c ∈ Life
+Lan_σ(F)(d) = colimit (σ(c) → d)(F(c))
+        
+                 σ
+  Canine ─────────────────▶ Mammal
+   fox, dog              σ(fox), σ(dog)
+
+     │                         │
+     │  F                      │ Lan_σ(F)
+     ▼                         ▼
+   Life ◀──────────────────── Life
+             dog → cat
+
+
+e.g. Lan_σ​(f)(fox)= dog → cat  
+
+fox, dog, cat ∈ Life
+fox, dog, cat ∈ Mammal
+fox, dog ∈ Canine
+
+We focus on fox.
+fox ∈ Canine                     // fox is a canine
+F(fox) = dog ∈ Life              // fox behaves like dog in the context of Life
+σ(fox):= dog → cat | Mammal  　　 // Under Mammal, fox is like a dog or a cat, not a gorilla. (QNT)
+dog → cat | Mammal               // dogs, as mammals, resemble cats.  
+
+⇒ Lan_σ(F)(fox) = dog → cat | Life   
+That is:
+    A fox, seen as a canine, is mapped to a dog under the functor: Canine → Life,
+    But as mammals, dogs resemble cats,
+    The fox is, in Life, conceptually equivalent to a transition, dog → cat — that is, the fox is basically dog or cat.
+
+Note:
+  The transition (dog → cat | Life) is interpreted as a Quasi-Natural Transformation (QNT):
+
+  η: dog ⇒ cat | Mammal
+  dog → Life ∘ η_Y ≈ η_X ∘ dog → Life
+  NL: "Cat is a dog, and dog is a cat — basically, under the Life frame."
 ```
 
 **Example:**
