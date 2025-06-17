@@ -222,7 +222,7 @@ and:
 Here, Z is the least upper bound (or unifying context) of Z₁ and Z₂.
 ```
 
-**Categorical Expression of Subsumption and Composition**
+**Composition: Z, Z' ⊆ Z'**
 ```
 Let Z, Z' ⊆ Z'
 
@@ -249,6 +249,7 @@ h:= g₁ ​∘ f₂​: Z → Z′
 g ∘ f | Z' ​= g₂ ∘ h ∘ f₁
 ```
 
+
 In Diagram:
 ```
    f₁        h         g₂
@@ -273,15 +274,34 @@ fox ─────→ Canine ─────→ Mammal′ ─────→ ca
              ↓             |
             dog ───────────→
 
-
-
-                                 h axis
-Lan(fox → dog | Canine) → fox → dog
-                                 ↓  lifted along Canine to Mammal axis h
-                                dog → cat | Mammal = fox → cat | Mammal
-                                       ↑
-                                    Extended from fox
 ```
+
+**Z frame lifting with Kan Extension: Z ⊈ Z′**
+
+In the case of Z ⊈ Z′, Left Kan Extension ensures conceptual flow structurally.
+```
+f: cake → sugar | Flavor
+g: sugar → happiness | Emotion
+
+f′ := Lan_{Z→Z′}(f): cake → sugar | Emotion
+thus:
+h := g ∘ f′: cake → happiness | Emotion
+
+         F
+Sweets ─────→ Flavor
+   |            |
+   |            | 
+   |            |
+   ↓            ↓
+Emotion ←──── Emotion
+
+Functor Examples:
+  cake ↦ pleasure
+  bitter chocolate ↦ sadness
+   
+Note: Concept clusters such as scarlet, crimson, and ruby can be regarded as objects of a conceptual category (e.g., Red), allowing Kan Extension to operate as a standard Left Kan Extension across conceptual frames.
+```
+
 
 ### Category:
 
