@@ -234,7 +234,7 @@ where:
   f₂: Z → B
   f = f₂ ∘ f₁
   
-  thus: A → Z → B
+  thus, A → Z → B
 
 g: B → C | Z'
 where:
@@ -250,7 +250,6 @@ g ∘ f = g₂ ​∘ (g₁ ​∘ f₂) ​∘ f₁
 h:= g₁ ​∘ f₂​: Z → Z′
 g ∘ f | Z' ​= g₂ ∘ h ∘ f₁
 ```
-
 
 In Diagram:
 ```
@@ -282,24 +281,25 @@ fox ─────→ Canine ─────→ Mammal′ ─────→ ca
 
 In the case of Z ⊈ Z′, Left Kan Extension ensures conceptual flow structurally.
 ```
-f: cake → sugar | Flavor
-g: sugar → happiness | Emotion
+f: speech → persuasion | Language
+g: persuasion → control | Power
 
-f′ := Lan_{Z→Z′}(f): cake → sugar | Emotion
+f′ := Lan_{Z→Z′}(f) := colim_{(Z → Z′)} f
+
 thus:
-h := g ∘ f′: cake → happiness | Emotion
+h := g ∘ f′: speech → control | Power
 
-         F
-Sweets ─────→ Flavor
-   |            |
-   |            | 
-   |            |
-   ↓            ↓
-Emotion ←──── Emotion
+            F
+Language ─────→ Power
+   |              |
+   |              | 
+   |              |
+   ↓              ↓
+Influence ←── Influence
 
 Functor Examples:
-  cake ↦ pleasure
-  bitter chocolate ↦ sadness
+  word ↦ authority
+  text ↦ order
    
 Note: Concept clusters such as scarlet, crimson, and ruby can be regarded as objects of a conceptual category (e.g., Red), allowing Kan Extension to operate as a standard Left Kan Extension across conceptual frames.
 ```
