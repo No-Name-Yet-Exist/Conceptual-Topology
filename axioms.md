@@ -223,6 +223,8 @@ Here, Z is the least upper bound (or unifying context) of Z₁ and Z₂.
 ```
 
 **Composition: Z, Z' ⊆ Z'**
+Although f is originally defined over Z, due to the inclusion Z ⊆ Z′,
+the composite g ∘ f can be interpreted as an internal composition in the superordinate category Z′.
 ```
 Let Z, Z' ⊆ Z'
 
@@ -301,7 +303,6 @@ Functor Examples:
    
 Note: Concept clusters such as scarlet, crimson, and ruby can be regarded as objects of a conceptual category (e.g., Red), allowing Kan Extension to operate as a standard Left Kan Extension across conceptual frames.
 ```
-
 
 ### Category:
 
