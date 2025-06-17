@@ -39,6 +39,7 @@ While we refer to “fibers” to describe morphic coherence over a shared Z-fra
 1. Fibered Conceptual Topology</br>
     1.1. A Z-framed Conceptual Category</br>
       - Z-Frame
+      - Functoriality
       - Category</br>
       - Object
       - Morphisms
@@ -61,7 +62,7 @@ While we refer to “fibers” to describe morphic coherence over a shared Z-fra
     1.4 Kan Extension as Horizontal Conceptual Shifting and Cone Structure</br>
       - Iterated Colimit Perspective</br>
       - ∞-Morphic Interpretation of Recusive Ken Extension</br>
-      - Universal Property of `Lan_{σᵢ}`</br>
+      - Universal Property of Lan_{σᵢ}</br>
 
 2. Monoid Structure of Conceptual Flow (M|Z)
 3. Identity Element of M|Z
@@ -222,11 +223,13 @@ and:
 Here, Z is the least upper bound (or unifying context) of Z₁ and Z₂.
 ```
 
-**Composition: Z, Z' ⊆ Z'**
+<div style="page-break-after: always;"></div>
+
+**Z-Frame Subsuming Composition（Z ⊆ Z′）**
 Although f is originally defined over Z, due to the inclusion Z ⊆ Z′,
 the composite g ∘ f can be interpreted as an internal composition in the superordinate category Z′.
 ```
-Let Z, Z' ⊆ Z'
+Let Z ⊆ Z'
 
 f: A → B | Z
 where:
@@ -261,6 +264,8 @@ A ─────→ Z ─────→ Z′ ─────→ C
          B ──────→
 ```
 
+<div style="page-break-after: always;"></div>
+
 In NL Diagram:
 ```
 f: fox → dog | Canine
@@ -277,7 +282,7 @@ fox ─────→ Canine ─────→ Mammal′ ─────→ ca
 
 ```
 
-**Z frame lifting with Kan Extension: Z ⊈ Z′**
+**Z-Frame Lifting via Kan Extension（Z ⊈ Z′）**
 
 In the case of Z ⊈ Z′, Left Kan Extension ensures conceptual flow structurally.
 ```
@@ -303,6 +308,8 @@ Functor Examples:
    
 Note: Concept clusters such as scarlet, crimson, and ruby can be regarded as objects of a conceptual category (e.g., Red), allowing Kan Extension to operate as a standard Left Kan Extension across conceptual frames.
 ```
+
+<div style="page-break-after: always;"></div>
 
 ### Category:
 
@@ -370,8 +377,6 @@ Let f: A → B | Z₁, g: B → C | Z₂, and h: C → D | Z₃
  where Z₁ ⊆ Z, Z₂ ⊆ Z, and Z₃ ⊆ Z.
 ```
 This ensures that all morphisms can coexist within the same conceptual space, and the meaning flow is preserved across the frames.
-
-<div style="page-break-after: always;"></div>
 
 **Example:**</br>
 If f: computer → smartphone | Gadget, g: smartphone → mobile GPS | Gadget, and h: mobile GPS → navigation | Travel, then the composite morphism is defined as 
@@ -2459,7 +2464,7 @@ GitHub: https://github.com/No-Name-Yet-Exist/Conceptual-Topology<br/>
 Note: https://note.com/xoreaxeax/n/n3711c1318d0b<br/>
 Zenodo: https://zenodo.org/records/15455079
 
-This is Version: 1.4.2
+This is Version: 1.4.3
 
 ----
 This document and all conceptual content therein are © [No Name Yet Exist], 2025. 
