@@ -2283,6 +2283,46 @@ Puppy <-- P --> Girl
 
 <div style="page-break-after: always;"></div>
 
+### 8.5 Computational Methodology to induce Z-frame
+A Z-frame acts as a cone shape in morphic structure—its role is to anchor multiple semantic flows into a unifying conceptual topology. In category-theoretic terms, the Z-frame corresponds to the colimit of a diagram.
+
+While colimits are traditionally defined via universal properties over cones, in natural language processing (NLP), a colimit can be approximated by KMeans clustering over word embeddings. If we interpret a cone from the side, we observe its tapering morphic shape; but from above, the apex of the cone corresponds to the semantic anchor (Z-frame) toward which all points converge.
+
+**Words: king, queen, man woman**
+Using a simple KMeans (k=1) over these four word vectors yields the following cluster center and its top 10 closest neighbors:
+
+```
+=== Z-frame Candidates ===
+       queen : Similarity = 0.7720
+       woman : Similarity = 0.7235
+        king : Similarity = 0.7221
+         man : Similarity = 0.6933
+    princess : Similarity = 0.6631
+        girl : Similarity = 0.6182
+     monarch : Similarity = 0.6139
+      prince : Similarity = 0.6070
+        lady : Similarity = 0.5850
+teenage_girl : Similarity = 0.5712
+```
+Remarkably, monarch emerges from a purely geometric computation. This term does not merely appear due to proximity in vector space, but because it semantically subsumes king, queen, man, and woman in terms of parochial authority. Thus, monarch behaves as a Z-frame, mediating the entire morphic configuration.
+
+
+**Mediation via Z-frame**
+The Z-frame also enables mediated morphic interpretation.
+
+Let us define semantic transitions under Z = monarch.
+```
+man → woman | monarch    //gender role in the monachial society: woman against man
+queen → king | monarch   //gender role in the monachial society: queen against king
+therefore: 
+man → king | monarch     //man is king in the monarch
+```
+
+
+### QNT Z-frame induction
+
+
+
 # Conclusion
 
 Conceptual Topos is a **fibered topos** over Z-frame:
