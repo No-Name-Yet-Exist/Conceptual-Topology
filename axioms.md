@@ -2288,7 +2288,7 @@ A Z-frame acts as a cone shape in morphic structure—its role is to anchor mult
 
 While colimits are traditionally defined via universal properties over cones, in natural language processing (NLP), a colimit can be approximated by KMeans clustering over word embeddings. If we interpret a cone from the side, we observe its tapering morphic shape; but from above, the apex of the cone corresponds to the semantic anchor (Z-frame) toward which all points converge.
 
-**Words: king, queen, man woman**
+**Words: king, queen, man woman**</br>
 Using a simple KMeans (k=1) over these four word vectors yields the following cluster center and its top 10 closest neighbors:
 
 ```
@@ -2306,22 +2306,61 @@ teenage_girl : Similarity = 0.5712
 ```
 Remarkably, monarch emerges from a purely geometric computation. This term does not merely appear due to proximity in vector space, but because it semantically subsumes king, queen, man, and woman in terms of parochial authority. Thus, monarch behaves as a Z-frame, mediating the entire morphic configuration.
 
+**Diagram:**
+```
+        man       woman
+          \       /
+           \     /
+             monarch     ← apex = Z-frame
+           /     \
+        king     queen
+```
 
-**Mediation via Z-frame**
-The Z-frame also enables mediated morphic interpretation.
+**PCA Interpretation**</br>
+Although the PCA projection does not produce a perfectly symmetric cone structure, we can semantically interpret this as reflecting the historical structure of patriarchal monarchy. In this frame, the transformation from king → queen or man → woman does not converge straight onto the concept monarch as we saw in puppy to dog and girl to she. This asymmetry indicates a semantic tension: while monarch appears to geometrically mediate both gendered and political domains, the flow from female-associated terms deviates from the dominant axis. Nevertheless, monarch successfully subsumes the morphic circulation among king, queen, man, and woman, serving as a conceptual apex (Z-frame) that bridges the two word clusters:
+
+```
+[king, queen] ←→ [man, woman]
+unified under the latent semantic attractor: monarch
+```
+
+From a geometrical viewpoint, these divergences are positional errors relative to the apex. What appears as semantic tension in flat projection becomes, from the Z-frame’s perspective, merely an expected distortion in projection space. The Z-frame does not require perfect symmetry; it requires coherence. And *monarch*, asymmetrically, holds. 
+
+![alt text](https://github.com/No-Name-Yet-Exist/Conceptual-Topology/blob/main/releases/resources/axioms/z-monarch.png?raw=true)
+
+
+**Semantic Mediation via Z-frame: monarch**
+The Z-frame enables mediated and asymmetrically coherent morphic interpretation.
 
 Let us define semantic transitions under Z = monarch.
 ```
-man → woman | monarch    //gender role in the monachial society: woman against man
-queen → king | monarch   //gender role in the monachial society: queen against king
-therefore: 
-man → king | monarch     //man is king in the monarch
+man → woman | monarch   // gender role transformation within monarchic structure
+woman → queen | monarch // woman becomes queen under monarchic mediation
+queen → king | monarch  // queen transitions to king in the symbolic hierarchy
+
+therefore:
+man → king | monarch    // man maps to king under the monarchic frame
 ```
 
+From the perspective of Left Kan Extension, *king* can also be understood as a lifted from *man*, crossing from a gendered lexical domain (generic gender space) to a political-royal domain (*king*) under the frame *monarch*.
 
-### QNT Z-frame induction
+```
+  Royal Domain ⇔ Gendered Domain
 
+           F: Royalty
+        king     ←     man
+        H|             |K    (H,K: Femenization)
+         v             v
+      queen      ←    woman
+            \        /
+             \      /
+              monarch
+            (Z-frame apex)
 
+Left Kan Extension:
+Lan_σ(man)  = king   | monarch  
+Lan_σ(woman) = queen  | monarch
+```
 
 # Conclusion
 
@@ -2341,7 +2380,7 @@ with:
 <div style="page-break-after: always;"></div>
 
 # Appendix
-**simbols**
+**symbols**
 
 ```
 Z : Intermediating variable (conceptual anchor; Z-frame)
@@ -2487,6 +2526,31 @@ plt.axis("equal")
 plt.savefig("image.png") 
 plt.show()
 ```
+
+**Kmeans**
+```python
+import numpy as np
+from sklearn.cluster import KMeans
+from gensim.models import KeyedVectors
+
+model_path = ''
+words = ["king", "queen", "man", "woman"] 
+
+model = KeyedVectors.load_word2vec_format(model_path, binary=True)
+vectors = np.array([model[word] for word in words])
+
+# KMeansクラスタリング（クラスタ数 = 1）
+kmeans = KMeans(n_clusters=1, random_state=42, n_init='auto')
+kmeans.fit(vectors)
+
+# Z-frame（中心ベクトル）
+z_frame = kmeans.cluster_centers_[0]
+
+print("\n=== Z-frame Candidates ===")
+for word, score in model.similar_by_vector(z_frame, topn=10):
+    print(f"{word:>12s} : Similarity = {score:.4f}")
+```
+
 
 </br>
 
