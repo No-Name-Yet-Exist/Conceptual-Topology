@@ -87,6 +87,7 @@ While we refer to “fibers” to describe morphic coherence over a shared Z-fra
     8.2. Zero Morphism</br>
     3.3. Cone Structure: Kan Extension and QNT</br>
     8.4. Universal Product</br>
+    8.5 Computational Methodology to induce Z-frame</br>
 
 Appendix: </br>
     - Simbols and Notations</br>
@@ -2284,9 +2285,9 @@ Puppy <-- P --> Girl
 <div style="page-break-after: always;"></div>
 
 ### 8.5 Computational Methodology to induce Z-frame
-A Z-frame acts as a cone shape in morphic structure—its role is to anchor multiple semantic flows into a unifying conceptual topology. In category-theoretic terms, the Z-frame corresponds to the colimit of a diagram.
+A Z-frame acts as a cone shape in morphic structure—its role is to anchor multiple conceptual flows into a unifying conceptual topology. In category-theoretic terms, the Z-frame corresponds to the colimit of a diagram.
 
-While colimits are traditionally defined via universal properties over cones, in natural language processing (NLP), a colimit can be approximated by KMeans clustering over word embeddings. If we interpret a cone from the side, we observe its tapering morphic shape; but from above, the apex of the cone corresponds to the semantic anchor (Z-frame) toward which all points converge.
+While colimits are traditionally defined via universal properties over cones, in natural language processing (NLP), a colimit can be approximated by KMeans clustering over word embeddings. If we interpret a cone from the side, we observe its tapering morphic shape; but from above, the apex of the cone corresponds to the conceptual anchor (Z-frame) toward which all points converge.
 
 **Words: king, queen, man woman**</br>
 Using a simple KMeans (k=1) over these four word vectors yields the following cluster center and its top 10 closest neighbors:
@@ -2311,13 +2312,17 @@ Remarkably, monarch emerges from a purely geometric computation. This term does 
         man       woman
           \       /
            \     /
-             monarch     ← apex = Z-frame
+           monarch     ← apex = Z-frame
            /     \
         king     queen
 ```
 
 **PCA Interpretation**</br>
-Although the PCA projection does not produce a perfectly symmetric cone structure, we can semantically interpret this as reflecting the historical structure of patriarchal monarchy. In this frame, the transformation from king → queen or man → woman does not converge straight onto the concept monarch as we saw in puppy to dog and girl to she. This asymmetry indicates a semantic tension: while monarch appears to geometrically mediate both gendered and political domains, the flow from female-associated terms deviates from the dominant axis. Nevertheless, monarch successfully subsumes the morphic circulation among king, queen, man, and woman, serving as a conceptual apex (Z-frame) that bridges the two word clusters:
+Although the PCA projection did not produce a perfectly symmetric cone structure, we can semantically interpret this as reflecting the historical structure of patriarchal monarchy.
+
+![alt text](https://github.com/No-Name-Yet-Exist/Conceptual-Topology/blob/main/releases/resources/axioms/z-monarch.png?raw=true)
+
+In this frame, the transformation from king → queen or man → woman does not converge straight onto the concept monarch as we saw in puppy to dog and girl to she. This asymmetry indicates a semantic tension: while monarch appears to geometrically mediate both gendered and political domains, the flow from female-associated terms deviates from the dominant axis. Nevertheless, monarch successfully subsumes the morphic circulation among king, queen, man, and woman, serving as a conceptual apex (Z-frame) that bridges the two word clusters:
 
 ```
 [king, queen] ←→ [man, woman]
@@ -2325,9 +2330,6 @@ unified under the latent semantic attractor: monarch
 ```
 
 From a geometrical viewpoint, these divergences are positional errors relative to the apex. What appears as semantic tension in flat projection becomes, from the Z-frame’s perspective, merely an expected distortion in projection space. The Z-frame does not require perfect symmetry; it requires coherence. And *monarch*, asymmetrically, holds. 
-
-![alt text](https://github.com/No-Name-Yet-Exist/Conceptual-Topology/blob/main/releases/resources/axioms/z-monarch.png?raw=true)
-
 
 **Semantic Mediation via Z-frame: monarch**</br>
 The Z-frame enables mediated and asymmetrically coherent morphic interpretation.
@@ -2341,7 +2343,6 @@ queen → king | monarch  // queen transitions to king in the symbolic hierarchy
 therefore:
 man → king | monarch    // man maps to king under the monarchic frame
 ```
-
 From the perspective of Left Kan Extension, *king* can also be understood as a lifted projection from *man*, crossing from a gendered lexical domain (generic gender space) to a political-royal domain (*king*) under the frame *monarch*.
 
 ```
@@ -2362,6 +2363,8 @@ Lan_σ(man)  = king   | monarch
 Lan_σ(woman) = queen  | monarch
 ```
 
+<div style="page-break-after: always;"></div>
+
 ### QNT Internal Z frame Induction
 QNT has internal Z-frame coherence such that f₁ → f'₁ | Z₁. 
 ```
@@ -2371,9 +2374,7 @@ for all fⱼ: Xⱼ → Yⱼ | Zⱼ ∈ Dᵢ,
 where f′ⱼ: η_X(Xⱼ) → η_Y(Yⱼ) | Zⱼ
 ```
 
-Using the same method KMeans, we could induce Z-frame: kitten using puppy, dog, girl and she.
-As we see in PCA, we could obtain internal Z-frame (or CD).
-
+Using the same method KMeans, we could induce internal Z-frame (or CD)-kitten using puppy, dog, girl and she.
 ```
 === Z-frame Candidates ===
        puppy : Similarity = 0.8759
@@ -2405,7 +2406,7 @@ By introducing the concept *mammal*, the overall geometric structure of the lexi
 ![alt text](https://github.com/No-Name-Yet-Exist/Conceptual-Topology/blob/main/releases/resources/axioms/kitten-mammal.png?raw=true)
 
 **Diagram for visualization**</br>
-While the spatial position of mammal has shifted in the PCA projection, the topological structure of the semantic system remains intact, positioning mammal between two morphic chains, as visually observed in the PCA.
+While the spatial position of mammal is shifted from its PCA-projected location in this diagram, the topological structure of the semantic system remains intact—positioning mammal between two morphic chains, as visually observed in the PCA.
 
 ```
     she ----- girl 
@@ -2415,7 +2416,7 @@ While the spatial position of mammal has shifted in the PCA projection, the topo
     dog      puppy  
       \       /
        \     /
-       Mammal
+        Mammal
 ```
 
 # Conclusion
