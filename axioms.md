@@ -2289,9 +2289,8 @@ A Z-frame acts as a cone shape in morphic structure—its role is to anchor mult
 
 While colimits are traditionally defined via universal properties over cones, in natural language processing (NLP), a colimit can be approximated by KMeans clustering over word embeddings. If we interpret a cone from the side, we observe its tapering morphic shape; but from above, the apex of the cone corresponds to the conceptual anchor (Z-frame) toward which all points converge.
 
-**Words: king, queen, man woman**</br>
-Using a simple KMeans (k=1) over these four word vectors yields the following cluster center and its top 10 closest neighbors:
-
+**Z frame: king, queen, man woman**</br>
+Using a simple KMeans (k=1) over these four word vectors yields the following cluster center and its top 10 closest neighbors.
 ```
 === Z-frame Candidates ===
        queen : Similarity = 0.7720
@@ -2326,7 +2325,7 @@ In this frame, the transformation from king → queen or man → woman does not 
 
 ```
 [king, queen] ←→ [man, woman]
-unified under the latent semantic attractor: monarch
+unified under the latent conceptual attractor: monarch
 ```
 
 From a geometrical viewpoint, these divergences are positional errors relative to the apex. What appears as semantic tension in flat projection becomes, from the Z-frame’s perspective, merely an expected distortion in projection space. The Z-frame does not require perfect symmetry; it requires coherence. And *monarch*, asymmetrically, holds. 
@@ -2393,7 +2392,7 @@ golden_retriever : Similarity = 0.7225
 
 ```
 Animal       Femenity
-
+  
 kitten -----  girl       Tiny
   ↓             |
 Puppy           |
@@ -2401,12 +2400,13 @@ Puppy           |
 dog  --------- she    Abstraction
 ```
 
+
 By introducing the concept *mammal*, the overall geometric structure of the lexical field underwent a notable transformation. We observe that *mammal* does not merely act as an added point—but as a semantic mediator that 3-dimensionally mediates two distinct morphic chains: she → dog and girl → kitten → puppy. 
 
 ![alt text](https://github.com/No-Name-Yet-Exist/Conceptual-Topology/blob/main/releases/resources/axioms/kitten-mammal.png?raw=true)
 
 **Diagram for visualization**</br>
-While the spatial position of mammal is shifted from its PCA-projected location in this diagram, the topological structure of the semantic system remains intact—positioning mammal between two morphic chains, as visually observed in the PCA.
+While the geometric position of mammal is shifted from its PCA-projected location in this diagram, the topological structure of the semantic system remains intact—positioning mammal between two morphic chains, as visually observed in the PCA.
 
 ```
     she ----- girl 
@@ -2596,11 +2596,11 @@ words = ["king", "queen", "man", "woman"]
 model = KeyedVectors.load_word2vec_format(model_path, binary=True)
 vectors = np.array([model[word] for word in words])
 
-# KMeansクラスタリング（クラスタ数 = 1）
+# KMeans Clustering
 kmeans = KMeans(n_clusters=1, random_state=42, n_init='auto')
 kmeans.fit(vectors)
 
-# Z-frame（中心ベクトル）
+# Z-frame
 z_frame = kmeans.cluster_centers_[0]
 
 print("\n=== Z-frame Candidates ===")
@@ -2625,7 +2625,7 @@ GitHub: https://github.com/No-Name-Yet-Exist/Conceptual-Topology<br/>
 Note: https://note.com/xoreaxeax/n/n3711c1318d0b<br/>
 Zenodo: https://zenodo.org/records/15455079
 
-This is Version: 1.4.3
+This is Version: 1.5
 
 ----
 This document and all conceptual content therein are © [No Name Yet Exist], 2025. 
