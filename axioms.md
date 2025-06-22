@@ -2329,7 +2329,7 @@ From a geometrical viewpoint, these divergences are positional errors relative t
 ![alt text](https://github.com/No-Name-Yet-Exist/Conceptual-Topology/blob/main/releases/resources/axioms/z-monarch.png?raw=true)
 
 
-**Semantic Mediation via Z-frame: monarch**
+**Semantic Mediation via Z-frame: monarch**</br>
 The Z-frame enables mediated and asymmetrically coherent morphic interpretation.
 
 Let us define semantic transitions under Z = monarch.
@@ -2342,7 +2342,7 @@ therefore:
 man → king | monarch    // man maps to king under the monarchic frame
 ```
 
-From the perspective of Left Kan Extension, *king* can also be understood as a lifted from *man*, crossing from a gendered lexical domain (generic gender space) to a political-royal domain (*king*) under the frame *monarch*.
+From the perspective of Left Kan Extension, *king* can also be understood as a lifted projection from *man*, crossing from a gendered lexical domain (generic gender space) to a political-royal domain (*king*) under the frame *monarch*.
 
 ```
   Royal Domain ⇔ Gendered Domain
@@ -2360,6 +2360,48 @@ From the perspective of Left Kan Extension, *king* can also be understood as a l
 Left Kan Extension:
 Lan_σ(man)  = king   | monarch  
 Lan_σ(woman) = queen  | monarch
+```
+
+### QNT Internal Z frame Induction
+QNT has internal Z-frame coherence such that f₁ → f'₁ | Z₁. 
+```
+η: Dᵢ ⇒ Dᵢ₊₁  | CD = Mammal
+η_X ∘ Dᵢ({f₁ | Z₁, ..., fₙ | Zₙ}) ≈ Dᵢ₊₁({f′₁ | Z₁, ..., f′ₙ | Zₙ}) ∘ η_Y | CD
+for all fⱼ: Xⱼ → Yⱼ | Zⱼ ∈ Dᵢ,  
+where f′ⱼ: η_X(Xⱼ) → η_Y(Yⱼ) | Zⱼ
+```
+
+Using the same method KMeans, we could induce Z-frame: kitten using puppy, dog, girl and she.
+As we see in PCA, we could obtain internal Z-frame (or CD).
+
+![alt text](https://github.com/No-Name-Yet-Exist/Conceptual-Topology/blob/main/releases/resources/axioms/qtn-induction-kitten.png?raw=true)
+
+```
+Animal       Femenity
+
+kitten -----  girl       Tiny
+  ↓             |
+Puppy           |
+  ↓             ↓
+dog  --------- she    Abstraction
+```
+
+By introducing the concept *mammal*, the overall geometric structure of the lexical field underwent a notable transformation. We observe that *mammal* does not merely act as an added point—but as a semantic mediator that 3-dimensionally mediates two distinct morphic chains: she → dog and girl → kitten → puppy. 
+
+![alt text](https://github.com/No-Name-Yet-Exist/Conceptual-Topology/blob/main/releases/resources/axioms/kitten-mammal.png?raw=true)
+
+**Diagram for visualization**</br>
+While the spatial position of mammal has shifted in the PCA projection, the topological structure of the semantic system remains intact, positioning mammal between two morphic chains, as visually observed in the PCA.
+
+```
+    she ----- girl 
+     |         ↓             
+     |       kitten           
+     ↓         ↓             
+    dog      puppy  
+      \       /
+       \     /
+       Mammal
 ```
 
 # Conclusion
