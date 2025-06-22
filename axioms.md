@@ -2374,6 +2374,20 @@ where f′ⱼ: η_X(Xⱼ) → η_Y(Yⱼ) | Zⱼ
 Using the same method KMeans, we could induce Z-frame: kitten using puppy, dog, girl and she.
 As we see in PCA, we could obtain internal Z-frame (or CD).
 
+```
+=== Z-frame Candidates ===
+       puppy : Similarity = 0.8759
+         dog : Similarity = 0.8172
+      kitten : Similarity = 0.7581
+         pup : Similarity = 0.7549
+        girl : Similarity = 0.7462
+     puppies : Similarity = 0.7243
+golden_retriever : Similarity = 0.7225
+       pooch : Similarity = 0.7119
+  Pomeranian : Similarity = 0.7082
+   chihuahua : Similarity = 0.7012
+```
+
 ![alt text](https://github.com/No-Name-Yet-Exist/Conceptual-Topology/blob/main/releases/resources/axioms/qtn-induction-kitten.png?raw=true)
 
 ```
