@@ -2330,6 +2330,8 @@ unified under the latent conceptual attractor: monarch
 
 From a geometrical viewpoint, these divergences are positional errors relative to the apex. What appears as semantic tension in flat projection becomes, from the Z-frame’s perspective, merely an expected distortion in projection space. The Z-frame does not require perfect symmetry; it requires coherence. And *monarch*, asymmetrically, holds. 
 
+<div style="page-break-after: always;"></div>
+
 **Semantic Mediation via Z-frame: monarch**</br>
 The Z-frame enables mediated and asymmetrically coherent morphic interpretation.
 
@@ -2362,8 +2364,6 @@ Lan_σ(man)  = king   | Monarch
 Lan_σ(woman) = queen  | Monarch
 ```
 
-<div style="page-break-after: always;"></div>
-
 ### QNT Internal Z frame Induction
 QNT has internal Z-frame coherence such that f₁ → f'₁ | Z₁. 
 ```
@@ -2372,6 +2372,8 @@ QNT has internal Z-frame coherence such that f₁ → f'₁ | Z₁.
 for all fⱼ: Xⱼ → Yⱼ | Zⱼ ∈ Dᵢ,  
 where f′ⱼ: η_X(Xⱼ) → η_Y(Yⱼ) | Zⱼ
 ```
+
+<div style="page-break-after: always;"></div>
 
 Using the same method KMeans, we could induce internal Z-frame (or CD) - kitten using puppy, dog, girl and she. 
 ```
@@ -2391,6 +2393,8 @@ golden_retriever : Similarity = 0.7225
 However, in the PCA projection, kitten did not function as a Z-frame as initially presumed. Instead, the structural configuration shifted, and puppy emerged as the effective conceptual anchor. This suggests that KMeans does not necessarily predict which word will operate as the actual Z-frame, even if it captures the overall conceptual coherence of the lexical field. While this might imply that KMeans does not always align with a true colimit structure, both the PCA projection and the initial KMeans similarity scores identified puppy as the geometric and structural center. Puppy ranked as the top Z-frame candidate, and the addition of kitten did not affect the overall configuration. This indicates that KMeans may still closely approximate colimit-like conceptual anchors despite our semantic intuitions suggesting otherwise.
 
 ![alt text](https://github.com/No-Name-Yet-Exist/Conceptual-Topology/blob/main/releases/resources/axioms/qtn-induction-kitten.png?raw=true)
+
+<div style="page-break-after: always;"></div>
 
 ```
 Animal       Femenity
@@ -2419,6 +2423,8 @@ While the geometric position of mammal is shifted from its PCA-projected locatio
        \     /
         Mammal
 ```
+
+<div style="page-break-after: always;"></div>
 
 # Conclusion
 
