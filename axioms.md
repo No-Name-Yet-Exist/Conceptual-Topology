@@ -2311,7 +2311,7 @@ Remarkably, monarch emerges from a purely geometric computation. This term does 
         man       woman
           \       /
            \     /
-           monarch     ← apex = Z-frame
+           Monarch     ← apex = Z-frame
            /     \
         king     queen
 ```
@@ -2335,12 +2335,12 @@ The Z-frame enables mediated and asymmetrically coherent morphic interpretation.
 
 Let us define semantic transitions under Z = monarch.
 ```
-man → woman | monarch   // gender role transformation within monarchic structure
-woman → queen | monarch // woman becomes queen under monarchic mediation
-queen → king | monarch  // queen transitions to king in the symbolic hierarchy
+man → woman | Monarch   // gender role transformation within monarchic structure
+woman → queen | Monarch // woman becomes queen under monarchic mediation
+queen → king | Monarch  // queen transitions to king in the symbolic hierarchy
 
 therefore:
-man → king | monarch    // man maps to king under the monarchic frame
+man → king | Monarch    // man maps to king under the monarchic frame
 ```
 From the perspective of Left Kan Extension, *king* can also be understood as a lifted projection from *man*, crossing from a gendered lexical domain (generic gender space) to a political-royal domain (*king*) under the frame *monarch*.
 
@@ -2354,12 +2354,12 @@ From the perspective of Left Kan Extension, *king* can also be understood as a l
       queen      ←    woman
             \        /
              \      /
-              monarch
+              Monarch
             (Z-frame apex)
 
 Left Kan Extension:
-Lan_σ(man)  = king   | monarch  
-Lan_σ(woman) = queen  | monarch
+Lan_σ(man)  = king   | Monarch  
+Lan_σ(woman) = queen  | Monarch
 ```
 
 <div style="page-break-after: always;"></div>
@@ -2373,7 +2373,7 @@ for all fⱼ: Xⱼ → Yⱼ | Zⱼ ∈ Dᵢ,
 where f′ⱼ: η_X(Xⱼ) → η_Y(Yⱼ) | Zⱼ
 ```
 
-Using the same method KMeans, we could induce internal Z-frame (or CD)-kitten using puppy, dog, girl and she.
+Using the same method KMeans, we could induce internal Z-frame (or CD) - kitten using puppy, dog, girl and she. 
 ```
 === Z-frame Candidates ===
        puppy : Similarity = 0.8759
@@ -2388,6 +2388,8 @@ golden_retriever : Similarity = 0.7225
    chihuahua : Similarity = 0.7012
 ```
 
+However, in the PCA projection, kitten did not function as a Z-frame as initially presumed. Instead, the structural configuration shifted, and puppy emerged as the effective conceptual anchor. This suggests that KMeans does not necessarily predict which word will operate as the actual Z-frame, even if it captures the overall conceptual coherence of the lexical field. While this might imply that KMeans does not always align with a true colimit structure, both the PCA projection and the KMeans similarity scores identified puppy as the geometric and structural center. Notably, puppy ranked as the top Z-frame candidate, and the addition of kitten did not affect the overall configuration. This indicates that KMeans may still closely approximate colimit-like conceptual anchors—despite our semantic intuitions suggesting otherwise.
+
 ![alt text](https://github.com/No-Name-Yet-Exist/Conceptual-Topology/blob/main/releases/resources/axioms/qtn-induction-kitten.png?raw=true)
 
 ```
@@ -2399,7 +2401,6 @@ Puppy           |
   ↓             ↓
 dog  --------- she    Abstraction
 ```
-
 
 By introducing the concept *mammal*, the overall geometric structure of the lexical field underwent a notable transformation. We observe that *mammal* does not merely act as an added point—but as a semantic mediator that 3-dimensionally mediates two distinct morphic chains: she → dog and girl → kitten → puppy. 
 
@@ -2625,7 +2626,7 @@ GitHub: https://github.com/No-Name-Yet-Exist/Conceptual-Topology<br/>
 Note: https://note.com/xoreaxeax/n/n3711c1318d0b<br/>
 Zenodo: https://zenodo.org/records/15455079
 
-This is Version: 1.5
+This is Version: 1.5.1
 
 ----
 This document and all conceptual content therein are © [No Name Yet Exist], 2025. 
